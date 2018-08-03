@@ -802,8 +802,8 @@
                     <div class="module_column tb-column col-full first tb_6_column module_column_0 module_column_6-6-0">
                       <div class="tb-column-inner">
                         <div id="text-6-6-0-0" class="module module-text text-6-6-0-0  repeat  ">
-                          <h2>Got Questions?</h2>
-                          <p>Don’t be shy. We are here to answer your questions 24/7.</p>
+                          <h2>CONTACTO</h2>
+                          <p>Mantente en contacto con nosotros llenando el formulario de contacto. <br/>Realiza todas las preguntas que tengas y responderemos a la brevedad.</p>
                         </div>
                         <div class="themify_builder_sub_row module_subrow clearfix sub_row_6-0-1">
                           <div class="subrow_inner gutter-none col_align_top">
@@ -812,36 +812,42 @@
                             <div class="col4-2 sub_column module_column middle sub_column_post_6 sub_column_6-0-1-1">
                               <div class="tb-column-inner">
                                 <div id="contact-6-sub_row_6-0-1-1-0" class="module module-contact contact-6-sub_row_6-0-1-1-0 contact-animated-label  ">
-                                  <form action="https://themify.me/demo/themes/ultra-app/wp-admin/admin-ajax.php" class="builder-contact" id="contact-6-sub_row_6-0-1-1-0-form" method="post">
+                                  <form action="" class="builder-contact" id="contact-6-sub_row_6-0-1-1-0-form" method="post">
                                     <div class="contact-message"></div>
                                     <div class="builder-contact-fields">
                                       <div class="builder-contact-field builder-contact-field-name builder-contact-text-field" data-order="">
-                                        <label class="control-label" for="contact-6-sub_row_6-0-1-1-0-contact-name">Your Name <span class="required">*</span></label>
+                                        <label class="control-label">Tu Nombre <span class="required">*</span></label>
                                         <div class="control-input">
-                                          <input type="text" name="contact-name" placeholder="" id="contact-6-sub_row_6-0-1-1-0-contact-name" value="" class="form-control" required />
+                                          <input type="text" name="name" id="name" class="form-control" required />
                                         </div>
                                       </div>
-                                      <div class="builder-contact-field builder-contact-field-email builder-contact-text-field" data-order="">
-                                        <label class="control-label" for="contact-6-sub_row_6-0-1-1-0-contact-email">Your Email <span class="required">*</span></label>
+                                      <div class="builder-contact-field builder-contact-field-name builder-contact-text-field" data-order="">
+                                        <label class="control-label">Tu Teléfono <span class="required">*</span></label>
                                         <div class="control-input">
-                                          <input type="text" name="contact-email" placeholder="" id="contact-6-sub_row_6-0-1-1-0-contact-email" value="" class="form-control" required />
+                                          <input type="text" name="phone" id="phone" class="form-control" required />
                                         </div>
                                       </div>
                                       <div class="builder-contact-field builder-contact-field-subject builder-contact-text-field" data-order="">
-                                        <label class="control-label" for="contact-6-sub_row_6-0-1-1-0-contact-subject">Subject <span class="required">*</span></label>
+                                        <label class="control-label">Asunto <span class="required">*</span></label>
                                         <div class="control-input">
-                                          <input type="text" name="contact-subject" placeholder="" id="contact-6-sub_row_6-0-1-1-0-contact-subject" value="" class="form-control" required />
+                                            <input type="email" name="email" id="email" class="form-control" required />
+                                        </div>
+                                      </div>
+                                      <div class="builder-contact-field builder-contact-field-subject builder-contact-text-field" data-order="">
+                                        <label class="control-label">Asunto <span class="required">*</span></label>
+                                        <div class="control-input">
+                                          <input type="text" name="subject" id="subject" class="form-control" required />
                                         </div>
                                       </div>
                                       <div class="builder-contact-field builder-contact-field-message builder-contact-textarea-field" data-order="">
-                                        <label class="control-label" for="contact-6-sub_row_6-0-1-1-0-contact-message">Message <span class="required">*</span></label>
+                                        <label class="control-label">Mensaje <span class="required">*</span></label>
                                         <div class="control-input">
-                                          <textarea name="contact-message" placeholder="" id="contact-6-sub_row_6-0-1-1-0-contact-message" rows="8" cols="45" class="form-control" required></textarea>
+                                          <textarea name="messages" id="messages" rows="8" cols="45" class="form-control" required></textarea>
                                         </div>
                                       </div>
                                       <div class="builder-contact-field builder-contact-field-send" data-order="10000">
                                         <div class="control-input builder-contact-field-send-center">
-                                          <button type="submit" class="btn btn-primary"> <i class="fa fa-cog fa-spin"></i> Send </button>
+                                          <button type="submit" class="btn btn-primary"> <i class="fa fa-cog fa-spin"></i> Enviar </button>
                                         </div>
                                       </div>
                                     </div>

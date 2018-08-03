@@ -7,15 +7,22 @@
         <div class="main-col first clearfix">
           <div class="footer-left-wrap first">
             <div class="footer-logo-wrapper clearfix">
-              <div id="footer-logo"><a href="https://themify.me/demo/themes/ultra-app" title="App"><span>App</span></a></div>
+              <div id="footer-logo">
+                  <a href="https://themify.me/demo/themes/ultra-app" title="App">
+                      <span>
+                          <img src="<?php echo site_url().'static/page_front/images/logo/logo.png';?>" alt="nfn-logo" width="50"/>
+                      </span>
+                  </a>
+              </div>
               <!-- /footer-logo -->
             </div>
           </div>
           <div class="footer-right-wrap">
             <div class="footer-text clearfix">
               <div class="footer-text-inner">
-                <div class="one">&copy; <a href="https://themify.me/demo/themes/ultra-app">App</a> 2018</div>
-                <div class="two">Powered by <a href="http://wordpress.org">WordPress</a> &bull; <a href="https://themify.me">Themify WordPress Themes</a></div>
+                  <div class="one">&copy; <a href="<?php echo site_url();?>">NFN</a> 2018</div>
+                  <div class="two">Todos los derechos reservador</div>
+                <div class="two">Creado por <a href="http://cevolutionweb.com/">Cevolution Web</a></div>
               </div>
             </div>
             <!-- /.footer-text -->
@@ -26,25 +33,34 @@
             <div class="footer-widgets clearfix">
               <div class="col4-2 first">
                 <div id="text-2" class="widget widget_text">
-                  <h4 class="widgettitle">Office</h4>
+                  <h4 class="widgettitle">New Future Network</h4>
                   <div class="textwidget">
-                    <p>Ultra Tower, 4th Fifth Street North York, M1E 5QF</p>
+                      <p>Av. Javier Prado Este 2801 Of. 201, Lima - Perú<br/>
+                          contacto@newfuturenetworl.com<br/>
+                          Teléfono: +51 336 3924
+                      </p>
                   </div>
                 </div>
               </div>
               <div class="col4-2 ">
                 <div id="themify-social-links-2" class="widget themify-social-links">
-                  <ul class="social-links horizontal">
+                    <ul class="social-links horizontal">
                     <li class="social-link-item facebook font-icon icon-large">
-                      <a href="http://facebook.com/themify"><i class="fa fa-facebook" style="color: #ffffff;"></i>  </a>
+                      <h4 class="widgettitle">Síguenos en:</h4>
+                    </li>    
+                    </ul>
+                  <ul class="social-links horizontal">
+                    
+                    <li class="social-link-item facebook font-icon icon-large">
+                      <a href="#"><i class="fa fa-facebook" style="color: #ffffff;"></i>  </a>
                     </li>
                     <!-- /themify-link-item -->
                     <li class="social-link-item twitter font-icon icon-large">
-                      <a href="http://twitter.com/themify"><i class="fa fa-twitter" style="color: #ffffff;"></i>  </a>
+                      <a href="#"><i class="fa fa-youtube" style="color: #ffffff;"></i>  </a>
                     </li>
                     <!-- /themify-link-item -->
                     <li class="social-link-item instagram font-icon icon-large">
-                      <a href="https://instagram.com/themify"><i class="fa fa-instagram" style="color: #ffffff;"></i>  </a>
+                      <a href="#"><i class="fa fa-instagram" style="color: #ffffff;"></i>  </a>
                     </li>
                     <!-- /themify-link-item -->
                   </ul>
