@@ -92,6 +92,8 @@ body:not(.slide-cart):not(.mobile_menu_active) #main-nav-wrap {
 	-webkit-justify-content: flex-end;
 	justify-content: flex-end;
 	position: relative;
+        padding-top: 1%;
+        
 }
 body:not(.slide-cart):not(.mobile_menu_active) #main-nav {
 	position: static;

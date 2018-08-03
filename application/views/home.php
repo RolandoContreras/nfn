@@ -28,7 +28,7 @@
           <div id="site-logo">
               <a href="<?php echo site_url();?>" title="NFN">
                   <span>
-                      <img src="<?php echo site_url().'static/page_front/images/logo/logo.png';?>" alt="nfn-logo" width="80"/>
+                      <img src="<?php echo site_url().'static/page_front/images/logo/logo.png';?>" alt="nfn-logo" width="60"/>
                   </span>
               </a>
           </div>
@@ -115,37 +115,26 @@
                           </div>
                         </div>
                         <!-- /module buttons -->
-
                       </div>
                     </div>
-
                     <div class="module_column tb-column col4-2 last tb_6_column module_column_1 module_column_6-1-1">
                       <div class="tb-column-inner">
-
-
                         <!-- module image -->
                         <div id="image-6-1-1-0" class="module module-image image-6-1-1-0  image-center   auto_fullwidth" data-parallax-element-speed="2">
                           <!--insert-->
-
                           <div class="image-wrap">
                             <img src="https://themify.me/demo/themes/ultra-app/files/2018/05/app-interface-670x481.png" width="670" class=" wp-post-image wp-image-28" alt="app interface"
                               srcset="https://themify.me/demo/themes/ultra-app/files/2018/05/app-interface-670x481.png 670w, https://themify.me/demo/themes/ultra-app/files/2018/05/app-interface-300x216.png 300w, https://themify.me/demo/themes/ultra-app/files/2018/05/app-interface-768x552.png 768w, https://themify.me/demo/themes/ultra-app/files/2018/05/app-interface.png 948w"
                               sizes="(max-width: 670px) 100vw, 670px" />
                           </div>
                           <!-- /image-wrap -->
-
-
                         </div>
                         <!-- /module image -->
-
                       </div>
                     </div>
                   </div>
                   <!-- /row_inner -->
-                
                 <!-- END ABOUTS -->
-                <!-- START TESTOMONIAL -->
-                <!--<div data-anchor="testimonials" class="themify_builder_row module_row clearfix repeat tb_section-testimonials module_row_2 themify_builder_6_row module_row_6-2">-->
                   <div class="row_inner col_align_top">
                     <div class="module_column tb-column col-full first tb_6_column module_column_0 module_column_6-2-0">
                       <div class="tb-column-inner">
@@ -211,9 +200,8 @@
                     </div>
                   </div>
                   <!-- /row_inner -->
-                <!--</div>-->
                 </div>
-                <!-- /module_row -->
+                <!-- END ABOUT -->
 
                 <!-- module_row -->
                 <div data-anchor="clients" class="themify_builder_row module_row clearfix fullcover fullwidth_row_container tb_section-clients module_row_3 themify_builder_6_row module_row_6-3">
@@ -357,95 +345,25 @@
                 <!-- module_row -->
                 <div data-anchor="features" class="themify_builder_row module_row clearfix repeat tb_section-features module_row_4 themify_builder_6_row module_row_6-4">
                   <div class="row_inner col_align_middle">
-
                     <div class="module_column tb-column col-full first tb_6_column module_column_0 module_column_6-4-0 repeat">
                       <div class="tb-column-inner">
-
-
-                        <!-- module text -->
                         <div id="text-6-4-0-0" class="module module-text text-6-4-0-0  repeat  ">
-                          <!--insert-->
-
-                          <h2>Features</h2>
+                          <h2>¿Por qué New Future Network?</h2>
                         </div>
-                        <!-- /module text -->
-
-
-
-                        <!-- module text -->
-                        <div id="text-6-4-0-1" class="module module-text text-6-4-0-1  repeat  ">
-                          <!--insert-->
-
-                          <p>Deserun mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. Excepteur sint occaecat
-                            cupidatat.</p>
-                        </div>
-                        <!-- /module text -->
-
                         <div class="themify_builder_sub_row module_subrow clearfix repeat sub_row_4-0-2">
                           <div class="subrow_inner col_align_middle">
                             <div class="col3-1 sub_column module_column first sub_column_post_6 sub_column_4-0-2-0">
                               <div class="tb-column-inner">
-
-
-                                <!-- module feature -->
-                                <div id="feature-6-sub_row_4-0-2-0-0" class="module module-feature feature-6-sub_row_4-0-2-0-0 with-chart layout-icon-right size-small  ">
-                                  <!--insert-->
-                                  <style type="text/css">
-                                    #feature-6-sub_row_4-0-2-0-0 .module-feature-chart-html5 {
-                                    					box-shadow: inset 0 0 0 2px rgba(0,0,0,.1);
-                                    				}
-                                    				#feature-6-sub_row_4-0-2-0-0 .chart-loaded.chart-html5-fill {
-                                    					box-shadow: inset 0 0 0 2px #405cc2;
-                                    				}
-                                  </style>
-
-                                  <div class="module-feature-image">
-
-
-                                    <div class="module-feature-chart-html5" data-progress="0" data-progress-end="100" data-size="100">
-                                      <div class="chart-html5-circle">
-                                        <div class="chart-html5-mask chart-html5-full">
-                                          <div class="chart-html5-fill"></div>
-                                        </div>
-                                        <div class="chart-html5-mask chart-html5-half">
-                                          <div class="chart-html5-fill"></div>
-                                        </div>
-                                        <div class="chart-html5-inset">
-
-                                          <img src="https://themify.me/demo/themes/ultra-app/files/2018/05/camera-app-icon-1.png" alt="Camera" />
-
-                                        </div>
-                                      </div>
-                                    </div>
-
-
-                                  </div>
-
-                                  <div class="module-feature-content">
-                                    <h3 class="module-feature-title">Camera</h3>
-                                    <p>Sed ut perspiciatis unde omnis iste natus error.</p>
-                                  </div>
-
-                                </div>
-                                <!-- /module feature -->
-
-
-
-                                <!-- module feature -->
                                 <div id="feature-6-sub_row_4-0-2-0-1" class="module module-feature feature-6-sub_row_4-0-2-0-1 with-chart layout-icon-right size-small  ">
-                                  <!--insert-->
                                   <style type="text/css">
                                     #feature-6-sub_row_4-0-2-0-1 .module-feature-chart-html5 {
-                                    					box-shadow: inset 0 0 0 2px rgba(0,0,0,.1);
-                                    				}
-                                    				#feature-6-sub_row_4-0-2-0-1 .chart-loaded.chart-html5-fill {
-                                    					box-shadow: inset 0 0 0 2px #405cc2;
-                                    				}
+                                            box-shadow: inset 0 0 0 2px rgba(0,0,0,.1);
+                                    }
+                                    #feature-6-sub_row_4-0-2-0-1 .chart-loaded.chart-html5-fill {
+                                            box-shadow: inset 0 0 0 2px #405cc2;
+                                    }
                                   </style>
-
                                   <div class="module-feature-image">
-
-
                                     <div class="module-feature-chart-html5" data-progress="0" data-progress-end="100" data-size="100">
                                       <div class="chart-html5-circle">
                                         <div class="chart-html5-mask chart-html5-full">
@@ -455,29 +373,18 @@
                                           <div class="chart-html5-fill"></div>
                                         </div>
                                         <div class="chart-html5-inset">
-
-                                          <img src="https://themify.me/demo/themes/ultra-app/files/2018/05/share-app-icon-1.png" alt="Share" />
-
+                                          <img src="<?php echo site_url().'static/page_front/images/icon/qualityaward_106571.png';?>" alt="Calidad"/>
                                         </div>
                                       </div>
                                     </div>
-
-
                                   </div>
-
                                   <div class="module-feature-content">
-                                    <h3 class="module-feature-title">Share</h3>
-                                    <p>Excepteur sint occaecat cupidatat non proident.</p>
+                                    <h3 class="module-feature-title">PRODUCTOS DE CALIDAD</h3>
+                                    <p>Nuestros productos son orgánicos, y naturales con un control de calidad muy estricto.</p>
                                   </div>
 
                                 </div>
-                                <!-- /module feature -->
-
-
-
-                                <!-- module feature -->
                                 <div id="feature-6-sub_row_4-0-2-0-2" class="module module-feature feature-6-sub_row_4-0-2-0-2 with-chart layout-icon-right size-small  ">
-                                  <!--insert-->
                                   <style type="text/css">
                                     #feature-6-sub_row_4-0-2-0-2 .module-feature-chart-html5 {
                                     					box-shadow: inset 0 0 0 2px rgba(0,0,0,.1);
@@ -486,10 +393,7 @@
                                     					box-shadow: inset 0 0 0 2px #405cc2;
                                     				}
                                   </style>
-
                                   <div class="module-feature-image">
-
-
                                     <div class="module-feature-chart-html5" data-progress="0" data-progress-end="100" data-size="100">
                                       <div class="chart-html5-circle">
                                         <div class="chart-html5-mask chart-html5-full">
@@ -499,98 +403,33 @@
                                           <div class="chart-html5-fill"></div>
                                         </div>
                                         <div class="chart-html5-inset">
-
-                                          <img src="https://themify.me/demo/themes/ultra-app/files/2018/05/sync-app-icon-1.png" alt="Sync" />
-
+                                          <img src="<?php echo site_url().'static/page_front/images/icon/deliverytruck_106577.png';?>" alt="Rapidez"/>
                                         </div>
                                       </div>
                                     </div>
-
-
                                   </div>
-
                                   <div class="module-feature-content">
-                                    <h3 class="module-feature-title">Sync</h3>
-                                    <p>At vero eos et accusamus et iusto odio dignissimos.</p>
+                                    <h3 class="module-feature-title">RAPIDEZ DE ENTREGA</h3>
+                                    <p>Luego de hacer el pago en menos de 24 horas estará recibiendo su pedido</p>
                                   </div>
-
                                 </div>
-                                <!-- /module feature -->
-
                               </div>
                             </div>
                             <div class="col3-1 sub_column module_column middle sub_column_post_6 sub_column_4-0-2-1">
                               <div class="tb-column-inner">
-
-
                                 <!-- module image -->
                                 <div id="image-6-sub_row_4-0-2-1-0" class="module module-image image-6-sub_row_4-0-2-1-0  image-center   wow fadeInUp">
-                                  <!--insert-->
-
                                   <div class="image-wrap">
-                                    <img src="https://themify.me/demo/themes/ultra-app/files/2018/05/mobile-phone-345x710.png" width="345" height="710" class=" wp-post-image wp-image-80"
-                                      alt="mobile phone" srcset="https://themify.me/demo/themes/ultra-app/files/2018/05/mobile-phone.png 345w, https://themify.me/demo/themes/ultra-app/files/2018/05/mobile-phone-146x300.png 146w"
+                                      <img src="<?php echo site_url().'static/page_front/images/compras-345x710.png';?>" width="345" height="710" class=" wp-post-image wp-image-80"
+                                      alt="mobile phone" srcset="<?php echo site_url().'static/page_front/images/compras-345x710.png';?> 345w, <?php echo site_url().'static/page_front/images/compras-146x300.png';?>"
                                       sizes="(max-width: 345px) 100vw, 345px" />
                                   </div>
-                                  <!-- /image-wrap -->
-
-
                                 </div>
-                                <!-- /module image -->
-
                               </div>
                             </div>
                             <div class="col3-1 sub_column module_column last sub_column_post_6 sub_column_4-0-2-2">
                               <div class="tb-column-inner">
-
-
-                                <!-- module feature -->
-                                <div id="feature-6-sub_row_4-0-2-2-0" class="module module-feature feature-6-sub_row_4-0-2-2-0 with-chart layout-icon-left size-small  ">
-                                  <!--insert-->
-                                  <style type="text/css">
-                                    #feature-6-sub_row_4-0-2-2-0 .module-feature-chart-html5 {
-                                    					box-shadow: inset 0 0 0 2px rgba(0,0,0,.1);
-                                    				}
-                                    				#feature-6-sub_row_4-0-2-2-0 .chart-loaded.chart-html5-fill {
-                                    					box-shadow: inset 0 0 0 2px #405cc2;
-                                    				}
-                                  </style>
-
-                                  <div class="module-feature-image">
-
-
-                                    <div class="module-feature-chart-html5" data-progress="0" data-progress-end="100" data-size="100">
-                                      <div class="chart-html5-circle">
-                                        <div class="chart-html5-mask chart-html5-full">
-                                          <div class="chart-html5-fill"></div>
-                                        </div>
-                                        <div class="chart-html5-mask chart-html5-half">
-                                          <div class="chart-html5-fill"></div>
-                                        </div>
-                                        <div class="chart-html5-inset">
-
-                                          <img src="https://themify.me/demo/themes/ultra-app/files/2018/05/filter-app-icon-1.png" alt="Filter" />
-
-                                        </div>
-                                      </div>
-                                    </div>
-
-
-                                  </div>
-
-                                  <div class="module-feature-content">
-                                    <h3 class="module-feature-title">Filter</h3>
-                                    <p>Neque porro quisquam est, qui dolorem ipsum quiat.</p>
-                                  </div>
-
-                                </div>
-                                <!-- /module feature -->
-
-
-
-                                <!-- module feature -->
                                 <div id="feature-6-sub_row_4-0-2-2-1" class="module module-feature feature-6-sub_row_4-0-2-2-1 with-chart layout-icon-left size-small  ">
-                                  <!--insert-->
                                   <style type="text/css">
                                     #feature-6-sub_row_4-0-2-2-1 .module-feature-chart-html5 {
                                     					box-shadow: inset 0 0 0 2px rgba(0,0,0,.1);
@@ -599,10 +438,7 @@
                                     					box-shadow: inset 0 0 0 2px #405cc2;
                                     				}
                                   </style>
-
                                   <div class="module-feature-image">
-
-
                                     <div class="module-feature-chart-html5" data-progress="0" data-progress-end="100" data-size="100">
                                       <div class="chart-html5-circle">
                                         <div class="chart-html5-mask chart-html5-full">
@@ -612,29 +448,17 @@
                                           <div class="chart-html5-fill"></div>
                                         </div>
                                         <div class="chart-html5-inset">
-
-                                          <img src="https://themify.me/demo/themes/ultra-app/files/2018/05/edit-app-icon-1.png" alt="Edit" />
-
+                                          <img src="<?php echo site_url().'static/page_front/images/icon/dollarcoin_106593.png';?>" alt="Negocio"/>
                                         </div>
                                       </div>
                                     </div>
-
-
                                   </div>
-
                                   <div class="module-feature-content">
-                                    <h3 class="module-feature-title">Edit</h3>
-                                    <p>Nemo enim ipsam voluptatem quia voluptas.</p>
+                                    <h3 class="module-feature-title">OPORTUNIDAD DE TENER UN NEGOCIO</h3>
+                                    <p>Construya un negocio sólido y en el tiempo por recomendar los productos que siempre compra.</p>
                                   </div>
-
                                 </div>
-                                <!-- /module feature -->
-
-
-
-                                <!-- module feature -->
                                 <div id="feature-6-sub_row_4-0-2-2-2" class="module module-feature feature-6-sub_row_4-0-2-2-2 with-chart layout-icon-left size-small  ">
-                                  <!--insert-->
                                   <style type="text/css">
                                     #feature-6-sub_row_4-0-2-2-2 .module-feature-chart-html5 {
                                     					box-shadow: inset 0 0 0 2px rgba(0,0,0,.1);
@@ -643,10 +467,7 @@
                                     					box-shadow: inset 0 0 0 2px #405cc2;
                                     				}
                                   </style>
-
                                   <div class="module-feature-image">
-
-
                                     <div class="module-feature-chart-html5" data-progress="0" data-progress-end="100" data-size="100">
                                       <div class="chart-html5-circle">
                                         <div class="chart-html5-mask chart-html5-full">
@@ -656,24 +477,16 @@
                                           <div class="chart-html5-fill"></div>
                                         </div>
                                         <div class="chart-html5-inset">
-
-                                          <img src="https://themify.me/demo/themes/ultra-app/files/2018/05/effect-app-icon-1.png" alt="Effects" />
-
+                                            <img src="<?php echo site_url().'static/page_front/images/icon/heartbag_106592.png';?>" alt="Comsumo Masivo"/>
                                         </div>
                                       </div>
                                     </div>
-
-
                                   </div>
-
                                   <div class="module-feature-content">
-                                    <h3 class="module-feature-title">Effects</h3>
-                                    <p>Nam libero tempore, cum soluta nobis est eligendi.</p>
+                                    <h3 class="module-feature-title">PRODUCTOS DE CONSUMO MASIVO</h3>
+                                    <p>Cada familia en el Perú y el mundo consume los productos que tenemos a diario.</p>
                                   </div>
-
                                 </div>
-                                <!-- /module feature -->
-
                               </div>
                             </div>
                           </div>
