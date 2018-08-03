@@ -1,93 +1,114 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>		
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="author" content="CriptoStore">
-    <meta name="description" content="En Easycripto puedes comprar Bitcoin de forma fácil, rápida y segura. ¡Sin necesidad de registro!">
-    <meta name="keywords" content="easycripto,bitcoin,comprar bitcoins,compra bitcoins,criptomonedas,adquirir bitcoins,vende bitcoin">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <link rel="shortcut icon" href="<?php echo site_url().'static/page_front/images/favicon/favicon.ico';?>" /> 
-    <!-- PAGE TITLE -->
-    <meta charset="UTF-8">
-    <title>CriptoStore | Compra Bitcoin</title>
-    <link rel='stylesheet' id='bootstrap-style-css'  href='http://multia.in/theme/wordpress/mievent/xmas-quick/wp-content/themes/mievent/site/css/bootstrap.min.css?ver=4.0.18' media='all' />
-    <link rel='stylesheet' id='font-awesome.min-style-css'  href='http://multia.in/theme/wordpress/mievent/xmas-quick/wp-content/themes/mievent/site/css/font-awesome.min.css?ver=4.0.18' media='all' />
-    <link rel='stylesheet' id='flexslider-style-css'  href='http://multia.in/theme/wordpress/mievent/xmas-quick/wp-content/themes/mievent/site/css/flexslider.css?ver=4.0.18' media='all' />
-    <link rel='stylesheet' id='animate-style-css'  href='http://multia.in/theme/wordpress/mievent/xmas-quick/wp-content/themes/mievent/site/css/animate.css?ver=4.0.18' media='all' />
-    <link rel='stylesheet' id='schedule-style-css'  href='http://multia.in/theme/wordpress/mievent/xmas-quick/wp-content/themes/mievent/site/css/schedule.css?ver=4.0.18' media='all' />
-    <link rel='stylesheet' id='gridgallery-style-css'  href='http://multia.in/theme/wordpress/mievent/xmas-quick/wp-content/themes/mievent/site/css/gridgallery.css?ver=4.0.18' media='all' />
-    <link rel='stylesheet' id='venobox-style-css'  href='http://multia.in/theme/wordpress/mievent/xmas-quick/wp-content/themes/mievent/site/css/venobox.css?ver=4.0.18' media='all' />
-    <link rel='stylesheet' id='jquery.countdown-style-css'  href='http://multia.in/theme/wordpress/mievent/xmas-quick/wp-content/themes/mievent/site/css/jquery.countdown.css?ver=4.0.18' media='all' />
-    <link rel='stylesheet' id='jquery.panel-style-css'  href='http://multia.in/theme/wordpress/mievent/xmas-quick/wp-content/themes/mievent/site/css/panel.css?ver=4.0.18' media='all' />
-    <link rel='stylesheet' id='mtheme-style-css'  href='http://multia.in/theme/wordpress/mievent/xmas-quick/wp-content/themes/mievent/style.css?ver=4.0.18' media='all' />
-    <link rel='stylesheet' id='mievent-style-css'  href='http://multia.in/theme/wordpress/mievent/xmas-quick/wp-content/themes/mievent/site/css/mtheme.css?ver=4.0.18' media='all' />
-    <link rel='stylesheet' id='queries-style-css'  href='http://multia.in/theme/wordpress/mievent/xmas-quick/wp-content/themes/mievent/site/css/queries.css?ver=4.0.18' media='all' />
-    <link rel="shortcut icon" href="<?php echo site_url().'static/page_front/images/favicon/favicon_empire.ico';?>"/>
-    <style>.status{background-image:url(http://multia.in/theme/wordpress/mievent/xmas-quick/wp-content/themes/mievent/site/img/loading.gif);}.header{background-color:#0f1726;}.blog-listing h1,.blog-listing h2,.blog-listing h3,.blog-listing h4,.blog-listing h5,.blog-listing h6,.posts-listing h1,.posts-listing h2,.posts-listing h3,.posts-listing h4,.posts-listing h5,.posts-listing h6,.page-heading h1,.sidebar .page_item a,.widget-title h3,.widget ul li a,td,caption,.tagcloud a,.post-content h1,.blog-listing h2,.post-content h3,.post-content h4,.post-content h5,.post-content h6{color:#0f1726;}.profile-name-discussion,.read-comment-head span,.nav-close fa{color:#0f1726!important;}.blog-listing div,.blog-listing p,.blog-listing span,.posts-listing div,.posts-listing p,.posts-listing span,.content,post-content div,.post-content p,.post-content span,.post-content .main-content .post-detail p{color:#0f1726;}.scroll-header,.dropdown-menu{background-color:#0f1726!important;}h1,h2,h3,h4,h5,h6{font-family:Raleway, sans-serif;}#wp-calendar thead tr th, #wp-calendar tbody tr td{border-color:#363738;}h1,h2,h3,h4,h5,h6,.accordion .item .heading{color:#363738;}.border_left,.border_bottom{border-color:#363738;}html, body, div, span, applet, object, iframe, p, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video{font-family:Raleway, sans-serif;}.d-sch i,.fb i{color:#5f6061!important;}body, input, select, textarea, p, .accordion .item .heading .e-title{color:#5f6061;}.tagcloud a{border-color:#5f6061;}a.btn-effect:hover, a.btn-effect:focus,.tabs nav a,.tc{color:#5f6061;}.social-btn i:hover, .social-btn i:focus,.social-btn:hover i,.md-trigger .fa,.nl-form.ajax-form a:hover,.md-trigger:hover,.page-numbers:hover,.page-numbers:focus,.page-numbers i:hover, .page-numbers i:focus,.page-numbers:hover i{color:#5f6061!important;}a.fb:hover,a.d-sch:hover,.active span,.widget li,.d-sch i:hover,.d-sch i:focus,.fb i:hover,.fb i:focus,.d-sch:hover i,.d-sch:focus i,.fb:hover i,.fb:focus i,.author-title,.nl-field-toggle,.nl-form.ajax-form input,.nl-form.ajax-form select{color:#fb1b35!important;}.tabs nav ul li *:hover,.btn-effect,.tabs nav li.tab-current,#submit,.learn-more-btn,.flex-control-paging li a.flex-active,.flex-control-paging li a:hover,.social-btn:hover, .social-btn:focus,.form-notify button.submit-button,.input-group-btn > .btn:hover, .input-group-btn > .btn:focus, .input-group-btn > .btn:active,
-            .fancy-title.bottom-border h1:after,.fancy-title.bottom-border h2:after,.fancy-title.bottom-border h3:after,
-            .fancy-title.bottom-border h4:after,.fancy-title.bottom-border h5:after,.fancy-title.bottom-border h6:after,.social-ftp a{background-color:#fb1b35;}a, a:hover, a:focus,.accordion .item.open .e-title,.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus,.navbar-default .navbar-nav > li.active > a,.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus,.md-trigger,.sp-name,.contact-details h2 span,.form-notify  h2,.social-btn,.page-numbers,.page-numbers i,.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus,.fa{color:#fb1b35;}blockquote,#title_hr,.flex-control-paging li a,hr{border-color:#fb1b35;}.button.dark, .jp-gui, .header-wrap, .header-navigation ul ul, .select-menu, .search-form, .mobile-search-form, .login-button .tooltip-text, .footer-wrap, .site-footer:after, .site-header:after,.tabs nav ul li,.post-details-header .overlay-detail,.social-btn,.page-numbers{background-color:#212739;}.author-img img{border-color:#212739;}.accordion .day,.light-box,.light-box:hover, .light-box:focus{color:#fb1b35;}.accordion .item .heading .time,.nl-ti-text ul li.nl-ti-example{border-color:#fb1b35;}.navbar-default .navbar-nav > li > a{font-size:0.91em;}.navbar-default .navbar-nav > li > a{color:#FFF;}.navbar-nav > li > a{padding-top:30px;}.navbar-nav > li > a{padding-bottom:30px;}
-    </style>
-    <script>
-        WebFontConfig = {google: { families: [ "Raleway:400,700,600,500,300,200,100,800,900" ] } };
-        (function() {
-                var wf = document.createElement("script");
-                wf.src = ("https:" == document.location.protocol ? "https" : "http") + "://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js";
-                wf.type = "text/javascript";
-                wf.async = "true";
-                var s = document.getElementsByTagName("script")[0];
-                s.parentNode.insertBefore(wf, s);
-        })();
-    </script>
-                        
-                        
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>New Future Network - Muy Pronto</title>
+    <meta name="description" content="NFN muy pronto. Prepárense para la revolución ">
+    <meta name="author" content="Newfuturenetwork">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Google Font -->
+	 <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,800%7CRanga:700" rel="stylesheet">  
+    <!-- All CSS -->
+	<link rel="stylesheet" type="text/css" href="https://pixiefy.com/themes/marshall/html/v53/css/normalize.css" />
+	<link rel="stylesheet" href="https://pixiefy.com/themes/marshall/html/v53/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="https://pixiefy.com/themes/marshall/html/v53/css/animate.css">
+	<link rel="stylesheet" href="https://pixiefy.com/themes/marshall/html/v53/css/jquery.mCustomScrollbar.min.css">
+	<link rel="stylesheet" href="https://pixiefy.com/themes/marshall/html/v53/css/photoswipe.css"> 
+	<link rel="stylesheet" href="https://pixiefy.com/themes/marshall/html/v53/css/default-skin/default-skin.css">
+	<link rel="stylesheet" href="https://pixiefy.com/themes/marshall/html/v53/css/style.css" />
+	<link rel="stylesheet" href="https://pixiefy.com/themes/marshall/html/v53/style.css">
+        <link rel="stylesheet" href="https://pixiefy.com/themes/marshall/html/v53/css/responsive.css">
+	<!-- Modernizr js - required -->
+	<script src="https://pixiefy.com/themes/marshall/html/v53/js/modernizr.custom.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+        <script src="https://use.fontawesome.com/3aa4a6fd0b.js"></script>
 </head>
-<body id="top" class="single single-event postid-332" data-spy="scroll" data-target=".header" data-offset="80">
-<!--PRELOADER-->
-<div class="preloader">
-	<div class="status"></div>
-</div>
-<!--/PRELOADER-->
-	<div id="home_slider">
-            <section class="autoheight home_slider">
-                <section class="inner-slider">
-                    <div class="image-bg" style="background-image:url('<?php echo site_url().'static/page_front/images/fondo.jpg';?>');">
-                         
-                   </div>
-                    <div class="col-lg-12 coming-landing-text-pos image_content align-center" style="top: 3% !important;">
-                        <a class="coming-brand" href="#">
-                            <img src="<?php echo 'static/page_front/images/logo/logo.png'?>" alt="logo" width="300px"/>
-                        </a>
-                        <div style="padding:200px !important"></div>
-                        <h1 class="wow animated fadeInDown" data-wow-duration="1s" data-wow-delay="1s" style="color:#fff;">PRÓXIMAMENTE</h1>
-                        <script type="text/javascript">window.header_transparent = "yes";</script>
-                    </div>
-                </section>
-                <script>window.dotColor = "#919191";window.lineColor = "#919191";window.lineWidth = "0.51";window.particleRadius = "3";</script>
-            </section>
-        </div>
-<!-- Tracking Code -->
-<script  src='http://multia.in/theme/wordpress/mievent/xmas-quick/wp-content/themes/mievent/site/js/jquery-1.11.0.min.js?ver=4.0.18'></script>
-<script src='http://multia.in/theme/wordpress/mievent/xmas-quick/wp-content/themes/mievent/site/js/nlform.js?ver=4.0.18'></script>
-<script src='http://multia.in/theme/wordpress/mievent/xmas-quick/wp-content/themes/mievent/site/js/jquery-ui-1.10.4.min.js?ver=4.0.18'></script>
-<script src='http://multia.in/theme/wordpress/mievent/xmas-quick/wp-content/themes/mievent/site/js/classie.js?ver=4.0.18'></script>
-<script src='http://multia.in/theme/wordpress/mievent/xmas-quick/wp-content/themes/mievent/site/js/hammer.min.js?ver=4.0.18'></script>
-<script src='http://multia.in/theme/wordpress/mievent/xmas-quick/wp-content/themes/mievent/site/js/venobox.js?ver=4.0.18'></script>
-<script src='http://multia.in/theme/wordpress/mievent/xmas-quick/wp-content/themes/mievent/site/js/html5shiv.js?ver=4.0.18'></script>
-<script src='http://multia.in/theme/wordpress/mievent/xmas-quick/wp-content/themes/mievent/site/js/respond.min.js?ver=4.0.18'></script>
-<script src='http://multia.in/theme/wordpress/mievent/xmas-quick/wp-content/themes/mievent/site/js/modalEffects.js?ver=4.0.18'></script>
-<script src='http://multia.in/theme/wordpress/mievent/xmas-quick/wp-content/themes/mievent/site/js/bootstrap.min.js?ver=4.0.18'></script>
-<script src='http://multia.in/theme/wordpress/mievent/xmas-quick/wp-content/themes/mievent/site/js/jquery.flexslider.js?ver=4.0.18'></script>
-<script src='http://multia.in/theme/wordpress/mievent/xmas-quick/wp-content/themes/mievent/site/js/modernizr.js?ver=4.0.18'></script>
-<script src='http://multia.in/theme/wordpress/mievent/xmas-quick/wp-content/themes/mievent/site/js/smooth-scroll.js?ver=4.0.18'></script>
-<script src='http://multia.in/theme/wordpress/mievent/xmas-quick/wp-content/themes/mievent/site/js/jquery.nicescroll.js?ver=4.0.18'></script>
-<script src='http://multia.in/theme/wordpress/mievent/xmas-quick/wp-content/themes/mievent/site/js/notifyMe.js?ver=4.0.18'></script>
-<script src='http://multia.in/theme/wordpress/mievent/xmas-quick/wp-content/themes/mievent/site/js/jquery.placeholder.js?ver=4.0.18'></script>
-<script src='http://multia.in/theme/wordpress/mievent/xmas-quick/wp-content/themes/mievent/site/js/jquery.plugin.js?ver=4.0.18'></script>
-<script src='http://multia.in/theme/wordpress/mievent/xmas-quick/wp-content/themes/mievent/site/js/jquery.countdown.js?ver=4.0.18'></script>
-<script src='http://multia.in/theme/wordpress/mievent/xmas-quick/wp-content/themes/mievent/site/js/wow.min.js?ver=4.0.18'></script>
-<script src='http://multia.in/theme/wordpress/mievent/xmas-quick/wp-content/themes/mievent/site/js/init.js?ver=4.0.18'></script>
-<script src='http://multia.in/theme/wordpress/mievent/xmas-quick/wp-content/themes/mievent/site/js/onkeypressvalidation.js?ver=4.0.18'></script>
-<script src='http://multia.in/theme/wordpress/mievent/xmas-quick/wp-content/themes/mievent/site/js/jquery.particleground.min.js?ver=4.0.18'></script>
-<script src='http://multia.in/theme/wordpress/mievent/xmas-quick/wp-content/themes/mievent/site/js/astronomy-init.js?ver=4.0.18'></script>
+<body class="mrs-v53">
+	<!-- Page Loader Start -->
+	<div class="marshall-loading-screen">
+	    <div class="marshall-loading-icon">
+	        <div class="marshall-loading-inner">
+                        <img class="marshall-load" src="<?php echo site_url().'static/page_front/images/logo/logo.png'?>" alt="NFN Logo">
+	        </div>
+	    </div>
+	</div><!-- End .loading-screen -->
+
+	<div class="marshall-container" id="container">
+		<div id="triangle_canvas" class="mrs_canvas mrs_particles_canvas">
+			<canvas id="particle_3d" width="900" height="520" ></canvas>
+		</div>
+
+		<div class="marshall-col-6 marshall-col-content align-center">
+			<div class="marshall-content jquery-center">
+				<div class="marshall-inner-logo fadeIn fast">
+					<img src="<?php echo site_url().'static/page_front/images/logo/logo.png'?>" alt="NFN Logo">
+				</div>
+				<h1 class="fadeIn medium">Muy Pronto!!</h1>
+				<div class="marshall-button-group fadeIn slow"></div>
+			</div>
+			<div class="marshall-social-column">
+				<p class="fadeIn fast">Mantente en contacto:</p>
+				<ul class="marshall-social-links">
+					<li><a class="fadeIn fast-child-1"  href="#" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+					<li><a class="fadeIn fast-child-2"  href="#" title="Facebook"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+					<li><a class="fadeIn fast-child-3"  href="#" title="Facebook"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="marshall-col-6 marshall-col-screen">
+			<div id="marshall-animate-area" data-hide="mrs-scaleDown" class="marshall-single-fit-thumb marshall-animate-content marshall-animate-content mrs-active marshall-fit-column" style="background-image:url(images/v53/light.png);">
+				<div class="inner-content css-center">
+					<div class="morph-content marshall-newsletter-form marshall-newsletter-center-wrap">
+						<div class="marshall-morph-modal open open-animate">
+							<div class="marshall-newsletter-inner">
+								<div class="content-style-form content-style-form-2">
+									<div class="marshall-newsletter-header">
+										<div class="marshall-newsletter-animation-icons">
+											<span class="medium-icon animation-icon-1 animation-icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+											<span class="medium-icon animation-icon-2 animation-icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+											<span class="medium-icon animation-icon-3 animation-icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+											<span class="small-icon animation-icon-4 animation-icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+											<span class="small-icon animation-icon-5 animation-icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+											<span class="large-icon animation-icon-7 animation-icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+											<span class="large-icon animation-icon-8 animation-icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+											<span class="large-icon animation-icon-9 animation-icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+
+											<span class="medium-icon animation-icon-10 animation-icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+											<span class="large-icon animation-icon-16 animation-icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+											<span class="large-icon animation-icon-17 animation-icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+											<span class="large-icon animation-icon-18 animation-icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+										</div>
+										<img src="<?php echo site_url().'static/page_front/images/logo/logo.png'?>" alt="NFN Logo">
+									</div>
+									<div class="marshall-newsletter-description">
+    									<p>Si ya eres un asociado inscrito, ya puedes ingresar a tu oficina virtual</p>
+                                                                            </div>
+									<form id="marshall-form" class="marshall-newsletter-content">
+                                                                            <a class="marshall_submit" href="http://newfuturenetwork.com/software">INICIAR SESIÓN</a>
+                                                                            <!--<button class="marshall_submit"><a href="http://newfuturenetwork.com/software">INICIAR SESIÓN</a></button>-->
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- All marshall js files -->
+	<script src="https://pixiefy.com/themes/marshall/html/v53/js/jquery-3.1.1.min.js"></script>
+	<script src="https://pixiefy.com/themes/marshall/html/v53/js/photoswipe.min.js"></script> 
+	<script src="https://pixiefy.com/themes/marshall/html/v53/js/photoswipe-ui-default.min.js"></script> 
+	<script src="https://pixiefy.com/themes/marshall/html/v53/js/jquery.mousewheel.min.js"></script>
+	<script src="https://pixiefy.com/themes/marshall/html/v53/js/jquery.mCustomScrollbar.min.js"></script>
+	<script src="https://pixiefy.com/themes/marshall/html/v53/js/gallery.js"></script>
+	<script src="https://pixiefy.com/themes/marshall/html/v53/js/classie.js"></script>
+	<script src="https://pixiefy.com/themes/marshall/html/v53/js/uiMorphingButton_fixed.js"></script>
+	<script src="https://pixiefy.com/themes/marshall/html/v53/js/form-init.js"></script>
+	<script src="https://pixiefy.com/themes/marshall/html/v53/js/jquery.ajaxchimp.min.js"></script>
+	<script src="https://pixiefy.com/themes/marshall/html/v53/js/jquery.textarea_autosize.js"></script>
+	<script src="https://pixiefy.com/themes/marshall/html/v53/js/v53/paricles-3d.js"></script>
+	<script src="https://pixiefy.com/themes/marshall/html/v53/js/main.js"></script>
 </body>
 </html>
