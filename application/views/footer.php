@@ -1,65 +1,56 @@
-<footer class="footer bottom_bg">
-    <div class="container">
-	<div class="row">
-            <div class="col-lg-4">
-		<!-- Footer Intro -->
-		<div class="footer_intro">
-                    <!-- Logo -->
-                    <div class="logo footer_logo">
-			<img src="<?php echo site_url().'static/page_front/images/logo/logo.png';?>" alt="logo" width="130">
-                    </div>
-                    <p>Para tener la mejor casa de Cambio de Criptomonedas es necesario tener un equipo serio, profesional, contar con una seguridad impecable, transacciones sólidas y confiables. Para todo ello, EASYCRIPTO.</p>
-			<!-- Copyright -->
-			<div class="footer_cr">
-                        Copyright &copy;<script>document.write(new Date().getFullYear());</script>
-                        All rights reserved  Easycripto© <br/>
-                        <script>document.write(new Date().getFullYear());</script> All rights reserved
-                        </div>
-		</div>
+<footer id="footer" class="pagewidth clearfix" itemscope="itemscope" itemtype="https://schema.org/WPFooter">
+        <div class="back-top clearfix back-top-float back-top-hide">
+          <div class="arrow-up">
+            <a href="#header"></a>
+          </div>
+        </div>
+        <div class="main-col first clearfix">
+          <div class="footer-left-wrap first">
+            <div class="footer-logo-wrapper clearfix">
+              <div id="footer-logo"><a href="https://themify.me/demo/themes/ultra-app" title="App"><span>App</span></a></div>
+              <!-- /footer-logo -->
             </div>
-            <!-- Footer Services -->
-            <div class="col-lg-3">
-                <div class="footer_col">
-                    <div class="footer_col_title">Easycripto</div>
-                    <ul>
-                        <li class="circle"><a href="<?php echo site_url().'home'?>">Inicio</a></li>
-                        <li class="circle"><a href="#features" >Características</a></li>
-                        <li class="circle"><a href="<?php echo site_url().'buy';?>">¡Comprar!</a></li>
-                        <li class="circle"><a href="#contact">Contacto</a></li>
-                        <li class="circle"><a href="<?php echo site_url().'login';?>">Login</a></li>
-                        <li class="circle"><a href="<?php echo site_url().'faq';?>">FAQ</a></li>
-                    </ul>
-                </div>
-                <div class="footer_col">
-                    <ul>
-                        <li><img src="<?php echo site_url().'static/page_front/images/tarjetas-aceptadas.png';?>" alt="tarjetas aceptadas"/></li>
-                    </ul>
-                </div>
+          </div>
+          <div class="footer-right-wrap">
+            <div class="footer-text clearfix">
+              <div class="footer-text-inner">
+                <div class="one">&copy; <a href="https://themify.me/demo/themes/ultra-app">App</a> 2018</div>
+                <div class="two">Powered by <a href="http://wordpress.org">WordPress</a> &bull; <a href="https://themify.me">Themify WordPress Themes</a></div>
+              </div>
             </div>
-	    <div class="col-lg-2">
-                <div class="footer_col">
-                    <div class="footer_col_title">Social</div>
-                    <ul>
-                        <ul>
-                            <li><a href="javascript:void(0);"><i class="fa fa-facebook-f fa-2x"></i></a></li>
-                            <li><a href="javascript:void(0);"><i class="fa fa-twitter fa-2x"></i></a></li>
-                            <li><a href="javascript:void(0);"><i class="fa fa-youtube fa-2x"></i></a></li>
-                        </ul>
-                    </ul>
+            <!-- /.footer-text -->
+          </div>
+        </div>
+        <div class="section-col clearfix">
+          <div class="footer-widgets-wrap">
+            <div class="footer-widgets clearfix">
+              <div class="col4-2 first">
+                <div id="text-2" class="widget widget_text">
+                  <h4 class="widgettitle">Office</h4>
+                  <div class="textwidget">
+                    <p>Ultra Tower, 4th Fifth Street North York, M1E 5QF</p>
+                  </div>
                 </div>
-            </div>
-            <!-- Footer Community -->
-            <div class="col-lg-3">
-                <div class="footer_col">
-                    <div class="footer_col_title">Legal</div>
-                    <ul>
-                        <li class="circle"><a href="<?php echo site_url().'notice/legal';?>">Aviso Legal</a></li>
-                        <li class="circle"><a href="<?php echo site_url().'notice/privacy';?>">Política de Privacidad</a></li>
-                        <li class="circle"><a href="<?php echo site_url().'notice/general';?>">Condiciones Generales</a></li>
-                        <li class="circle"><a href="<?php echo site_url().'notice/cookies';?>">Política de Cookies</a></li>
-                    </ul>
+              </div>
+              <div class="col4-2 ">
+                <div id="themify-social-links-2" class="widget themify-social-links">
+                  <ul class="social-links horizontal">
+                    <li class="social-link-item facebook font-icon icon-large">
+                      <a href="http://facebook.com/themify"><i class="fa fa-facebook" style="color: #ffffff;"></i>  </a>
+                    </li>
+                    <!-- /themify-link-item -->
+                    <li class="social-link-item twitter font-icon icon-large">
+                      <a href="http://twitter.com/themify"><i class="fa fa-twitter" style="color: #ffffff;"></i>  </a>
+                    </li>
+                    <!-- /themify-link-item -->
+                    <li class="social-link-item instagram font-icon icon-large">
+                      <a href="https://instagram.com/themify"><i class="fa fa-instagram" style="color: #ffffff;"></i>  </a>
+                    </li>
+                    <!-- /themify-link-item -->
+                  </ul>
                 </div>
+              </div>
             </div>
-	</div>
-    </div>
-</footer>
+          </div>
+        </div>
+      </footer>
