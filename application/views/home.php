@@ -22,7 +22,6 @@
       <div class="header-icons">
         <a id="menu-icon" href="#mobile-menu"><span class="menu-icon-inner"></span></a>
       </div>
-
       <header id="header" class="pagewidth clearfix" itemscope="itemscope" itemtype="https://schema.org/WPHeader">
         <div class="header-bar">
           <div id="site-logo">
@@ -60,25 +59,20 @@
                 if(!document.getElementById( "builder-styles" ) && document.getElementById( "builder-styles-css" ) ) document.getElementById( "builder-styles-css" ).insertAdjacentHTML( "beforebegin", "<link id='builder-styles' rel='stylesheet' href='https://themify.me/demo/themes/ultra-app/wp-content/themes/themify-ultra/themify/themify-builder/css/themify-builder-style.css?ver=4.0.0' type='text/css' />" );
               </script>
               <div id="themify_builder_content-6" data-postid="6" class="themify_builder_content themify_builder_content-6 themify_builder">
-                <!-- module_row -->
                 <div class="themify_builder_row module_row clearfix fullcover fullwidth_row_container module_row_0 themify_builder_6_row module_row_6-0">
                   <div class="row_inner col_align_middle">
                     <div class="module_column tb-column col3-1 first tb_6_column module_column_0 module_column_6-0-0">
                       <div class="tb-column-inner">
-                        <!-- module text -->
                         <div id="text-6-0-0-0" class="module module-text text-6-0-0-0  repeat  ">
-                          <!--insert-->
                           <h1>New Future Network</h1>
                           <p>Te imaginas que los productos que siempre consumes te generen dinero extra</p>
                         </div>
                         <div id="buttons-6-0-0-1" class="module module-buttons buttons-6-0-0-1  ">
-                          <!--insert-->
                           <div class="module-buttons normal solid circle">
                             <div class="module-buttons-item  buttons-horizontal">
                                 <a href="#" class="ui builder_button blue"><span>REGISTRO</span></a> </div>
                           </div>
                         </div>
-                        <!-- /module buttons -->
                       </div>
                     </div>
                     <div class="module_column tb-column col3-2 last tb_6_column module_column_1 module_column_6-0-1">
@@ -169,11 +163,9 @@
                                   <div class="testimonial-entry-content">
                                     <p>Llevar este concepto de negocio a todo el Perú. Haciendo de casa asociado un consumidor de nuestros productos, un divulgador y constructor de red de consumo inteligente.</p>
                                   </div>
-
                                   <div class="testimonial-author">
                                     <div class="person-name">MISIÓN</div>
                                 </div>
-                                <!-- /testimonial-content -->
                               </div>
                             </li>
                             <li>
@@ -343,7 +335,7 @@
                 <!-- /module_row -->
 
                 <!-- module_row -->
-                <div data-anchor="features" class="themify_builder_row module_row clearfix repeat tb_section-features module_row_4 themify_builder_6_row module_row_6-4">
+                <div data-anchor="pricing" class="themify_builder_row module_row clearfix repeat tb_section-features module_row_4 themify_builder_6_row module_row_6-4">
                   <div class="row_inner col_align_middle">
                     <div class="module_column tb-column col-full first tb_6_column module_column_0 module_column_6-4-0 repeat">
                       <div class="tb-column-inner">
@@ -500,22 +492,16 @@
                 <!-- /module_row -->
 
                 <!-- module_row -->
-                <div data-anchor="pricing" class="themify_builder_row module_row clearfix fullcover fullwidth_row_container tb_section-pricing module_row_5 themify_builder_6_row module_row_6-5">
+                <div  class="themify_builder_row module_row clearfix fullcover fullwidth_row_container tb_section-pricing module_row_5 themify_builder_6_row module_row_6-5">
                   <div class="row_inner col_align_top">
-
                     <div class="module_column tb-column col-full first tb_6_column module_column_0 module_column_6-5-0">
                       <div class="tb-column-inner">
                         <div class="themify_builder_sub_row module_subrow clearfix sub_row_5-0-0">
                           <div class="subrow_inner col_align_top">
                             <div class="col3-1 sub_column module_column first sub_column_post_6 sub_column_5-0-0-0">
                               <div class="tb-column-inner">
-
-
-
                                 <div id="pricing-table-6-sub_row_5-0-0-0-0" class="module module-pricing-table ui pricing-table-6-sub_row_5-0-0-0-0   green ">
                                   <!--insert-->
-
-
                                   <div class="module-pricing-table-header ui green ">
                                     <span class="module-pricing-table-title">
                                         <span >Lite</span>
@@ -523,32 +509,20 @@
                                     <span class="module-pricing-table-price">$5.99</span>
                                     <p class="module-pricing-table-description">/ month</p>
                                   </div>
-                                  <!-- .module-pricing-table-header -->
                                   <div class="module-pricing-table-content">
                                     <p class="module-pricing-table-features">1 User</p>
                                     <p class="module-pricing-table-features">100 Exports</p>
                                     <p class="module-pricing-table-features">100 Prototypes</p>
                                     <p class="module-pricing-table-features unavailable-features"></p>
-                                    <a class="module-pricing-table-button ui green" href="https://themify.me">
-                    Buy Now 
-                </a>
+                                        <a class="module-pricing-table-button ui green" href="https://themify.me">Buy Now</a>
                                   </div>
-                                  <!-- .module-pricing-table-content -->
                                 </div>
-                                <!-- /module pricing-table -->
-
                               </div>
                             </div>
                             <div class="col3-1 sub_column module_column middle sub_column_post_6 sub_column_5-0-0-1">
                               <div class="tb-column-inner">
-
-
-
                                 <div id="pricing-table-6-sub_row_5-0-0-1-0" class="module module-pricing-table ui pricing-table-6-sub_row_5-0-0-1-0   purple  pricing-enlarge pricing-pop">
-                                  <!--insert-->
-
                                   <span class="module-pricing-table-pop">Popular</span>
-
                                   <div class="module-pricing-table-header ui purple ">
                                     <span class="module-pricing-table-title">
                                         <span >Pro</span>
@@ -556,31 +530,19 @@
                                     <span class="module-pricing-table-price">$9.99</span>
                                     <p class="module-pricing-table-description">/ month</p>
                                   </div>
-                                  <!-- .module-pricing-table-header -->
                                   <div class="module-pricing-table-content">
                                     <p class="module-pricing-table-features">5 Users</p>
                                     <p class="module-pricing-table-features">1000 Exports</p>
                                     <p class="module-pricing-table-features">1000 Prototypes</p>
                                     <p class="module-pricing-table-features unavailable-features"></p>
-                                    <a class="module-pricing-table-button ui purple" href="https://themify.me">
-                    Buy Now 
-                </a>
+                                    <a class="module-pricing-table-button ui purple" href="https://themify.me">Buy Now</a>
                                   </div>
-                                  <!-- .module-pricing-table-content -->
                                 </div>
-                                <!-- /module pricing-table -->
-
                               </div>
                             </div>
                             <div class="col3-1 sub_column module_column last sub_column_post_6 sub_column_5-0-0-2">
                               <div class="tb-column-inner">
-
-
-
                                 <div id="pricing-table-6-sub_row_5-0-0-2-0" class="module module-pricing-table ui pricing-table-6-sub_row_5-0-0-2-0   green ">
-                                  <!--insert-->
-
-
                                   <div class="module-pricing-table-header ui green ">
                                     <span class="module-pricing-table-title">
                                         <span >Master</span>
@@ -588,19 +550,14 @@
                                     <span class="module-pricing-table-price">$24.99</span>
                                     <p class="module-pricing-table-description">/ month</p>
                                   </div>
-                                  <!-- .module-pricing-table-header -->
                                   <div class="module-pricing-table-content">
                                     <p class="module-pricing-table-features">Unlimited Users</p>
                                     <p class="module-pricing-table-features">Unlimited Exports</p>
                                     <p class="module-pricing-table-features">Unlimited Prototypes</p>
                                     <p class="module-pricing-table-features unavailable-features"></p>
-                                    <a class="module-pricing-table-button ui green" href="https://themify.me">
-                    Buy Now 
-                </a>
+                                    <a class="module-pricing-table-button ui green" href="https://themify.me">Buy Now</a>
                                   </div>
-                                  <!-- .module-pricing-table-content -->
                                 </div>
-                                <!-- /module pricing-table -->
                               </div>
                             </div>
                           </div>

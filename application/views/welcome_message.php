@@ -105,8 +105,7 @@
     									<p>Si ya eres un asociado inscrito, ya puedes ingresar a tu oficina virtual</p>
                                                                             </div>
 									<form id="marshall-form" class="marshall-newsletter-content">
-                                                                            <a class="marshall_submit" href="http://newfuturenetwork.com/software">INICIAR SESIÓN</a>
-                                                                            <!--<button class="marshall_submit"><a href="http://newfuturenetwork.com/software">INICIAR SESIÓN</a></button>-->
+                                                                            <a class="marshall_submit" href="http://newfuturenetwork.com/software/backend">INICIAR SESIÓN</a>
 									</form>
 								</div>
 							</div>
