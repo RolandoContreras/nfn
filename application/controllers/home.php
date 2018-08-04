@@ -24,7 +24,7 @@ class Home extends CI_Controller {
                     . "<h1>Hay una pregunta por responder</h1><br/>"
                     . "<h3>Datos del Solicitante</h3><br/>"
                     . "Nombre: <em>$name</em><br/>"
-                    . "Teléfono: <em>$phone</em><br/>"
+                    . "Telefono: <em>$phone</em><br/>"
                     . "Email: <em>$email</em><br/>"
                     . "<p>$comments<p></body></html>", 70, "\n", true);
             $titulo = $subject;
