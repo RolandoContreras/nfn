@@ -119,61 +119,84 @@
                       </div>
                     </div>
                   </div>
-                <!-- END ABOUTS -->
-                  <div class="row_inner col_align_top">
-                    <div class="module_column tb-column col-full first tb_6_column module_column_0 module_column_6-2-0">
+                </div>
+                 <!--START MISION-->
+                <div class="themify_builder_row module_row clearfix repeat tb_section-features module_row_4 themify_builder_6_row module_row_6-4 padding-bottom_100">
+                  <div class="row_inner col_align_middle">
+                    <div class="module_column tb-column col-full first tb_6_column module_column_0 module_column_6-4-0 repeat">
                       <div class="tb-column-inner">
-                        <div class="tb_slider_loader"></div>
-                        <div id="testimonial-slider-6-2-0-1" class="module module-testimonial-slider testimonial-slider-6-2-0-1 themify_builder_slider_wrap clearfix  image-top  wow fadeIn  ">
-                          <ul class="themify_builder_slider" data-id="testimonial-slider-6-2-0-1" data-visible="3" data-mob-visible="1" data-scroll="1" data-auto-scroll="off" data-speed="1"
-                            data-wrap="yes" data-arrow="yes" data-pagination="yes" data-effect="scroll" data-height="variable" data-pause-on-hover="resume">
-                            <li>
-                              <div>
-                                <figure class="testimonial-image">
-                                  <img src="https://themify.me/demo/themes/ultra-app/files/2018/05/testimonial-client-1-100x100.jpg" width="100" height="100" class=" wp-post-image wp-image-98"
-                                    alt="testimonial-client-1" /> 
-                                </figure>
-                                <div class="testimonial-content">
-                                  <div class="testimonial-entry-content">
-                                    <p>Impulsar un nuevo concepto de negocio (red de consumo inteligente) creando fuentes de trabajo y mejorando la economía a través del marketing multinivel. Trabajando con visión, fe y pasión seremos la empresa líder en todo el Perú.</p>
+                        <div class="themify_builder_sub_row module_subrow clearfix repeat sub_row_4-0-2">
+                          <div class="subrow_inner col_align_middle">
+                             <div class="col3-1 sub_column module_column first sub_column_post_6 sub_column_4-0-2-0">
+                              <div class="tb-column-inner">
+                                <div id="feature-6-sub_row_4-0-2-0-1" class="module module-feature feature-6-sub_row_4-0-2-0-1 with-chart layout-icon-right size-small  ">
+                                  <div class="module-feature-content">
+                                    <div class="module-feature-image float-none padding-6">
+                                    <div class="module-feature-chart-html5" data-progress="0" data-progress-end="100" data-size="100">
+                                      <div class="chart-html5-circle">
+                                        <div class="chart-html5-mask chart-html5-full">
+                                          <div class="chart-html5-fill"></div>
+                                        </div>
+                                        <div class="chart-html5-mask chart-html5-half">
+                                          <div class="chart-html5-fill"></div>
+                                        </div>
+                                            <img src="<?php echo site_url().'static/page_front/images/icon/brilliant3x_87030.png';?>" alt="Nuevo Concepto"/>
+                                      </div>
+                                    </div>
                                   </div>
-                                  <div class="testimonial-author">
-                                    <div class="person-name">VISIÓN</div>
+                                    <h3 class="module-feature-title">VISIÓN</h3>
+                                    <p>Impulsar un nuevo concepto de negocio (red de consumo inteligente) creando fuentes de trabajo y mejorando la economía a través del marketing multinivel.</p>
                                   </div>
                                 </div>
                               </div>
-                            </li>
-                            <li>
-                                <figure class="testimonial-image">
-                                  <img src="https://themify.me/demo/themes/ultra-app/files/2018/05/testimonial-client-2-100x100.jpg" width="100" height="100" class=" wp-post-image wp-image-99"
-                                    alt="testimonial-client-2" /> </figure>
-
-                                <div class="testimonial-content">
-                                  <div class="testimonial-entry-content">
-                                    <p>Llevar este concepto de negocio a todo el Perú. Haciendo de casa asociado un consumidor de nuestros productos, un divulgador y constructor de red de consumo inteligente.</p>
+                            </div>
+                             <div class="col3-1 sub_column module_column first sub_column_post_6 sub_column_4-0-2-0">
+                              <div class="tb-column-inner">
+                                <div id="feature-6-sub_row_4-0-2-0-1" class="module module-feature feature-6-sub_row_4-0-2-0-1 with-chart layout-icon-right size-small  ">
+                                  <div class="module-feature-content">
+                                    <div class="module-feature-image float-none padding-6">
+                                    <div class="module-feature-chart-html5" data-progress="0" data-progress-end="100" data-size="100">
+                                      <div class="chart-html5-circle">
+                                        <div class="chart-html5-mask chart-html5-full">
+                                          <div class="chart-html5-fill"></div>
+                                        </div>
+                                        <div class="chart-html5-mask chart-html5-half">
+                                          <div class="chart-html5-fill"></div>
+                                        </div>
+                                            <img src="<?php echo site_url().'static/page_front/images/icon/world.png';?>" alt="Global"/>
+                                      </div>
+                                    </div>
                                   </div>
-                                  <div class="testimonial-author">
-                                    <div class="person-name">MISIÓN</div>
+                                    <h3 class="module-feature-title margin-left-6">MISIÓN</h3>
+                                    <p class="margin-left-6">Llevar este concepto de negocio a todo el Perú. Haciendo de casa asociado un consumidor de nuestros productos, un divulgador y constructor de red de consumo inteligente.</p>
+                                  </div>
                                 </div>
                               </div>
-                            </li>
-                            <li>
-                              <div>
-                                <figure class="testimonial-image">
-                                  <img src="https://themify.me/demo/themes/ultra-app/files/2018/05/testimonial-client-3-100x100.jpg" width="100" height="100" class=" wp-post-image wp-image-100"
-                                    alt="testimonial-client-3" /> 
-                                </figure>
-                                <div class="testimonial-content">
-                                  <div class="testimonial-entry-content">
-                                    <p>Convertirnos en una de las mejores empresas del Perú creando oportunidad de trabajo con salario digno de acuerdo a la capacidad y habilidad de cada emprendedor. A la vez alimentar a todos los hogares y familias del Perú.</p>
+                            </div>
+                            <div class="col3-1 sub_column module_column first sub_column_post_6 sub_column_4-0-2-0">
+                              <div class="tb-column-inner">
+                                <div id="feature-6-sub_row_4-0-2-0-1" class="module module-feature feature-6-sub_row_4-0-2-0-1 with-chart layout-icon-right ">
+                                  <div class="module-feature-content">
+                                    <div class="module-feature-image float-none padding-6">
+                                    <div class="module-feature-chart-html5" data-progress="0" data-progress-end="100" data-size="100">
+                                      <div class="chart-html5-circle">
+                                        <div class="chart-html5-mask chart-html5-full">
+                                          <div class="chart-html5-fill"></div>
+                                        </div>
+                                        <div class="chart-html5-mask chart-html5-half">
+                                          <div class="chart-html5-fill"></div>
+                                        </div>
+                                            <img src="<?php echo site_url().'static/page_front/images/icon/star.png';?>" alt="n1"/>
+                                      </div>
+                                    </div>
                                   </div>
-                                  <div class="testimonial-author">
-                                    <div class="person-name">Objetivo</div>
+                                    <h3 class="module-feature-title">OBJETIVO</h3>
+                                    <p>Convertirnos en una de las mejores empresas del Perú creando oportunidad de trabajo con salario digno de acuerdo a la capacidad y habilidad de cada emprendedor.</p>
+                                  </div>
                                 </div>
                               </div>
-                              </div>
-                            </li>
-                          </ul>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>

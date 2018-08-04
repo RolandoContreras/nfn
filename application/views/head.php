@@ -10,7 +10,6 @@
     <meta property="og:description" content="New future network (red de consumo inteligente) es una empresa basada en el consumo de primera necesidad." />
     <meta property="og:url" content="http://rednfn.com/" />
     <meta property="og:site_name" content="NFN" />
-    <meta name="builder-styles-css" content="" id="builder-styles-css">
     <link rel='dns-prefetch' href='//fonts.googleapis.com' />
     <link rel='dns-prefetch' href='//s.w.org' />
     <!--FAVICO-->
@@ -48,6 +47,7 @@
     </style>
     <link rel='stylesheet' href='<?php echo site_url().'static/page_front/css/bootstrap.min.css';?>' media='all'/>
     <link rel='stylesheet' id='themify-common-css'  href='<?php echo site_url().'static/page_front/css/themify.common.css?ver=4.9.7';?>' media='all'/>
+    <link rel='stylesheet' id='themify-common-css'  href='<?php echo site_url().'static/page_front/css/themify-builder-style.css';?>' media='all'/>
     <link rel='stylesheet' id='theme-style-css'  href='<?php echo site_url().'static/page_front/css/style.css?ver=2.0.2';?>' media='all' />
     <link rel='stylesheet' id='themify-media-queries-css'  href='<?php echo site_url().'static/page_front/css/media-queries.css?ver=2.0.2';?>' media='all' />
     <link rel='stylesheet' id='themify-skin-css'  href='<?php echo site_url().'static/page_front/css/app_style.css?ver=4.0.0';?>' media='all' />
