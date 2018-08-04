@@ -14,24 +14,27 @@ class Home extends CI_Controller {
      //GET DATA BY POST
      if($this->input->is_ajax_request()){   
             $name = $this->input->post("name");
+            $phone = $this->input->post("phone");
             $email = $this->input->post("email");
             $subject = $this->input->post("subject");
             $comments = $this->input->post("comments");
-
-            //status_value 0 means (not read)
-                    $data = array(
-                        'name' => $name,
-                        'email' => $email,
-                        'subject' => $subject,
-                        'comment' => $comments,
-                        'big_investor' => 0,
-                        'date_comment' => date("Y-m-d H:i:s"),
-                        'active' => 1,
-                        'status_value' => 1,
-                    );
-                    $this->obj_comments->insert($data);
-                    echo json_encode($data);            
-                    exit();
+            
+            //SEND MESSAGES
+            $mensaje = wordwrap("<html><body>"
+                    . "<h1>Hay una pregunta por responder</h1><br/>"
+                    . "<h3>Datos del Solicitante</h3><br/>"
+                    . "Nombre: <em>$name</em><br/>"
+                    . "Teléfono: <em>$phone</em><br/>"
+                    . "Email: <em>$email</em><br/>"
+                    . "<p>$comments<p></body></html>", 70, "\n", true);
+            $titulo = $subject;
+            $headers = "MIME-Version: 1.0\r\n"; 
+            $headers .= "Content-type: text/html; charset=iso-8859-1\r\n"; 
+            $headers .= "From: 3T Company: Travel - Training - Trade < noreplay@my3t.club >\r\n";
+            $bool = mail("contacto@newfuturenetwork.com",$titulo,$mensaje,$headers); 
+            $data = true;
+            echo json_encode($data);            
+            exit();
         }
             }
 }

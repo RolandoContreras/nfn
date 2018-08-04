@@ -39,6 +39,7 @@ textarea, input[type=text], input[type=password], input[type=search], input[type
 	padding: .65em;
 	margin: 0;
 	transition: all .3s;
+        font-size: 14px;
 }
 textarea {
 	border: 1px solid #d2d0d0;
@@ -809,4 +810,22 @@ MEDIA QUERIES
 }
 .textwidget{
     font-size: .85em;
+}
+/*CONTACT*/
+.field-validation-error {
+    border: none;
+    font-size: 12px;
+    background-color: rgba(236, 187, 185, 0.52);
+    color: #ff0000;
+    padding: 5px 15px;
+    margin: 5px 0;
+    display: block;
+}
+.text-contact{
+    font-size: .85em;
+    font-weight: 500;
+    text-transform: uppercase;
+    vertical-align: middle;
+    margin-bottom: 3px;
+    padding-top: 5px;
 }

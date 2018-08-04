@@ -455,45 +455,54 @@
                             <div class="col4-2 sub_column module_column middle sub_column_post_6 sub_column_6-0-1-1">
                               <div class="tb-column-inner">
                                 <div id="contact-6-sub_row_6-0-1-1-0" class="module module-contact contact-6-sub_row_6-0-1-1-0 contact-animated-label  ">
-                                  <form action="" class="builder-contact" id="contact-6-sub_row_6-0-1-1-0-form" method="post">
+                                  <form class="builder-contact" enctype="multipart/form-data">
                                     <div class="contact-message"></div>
                                     <div class="builder-contact-fields">
                                       <div class="builder-contact-field builder-contact-field-name builder-contact-text-field" data-order="">
-                                        <label class="control-label">Tu Nombre <span class="required">*</span></label>
+                                        
                                         <div class="control-input">
-                                          <input type="text" name="name" id="name" class="form-control" required />
+                                          <p class="text-contact">Tu Nombre <span class="required">*</span></p>
+                                          <input type="text" name="name" id="name" onkeyup="fade_name(this.value);" class="form-control"/>
+                                          <span id="message_name" class="field-validation-error" style="display:none;">El Nombre es requerido</span>
                                         </div>
                                       </div>
                                       <div class="builder-contact-field builder-contact-field-name builder-contact-text-field" data-order="">
-                                        <label class="control-label">Tu Teléfono <span class="required">*</span></label>
+                                        
                                         <div class="control-input">
-                                          <input type="text" name="phone" id="phone" class="form-control" required />
+                                          <p class="text-contact">Tu Teléfono <span class="required">*</span></p>
+                                          <input type="text" name="phone" id="phone" onkeyup="fade_phone(this.value);"class="form-control"/><br/>
+                                          <span id="message_phone" class="field-validation-error" style="display:none;">El Teléfono es requerido</span>
                                         </div>
                                       </div>
                                       <div class="builder-contact-field builder-contact-field-subject builder-contact-text-field" data-order="">
-                                        <label class="control-label">Asunto <span class="required">*</span></label>
                                         <div class="control-input">
-                                            <input type="email" name="email" id="email" class="form-control" required />
+                                            <p class="text-contact">Email<span class="required">*</span></p>
+                                            <input type="email" name="email" id="email" onkeyup="fade_email(this.value);" class="form-control"/>
+                                            <span id="message_email" class="field-validation-error" style="display:none;">El Email es requerido</span>
                                         </div>
                                       </div>
                                       <div class="builder-contact-field builder-contact-field-subject builder-contact-text-field" data-order="">
-                                        <label class="control-label">Asunto <span class="required">*</span></label>
+                                        <p class="text-contact">Asunto<span class="required">*</span></p>
                                         <div class="control-input">
-                                          <input type="text" name="subject" id="subject" class="form-control" required />
+                                          <input type="text" name="subject" id="subject" onkeyup="fade_subject(this.value);" class="form-control"/>
+                                          <span id="message_subject" class="field-validation-error" style="display:none;">El Asunto es requerido</span>
                                         </div>
                                       </div>
                                       <div class="builder-contact-field builder-contact-field-message builder-contact-textarea-field" data-order="">
-                                        <label class="control-label">Mensaje <span class="required">*</span></label>
+                                       <p class="text-contact">Mensaje<span class="required">*</span></p>
                                         <div class="control-input">
-                                          <textarea name="messages" id="messages" rows="8" cols="45" class="form-control" required></textarea>
+                                          <textarea name="messages" onkeyup="fade_comments(this.value);" id="messages" rows="8" cols="45" class="form-control"></textarea>
+                                          <span id="message_comments" class="field-validation-error" style="display:none;">El Mensaje es requerido</span>
                                         </div>
                                       </div>
                                       <div class="builder-contact-field builder-contact-field-send" data-order="10000">
                                         <div class="control-input builder-contact-field-send-center">
-                                          <button type="submit" class="btn btn-primary"> <i class="fa fa-cog fa-spin"></i> Enviar </button>
+                                            <button onclick="send_messages_home();" class="btn btn-primary"> Enviar </button><br/><br/>
+                                            <div id="messages_respose" class="alert alert-success" style="text-align: center; display: none;">Enviado Correctamente.</div>
                                         </div>
-                                      </div>
-                                    </div>
+                                     </div>
+                                        
+                                     </div>
                                   </form>
                                 </div>
                               </div>
@@ -516,6 +525,7 @@
       <?php $this->load->view("footer");?>
     </div>
   </div>
+  <script src='<?php echo site_url().'static/page_front/js/home.js';?>'></script>
   <!-- wp_footer -->
   <script type='text/javascript'>
     /* <![CDATA[ */
@@ -525,11 +535,13 @@
     var tbScrollHighlight = {"fixedHeaderSelector":"#headerwrap.fixed-header","speed":"900","navigation":"#main-nav, .module-menu .menu-bar","scrollOffset":"-5","scroll":"internal"};
     /* ]]> */
   </script>
+  <script src='<?php echo site_url().'static/page_front/js/bootstrap.min.js';?>'></script>
   <script src='<?php echo site_url().'static/page_front/js/main.js?ver=4.0.0';?>'></script>
   <script src='<?php echo site_url().'static/page_front/js/imagesloaded.min.js?ver=3.2.0';?>'></script>
   <script src='<?php echo site_url().'static/page_front/js/themify.sidemenu.js?ver=2.0.2';?>'></script>
   <script src='<?php echo site_url().'static/page_front/js/themify.script.js?ver=2.0.2';?>'></script>
   <script src='<?php echo site_url().'static/page_front/js/comment-reply.min.js?ver=4.9.7';?>'></script>
   <script src='<?php echo site_url().'static/page_front/js/wp-embed.min.js?ver=4.9.7';?>'></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 </body>
 </html>

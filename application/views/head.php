@@ -46,6 +46,7 @@
             padding: 0 !important;
     }
     </style>
+    <link rel='stylesheet' href='<?php echo site_url().'static/page_front/css/bootstrap.min.css';?>' media='all'/>
     <link rel='stylesheet' id='themify-common-css'  href='<?php echo site_url().'static/page_front/css/themify.common.css?ver=4.9.7';?>' media='all'/>
     <link rel='stylesheet' id='theme-style-css'  href='<?php echo site_url().'static/page_front/css/style.css?ver=2.0.2';?>' media='all' />
     <link rel='stylesheet' id='themify-media-queries-css'  href='<?php echo site_url().'static/page_front/css/media-queries.css?ver=2.0.2';?>' media='all' />
