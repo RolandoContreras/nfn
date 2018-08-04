@@ -185,6 +185,7 @@
                                 </div>
                                 <!-- /testimonial-content -->
                               </div>
+                              </div>
                             </li>
                           </ul>
                         </div>
@@ -205,136 +206,18 @@
                           <div class="subrow_inner col_align_top" data-basecol="6" data-col_mobile="column3-1 tb_3col">
                             <div class="col6-1 sub_column module_column first sub_column_post_6 sub_column_3-0-0-0">
                               <div class="tb-column-inner">
-
-
-                                <!-- module image -->
-                                <div id="image-6-sub_row_3-0-0-0-0" class="module module-image image-6-sub_row_3-0-0-0-0  image-center  ">
-                                  <!--insert-->
-
-                                  <div class="image-wrap">
-                                    <img src="https://themify.me/demo/themes/ultra-app/files/2018/05/client-1-156x39.png" width="156" height="39" class=" wp-post-image wp-image-55" alt="client 1"
-                                      srcset="https://themify.me/demo/themes/ultra-app/files/2018/05/client-1.png 156w, https://themify.me/demo/themes/ultra-app/files/2018/05/client-1-150x39.png 150w"
-                                      sizes="(max-width: 156px) 100vw, 156px" />
-                                  </div>
-                                  <!-- /image-wrap -->
-
-
-                                </div>
-                                <!-- /module image -->
-
-                              </div>
-                            </div>
-                            <div class="col6-1 sub_column module_column second sub_column_post_6 sub_column_3-0-0-1">
-                              <div class="tb-column-inner">
-
-
-                                <!-- module image -->
-                                <div id="image-6-sub_row_3-0-0-1-0" class="module module-image image-6-sub_row_3-0-0-1-0  image-center  ">
-                                  <!--insert-->
-
-                                  <div class="image-wrap">
-                                    <img src="https://themify.me/demo/themes/ultra-app/files/2018/05/client-2-143x37.png" width="143" height="37" class=" wp-post-image wp-image-56" alt="client 2"
-                                    />
-                                  </div>
-                                  <!-- /image-wrap -->
-
-
-                                </div>
-                                <!-- /module image -->
-
-                              </div>
-                            </div>
-                            <div class="col6-1 sub_column module_column third sub_column_post_6 sub_column_3-0-0-2">
-                              <div class="tb-column-inner">
-
-
-                                <!-- module image -->
-                                <div id="image-6-sub_row_3-0-0-2-0" class="module module-image image-6-sub_row_3-0-0-2-0  image-center  ">
-                                  <!--insert-->
-
-                                  <div class="image-wrap">
-                                    <img src="https://themify.me/demo/themes/ultra-app/files/2018/05/client-3-51x36.png" width="51" height="36" class=" wp-post-image wp-image-59" alt="client 3"
-                                    />
-                                  </div>
-                                  <!-- /image-wrap -->
-
-
-                                </div>
-                                <!-- /module image -->
-
-                              </div>
-                            </div>
-                            <div class="col6-1 sub_column module_column fourth sub_column_post_6 sub_column_3-0-0-3">
-                              <div class="tb-column-inner">
-
-
-                                <!-- module image -->
-                                <div id="image-6-sub_row_3-0-0-3-0" class="module module-image image-6-sub_row_3-0-0-3-0  image-center  ">
-                                  <!--insert-->
-
-                                  <div class="image-wrap">
-                                    <img src="https://themify.me/demo/themes/ultra-app/files/2018/05/client-4-126x37.png" width="126" height="37" class=" wp-post-image wp-image-60" alt="client 4"
-                                    />
-                                  </div>
-                                  <!-- /image-wrap -->
-
-
-                                </div>
-                                <!-- /module image -->
-
-                              </div>
-                            </div>
-                            <div class="col6-1 sub_column module_column fifth sub_column_post_6 sub_column_3-0-0-4">
-                              <div class="tb-column-inner">
-
-
-                                <!-- module image -->
-                                <div id="image-6-sub_row_3-0-0-4-0" class="module module-image image-6-sub_row_3-0-0-4-0  image-center  ">
-                                  <!--insert-->
-
-                                  <div class="image-wrap">
-                                    <img src="https://themify.me/demo/themes/ultra-app/files/2018/05/client-5-163x37.png" width="163" height="37" class=" wp-post-image wp-image-61" alt="client 5"
-                                    />
-                                  </div>
-                                  <!-- /image-wrap -->
-
-
-                                </div>
-                                <!-- /module image -->
-
-                              </div>
-                            </div>
-                            <div class="col6-1 sub_column module_column last sub_column_post_6 sub_column_3-0-0-5">
-                              <div class="tb-column-inner">
-
-
-                                <!-- module image -->
-                                <div id="image-6-sub_row_3-0-0-5-0" class="module module-image image-6-sub_row_3-0-0-5-0  image-center  ">
-                                  <!--insert-->
-
-                                  <div class="image-wrap">
-                                    <img src="https://themify.me/demo/themes/ultra-app/files/2018/05/client-6-116x35.png" width="116" height="35" class=" wp-post-image wp-image-62" alt="client 6"
-                                    />
-                                  </div>
-                                  <!-- /image-wrap -->
-
-
-                                </div>
-                                <!-- /module image -->
-
+                                
                               </div>
                             </div>
                           </div>
                         </div>
-                        <!-- /themify_builder_sub_row -->
                       </div>
                     </div>
                   </div>
-                  <!-- /row_inner -->
                 </div>
                 <!-- /module_row -->
 
-                <!-- module_row -->
+                <!--START PTODUCTS-->
                 <div data-anchor="pricing" class="themify_builder_row module_row clearfix repeat tb_section-features module_row_4 themify_builder_6_row module_row_6-4">
                   <div class="row_inner col_align_middle">
                     <div class="module_column tb-column col-full first tb_6_column module_column_0 module_column_6-4-0 repeat">
@@ -483,15 +366,11 @@
                             </div>
                           </div>
                         </div>
-                        <!-- /themify_builder_sub_row -->
                       </div>
                     </div>
                   </div>
-                  <!-- /row_inner -->
                 </div>
-                <!-- /module_row -->
-
-                <!-- module_row -->
+                <!-- PRODUCT -->
                 <div  class="themify_builder_row module_row clearfix fullcover fullwidth_row_container tb_section-pricing module_row_5 themify_builder_6_row module_row_6-5">
                   <div class="row_inner col_align_top">
                     <div class="module_column tb-column col-full first tb_6_column module_column_0 module_column_6-5-0">
@@ -504,17 +383,15 @@
                                   <!--insert-->
                                   <div class="module-pricing-table-header ui green ">
                                     <span class="module-pricing-table-title">
-                                        <span >Lite</span>
+                                        <span>BASICO</span>
                                     </span>
-                                    <span class="module-pricing-table-price">$5.99</span>
-                                    <p class="module-pricing-table-description">/ month</p>
+                                      <span class="module-pricing-table-price">
+                                          <img src="<?php echo site_url().'static/page_front/images/caja-prodcutos2.png';?>" alt="productos"/>
+                                      </span>
                                   </div>
                                   <div class="module-pricing-table-content">
-                                    <p class="module-pricing-table-features">1 User</p>
-                                    <p class="module-pricing-table-features">100 Exports</p>
-                                    <p class="module-pricing-table-features">100 Prototypes</p>
                                     <p class="module-pricing-table-features unavailable-features"></p>
-                                        <a class="module-pricing-table-button ui green" href="https://themify.me">Buy Now</a>
+                                        <a class="module-pricing-table-button ui green" href="https://themify.me">Ver Contenido</a>
                                   </div>
                                 </div>
                               </div>
@@ -522,20 +399,18 @@
                             <div class="col3-1 sub_column module_column middle sub_column_post_6 sub_column_5-0-0-1">
                               <div class="tb-column-inner">
                                 <div id="pricing-table-6-sub_row_5-0-0-1-0" class="module module-pricing-table ui pricing-table-6-sub_row_5-0-0-1-0   purple  pricing-enlarge pricing-pop">
-                                  <span class="module-pricing-table-pop">Popular</span>
+                                  <span class="module-pricing-table-pop">El Más Pedido</span>
                                   <div class="module-pricing-table-header ui purple ">
                                     <span class="module-pricing-table-title">
-                                        <span >Pro</span>
+                                        <span>JUMBO</span>
                                     </span>
-                                    <span class="module-pricing-table-price">$9.99</span>
-                                    <p class="module-pricing-table-description">/ month</p>
+                                      <span class="module-pricing-table-price">
+                                          <img src="<?php echo site_url().'static/page_front/images/caja-prodcutos2.png';?>" alt="productos"/>
+                                      </span>
                                   </div>
                                   <div class="module-pricing-table-content">
-                                    <p class="module-pricing-table-features">5 Users</p>
-                                    <p class="module-pricing-table-features">1000 Exports</p>
-                                    <p class="module-pricing-table-features">1000 Prototypes</p>
                                     <p class="module-pricing-table-features unavailable-features"></p>
-                                    <a class="module-pricing-table-button ui purple" href="https://themify.me">Buy Now</a>
+                                    <a class="module-pricing-table-button ui purple" href="https://themify.me">Ver Contenido</a>
                                   </div>
                                 </div>
                               </div>
@@ -545,17 +420,15 @@
                                 <div id="pricing-table-6-sub_row_5-0-0-2-0" class="module module-pricing-table ui pricing-table-6-sub_row_5-0-0-2-0   green ">
                                   <div class="module-pricing-table-header ui green ">
                                     <span class="module-pricing-table-title">
-                                        <span >Master</span>
+                                        <span >COMPLETO</span>
                                     </span>
-                                    <span class="module-pricing-table-price">$24.99</span>
-                                    <p class="module-pricing-table-description">/ month</p>
+                                      <span class="module-pricing-table-price">
+                                          <img src="<?php echo site_url().'static/page_front/images/caja-prodcutos2.png';?>" alt="productos"/>
+                                      </span>
                                   </div>
                                   <div class="module-pricing-table-content">
-                                    <p class="module-pricing-table-features">Unlimited Users</p>
-                                    <p class="module-pricing-table-features">Unlimited Exports</p>
-                                    <p class="module-pricing-table-features">Unlimited Prototypes</p>
                                     <p class="module-pricing-table-features unavailable-features"></p>
-                                    <a class="module-pricing-table-button ui green" href="https://themify.me">Buy Now</a>
+                                    <a class="module-pricing-table-button ui green" href="https://themify.me">Ver Contenido</a>
                                   </div>
                                 </div>
                               </div>
