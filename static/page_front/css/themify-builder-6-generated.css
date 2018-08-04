@@ -1,4 +1,6 @@
-.themify_builder_6_row.module_row_0.module_row{background-image: url("https://themify.me/demo/themes/ultra-app/files/2018/05/bg-header.jpg"); background-repeat: no-repeat;background-size: cover; background-attachment: scroll; background-position: center top; padding-top:12%; padding-bottom:25%; }
+.themify_builder_6_row.module_row_0.module_row{
+    background-image: url("https://themify.me/demo/themes/ultra-app/files/2018/05/bg-header.jpg"); background-repeat: no-repeat;background-size: cover; 
+    background-attachment: scroll; background-position: center top; padding-top:12%; padding-bottom:15%; }
 @media screen and (max-width: 680px) {.themify_builder_6_row.module_row_0.module_row{background-repeat: no-repeat;background-size: cover; background-attachment: scroll; background-position: center top; padding-top:22%; padding-bottom:5%; }
 }
 @media screen and (max-width: 680px) {.module_row_0 .module_column_0.tb_6_column.module_column{background-repeat: repeat; background-attachment: scroll; background-position: center center; padding-bottom:14%; }
@@ -7,7 +9,8 @@
 .themify_builder .text-6-0-0-0.module-text,.themify_builder .text-6-0-0-0.module-text h1,.themify_builder .text-6-0-0-0.module-text h2,.themify_builder .text-6-0-0-0.module-text h3:not(.module-title),.themify_builder .text-6-0-0-0.module-text h4,.themify_builder .text-6-0-0-0.module-text h5,.themify_builder .text-6-0-0-0.module-text h6{color:#ffffff; }
 .themify_builder .buttons-6-0-0-1.module.module-buttons{background-repeat: repeat; }
 .themify_builder .image-6-0-1-0.module-image{background-repeat: repeat; }
-.themify_builder_6_row.module_row_1.module_row{background-repeat: no-repeat;background-size: cover; background-attachment: scroll; background-position: center center; padding-top:6%; padding-bottom:6%; }
+.themify_builder_6_row.module_row_1.module_row{
+    background-repeat: no-repeat;background-size: cover; background-attachment: scroll; background-position: center center;}
 @media screen and (max-width: 680px) {.themify_builder_6_row.module_row_1.module_row{background-repeat: no-repeat;background-size: cover; background-attachment: scroll; background-position: center center; padding-top:0%; }
 }
 .module_row_1 .module_column_0.tb_6_column.module_column{background-repeat: repeat; background-attachment: scroll; background-position: center center; padding-top:10%; padding-right:5%; padding-bottom:5%; padding-left:5%; }

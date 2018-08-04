@@ -102,39 +102,29 @@
                           <p>Empresa 100% peruana que desarrolla su visión de negocio a través del marketing de consumo en la línea de alimentos.</p>
                           <p>La oficina central de nuestra empresa se encuentra ubicada en San Borja y el almacén de distribución y logística en el distrito de San Luis.</p>
                         </div>
-                        <!-- module buttons -->
                         <div id="buttons-6-1-0-1" class="module module-buttons buttons-6-1-0-1  ">
-                          <!--insert-->
                           <div class="module-buttons normal solid circle">
                           </div>
                         </div>
-                        <!-- /module buttons -->
                       </div>
                     </div>
                     <div class="module_column tb-column col4-2 last tb_6_column module_column_1 module_column_6-1-1">
                       <div class="tb-column-inner">
-                        <!-- module image -->
                         <div id="image-6-1-1-0" class="module module-image image-6-1-1-0  image-center   auto_fullwidth" data-parallax-element-speed="2">
-                          <!--insert-->
                           <div class="image-wrap">
-                            <img src="https://themify.me/demo/themes/ultra-app/files/2018/05/app-interface-670x481.png" width="670" class=" wp-post-image wp-image-28" alt="app interface"
-                              srcset="https://themify.me/demo/themes/ultra-app/files/2018/05/app-interface-670x481.png 670w, https://themify.me/demo/themes/ultra-app/files/2018/05/app-interface-300x216.png 300w, https://themify.me/demo/themes/ultra-app/files/2018/05/app-interface-768x552.png 768w, https://themify.me/demo/themes/ultra-app/files/2018/05/app-interface.png 948w"
-                              sizes="(max-width: 670px) 100vw, 670px" />
+                              <img src="<?php echo site_url().'static/page_front/images/nosotrosx670x481.jpg';?>" width="670" class=" wp-post-image wp-image-28" alt="Nosotros"
+                              srcset="<?php echo site_url().'static/page_front/images/nosotrosx670x481.jpg';?> 670w, <?php echo site_url().'static/page_front/images/nosotrosx300x216.jpg';?> 300w, <?php echo site_url().'static/page_front/images/nosotrosx768x552.jpg';?> 768w, <?php echo site_url().'static/page_front/images/nosotrosx900.jpg';?> 948w"/>
                           </div>
-                          <!-- /image-wrap -->
                         </div>
-                        <!-- /module image -->
                       </div>
                     </div>
                   </div>
-                  <!-- /row_inner -->
                 <!-- END ABOUTS -->
                   <div class="row_inner col_align_top">
                     <div class="module_column tb-column col-full first tb_6_column module_column_0 module_column_6-2-0">
                       <div class="tb-column-inner">
                         <div class="tb_slider_loader"></div>
                         <div id="testimonial-slider-6-2-0-1" class="module module-testimonial-slider testimonial-slider-6-2-0-1 themify_builder_slider_wrap clearfix  image-top  wow fadeIn  ">
-                          <!--insert-->
                           <ul class="themify_builder_slider" data-id="testimonial-slider-6-2-0-1" data-visible="3" data-mob-visible="1" data-scroll="1" data-auto-scroll="off" data-speed="1"
                             data-wrap="yes" data-arrow="yes" data-pagination="yes" data-effect="scroll" data-height="variable" data-pause-on-hover="resume">
                             <li>
@@ -151,7 +141,6 @@
                                     <div class="person-name">VISIÓN</div>
                                   </div>
                                 </div>
-                                <!-- /testimonial-content -->
                               </div>
                             </li>
                             <li>
@@ -174,16 +163,13 @@
                                   <img src="https://themify.me/demo/themes/ultra-app/files/2018/05/testimonial-client-3-100x100.jpg" width="100" height="100" class=" wp-post-image wp-image-100"
                                     alt="testimonial-client-3" /> 
                                 </figure>
-
                                 <div class="testimonial-content">
                                   <div class="testimonial-entry-content">
                                     <p>Convertirnos en una de las mejores empresas del Perú creando oportunidad de trabajo con salario digno de acuerdo a la capacidad y habilidad de cada emprendedor. A la vez alimentar a todos los hogares y familias del Perú.</p>
                                   </div>
-
                                   <div class="testimonial-author">
                                     <div class="person-name">Objetivo</div>
                                 </div>
-                                <!-- /testimonial-content -->
                               </div>
                               </div>
                             </li>
@@ -192,31 +178,8 @@
                       </div>
                     </div>
                   </div>
-                  <!-- /row_inner -->
                 </div>
                 <!-- END ABOUT -->
-
-                <!-- module_row -->
-                <div data-anchor="clients" class="themify_builder_row module_row clearfix fullcover fullwidth_row_container tb_section-clients module_row_3 themify_builder_6_row module_row_6-3">
-                  <div class="row_inner col_align_middle">
-
-                    <div class="module_column tb-column col-full first tb_6_column module_column_0 module_column_6-3-0">
-                      <div class="tb-column-inner">
-                        <div class="themify_builder_sub_row module_subrow clearfix repeat sub_row_3-0-0">
-                          <div class="subrow_inner col_align_top" data-basecol="6" data-col_mobile="column3-1 tb_3col">
-                            <div class="col6-1 sub_column module_column first sub_column_post_6 sub_column_3-0-0-0">
-                              <div class="tb-column-inner">
-                                
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- /module_row -->
-
                 <!--START PTODUCTS-->
                 <div data-anchor="pricing" class="themify_builder_row module_row clearfix repeat tb_section-features module_row_4 themify_builder_6_row module_row_6-4">
                   <div class="row_inner col_align_middle">
@@ -542,6 +505,6 @@
   <script src='<?php echo site_url().'static/page_front/js/themify.script.js?ver=2.0.2';?>'></script>
   <script src='<?php echo site_url().'static/page_front/js/comment-reply.min.js?ver=4.9.7';?>'></script>
   <script src='<?php echo site_url().'static/page_front/js/wp-embed.min.js?ver=4.9.7';?>'></script>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>-->
 </body>
 </html>
