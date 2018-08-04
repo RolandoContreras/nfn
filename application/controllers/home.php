@@ -30,7 +30,7 @@ class Home extends CI_Controller {
             $titulo = $subject;
             $headers = "MIME-Version: 1.0\r\n"; 
             $headers .= "Content-type: text/html; charset=iso-8859-1\r\n"; 
-            $headers .= "From: 3T Company: Travel - Training - Trade < noreplay@my3t.club >\r\n";
+            $headers .= "From: Red NFN: Red de Consumo Inteligente < noreplay@newfuturenetwork.com >\r\n";
             $bool = mail("contacto@newfuturenetwork.com",$titulo,$mensaje,$headers); 
             $data = true;
             echo json_encode($data);            
