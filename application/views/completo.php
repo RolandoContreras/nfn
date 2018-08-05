@@ -224,7 +224,7 @@
                         <div id="buttons-6-0-0-1" class="module module-buttons buttons-6-0-0-1  margin-top100">
                           <div class="module-buttons normal solid circle">
                             <div class="module-buttons-item  buttons-horizontal">
-                                <a href="<?php echo site_url().'producto/limpieza';?>" class="ui builder_button blue"><span>VER BOX LIMPIEZA</span></a> </div>
+                                <a href="<?php echo site_url().'product/limpieza';?>" class="ui builder_button blue"><span>VER BOX LIMPIEZA</span></a> </div>
                           </div>
                         </div>
                       </div>
