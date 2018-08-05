@@ -62,7 +62,7 @@
                         <div id="buttons-6-0-0-1" class="module module-buttons buttons-6-0-0-1  ">
                           <div class="module-buttons normal solid circle">
                             <div class="module-buttons-item  buttons-horizontal">
-                                <a href="http://newfuturenetwork.com/software/backend" target="_blank" class="ui builder_button blue"><span>REGISTRO</span></a> </div>
+                                <a href="http://newfuturenetwork.com/software/backend" target="_blank" class="ui builder_button black"><span>REGISTRO</span></a> </div>
                           </div>
                         </div>
                       </div>
@@ -99,7 +99,7 @@
                               <div id="buttons-6-0-0-1" class="module module-buttons buttons-6-0-0-1  ">
                           <div class="module-buttons normal solid circle">
                             <div class="module-buttons-item  buttons-horizontal">
-                                <a href="<?php echo site_url().'about';?>" class="ui builder_button blue"><span>VER MÁS</span></a> </div>
+                                <a href="<?php echo site_url().'about';?>" class="ui builder_button black"><span>VER MÁS</span></a> </div>
                           </div>
                         </div>
                           </div>

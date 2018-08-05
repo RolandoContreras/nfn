@@ -366,7 +366,7 @@ BUILDER BUTTONS
 .ui.module.module-pricing-table {
 	border: none;
 	border-radius: 10px;
-	box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.2);
+	box-shadow: 0px 16px 28px 0px rgba(0, 0, 0, 0.4);
 	font-family: 'Raleway', sans-serif;
 }
 .module.module-pricing-table .module-pricing-table-header {
@@ -414,6 +414,7 @@ BUILDER BUTTONS
 	transform: skewY(-7deg);
 	z-index: -1;
 	pointer-events: none;
+        background-color: #efb810 !important;
 }
 .module-pricing-table.pricing-enlarge .module-pricing-table-content:before {
 	-webkit-transform-origin: left bottom;
