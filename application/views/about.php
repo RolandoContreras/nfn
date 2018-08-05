@@ -119,7 +119,7 @@
                   </div>
                 </div>
                  <!--START MISION-->
-<!--                <div class="themify_builder_row module_row clearfix repeat tb_section-features module_row_4 themify_builder_6_row module_row_6-4 padding-bottom_100">
+                <div class="themify_builder_row module_row clearfix repeat tb_section-features module_row_4 themify_builder_6_row module_row_6-4 padding-bottom_100">
                   <div class="row_inner col_align_middle">
                     <div class="module_column tb-column col-full first tb_6_column module_column_0 module_column_6-4-0 repeat">
                       <div class="tb-column-inner">
@@ -132,7 +132,7 @@
                                     <div class="module-feature-image float-none padding-6">
                                     <div class="module-feature-chart-html5" data-progress="0" data-progress-end="100" data-size="100">
                                       <div class="chart-html5-circle">
-                                            <img src="<?php // echo site_url().'static/page_front/images/icon/brilliant3x_87030.png';?>" alt="Nuevo Concepto"/>
+                                            <!--<img src="<?php // echo site_url().'static/page_front/images/icon/brilliant3x_87030.png';?>" alt="Nuevo Concepto"/>-->
                                           <i class="fa fa-dollar fa-4x" style="font-size: 6.5em; color: #000;"></i>
                                       </div>
                                     </div>
@@ -151,7 +151,7 @@
                                     <div class="module-feature-chart-html5" data-progress="0" data-progress-end="100" data-size="100">
                                       <div class="chart-html5-circle">
                                           <i class="fa fa-globe fa-4x" style="font-size: 7em; color: #000;"></i>
-                                          <img src="<?php echo site_url().'static/page_front/images/icon/world.png';?>" alt="Global"/>
+<!--                                          <img src="<?php echo site_url().'static/page_front/images/icon/world.png';?>" alt="Global"/>-->
                                       </div>
                                     </div>
                                   </div>
@@ -169,7 +169,7 @@
                                     <div class="module-feature-chart-html5" data-progress="0" data-progress-end="100" data-size="100">
                                       <div class="chart-html5-circle">
                                           <i class="fa fa-star fa-4x" style="font-size: 7em; color: #000;"></i>
-                                            <img src="<?php echo site_url().'static/page_front/images/icon/star.png';?>" alt="n1"/>
+                                            <!--<img src="<?php echo site_url().'static/page_front/images/icon/star.png';?>" alt="n1"/>-->
                                       </div>
                                     </div>
                                   </div>
@@ -184,7 +184,7 @@
                       </div>
                     </div>
                   </div>
-                </div>-->
+                </div>
                 <!-- END ABOUT -->
                 <!--START PTODUCTS-->
                 <div data-anchor="pricing" class="themify_builder_row module_row clearfix repeat tb_section-features module_row_4 themify_builder_6_row module_row_6-4">
@@ -344,9 +344,6 @@
                   <div class="row_inner col_align_top">
                     <div class="module_column tb-column col-full first tb_6_column module_column_0 module_column_6-5-0">
                       <div class="tb-column-inner">
-                          <div id="text-6-4-0-0" class="module module-text text-6-4-0-0  repeat padding-bottom-9">
-                            <h2>Nuestros Productos</h2>
-                          </div>
                         <div class="themify_builder_sub_row module_subrow clearfix sub_row_5-0-0">
                           <div class="subrow_inner col_align_top">
                             <div class="col3-22 sub_column module_column first sub_column_post_6 sub_column_5-0-0-0">
@@ -363,7 +360,7 @@
                                   </div>
                                   <div class="module-pricing-table-content">
                                     <p class="module-pricing-table-features unavailable-features"></p>
-                                    <a class="module-pricing-table-button ui green" href="<?php echo site_url().'productos';?>">Ver Contenido</a>
+                                    <a class="module-pricing-table-button ui green" href="<?php echo site_url().'product/basico';?>">Ver Contenido</a>
                                   </div>
                                 </div>
                               </div>
@@ -382,7 +379,7 @@
                                   </div>
                                   <div class="module-pricing-table-content">
                                     <p class="module-pricing-table-features unavailable-features"></p>
-                                    <a class="module-pricing-table-button ui black" href="<?php echo site_url().'productos';?>">Ver Contenido</a>
+                                    <a class="module-pricing-table-button ui black" href="<?php echo site_url().'product/jumbo';?>">Ver Contenido</a>
                                   </div>
                                 </div>
                               </div>
@@ -400,7 +397,7 @@
                                   </div>
                                   <div class="module-pricing-table-content">
                                     <p class="module-pricing-table-features unavailable-features"></p>
-                                    <a class="module-pricing-table-button ui purple" href="<?php echo site_url().'productos';?>">Ver Contenido</a>
+                                    <a class="module-pricing-table-button ui purple" href="<?php echo site_url().'product/completo';?>">Ver Contenido</a>
                                   </div>
                                 </div>
                               </div>
@@ -418,10 +415,86 @@
                                   </div>
                                   <div class="module-pricing-table-content">
                                     <p class="module-pricing-table-features unavailable-features"></p>
-                                    <a class="module-pricing-table-button ui orange" href="<?php echo site_url().'productos';?>">Ver Contenido</a>
+                                    <a class="module-pricing-table-button ui orange" href="<?php echo site_url().'product/limpieza';?>">Ver Contenido</a>
                                   </div>
                                 </div>
                               </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- START CONTACT -->
+                <div data-anchor="contact" class="themify_builder_row module_row clearfix repeat tb_section-contact module_row_6 themify_builder_6_row module_row_6-6">
+                  <div class="row_inner col_align_top">
+                    <div class="module_column tb-column col-full first tb_6_column module_column_0 module_column_6-6-0">
+                      <div class="tb-column-inner">
+                        <div id="text-6-6-0-0" class="module module-text text-6-6-0-0  repeat  ">
+                          <h2>CONTACTO</h2>
+                          <p>Mantente en contacto con nosotros llenando el formulario de contacto. <br/>Realiza todas las preguntas que tengas y responderemos a la brevedad.</p>
+                        </div>
+                        <div class="themify_builder_sub_row module_subrow clearfix sub_row_6-0-1">
+                          <div class="subrow_inner gutter-none col_align_top">
+                            <div class="col4-1 sub_column module_column first sub_column_post_6 sub_column_6-0-1-0">
+                            </div>
+                            <div class="col4-2 sub_column module_column middle sub_column_post_6 sub_column_6-0-1-1">
+                              <div class="tb-column-inner">
+                                <div id="contact-6-sub_row_6-0-1-1-0" class="module module-contact contact-6-sub_row_6-0-1-1-0 contact-animated-label  ">
+                                  <form class="builder-contact" enctype="multipart/form-data">
+                                    <div class="contact-message"></div>
+                                    <div class="builder-contact-fields">
+                                      <div class="builder-contact-field builder-contact-field-name builder-contact-text-field" data-order="">
+                                        
+                                        <div class="control-input">
+                                          <p class="text-contact">Tu Nombre <span class="required">*</span></p>
+                                          <input type="text" name="name" id="name" onkeyup="fade_name(this.value);" class="form-control"/>
+                                          <span id="message_name" class="field-validation-error" style="display:none;">El Nombre es requerido</span>
+                                        </div>
+                                      </div>
+                                      <div class="builder-contact-field builder-contact-field-name builder-contact-text-field" data-order="">
+                                        
+                                        <div class="control-input">
+                                          <p class="text-contact">Tu Teléfono <span class="required">*</span></p>
+                                          <input type="text" name="phone" id="phone" onkeyup="fade_phone(this.value);"class="form-control"/><br/>
+                                          <span id="message_phone" class="field-validation-error" style="display:none;">El Teléfono es requerido</span>
+                                        </div>
+                                      </div>
+                                      <div class="builder-contact-field builder-contact-field-subject builder-contact-text-field" data-order="">
+                                        <div class="control-input">
+                                            <p class="text-contact">Email<span class="required">*</span></p>
+                                            <input type="email" name="email" id="email" onkeyup="fade_email(this.value);" class="form-control"/>
+                                            <span id="message_email" class="field-validation-error" style="display:none;">El Email es requerido</span>
+                                        </div>
+                                      </div>
+                                      <div class="builder-contact-field builder-contact-field-subject builder-contact-text-field" data-order="">
+                                        <p class="text-contact">Asunto<span class="required">*</span></p>
+                                        <div class="control-input">
+                                          <input type="text" name="subject" id="subject" onkeyup="fade_subject(this.value);" class="form-control"/>
+                                          <span id="message_subject" class="field-validation-error" style="display:none;">El Asunto es requerido</span>
+                                        </div>
+                                      </div>
+                                      <div class="builder-contact-field builder-contact-field-message builder-contact-textarea-field" data-order="">
+                                       <p class="text-contact">Mensaje<span class="required">*</span></p>
+                                        <div class="control-input">
+                                          <textarea name="messages" onkeyup="fade_comments(this.value);" id="messages" rows="8" cols="45" class="form-control"></textarea>
+                                          <span id="message_comments" class="field-validation-error" style="display:none;">El Mensaje es requerido</span>
+                                        </div>
+                                      </div>
+                                      <div class="builder-contact-field builder-contact-field-send" data-order="10000">
+                                        <div class="control-input builder-contact-field-send-center">
+                                            <button onclick="send_messages_home();" class="btn btn-primary"> Enviar </button><br/><br/>
+                                            <div id="messages_respose" class="alert alert-success" style="text-align: center; display: none;">Enviado Correctamente.</div>
+                                        </div>
+                                     </div>
+                                        
+                                     </div>
+                                  </form>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col4-1 sub_column module_column last sub_column_post_6 sub_column_6-0-1-2">
                             </div>
                           </div>
                         </div>

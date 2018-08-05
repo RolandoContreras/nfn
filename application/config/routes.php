@@ -42,11 +42,11 @@ $route['default_controller'] = "welcome";
 $route['404_override'] = 'errors/error_404';
 
 $route['home'] = 'home';
+$route['nosotros'] = 'about';
+$route['productos'] = 'product';
+$route['noticias'] = 'new';
+$route['contacto'] = 'contact';
 $route['home/send_messages'] = 'home/send_messages';
 $route['product/basico'] = 'home/product';
-$route['product/jumbo'] = 'home/product';
-$route['product/completo'] = 'home/product';
-$route['product/limpieza'] = 'home/product';
-
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */

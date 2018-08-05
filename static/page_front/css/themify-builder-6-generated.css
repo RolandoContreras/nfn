@@ -48,14 +48,20 @@
 .themify_builder .feature-6-sub_row_4-0-2-2-0.module-feature{background-repeat: repeat; background-position: left top; margin-bottom:40px; }
 .themify_builder .feature-6-sub_row_4-0-2-2-1.module-feature{background-repeat: repeat; background-position: left top; margin-bottom:40px; }
 .themify_builder .feature-6-sub_row_4-0-2-2-2.module-feature{background-repeat: repeat; background-position: left top; margin-bottom:40px; }
-.themify_builder_6_row.module_row_5.module_row{background-image: url("../images/bg-pricing.jpg"); background-repeat: no-repeat;background-size: cover; background-attachment: scroll; background-position: center top; padding-top: 6%;padding-bottom: 6%; }
+
+.themify_builder_6_row.module_row_5.module_row{
+    /*background-image: url("../images/bg-pricing.jpg");*/ 
+    /*background-repeat: no-repeat;background-size: cover;*/ 
+    /*background-attachment: scroll;*/ 
+    /*background-position: center top;*/ 
+    padding-bottom: 6%; }
 @media screen and (max-width: 680px) {.themify_builder_6_row.module_row_5.module_row{background-repeat: no-repeat;background-size: cover; background-attachment: scroll; background-position: center top; padding-top:5%; padding-bottom:5%; }
 }
 .themify_builder .pricing-table-6-sub_row_5-0-0-0-0.ui.module-pricing-table{background-repeat: repeat; }
 .themify_builder .pricing-table-6-sub_row_5-0-0-0-0.module-pricing-table .module-pricing-table-button{background-color:#41b838; }
 .themify_builder .pricing-table-6-sub_row_5-0-0-1-0.ui.module-pricing-table{background-repeat: repeat; }
 .themify_builder .pricing-table-6-sub_row_5-0-0-1-0.module-pricing-table .module-pricing-table-button{background-color:#7b21e6; }
-.themify_builder .pricing-table-6-sub_row_5-0-0-1-0.module-pricing-table .module-pricing-table-pop{color:#ffffff; }
+.themify_builder .pricing-table-6-sub_row_5-0-0-1-0.module-pricing-table .module-pricing-table-pop{color:#000;}
 .themify_builder .pricing-table-6-sub_row_5-0-0-2-0.ui.module-pricing-table{background-repeat: repeat; }
 .themify_builder .pricing-table-6-sub_row_5-0-0-2-0.module-pricing-table .module-pricing-table-button{background-color:#41b838; }
 .themify_builder_6_row.module_row_6.module_row{background-repeat: repeat; background-attachment: scroll; background-position: center center; padding-top:5%; padding-bottom:8%; }

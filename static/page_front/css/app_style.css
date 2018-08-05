@@ -685,7 +685,7 @@ FOOTER
 #footerwrap {
 	color: rgba(255,255,255,.7);
 	background-color: transparent;
-	background-image: url(../images/bg-bottom.jpg);
+	background-image: url(../images/bg-pricing.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center top;
@@ -850,4 +850,14 @@ MEDIA QUERIES
 }
 .margin-top-12{
     margin-top: 8%;
+}
+.margin-top-8{
+    margin-top: 8% !important;
+}
+.padding-bottom-9{
+   padding-bottom: 9% !important;    
+}
+
+.module-pricing-table .module-pricing-table-pop::before {
+    color: #000 !important;
 }
