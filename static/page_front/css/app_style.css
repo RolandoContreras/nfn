@@ -379,8 +379,8 @@ BUILDER BUTTONS
 	padding-top: 32px;
 }
 .module.module-pricing-table .module-pricing-table-title {
-	font-size: 1.65em;
-	font-weight: normal;
+	font-size: 22px;
+        font-weight: bold;
 }
 .module.module-pricing-table .module-pricing-table-price {
 	font-size: 3.5em;
@@ -538,6 +538,14 @@ button:hover,
 	background-image: -webkit-linear-gradient( 135deg, rgb(80,35,206) 0%, rgb(123,34,230) 66%, rgb(165,32,254) 100%);
 	background-image: -ms-linear-gradient( 135deg, rgb(80,35,206) 0%, rgb(123,34,230) 66%, rgb(165,32,254) 100%);
 }
+.module.module-pricing-table .module-pricing-table-header.purple,
+.module-pricing-table-button.purple,
+.module-buttons-item .purple {
+	background-image: -moz-linear-gradient( 135deg, rgb(80,35,206) 0%, rgb(123,34,230) 66%, rgb(165,32,254) 100%);
+	background-image: -webkit-linear-gradient( 135deg, rgb(80,35,206) 0%, rgb(123,34,230) 66%, rgb(165,32,254) 100%);
+	background-image: -ms-linear-gradient( 135deg, rgb(80,35,206) 0%, rgb(123,34,230) 66%, rgb(165,32,254) 100%);
+}
+
 .module.module-pricing-table .module-pricing-table-header.light-purple,
 .module-pricing-table-button.light-purple,
 .module-buttons-item .light-purple {

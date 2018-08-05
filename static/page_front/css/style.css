@@ -4785,3 +4785,6 @@ body:after{
 			-webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
 		}
 }
+.module-pricing-table .module-pricing-table-button {
+    font-size: 14px !important;
+}

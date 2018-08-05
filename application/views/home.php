@@ -57,12 +57,12 @@
                       <div class="tb-column-inner">
                         <div id="text-6-0-0-0" class="module module-text text-6-0-0-0  repeat  ">
                           <h1>New Future Network</h1>
-                          <p>Te imaginas que los productos que siempre consumes te generen dinero extra</p>
+                          <p>Te imaginas ganar dinero por los productos que siempre consumes.</p>
                         </div>
                         <div id="buttons-6-0-0-1" class="module module-buttons buttons-6-0-0-1  ">
                           <div class="module-buttons normal solid circle">
                             <div class="module-buttons-item  buttons-horizontal">
-                                <a href="#" class="ui builder_button blue"><span>REGISTRO</span></a> </div>
+                                <a href="http://newfuturenetwork.com/software/backend" target="_blank" class="ui builder_button blue"><span>REGISTRO</span></a> </div>
                           </div>
                         </div>
                       </div>
@@ -74,7 +74,7 @@
                           <!--insert-->
                           <div class="image-wrap">
                             <a href="https://www.youtube.com/watch?v=FMLrf64RuKE" class="lightbox-builder themify_lightbox">
-                                <img src="<?php echo site_url().'static/page_front/images/home/ipad-app-689x506.png';?>" width="689" class=" wp-post-image wp-image-8" alt="ipad app" srcset="<?php echo site_url().'static/page_front/images/home/ipad-app-689x506.png';?> 689w, <?php echo site_url().'static/page_front/images/home/ipad-app-300x220.png';?> 300w"
+                                <img src="<?php echo site_url().'static/page_front/images/home/ipad-app.png';?>" width="689" class=" wp-post-image wp-image-8" alt="ipad app" srcset="<?php echo site_url().'static/page_front/images/home/ipad-app.png';?> 689w, <?php echo site_url().'static/page_front/images/home/ipad-appx300x220.png';?> 300w"
                                 sizes="(max-width: 689px) 100vw, 689px" /> </a>
                           </div>
                         </div>
@@ -355,7 +355,7 @@
                       <div class="tb-column-inner">
                         <div class="themify_builder_sub_row module_subrow clearfix sub_row_5-0-0">
                           <div class="subrow_inner col_align_top">
-                            <div class="col3-1 sub_column module_column first sub_column_post_6 sub_column_5-0-0-0">
+                            <div class="col3-22 sub_column module_column first sub_column_post_6 sub_column_5-0-0-0">
                               <div class="tb-column-inner">
                                 <div id="pricing-table-6-sub_row_5-0-0-0-0" class="module module-pricing-table ui pricing-table-6-sub_row_5-0-0-0-0   green ">
                                   <!--insert-->
@@ -374,11 +374,11 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="col3-1 sub_column module_column middle sub_column_post_6 sub_column_5-0-0-1">
+                            <div class="col3-22 sub_column module_column middle sub_column_post_6 sub_column_5-0-0-1">
                               <div class="tb-column-inner">
-                                <div id="pricing-table-6-sub_row_5-0-0-1-0" class="module module-pricing-table ui pricing-table-6-sub_row_5-0-0-1-0   purple  pricing-enlarge pricing-pop">
+                                <div id="pricing-table-6-sub_row_5-0-0-1-0" class="module module-pricing-table ui pricing-table-6-sub_row_5-0-0-1-0 black pricing-enlarge pricing-pop">
                                   <span class="module-pricing-table-pop">El Más Pedido</span>
-                                  <div class="module-pricing-table-header ui purple ">
+                                  <div class="module-pricing-table-header ui black">
                                     <span class="module-pricing-table-title">
                                         <span>BOX JUMBO</span>
                                     </span>
@@ -388,15 +388,15 @@
                                   </div>
                                   <div class="module-pricing-table-content">
                                     <p class="module-pricing-table-features unavailable-features"></p>
-                                    <a class="module-pricing-table-button ui purple" href="<?php echo site_url().'product/jumbo';?>">Ver Contenido</a>
+                                    <a class="module-pricing-table-button ui black" href="<?php echo site_url().'product/jumbo';?>">Ver Contenido</a>
                                   </div>
                                 </div>
                               </div>
                             </div>
-                            <div class="col3-1 sub_column module_column last sub_column_post_6 sub_column_5-0-0-2">
+                            <div class="col3-22 sub_column module_column last sub_column_post_6 sub_column_5-0-0-2">
                               <div class="tb-column-inner">
-                                <div id="pricing-table-6-sub_row_5-0-0-2-0" class="module module-pricing-table ui pricing-table-6-sub_row_5-0-0-2-0   green ">
-                                  <div class="module-pricing-table-header ui green ">
+                                <div id="pricing-table-6-sub_row_5-0-0-2-0" class="module module-pricing-table ui pricing-table-6-sub_row_5-0-0-2-0 purple">
+                                  <div class="module-pricing-table-header ui purple">
                                     <span class="module-pricing-table-title">
                                         <span>BOX COMPLETO</span>
                                     </span>
@@ -406,7 +406,25 @@
                                   </div>
                                   <div class="module-pricing-table-content">
                                     <p class="module-pricing-table-features unavailable-features"></p>
-                                    <a class="module-pricing-table-button ui green" href="<?php echo site_url().'product/completo';?>">Ver Contenido</a>
+                                    <a class="module-pricing-table-button ui purple" href="<?php echo site_url().'product/completo';?>">Ver Contenido</a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                              <div class="col3-22 sub_column module_column last sub_column_post_6 sub_column_5-0-0-2">
+                              <div class="tb-column-inner">
+                                <div id="pricing-table-6-sub_row_5-0-0-2-0" class="module module-pricing-table ui pricing-table-6-sub_row_5-0-0-2-0 orange">
+                                  <div class="module-pricing-table-header ui orange">
+                                    <span class="module-pricing-table-title">
+                                        <span>BOX LIMPIEZA</span>
+                                    </span>
+                                      <span class="module-pricing-table-price">
+                                          <img src="<?php echo site_url().'static/page_front/images/caja-productos.png';?>" alt="productos"/>
+                                      </span>
+                                  </div>
+                                  <div class="module-pricing-table-content">
+                                    <p class="module-pricing-table-features unavailable-features"></p>
+                                    <a class="module-pricing-table-button ui orange" href="<?php echo site_url().'product/limpieza';?>">Ver Contenido</a>
                                   </div>
                                 </div>
                               </div>

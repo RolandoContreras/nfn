@@ -36,7 +36,7 @@
                   <h4 class="widgettitle">New Future Network</h4>
                   <div class="textwidget">
                       <p>Av. Javier Prado Este 2801 Of. 201, Lima - Perú<br/>
-                          contacto@newfuturenetworl.com<br/>
+                          contacto@newfuturenetwork.com<br/>
                           Teléfono: +51 336 3924
                       </p>
                   </div>

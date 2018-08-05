@@ -62,8 +62,11 @@ div.module_column{
 .module_column.col4-3{
     width:74.2%;
 }
-.module_column.col3-1{
+/*.module_column.col3-1{
     width:31.2%;
+}*/
+.module_column.col3-22{
+    width:22%;
 }
 .module_column.col3-2{
     width:65.6%;
