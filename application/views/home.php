@@ -126,13 +126,8 @@
                                     <div class="module-feature-image float-none padding-6">
                                     <div class="module-feature-chart-html5" data-progress="0" data-progress-end="100" data-size="100">
                                       <div class="chart-html5-circle">
-                                        <div class="chart-html5-mask chart-html5-full">
-                                          <div class="chart-html5-fill"></div>
-                                        </div>
-                                        <div class="chart-html5-mask chart-html5-half">
-                                          <div class="chart-html5-fill"></div>
-                                        </div>
-                                            <img src="<?php echo site_url().'static/page_front/images/icon/brilliant3x_87030.png';?>" alt="Nuevo Concepto"/>
+                                            <!--<img src="<?php // echo site_url().'static/page_front/images/icon/brilliant3x_87030.png';?>" alt="Nuevo Concepto"/>-->
+                                          <i class="fa fa-dollar fa-4x" style="font-size: 6.5em; color: #000;"></i>
                                       </div>
                                     </div>
                                   </div>
@@ -149,13 +144,8 @@
                                     <div class="module-feature-image float-none padding-6">
                                     <div class="module-feature-chart-html5" data-progress="0" data-progress-end="100" data-size="100">
                                       <div class="chart-html5-circle">
-                                        <div class="chart-html5-mask chart-html5-full">
-                                          <div class="chart-html5-fill"></div>
-                                        </div>
-                                        <div class="chart-html5-mask chart-html5-half">
-                                          <div class="chart-html5-fill"></div>
-                                        </div>
-                                            <img src="<?php echo site_url().'static/page_front/images/icon/world.png';?>" alt="Global"/>
+                                          <i class="fa fa-globe fa-4x" style="font-size: 7em; color: #000;"></i>
+<!--                                          <img src="<?php echo site_url().'static/page_front/images/icon/world.png';?>" alt="Global"/>-->
                                       </div>
                                     </div>
                                   </div>
@@ -172,13 +162,8 @@
                                     <div class="module-feature-image float-none padding-6">
                                     <div class="module-feature-chart-html5" data-progress="0" data-progress-end="100" data-size="100">
                                       <div class="chart-html5-circle">
-                                        <div class="chart-html5-mask chart-html5-full">
-                                          <div class="chart-html5-fill"></div>
-                                        </div>
-                                        <div class="chart-html5-mask chart-html5-half">
-                                          <div class="chart-html5-fill"></div>
-                                        </div>
-                                            <img src="<?php echo site_url().'static/page_front/images/icon/star.png';?>" alt="n1"/>
+                                          <i class="fa fa-star fa-4x" style="font-size: 7em; color: #000;"></i>
+                                            <!--<img src="<?php echo site_url().'static/page_front/images/icon/star.png';?>" alt="n1"/>-->
                                       </div>
                                     </div>
                                   </div>
@@ -273,8 +258,8 @@
                                 <!-- module image -->
                                 <div id="image-6-sub_row_4-0-2-1-0" class="module module-image image-6-sub_row_4-0-2-1-0  image-center   wow fadeInUp">
                                   <div class="image-wrap">
-                                      <img src="<?php echo site_url().'static/page_front/images/compras-345x710.png';?>" width="345" height="710" class=" wp-post-image wp-image-80"
-                                      alt="mobile phone" srcset="<?php echo site_url().'static/page_front/images/compras-345x710.png';?> 345w, <?php echo site_url().'static/page_front/images/compras-146x300.png';?>"
+                                      <img src="<?php echo site_url().'static/page_front/images/comprasx345.jpg';?>" width="345" height="710" class=" wp-post-image wp-image-80"
+                                      alt="mobile phone" srcset="<?php echo site_url().'static/page_front/images/comprasx345.jpg';?> 345w, <?php echo site_url().'static/page_front/images/comprasx145.jpg';?>"
                                       sizes="(max-width: 345px) 100vw, 345px" />
                                   </div>
                                 </div>
