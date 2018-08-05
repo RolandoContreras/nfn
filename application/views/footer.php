@@ -8,24 +8,22 @@
           <div class="footer-left-wrap first">
             <div class="footer-logo-wrapper clearfix">
               <div id="footer-logo">
-                  <a href="https://themify.me/demo/themes/ultra-app" title="App">
+                  <a href="<?php echo site_url();?>" title="Home">
                       <span>
                           <img src="<?php echo site_url().'static/page_front/images/logo/logo.png';?>" alt="nfn-logo" width="50"/>
                       </span>
                   </a>
               </div>
-              <!-- /footer-logo -->
             </div>
           </div>
           <div class="footer-right-wrap">
             <div class="footer-text clearfix">
               <div class="footer-text-inner">
                   <div class="one">&copy; <a href="<?php echo site_url();?>">NFN</a> 2018</div>
-                  <div class="two">Todos los derechos reservador</div>
+                  <div class="two">Todos los derechos reservados</div>
                 <div class="two">Creado por <a href="http://cevolutionweb.com/">Cevolution Web</a></div>
               </div>
             </div>
-            <!-- /.footer-text -->
           </div>
         </div>
         <div class="section-col clearfix">
@@ -50,19 +48,15 @@
                     </li>    
                     </ul>
                   <ul class="social-links horizontal">
-                    
                     <li class="social-link-item facebook font-icon icon-large">
                       <a href="#"><i class="fa fa-facebook" style="color: #ffffff;"></i>  </a>
                     </li>
-                    <!-- /themify-link-item -->
                     <li class="social-link-item twitter font-icon icon-large">
                       <a href="#"><i class="fa fa-youtube" style="color: #ffffff;"></i>  </a>
                     </li>
-                    <!-- /themify-link-item -->
                     <li class="social-link-item instagram font-icon icon-large">
                       <a href="#"><i class="fa fa-instagram" style="color: #ffffff;"></i>  </a>
                     </li>
-                    <!-- /themify-link-item -->
                   </ul>
                 </div>
               </div>

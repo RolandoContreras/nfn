@@ -1,6 +1,6 @@
 .themify_builder_6_row.module_row_0.module_row{
-    background-image: url("https://themify.me/demo/themes/ultra-app/files/2018/05/bg-header.jpg"); background-repeat: no-repeat;background-size: cover; 
-    background-attachment: scroll; background-position: center top; padding-top:12%; padding-bottom:15%; }
+    background-image: url("../images/bg_header.jpg"); background-repeat: no-repeat;background-size: cover; 
+    background-attachment: scroll; background-position: center top; padding-top:12%; padding-bottom: 10%; z-index: 1}
 @media screen and (max-width: 680px) {.themify_builder_6_row.module_row_0.module_row{background-repeat: no-repeat;background-size: cover; background-attachment: scroll; background-position: center top; padding-top:22%; padding-bottom:5%; }
 }
 @media screen and (max-width: 680px) {.module_row_0 .module_column_0.tb_6_column.module_column{background-repeat: repeat; background-attachment: scroll; background-position: center center; padding-bottom:14%; }
@@ -23,7 +23,6 @@
 .themify_builder_6_row.module_row_2.module_row{background-repeat: repeat; background-attachment: scroll; background-position: center center; }
 .themify_builder .text-6-2-0-0.module-text{background-repeat: repeat; text-align: center; margin-bottom:30px; }
 .themify_builder .text-6-2-0-0.module.module-text h2{color:#405cc2; }
-.themify_builder_6_row.module_row_3.module_row{background-image: url("https://themify.me/demo/themes/ultra-app/files/2018/05/bg-section-brand.jpg"); background-repeat: no-repeat;background-size: cover; background-attachment: scroll; background-position: center center; padding-top:27%; padding-bottom:17%; }
 .module_row_3 .module_column_0 .sub_row_3-0-0.module_subrow{background-repeat: repeat; background-attachment: scroll; background-position: center center; padding-top:60px; }
 @media screen and (max-width: 680px) {.module_row_3 .module_column_0 .sub_row_3-0-0.module_subrow{background-repeat: repeat; background-attachment: scroll; background-position: center center; padding-top:80px; padding-bottom:40px; }
 }
@@ -49,7 +48,7 @@
 .themify_builder .feature-6-sub_row_4-0-2-2-0.module-feature{background-repeat: repeat; background-position: left top; margin-bottom:40px; }
 .themify_builder .feature-6-sub_row_4-0-2-2-1.module-feature{background-repeat: repeat; background-position: left top; margin-bottom:40px; }
 .themify_builder .feature-6-sub_row_4-0-2-2-2.module-feature{background-repeat: repeat; background-position: left top; margin-bottom:40px; }
-.themify_builder_6_row.module_row_5.module_row{background-image: url("https://themify.me/demo/themes/ultra-app/files/2018/05/bg-pricing.jpg"); background-repeat: no-repeat;background-size: cover; background-attachment: scroll; background-position: center top; padding-top:11%; padding-bottom:15%; }
+.themify_builder_6_row.module_row_5.module_row{background-image: url("../images/bg-pricing.jpg"); background-repeat: no-repeat;background-size: cover; background-attachment: scroll; background-position: center top; padding-top: 6%;padding-bottom: 6%; }
 @media screen and (max-width: 680px) {.themify_builder_6_row.module_row_5.module_row{background-repeat: no-repeat;background-size: cover; background-attachment: scroll; background-position: center top; padding-top:5%; padding-bottom:5%; }
 }
 .themify_builder .pricing-table-6-sub_row_5-0-0-0-0.ui.module-pricing-table{background-repeat: repeat; }
