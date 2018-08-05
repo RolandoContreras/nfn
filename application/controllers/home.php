@@ -36,5 +36,25 @@ class Home extends CI_Controller {
             echo json_encode($data);            
             exit();
         }
-            }
+    }
+    public function product(){
+        $url = explode("/",uri_string());
+        $nav = $url[1];
+        switch ($nav) {
+            case 'basico':
+                $this->load->view('basico');
+                break;
+            case 'jumbo':
+                $this->load->view('jumbo');
+                break;
+            case 'completo':
+                $this->load->view('completo');
+                break;
+            case 'limpieza':
+                $this->load->view('limpieza');
+                break;
+        } 
+        
+        
+    }
 }

@@ -829,3 +829,17 @@ MEDIA QUERIES
     margin-bottom: 3px;
     padding-top: 5px;
 }
+/*table*/
+.separador-cripto-all-top {
+    border-top: 1px solid #e5e5e5;
+    padding-top: 2%;
+}
+.margin-top100{
+    margin-top: 100px;
+}
+.currency_text_all{
+    font-size: 15px;
+}
+.margin-top-12{
+    margin-top: 12%;
+}

@@ -43,21 +43,13 @@
           </div>
           <a id="menu-icon-close" href="#"></a>
         </div>
-        <!-- /#mobile-menu -->
       </header>
-      <!-- /#header -->
     </div>
-    <!-- /#headerwrap -->
     <div id="body" class="clearfix">
-      <!-- layout-container -->
       <div id="layout" class="pagewidth clearfix">
-        <!-- content -->
         <div id="content" class="clearfix">
           <div id="page-6" class="type-page">
             <div class="page-content entry-content">
-              <script type="text/javascript">
-                if(!document.getElementById( "builder-styles" ) && document.getElementById( "builder-styles-css" ) ) document.getElementById( "builder-styles-css" ).insertAdjacentHTML( "beforebegin", "<link id='builder-styles' rel='stylesheet' href='https://themify.me/demo/themes/ultra-app/wp-content/themes/themify-ultra/themify/themify-builder/css/themify-builder-style.css?ver=4.0.0' type='text/css' />" );
-              </script>
               <div id="themify_builder_content-6" data-postid="6" class="themify_builder_content themify_builder_content-6 themify_builder">
                 <div class="themify_builder_row module_row clearfix fullcover fullwidth_row_container module_row_0 themify_builder_6_row module_row_6-0">
                   <div class="row_inner col_align_middle">
@@ -369,7 +361,7 @@
                                   <!--insert-->
                                   <div class="module-pricing-table-header ui green ">
                                     <span class="module-pricing-table-title">
-                                        <span>BASICO</span>
+                                        <span>BOX BÁSICO</span>
                                     </span>
                                       <span class="module-pricing-table-price">
                                           <img src="<?php echo site_url().'static/page_front/images/caja-prodcutos2.png';?>" alt="productos"/>
@@ -377,7 +369,7 @@
                                   </div>
                                   <div class="module-pricing-table-content">
                                     <p class="module-pricing-table-features unavailable-features"></p>
-                                        <a class="module-pricing-table-button ui green" href="https://themify.me">Ver Contenido</a>
+                                    <a class="module-pricing-table-button ui green" href="<?php echo site_url().'product/basico';?>">Ver Contenido</a>
                                   </div>
                                 </div>
                               </div>
@@ -388,7 +380,7 @@
                                   <span class="module-pricing-table-pop">El Más Pedido</span>
                                   <div class="module-pricing-table-header ui purple ">
                                     <span class="module-pricing-table-title">
-                                        <span>JUMBO</span>
+                                        <span>BOX JUMBO</span>
                                     </span>
                                       <span class="module-pricing-table-price">
                                           <img src="<?php echo site_url().'static/page_front/images/caja-prodcutos2.png';?>" alt="productos"/>
@@ -396,7 +388,7 @@
                                   </div>
                                   <div class="module-pricing-table-content">
                                     <p class="module-pricing-table-features unavailable-features"></p>
-                                    <a class="module-pricing-table-button ui purple" href="https://themify.me">Ver Contenido</a>
+                                    <a class="module-pricing-table-button ui purple" href="<?php echo site_url().'product/jumbo';?>">Ver Contenido</a>
                                   </div>
                                 </div>
                               </div>
@@ -406,7 +398,7 @@
                                 <div id="pricing-table-6-sub_row_5-0-0-2-0" class="module module-pricing-table ui pricing-table-6-sub_row_5-0-0-2-0   green ">
                                   <div class="module-pricing-table-header ui green ">
                                     <span class="module-pricing-table-title">
-                                        <span >COMPLETO</span>
+                                        <span>BOX COMPLETO</span>
                                     </span>
                                       <span class="module-pricing-table-price">
                                           <img src="<?php echo site_url().'static/page_front/images/caja-prodcutos2.png';?>" alt="productos"/>
@@ -414,7 +406,7 @@
                                   </div>
                                   <div class="module-pricing-table-content">
                                     <p class="module-pricing-table-features unavailable-features"></p>
-                                    <a class="module-pricing-table-button ui green" href="https://themify.me">Ver Contenido</a>
+                                    <a class="module-pricing-table-button ui green" href="<?php echo site_url().'product/completo';?>">Ver Contenido</a>
                                   </div>
                                 </div>
                               </div>
