@@ -413,20 +413,8 @@
                                 </div>
                               <div class="row separador-cripto-all-top">
                                   <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
-                                  <div class="col-sm-6 col-md-4"><span class="currency_text_all">Lenteja 500g</span></div>
-                                    <div class="col-sm-6 col-md-3"><span class="currency_text_all">Costeño</span></div>
-                                    <div class="col-sm-6 col-md-4"><span class="currency_text_all">1 UND</span></div>
-                                </div>
-                              <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                   <div class="col-sm-6 col-md-4"><span class="currency_text_all">Mayonesa 500g</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">AlaCena</span></div>
-                                    <div class="col-sm-6 col-md-4"><span class="currency_text_all">1 UND</span></div>
-                                </div>
-                              <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
-                                  <div class="col-sm-6 col-md-4"><span class="currency_text_all">Lenteja 500g</span></div>
-                                    <div class="col-sm-6 col-md-3"><span class="currency_text_all">Costeño</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">1 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">

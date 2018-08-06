@@ -96,7 +96,7 @@
                                     </div>
                                   </div>
                                     <h3 class="module-feature-title margin-left-6">MISIÓN</h3>
-                                    <p class="margin-left-6">Llevar este concepto de negocio a todo el Perú. Haciendo de casa asociado un consumidor de nuestros productos, un divulgador y constructor de red de consumo inteligente.</p>
+                                    <p class="margin-left-6">Llevar este concepto de negocio a todo el Perú. Haciendo de cada asociado un consumidor de nuestros productos, un divulgador y constructor de red de consumo inteligente.</p>
                                   </div>
                                 </div>
                               </div>
