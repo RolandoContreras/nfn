@@ -3945,6 +3945,9 @@ FEATURE MODULE
 .padding-bottom_100{
     padding-bottom: 100px;;
 }
+.padding-bottom_40{
+    padding-bottom: 40px;
+}
 
 .float-none{
     float: none !important;

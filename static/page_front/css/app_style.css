@@ -865,10 +865,21 @@ MEDIA QUERIES
 .margin-top-8{
     margin-top: 8% !important;
 }
+.margin-top-4{
+    margin-top: 4% !important;
+}
 .padding-bottom-9{
    padding-bottom: 9% !important;    
 }
 
 .module-pricing-table .module-pricing-table-pop::before {
+    color: #000 !important;
+}
+
+#title_product{
+    color: #000 !important;
+    font-size: 2em;
+}
+.title_product{
     color: #000 !important;
 }
