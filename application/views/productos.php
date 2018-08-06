@@ -60,103 +60,103 @@
                           <h2>BOX BÁSICO</h2>
                           <div class="container">
                                 <div class="row margin-top100">
-                                    <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                    <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">Arroz 5kg</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Costeño</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">2 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                   <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                   <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">Frijol canario 500g</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Costeño</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">2 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">Lenteja 500g</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Costeño</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">2 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">Pallar 500g</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Costeño</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">2 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">Fideos coditos 250g</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Don Vittorio</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">2 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                    <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                    <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">Cabello de ángel 250g</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Don Vittorio</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">2 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                    <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                    <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">Espagueti 500g</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Don Vittorio</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">4 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                    <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                    <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">Azúcar rubia 1kg</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Paramonga</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">4 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">Aceite 1L</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Primor</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">2 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">Harina de trigo 1kg</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Blanca Flor</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">1 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">Leche evaporada 400g</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Gloria</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">4 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">Quaker 160g</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">3 Ositos</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">3 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">Filete atún 170g</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Florida</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">3 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">Lavavajilla crema 600g</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Ayudin</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">1 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">Jabón baño 120g</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Protex</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">2 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">Crema dental 75ml</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Colgate</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">1 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">Papel higiénico (4 Rollos)</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Suave</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">1 UND</span></div>
@@ -195,181 +195,181 @@
                           <h2>BOX JUMBO</h2>
                           <div class="container">
                                 <div class="row margin-top100">
-                                    <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                    <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">Arroz 5kg</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Rompe Olla</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">2 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">Azúcar 5kg</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Dulce Miel</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">1 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">Espagueti 500g</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Bells</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">1 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">Fideos tornillos 250g</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Bells</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">1 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                   <div class="col-sm-6 col-md-4"><span class="currency_text_all">Fideos coditos 250g</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Bells</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">2 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                   <div class="col-sm-6 col-md-4"><span class="currency_text_all">Fideos cabello ángel 250g</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Bells</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">2 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                   <div class="col-sm-6 col-md-4"><span class="currency_text_all">Aceite vegetal 1L</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Bells</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">1 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                   <div class="col-sm-6 col-md-4"><span class="currency_text_all">Arveja partida 500g</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">M&K</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">2 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                   <div class="col-sm-6 col-md-4"><span class="currency_text_all">Lentejas 500g</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">M&K</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">2 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                   <div class="col-sm-6 col-md-4"><span class="currency_text_all">Frijol 500g</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">M&K</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">2 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                   <div class="col-sm-6 col-md-4"><span class="currency_text_all">Pallar 500g</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">M&K</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">2 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                   <div class="col-sm-6 col-md-4"><span class="currency_text_all">Leche tarro 400g</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Gloria</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">4 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                   <div class="col-sm-6 col-md-4"><span class="currency_text_all">Filete  atún 170g</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Florida</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">2 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                   <div class="col-sm-6 col-md-4"><span class="currency_text_all">Kétchup 85g</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">AlaCena</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">1 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                   <div class="col-sm-6 col-md-4"><span class="currency_text_all">Salsa de tomates</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Molitana</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">1 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                   <div class="col-sm-6 col-md-4"><span class="currency_text_all">Tari 85g</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">AlaCena</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">1 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                   <div class="col-sm-6 col-md-4"><span class="currency_text_all">Sillao 150g</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Ajinosillao</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">1 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                   <div class="col-sm-6 col-md-4"><span class="currency_text_all">Vinagre 250g</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Bells</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">1 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                   <div class="col-sm-6 col-md-4"><span class="currency_text_all">Mayonesa 85g</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">AlaCena</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">1 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                   <div class="col-sm-6 col-md-4"><span class="currency_text_all">Infusión Anís (25und)</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Herbi</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">1 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                   <div class="col-sm-6 col-md-4"><span class="currency_text_all">Infusión Manzanilla (25und)</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Herbi</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">1 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                   <div class="col-sm-6 col-md-4"><span class="currency_text_all">Gelatina 150g</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Universal</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">1 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                   <div class="col-sm-6 col-md-4"><span class="currency_text_all">Avena 150g</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">3 Ositos</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">3 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                   <div class="col-sm-6 col-md-4"><span class="currency_text_all">Chocolate taza 90g</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Imperio Cuzco</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">1 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                   <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                   <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                   <div class="col-sm-6 col-md-4"><span class="currency_text_all">Crema dental 75ml</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Colgate</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">1 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                   <div class="col-sm-6 col-md-4"><span class="currency_text_all">Jabón baño 120g</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Protex</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">2 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                   <div class="col-sm-6 col-md-4"><span class="currency_text_all">Jabón barra para ropa 220g</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Bolívar</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">1 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                   <div class="col-sm-6 col-md-4"><span class="currency_text_all">Lavavajilla crema 600g</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Ayudin</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">1 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                   <div class="col-sm-6 col-md-4"><span class="currency_text_all">Detergente 850g</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Ariel</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">1 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                   <div class="col-sm-6 col-md-4"><span class="currency_text_all">Papel higiénico  (4 Rollos)</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Suave</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">1 UND</span></div>
@@ -388,175 +388,175 @@
                           <h2>BOX COMPLETO</h2>
                           <div class="container">
                                 <div class="row margin-top100">
-                                    <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                    <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                   <div class="col-sm-6 col-md-4"><span class="currency_text_all">Arroz 5kg</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Costeño</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">1 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                   <div class="col-sm-6 col-md-4"><span class="currency_text_all">Frijol canario 500g</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Costeño</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">1 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                   <div class="col-sm-6 col-md-4"><span class="currency_text_all">Lenteja 500g</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Costeño</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">1 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                   <div class="col-sm-6 col-md-4"><span class="currency_text_all">Pallar 500g</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Costeño</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">1 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                   <div class="col-sm-6 col-md-4"><span class="currency_text_all">Lenteja 500g</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Costeño</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">1 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                   <div class="col-sm-6 col-md-4"><span class="currency_text_all">Mayonesa 500g</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">AlaCena</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">1 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                   <div class="col-sm-6 col-md-4"><span class="currency_text_all">Lenteja 500g</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Costeño</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">1 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                   <div class="col-sm-6 col-md-4"><span class="currency_text_all">Fideos coditos 250g</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Don Vittorio</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">1 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                   <div class="col-sm-6 col-md-4"><span class="currency_text_all">>Cabello de ángel 250g</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Don Vittorio</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="text-red">1 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                   <div class="col-sm-6 col-md-4"><span class="currency_text_all">Espagueti 500g</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Don Vittorio</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">4 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                   <div class="col-sm-6 col-md-4"><span class="currency_text_all">Azúcar rubia 1kg</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Paramonga</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">2 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                   <div class="col-sm-6 col-md-4"><span class="currency_text_all">Aceite 1L</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Primor</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">1 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                   <div class="col-sm-6 col-md-4"><span class="currency_text_all">Harina de trigo 1kg</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Blanca Flor</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">1 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                   <div class="col-sm-6 col-md-4"><span class="currency_text_all">Café chico 48g</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Nescafe</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">1 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                   <div class="col-sm-6 col-md-4"><span class="currency_text_all">Galletas de soda 204g (6 paq)</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Field</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="text-red">1 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                   <div class="col-sm-6 col-md-4"><span class="currency_text_all">Sillao 500ml</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Kiko</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">1 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                   <div class="col-sm-6 col-md-4"><span class="currency_text_all">Néctar 1L </span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Gloria</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">2 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                   <div class="col-sm-6 col-md-4"><span class="currency_text_all">Gelatina 150g</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Universal</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">1 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                   <div class="col-sm-6 col-md-4"><span class="currency_text_all">Infusión Anís (25und)</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Universal</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">1 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                   <div class="col-sm-6 col-md-4"><span class="currency_text_all">Infusión Manzanilla (25und)</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Herbi</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">1 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                   <div class="col-sm-6 col-md-4"><span class="currency_text_all">Infusión Canela y Clavo (25und)</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Herbi</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">1 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                   <div class="col-sm-6 col-md-4"><span class="currency_text_all">Salsa pomarola 160g</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Molitalia</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">2 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                   <div class="col-sm-6 col-md-4"><span class="currency_text_all">Leche evaporada 400g</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Gloria</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">3 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                   <div class="col-sm-6 col-md-4"><span class="currency_text_all">Quaker 160g</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">3 ositos</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">3 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                   <div class="col-sm-6 col-md-4"><span class="currency_text_all">Filete de atún 170g</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Florida</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">2 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                   <div class="col-sm-6 col-md-4"><span class="currency_text_all">Lavavajilla crema 600g</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Ayudin</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">1 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                   <div class="col-sm-6 col-md-4"><span class="currency_text_all">Jabón baño 120g</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Protex</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">3 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                   <div class="col-sm-6 col-md-4"><span class="currency_text_all">Crema dental 75ml</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Colgate</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">1 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                   <div class="col-sm-6 col-md-4"><span class="currency_text_all">Limpia todo 900ml</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Sapolio</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">1 UND</span></div>
@@ -568,13 +568,13 @@
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">2 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                   <div class="col-sm-6 col-md-4"><span class="currency_text_all">Detergente 850g (Bolsa)</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Ariel</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">1 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                   <div class="col-sm-6 col-md-4"><span class="currency_text_all">Detergente 850g (Bolsa)</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Ariel</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">1 UND</span></div>
@@ -613,115 +613,115 @@
                           <h2>BOX LIMPIEZA</h2>
                           <div class="container">
                                <div class="row margin-top100">
-                                   <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                   <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                    <div class="col-sm-6 col-md-4"><span class="currency_text_all">Papel higiénico (24 Rollos)</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Suave </span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">1 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                    <div class="col-sm-6 col-md-4"><span class="currency_text_all">Crema dental 75ml</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Colgate</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">3 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                    <div class="col-sm-6 col-md-4"><span class="currency_text_all">Jabón baño 120ml</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Protex</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">4 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                   <div class="col-sm-6 col-md-4"><span class="currency_text_all">Detergente 2kg (Bolsa)</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Ariel</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">1 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                   <div class="col-sm-6 col-md-4"><span class="currency_text_all">Papel toalla mega rollo</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Elite</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">1 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                   <div class="col-sm-6 col-md-4"><span class="currency_text_all">Lejía 1L</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Sapolio</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">1 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                   <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                   <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                    <div class="col-sm-6 col-md-4"><span class="currency_text_all">Limpia todo 900ml</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Sapolio</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">1 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                   <div class="col-sm-6 col-md-4"><span class="currency_text_all">Limpiador multiuso 500ml</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Mr. musculo</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">1 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                   <div class="col-sm-6 col-md-4"><span class="currency_text_all">Paño absorbente</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Yes</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">1 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                   <div class="col-sm-6 col-md-4"><span class="currency_text_all">Lavavajilla liquido 300ml</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Ayudin</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">1 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                   <div class="col-sm-6 col-md-4"><span class="currency_text_all">Jabón para ropa 220g</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Bolívar</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">1 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                   <div class="col-sm-6 col-md-4"><span class="currency_text_all">Servilletas (60 und)</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Elite</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">1 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                   <div class="col-sm-6 col-md-4"><span class="currency_text_all">Shampoo 375ml</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Head&shoulders</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">1 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                    <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                    <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">Enjuague bucal 500ml</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Listerine</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">1 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                   <div class="col-sm-6 col-md-4"><span class="currency_text_all">Glade aerosol 400ml</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Glade</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">1 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                   <div class="col-sm-6 col-md-4"><span class="currency_text_all">Detergente liquido 1L</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Sapolio</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">1 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                   <div class="col-sm-6 col-md-4"><span class="currency_text_all">Lavavajilla crema 600g</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Ayudin</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">1 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                   <div class="col-sm-6 col-md-4"><span class="currency_text_all">Esponja doble uso</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">3M</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">1 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                   <div class="col-sm-6 col-md-4"><span class="currency_text_all">Suavizante de ropa 900ml</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Suavitel</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">1 UND</span></div>

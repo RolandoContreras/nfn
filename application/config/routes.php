@@ -41,7 +41,7 @@
 $route['default_controller'] = "welcome";
 $route['404_override'] = 'errors/error_404';
 
-$route['home'] = 'home';
+$route['inicio'] = 'home';
 $route['nosotros'] = 'about';
 $route['productos'] = 'product';
 $route['noticias'] = 'new';

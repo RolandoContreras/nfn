@@ -129,6 +129,10 @@ HEADER
 #main-nav .current-menu-item > a {
 	color: #F7921A;
 }
+.active{
+    color: #F7921A !important;
+}
+
 #main-nav ul a {
 	letter-spacing: normal;
 }
