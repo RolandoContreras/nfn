@@ -23,8 +23,11 @@
 |
 */
 
-$config['base_url'] = 'http://localhost/nfn';
+//$config['base_url'] = 'http://localhost/nfn';
+$config['base_url'] = 'https://www.rednfn.com/';
+
 //$config['base_url'] = 'http://easycripto.com/';
+
 
 
 /*
