@@ -55,9 +55,9 @@
                 <!-- START CONTACT -->
                 <div class="themify_builder_row module_row clearfix repeat tb_section-contact module_row_6 themify_builder_6_row module_row_6-6">
                   <div class="row_inner col_align_top margin-top-8">
-                    <div class="module_column tb-column col-full first tb_6_column module_column_0 module_column_6-6-0">
+                    <div class="module_column tb-column col-full first tb_6_column module_column_0 module_column_6-6-0 padding-top34">
                       <div class="tb-column-inner">
-                        <div id="text-6-6-0-0" class="module module-text text-6-6-0-0  repeat  ">
+                        <div id="text-6-6-0-0" class="module module-text text-6-6-0-0 repeat">
                           <h2>NOTICIAS</h2>
                         </div>
                             <div class="row_inner col_align_middle">

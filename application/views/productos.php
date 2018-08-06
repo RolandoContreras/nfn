@@ -56,7 +56,7 @@
                   <div class="row_inner col_align_middle gutter-none">
                     <div class="module_column tb-column col4-2 first tb_6_column module_column_0 module_column_6-1-0 repeat">
                       <div class="tb-column-inner margin-top-12">
-                        <div id="text-6-1-0-0" class="module module-text text-6-1-0-0  repeat  ">
+                        <div id="text-6-1-0-0" class="module module-text text-6-1-0-0  repeat  padding-top34">
                           <h2>BOX BÁSICO</h2>
                           <div class="container">
                                 <div class="row margin-top100">
