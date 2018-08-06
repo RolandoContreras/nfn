@@ -118,7 +118,7 @@ s<!DOCTYPE html>
                                 </div>
                               <div class="row separador-cripto-all-top">
                                     <div class="col-sm-6 col-md-4"><i class="fa fa-check" style="color:greenyellow"></i> <span class="currency_text_all">Servilletas (60 und)</span></div>
-                                    <div class="col-sm-6 col-md-4"><span class="currency_text_all">Servilletas (60 und)	Elite</span></div>
+                                    <div class="col-sm-6 col-md-4"><span class="currency_text_all">Servilletas (60 und)	</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">1 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
