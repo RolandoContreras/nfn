@@ -57,7 +57,6 @@
     <link rel='stylesheet' id='themify-google-fonts-css'  href='https://fonts.googleapis.com/css?family=Raleway%3A300%2C400%2C500%2C600%2C700%2C800%2C900%7CPoppins%3A300%2C400&#038;subset=latin&#038;ver=4.9.7' media='all' />
     <script src='<?php echo site_url().'static/page_front/js/jquery.js?ver=1.12.4';?>'></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <!--<script src='<?php echo site_url().'static/page_front/js/jquery-migrate.min.js?ver=1.4.1';?>'></script>-->
     <link rel='shortlink' href='http://rednfn.com/' />
     <script src="https://use.fontawesome.com/3aa4a6fd0b.js"></script>
     <script>

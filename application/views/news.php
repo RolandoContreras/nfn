@@ -45,6 +45,7 @@
         </div>
       </header>
     </div>
+      
     <div id="body" class="clearfix">
       <div id="layout" class="pagewidth clearfix">
         <div id="content" class="clearfix">
@@ -57,63 +58,81 @@
                     <div class="module_column tb-column col-full first tb_6_column module_column_0 module_column_6-6-0">
                       <div class="tb-column-inner">
                         <div id="text-6-6-0-0" class="module module-text text-6-6-0-0  repeat  ">
-                          <h2>NOSOTROS</h2>
-                          <p>Empresa 100% peruana que desarrolla su visión de negocio a través del marketing de consumo en la línea de alimentos.<br/>
-                          La oficina central de nuestra empresa se encuentra ubicada en San Borja y el almacén de distribución y logística en el distrito de San Luis.</p>
+                          <h2>NOTICIAS</h2>
+                        </div>
+                            <div class="row_inner col_align_middle">
+                                <div class="module_column tb-column col3-1 first tb_6_column module_column_0 module_column_6-0-0">
+                                  <div class="tb-column-inner">
+                                    <div id="text-6-0-0-0" class="module module-text text-6-0-0-0  repeat  ">
+                                     <h2 id="title_product">GRAN LANZAMIENTO DE NFN</h2>
+                                      <p class="title_product">Desde el Hotel Kingdom - 13/07/2018</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="module_column tb-column col3-2 last tb_6_column module_column_1 module_column_6-0-1">
+                                  <div class="tb-column-inner">
+                                    <!-- module image -->
+                                    <div id="image-6-0-1-0" class="module module-image image-6-0-1-0  image-center   wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
+                                      <!--insert-->
+                                      <div class="image-wrap">
+                                          <img src="<?php echo site_url().'static/page_front/images/news/portada-noticias.jpg';?>" alt="Portada">
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                          
+                 <div class="tb-column-inner margin-top8">
+                        <div id="text-6-6-0-0" class="module module-text text-6-6-0-0  repeat">
+                          <h2>EVENTOS</h2>
                         </div>
                   <div class="themify_builder_row module_row clearfix repeat tb_section-features module_row_4 themify_builder_6_row module_row_6-4 padding-bottom_40 margin-top-4">
                   <div class="row_inner col_align_middle">
-                    <div class="module_column tb-column col-full first tb_6_column module_column_0 module_column_6-4-0 repeat">
+                    <div class="module_column tb-column col-full tb_6_column module_column_0 module_column_6-4-0 repeat last">
                       <div class="tb-column-inner">
                         <div class="themify_builder_sub_row module_subrow clearfix repeat sub_row_4-0-2">
                           <div class="subrow_inner col_align_middle">
-                             <div class="col3-1 sub_column module_column first sub_column_post_6 sub_column_4-0-2-0">
-                              <div class="tb-column-inner">
-                                <div id="feature-6-sub_row_4-0-2-0-1" class="module module-feature feature-6-sub_row_4-0-2-0-1 with-chart layout-icon-right size-small  ">
-                                  <div class="module-feature-content">
-                                    <div class="module-feature-image float-none padding-6">
-                                    <div class="module-feature-chart-html5" data-progress="0" data-progress-end="130" data-size="130">
-                                      <div class="chart-html5-circle">
-                                          <img src="<?php echo site_url().'static/page_front/images/about/world.jpg';?>" alt="Global"/>
-                                      </div>
-                                    </div>
-                                  </div>
-                                    <h3 class="module-feature-title">VISIÓN</h3>
-                                    <p>Impulsar un nuevo concepto de negocio (red de consumo inteligente) creando fuentes de trabajo y mejorando la economía a través del marketing multinivel.</p>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                             <div class="col3-1 sub_column module_column first sub_column_post_6 sub_column_4-0-2-0">
-                              <div class="tb-column-inner">
-                                <div id="feature-6-sub_row_4-0-2-0-1" class="module module-feature feature-6-sub_row_4-0-2-0-1 with-chart layout-icon-right size-small  ">
-                                  <div class="module-feature-content">
-                                    <div class="module-feature-image float-none padding-6">
-                                    <div class="module-feature-chart-html5" data-progress="0" data-progress-end="130" data-size="130">
-                                      <div class="chart-html5-circle">
-                                          <img src="<?php echo site_url().'static/page_front/images/about/mision.jpg';?>" alt="mision"/>
-                                      </div>
-                                    </div>
-                                  </div>
-                                    <h3 class="module-feature-title margin-left-6">MISIÓN</h3>
-                                    <p class="margin-left-6">Llevar este concepto de negocio a todo el Perú. Haciendo de casa asociado un consumidor de nuestros productos, un divulgador y constructor de red de consumo inteligente.</p>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col3-1 sub_column module_column first sub_column_post_6 sub_column_4-0-2-0">
+                            <div class="col3-1 sub_column module_column sub_column_post_6 sub_column_4-0-2-0 last">
                               <div class="tb-column-inner">
                                 <div id="feature-6-sub_row_4-0-2-0-1" class="module module-feature feature-6-sub_row_4-0-2-0-1 with-chart layout-icon-right ">
                                   <div class="module-feature-content">
-                                    <div class="module-feature-image float-none padding-6">
-                                    <div class="module-feature-chart-html5" data-progress="0" data-progress-end="130" data-size="130">
+                                    <div class="module-feature-image float-none">
+                                    <div class="module-feature-chart-html5" style="width: 350px; height: 500px;">
                                       <div class="chart-html5-circle">
-                                            <img src="<?php echo site_url().'static/page_front/images/about/objetivo.jpg';?>" alt="objetivo"/>
+                                            <img id="img" src="<?php echo site_url().'static/page_front/images/news/volantes/volante-1.jpg';?>" alt="foto1">
                                       </div>
                                     </div>
                                   </div>
-                                    <h3 class="module-feature-title">OBJETIVO</h3>
-                                    <p>Convertirnos en una de las mejores empresas del Perú creando oportunidad de trabajo con salario digno de acuerdo a la capacidad y habilidad de cada emprendedor.</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col3-1 sub_column module_column sub_column_post_6 sub_column_4-0-2-0 last">
+                              <div class="tb-column-inner">
+                                <div id="feature-6-sub_row_4-0-2-0-1" class="module module-feature feature-6-sub_row_4-0-2-0-1 with-chart layout-icon-right ">
+                                  <div class="module-feature-content">
+                                    <div class="module-feature-image float-none">
+                                    <div class="module-feature-chart-html5" style="width: 350px; height: 500px;">
+                                      <div class="chart-html5-circle">
+                                            <img id="img" src="<?php echo site_url().'static/page_front/images/news/volantes/volante-2.jpg';?>" alt="foto1">
+                                      </div>
+                                    </div>
+                                  </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col3-1 sub_column module_column sub_column_post_6 sub_column_4-0-2-0 last">
+                              <div class="tb-column-inner">
+                                <div id="feature-6-sub_row_4-0-2-0-1" class="module module-feature feature-6-sub_row_4-0-2-0-1 with-chart layout-icon-right ">
+                                  <div class="module-feature-content">
+                                    <div class="module-feature-image float-none">
+                                    <div class="module-feature-chart-html5" style="width: 350px; height: 500px;">
+                                      <div class="chart-html5-circle">
+                                            <img id="img" src="<?php echo site_url().'static/page_front/images/news/volantes/volante-3.jpg';?>" alt="foto1">
+                                      </div>
+                                    </div>
+                                  </div>
                                   </div>
                                 </div>
                               </div>
@@ -124,51 +143,7 @@
                     </div>
                   </div>
                 </div>
-                
-                <div class="themify_builder_row module_row clearfix repeat tb_section-contact module_row_6 themify_builder_6_row module_row_6-6 padding-top0">
-                  <div class="row_inner col_align_top">
-                      <div class="tb-column-inner">
-                        <div id="text-6-6-0-0" class="module module-text text-6-6-0-0  repeat  ">
-                          <div id="buttons-6-0-0-1" class="module module-buttons buttons-6-0-0-1">
-                          <div class="module-buttons normal solid circle">
-                            <div class="module-buttons-item  buttons-horizontal">
-                                <a href="<?php echo site_url().'static/page_front/document/presentacion_nfn.pdf';?>" download="Presentación NFN" class="ui builder_button black"><span>Descargar Presentación</span></a> </div>
-                          </div>
-                        </div>
-                        </div>
-                          </div>
                       </div>
-                </div>
-                          
-                          
-                          
-                <div class="row_inner col_align_middle">
-                    <div class="module_column tb-column col3-1 first tb_6_column module_column_0 module_column_6-0-0">
-                      <div class="tb-column-inner">
-                        <div id="text-6-0-0-0" class="module module-text text-6-0-0-0  repeat  ">
-                         <h2 id="title_product">Box Básico, Completo Jumbo y Limpieza</h2>
-                          <p class="title_product">Productos variados para tu comodidad, cuidado personal, abarrotes, limpieza y bebidas.</p>
-                        </div>
-                        <div id="buttons-6-0-0-1" class="module module-buttons buttons-6-0-0-1  ">
-                          <div class="module-buttons normal solid circle">
-                            <div class="module-buttons-item  buttons-horizontal">
-                                <a href="<?php echo site_url().'productos';?>" class="ui builder_button black"><span>Ver Productos</span></a></div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="module_column tb-column col3-2 last tb_6_column module_column_1 module_column_6-0-1">
-                      <div class="tb-column-inner">
-                        <!-- module image -->
-                        <div id="image-6-0-1-0" class="module module-image image-6-0-1-0  image-center   wow fadeInUp" style="visibility: visible; animation-name: fadeInUp;">
-                          <!--insert-->
-                          <div class="image-wrap">
-                              <img src="<?php echo site_url().'static/page_front/images/caja-prodcutos2.png';?>" alt="Productos">
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                </div>
                       </div>
                     </div>
                   </div>
@@ -183,8 +158,6 @@
       <?php $this->load->view("footer");?>
     </div>
   </div>
-  <script src='<?php echo site_url().'static/page_front/js/home.js';?>'></script>
-  <!-- wp_footer -->
   <script type='text/javascript'>
     /* <![CDATA[ */
     var themify_vars = {"version":"4.0.0","url":"https:\/\/themify.me\/demo\/themes\/ultra-app\/wp-content\/themes\/themify-ultra\/themify","map_key":null,"includesURL":"https:\/\/themify.me\/demo\/themes\/ultra-app\/wp-includes\/","isCached":null,"minify":{"css":{"themify-icons":false,"themify.framework":false,"lightbox":false,"themify-builder-style":false},"js":{"backstretch.themify-version":false,"bigvideo":false,"themify.dropdown":false,"themify-tiles":false,"themify.mega-menu":false,"themify.builder.script":false,"themify.scroll-highlight":false,"themify-youtube-bg":false,"themify.parallaxit":false,"themify.ticks":false}}};
@@ -200,6 +173,7 @@
   <script src='<?php echo site_url().'static/page_front/js/themify.script.js?ver=2.0.2';?>'></script>
   <script src='<?php echo site_url().'static/page_front/js/comment-reply.min.js?ver=4.9.7';?>'></script>
   <script src='<?php echo site_url().'static/page_front/js/wp-embed.min.js?ver=4.9.7';?>'></script>
-  
+  <script src='<?php echo site_url().'static/page_front/js/owl.carousel.js';?>'></script>
+  <script src='<?php echo site_url().'static/page_front/js/bootstrap-collapse.js';?>'></script>
 </body>
 </html>

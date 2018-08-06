@@ -883,3 +883,12 @@ MEDIA QUERIES
 .title_product{
     color: #000 !important;
 }
+#owl-demo .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+#img {
+    border-radius: 0% !important;
+    max-width: 100%;
+}
