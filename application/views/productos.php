@@ -280,7 +280,7 @@
                                 </div>
                               <div class="row separador-cripto-all-top">
                                   <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
-                                  <div class="col-sm-6 col-md-4"><span class="currency_text_all">Salsa de tomates</span></div>
+                                  <div class="col-sm-6 col-md-4"><span class="currency_text_all">Salsa de tomates 160g</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Molitana</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">1 UND</span></div>
                                 </div>
@@ -437,7 +437,7 @@
                                 </div>
                               <div class="row separador-cripto-all-top">
                                   <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
-                                  <div class="col-sm-6 col-md-4"><span class="currency_text_all">>Cabello de ángel 250g</span></div>
+                                  <div class="col-sm-6 col-md-4"><span class="currency_text_all">Cabello de ángel 250g</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Don Vittorio</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="text-red">1 UND</span></div>
                                 </div>
@@ -562,16 +562,10 @@
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">1 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:greenyellow"></i></div>
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                   <div class="col-sm-6 col-md-4"><span class="currency_text_all">Papel higiénico (4 Rollos)</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Suave</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">2 UND</span></div>
-                                </div>
-                              <div class="row separador-cripto-all-top">
-                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
-                                  <div class="col-sm-6 col-md-4"><span class="currency_text_all">Detergente 850g (Bolsa)</span></div>
-                                    <div class="col-sm-6 col-md-3"><span class="currency_text_all">Ariel</span></div>
-                                    <div class="col-sm-6 col-md-4"><span class="currency_text_all">1 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
                                   <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
@@ -706,6 +700,12 @@
                                   <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
                                   <div class="col-sm-6 col-md-4"><span class="currency_text_all">Detergente liquido 1L</span></div>
                                     <div class="col-sm-6 col-md-3"><span class="currency_text_all">Sapolio</span></div>
+                                    <div class="col-sm-6 col-md-4"><span class="currency_text_all">1 UND</span></div>
+                                </div>
+                              <div class="row separador-cripto-all-top">
+                                  <div class="col-sm-6 col-md-1"><i class="fa fa-check" style="color:black"></i></div>
+                                  <div class="col-sm-6 col-md-4"><span class="currency_text_all">Jabón líquido de manos 221ml</span></div>
+                                    <div class="col-sm-6 col-md-3"><span class="currency_text_all">Protex</span></div>
                                     <div class="col-sm-6 col-md-4"><span class="currency_text_all">1 UND</span></div>
                                 </div>
                               <div class="row separador-cripto-all-top">
