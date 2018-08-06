@@ -58,7 +58,7 @@
                       <div class="tb-column-inner">
                         <div id="text-6-6-0-0" class="module module-text text-6-6-0-0  repeat  ">
                           <h2>NOSOTROS</h2>
-                          <p>Empresa 100% peruana que desarrolla su visión de negocio a través del marketing de consumo en la línea de alimentos.<br/>
+                          <p>New Future Network S.A.C (Red de consumo inteligente) empresa 100% peruana que desarrolla su visión de negocio a través del marketing de consumo en la línea de alimentos. 
                           La oficina central de nuestra empresa se encuentra ubicada en San Borja y el almacén de distribución y logística en el distrito de San Luis.</p>
                         </div>
                   <div class="themify_builder_row module_row clearfix repeat tb_section-features module_row_4 themify_builder_6_row module_row_6-4 padding-bottom_40 margin-top-4">

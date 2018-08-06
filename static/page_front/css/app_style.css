@@ -458,6 +458,12 @@ BUILDER BUTTONS
 		clear: left;
 		width: 100%;
 	}
+        .themify_builder_6_row.module_row_0.module_row {
+            padding-top: 36% !important;
+}
+        
+        
+        
 }
 
 /* BUTTONS MODULE
@@ -820,6 +826,9 @@ MEDIA QUERIES
 	.module-pricing-table.pricing-enlarge .module-pricing-table-content:before {
 		height: 72px;
 	}
+            .themify_builder_6_row.module_row_0.module_row {
+            padding-top: 36% !important;
+}
 }
 .textwidget{
     font-size: .85em;
@@ -875,6 +884,14 @@ MEDIA QUERIES
 .module-pricing-table .module-pricing-table-pop::before {
     color: #000 !important;
 }
+
+.themify_builder_6_row.module_row_6.module_row {
+    padding-top: 32% !important;
+}
+.module_row_1 .module_column_0.tb_6_column.module_column {
+    padding-top: 37% !important;
+}
+
 
 #title_product{
     color: #000 !important;
