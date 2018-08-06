@@ -81,6 +81,62 @@
                                   </div>
                                 </div>
                             </div>
+                     </div>
+                 <div class="tb-column-inner margin-top8">
+                        <div id="text-6-6-0-0" class="module module-text text-6-6-0-0  repeat">
+                          <h2>FOTOS</h2>
+                        </div>
+                  <div class="themify_builder_row module_row clearfix repeat tb_section-features module_row_4 themify_builder_6_row module_row_6-4 padding-bottom_40 margin-top-4">
+                  <div class="row_inner col_align_middle">
+                    <div class="module_column tb-column col-full tb_6_column module_column_0 module_column_6-4-0 repeat last">
+                      <div class="tb-column-inner">
+                        <div class="themify_builder_sub_row module_subrow clearfix repeat sub_row_4-0-2">
+                          <div class="subrow_inner col_align_middle">
+                              
+                              <div class="sp-slideshow">
+				<input id="button-1" type="radio" name="radio-set" class="sp-selector-1" checked="checked" />
+				<label for="button-1" class="button-label-1"></label>
+				
+				<input id="button-2" type="radio" name="radio-set" class="sp-selector-2" />
+				<label for="button-2" class="button-label-2"></label>
+				
+				<input id="button-3" type="radio" name="radio-set" class="sp-selector-3" />
+				<label for="button-3" class="button-label-3"></label>
+				
+				<input id="button-4" type="radio" name="radio-set" class="sp-selector-4" />
+				<label for="button-4" class="button-label-4"></label>
+				
+				<input id="button-5" type="radio" name="radio-set" class="sp-selector-5" />
+				<label for="button-5" class="button-label-5"></label>
+				
+				<label for="button-1" class="sp-arrow sp-a1"></label>
+				<label for="button-2" class="sp-arrow sp-a2"></label>
+				<label for="button-3" class="sp-arrow sp-a3"></label>
+				<label for="button-4" class="sp-arrow sp-a4"></label>
+				<label for="button-5" class="sp-arrow sp-a5"></label>
+                                <label for="button-6" class="sp-arrow sp-a6"></label>
+                                <label for="button-7" class="sp-arrow sp-a7"></label>
+                                <label for="button-8" class="sp-arrow sp-a8"></label>
+                                
+				<div class="sp-content">
+                                    <div class="sp-parallax-bg"></div>
+                                    <ul class="sp-slider clearfix">
+                                        <li><img src="<?php echo site_url() . 'static/page_front/images/news/fotos/slide-8.jpg'; ?>" alt="image01" /></li>
+                                        <li><img src="<?php echo site_url() . 'static/page_front/images/news/fotos/slide-3.jpg'; ?>" alt="image02" /></li>
+                                        <li><img src="<?php echo site_url() . 'static/page_front/images/news/fotos/slide-4.jpg'; ?>" alt="image03" /></li>
+                                        <li><img src="<?php echo site_url() . 'static/page_front/images/news/fotos/slide-5.jpg'; ?>" alt="image04" /></li>
+                                        <li><img src="<?php echo site_url() . 'static/page_front/images/news/fotos/slide-7.jpg'; ?>" alt="image05" /></li>
+                                    </ul>
+				</div><!-- sp-content -->
+			</div><!-- sp-slideshow -->
+                           </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                      </div>       
+                        
                           
                  <div class="tb-column-inner margin-top8">
                         <div id="text-6-6-0-0" class="module module-text text-6-6-0-0  repeat">
@@ -158,6 +214,14 @@
       <?php $this->load->view("footer");?>
     </div>
   </div>
+  <script>
+  function principal() { // onload body
+    new CarruselB({
+      id: "carrusel_b",
+      waiting: 7000, // milliseconds (false per desactivar)
+    });
+  }
+</script>
   <script type='text/javascript'>
     /* <![CDATA[ */
     var themify_vars = {"version":"4.0.0","url":"https:\/\/themify.me\/demo\/themes\/ultra-app\/wp-content\/themes\/themify-ultra\/themify","map_key":null,"includesURL":"https:\/\/themify.me\/demo\/themes\/ultra-app\/wp-includes\/","isCached":null,"minify":{"css":{"themify-icons":false,"themify.framework":false,"lightbox":false,"themify-builder-style":false},"js":{"backstretch.themify-version":false,"bigvideo":false,"themify.dropdown":false,"themify-tiles":false,"themify.mega-menu":false,"themify.builder.script":false,"themify.scroll-highlight":false,"themify-youtube-bg":false,"themify.parallaxit":false,"themify.ticks":false}}};
@@ -166,6 +230,9 @@
     var tbScrollHighlight = {"fixedHeaderSelector":"#headerwrap.fixed-header","speed":"900","navigation":"#main-nav, .module-menu .menu-bar","scrollOffset":"-5","scroll":"internal"};
     /* ]]> */
   </script>
+  <link href="<?php echo site_url().'static/page_front/css/demo.css';?>" rel="stylesheet"/>
+  <link href="<?php echo site_url().'static/page_front/css/slide.css';?>" rel="stylesheet"/>
+  <script src="<?php echo site_url().'static/page_front/js/modernizr.js';?>"></script>
   <script src='<?php echo site_url().'static/page_front/js/bootstrap.min.js';?>'></script>
   <script src='<?php echo site_url().'static/page_front/js/main.js?ver=4.0.0';?>'></script>
   <script src='<?php echo site_url().'static/page_front/js/imagesloaded.min.js?ver=3.2.0';?>'></script>
