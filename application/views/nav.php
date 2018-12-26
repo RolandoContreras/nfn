@@ -36,6 +36,9 @@
         <li id='menu-item-136' class="<?php echo $active_productos;?> menu-item menu-item-type-custom menu-item-object-custom"><a href="<?php echo site_url().'productos';?>">Productos</a> </li>
         <li id='menu-item-139' class="<?php echo $active_contacto;?> menu-item menu-item-type-custom menu-item-object-custom"><a href="<?php echo site_url().'contacto';?>">Contacto</a></li>
         <li id='menu-item-139' class="<?php echo $active_noticias;?> menu-item menu-item-type-custom menu-item-object-custom"><a href="<?php echo site_url().'noticias';?>">Noticias</a></li>
-        <li id='menu-item-140' class="highlight-link menu-item menu-item-type-custom menu-item-object-custom"><a href="http://newfuturenetwork.com/software/backend" target="_blank">LOGIN</a> </li>
+        <li id='menu-item-140' class="highlight-link menu-item menu-item-type-custom menu-item-object-custom">
+            <!--<a href="http://newfuturenetwork.com/software/backend" target="_blank">LOGIN</a>--> 
+            <a href="<?php echo site_url().'login';?>" >LOGIN</a> 
+        </li>
     </ul>
 </nav>

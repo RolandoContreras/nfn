@@ -38,7 +38,7 @@
 |
 */
 
-$route['default_controller'] = "welcome";
+$route['default_controller'] = "home";
 $route['404_override'] = 'errors/error_404';
 
 $route['inicio'] = 'home';
@@ -46,6 +46,8 @@ $route['nosotros'] = 'about';
 $route['productos'] = 'product';
 $route['noticias'] = 'news';
 $route['contacto'] = 'contact';
+$route['login'] = 'login';
+$route['forgot'] = 'forgot';
 $route['home/send_messages'] = 'home/send_messages';
 $route['product/basico'] = 'home/product';
 /* End of file routes.php */
