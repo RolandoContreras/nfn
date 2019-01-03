@@ -30,22 +30,32 @@
     <!-- /.login-logo -->
     <div class="login-box-body">
         <p class="login-box-msg">Sign in to start your session</p>
-                <form action="" method="post">
-            <div class="form-group has-feedback">
-                <input type="text" name="user_login_id" value=""  placeholder="User ID" class="form-control" id="user_login_id" />
-                <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
-            </div>
-            <div class="form-group has-feedback">
-                <input type="password" name="user_pass" value=""  placeholder="Password" class="form-control" id="user_pass" />
-                <span class="glyphicon glyphicon-lock form-control-feedback"></span>
-            </div>
-            <div class="form-group has-feedback"></div>
-            <div class="row">
-                <div class="col-xs-12">
-                    <button type="submit" class="btn btn-primary btn-block btn-flat">Inicio de Sesión</button>
+            <form action="" method="post">
+                <div class="form-group has-feedback">
+                    <input type="text" name="user_login_id" value=""  placeholder="User ID" class="form-control" id="user_login_id" />
+                    <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
                 </div>
-            </div>
-        </form>
+                <div class="form-group has-feedback">
+                    <input type="password" name="user_pass" value=""  placeholder="Password" class="form-control" id="user_pass" />
+                    <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+                </div>
+                <div class="form-group has-feedback" style="display: none;">
+                    <div class="alert alert-danger validation-errors">
+                        <p class="user_login_id">El usuario y/o contraseña incorrectas.</p>
+                    </div>
+                </div>
+                <div class="form-group has-feedback" style="display: none;">
+                    <div class="alert alert-success validation-errors">
+                        <p class="user_login_id">Bienvenido.</p>
+                    </div>
+                </div>
+                <div class="form-group has-feedback"></div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <button type="submit" class="btn btn-primary btn-block btn-flat">Inicio de Sesión</button>
+                    </div>
+                </div>
+            </form>
 		<div class="text-center">
         	<p>&nbsp;</p>
                 <p><a href="<?php echo site_url().'forgot';?>">¿Olvidaste tu contraseña?</a></p>

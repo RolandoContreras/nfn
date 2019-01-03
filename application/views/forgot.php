@@ -9,11 +9,11 @@
 <title>Forgot Password | New Future Network</title>
 <link rel="icon" href="images/favicons/favicon.ico">
 <link rel="apple-touch-icon" href="images/favicons/apple-touch-icon.png">
-<link rel="stylesheet" href="http://newfuturenetwork.com/software/assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="<?php echo site_url().'static/login/css/bootstrap.min.css';?>">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-<link rel="stylesheet" href="http://newfuturenetwork.com/software/assets/css/AdminLTE.min.css">
-<link rel="stylesheet" href="http://newfuturenetwork.com/software/assets/css/skins/_all-skins.min.css">
+<link rel="stylesheet" href="<?php echo site_url().'static/login/css/AdminLTE.min.css';?>">
+<link rel="stylesheet" href="<?php echo site_url().'static/login/css/all-skins.min.css';?>">
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -23,7 +23,9 @@
 <body class="hold-transition login-page">
 <div class="login-box"  style="margin:1% auto;">
     <div class="login-logo">
-        <b><img src="http://newfuturenetwork.com/software/assets/design/images/logo.png"></b>
+        <b>
+            <img src="<?php echo site_url().'static/page_front/images/logo/logo.png';?>">
+        </b>
     </div>
     <!-- /.login-logo -->
     <div class="login-box-body">
@@ -46,9 +48,9 @@
 <!-- /.login-box -->
 
 </body>
-<script src="http://newfuturenetwork.com/software/assets/plugins/jQuery/jquery-2.2.3.min.js"></script>
-<script src="http://newfuturenetwork.com/software/assets/js/bootstrap.min.js"></script>
-<script src="http://newfuturenetwork.com/software/assets/plugins/fastclick/fastclick.js"></script>
-<script src="http://newfuturenetwork.com/software/assets/js/app.min.js"></script>
-<script src="http://newfuturenetwork.com/software/assets/js/demo.js"></script>
+<script src="<?php echo site_url().'static/login/js/jquery-2.2.3.min.js';?>"></script>
+<script src="<?php echo site_url().'static/login/js/bootstrap.min.js';?>"></script>
+<script src="<?php echo site_url().'static/login/js/fastclick.js';?>"></script>
+<script src="<?php echo site_url().'static/login/js/app.min.js';?>"></script>
+<script src="<?php echo site_url().'static/login/js/demo.js';?>"></script>
 </html>
