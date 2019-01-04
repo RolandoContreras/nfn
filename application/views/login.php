@@ -14,6 +14,9 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
 <link rel="stylesheet" href="<?php echo site_url().'static/login/css/AdminLTE.min.css';?>">
 <link rel="stylesheet" href="<?php echo site_url().'static/login/css/all-skins.min.css';?>">
+<script>
+    var site = '<?php echo site_url();?>';
+</script>
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -30,29 +33,37 @@
     <!-- /.login-logo -->
     <div class="login-box-body">
         <p class="login-box-msg">Sign in to start your session</p>
-            <form action="" method="post">
+        <form method="post" action="javascript:void(0);" onsubmit="login();" enctype="multipart/form-data">
                 <div class="form-group has-feedback">
-                    <input type="text" name="user_login_id" value=""  placeholder="User ID" class="form-control" id="user_login_id" />
+                    <input type="text" name="code"  placeholder="Código Usuario" class="form-control" id="code"/>
                     <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
                 </div>
                 <div class="form-group has-feedback">
-                    <input type="password" name="user_pass" value=""  placeholder="Password" class="form-control" id="user_pass" />
+                    <input type="password" name="pass" placeholder="Contraseña" class="form-control" id="pass"/>
                     <span class="glyphicon glyphicon-lock form-control-feedback"></span>
                 </div>
-                <div class="form-group has-feedback" style="display: none;">
+                <div class="form-group has-feedback">
+                    <div class="g-recaptcha" data-sitekey="6Lc684YUAAAAAKbiFYJvMx83vmSSJHH8N03PXnKx"></div>
+                </div>
+                <div class="form-group has-feedback" style="display: none;" id="no_messages">
                     <div class="alert alert-danger validation-errors">
-                        <p class="user_login_id">El usuario y/o contraseña incorrectas.</p>
+                        <p class="user_login_id" style="text-align: center;">El usuario y/o contraseña incorrectas.</p>
                     </div>
                 </div>
-                <div class="form-group has-feedback" style="display: none;">
+                <div class="form-group has-feedback" style="display: none;" id="captcha_messages">
+                    <div class="alert alert-danger validation-errors">
+                        <p class="user_login_id" style="text-align: center;">Captcha no verificado</p>
+                    </div>
+                </div>
+                <div class="form-group has-feedback" style="display: none;" id="messages">
                     <div class="alert alert-success validation-errors">
-                        <p class="user_login_id">Bienvenido.</p>
+                        <p class="user_login_id" style="text-align: center;">Bienvenido.</p>
                     </div>
                 </div>
                 <div class="form-group has-feedback"></div>
                 <div class="row">
                     <div class="col-xs-12">
-                        <button type="submit" class="btn btn-primary btn-block btn-flat">Inicio de Sesión</button>
+                        <button id="submit" onclick="login();" class="btn btn-primary btn-block btn-flat">Inicio de Sesión</button>
                     </div>
                 </div>
             </form>
@@ -63,7 +74,9 @@
     </div>
 </div>
 </body>
-<script src="<?php echo site_url().'static/login/js/jquery-2.2.3.min.js';?>"></script>
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<script src='<?php echo site_url().'static/login/js/jquery-2.2.3.min.js';?>'></script>
+<script src="<?php echo site_url().'static/page_front/js/login.js';?>"></script>
 <script src="<?php echo site_url().'static/login/js/bootstrap.min.js';?>"></script>
 <script src="<?php echo site_url().'static/login/js/fastclick.js';?>"></script>
 <script src="<?php echo site_url().'static/login/js/app.min.js';?>"></script>

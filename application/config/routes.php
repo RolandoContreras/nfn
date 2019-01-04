@@ -50,5 +50,7 @@ $route['login'] = 'login';
 $route['forgot'] = 'forgot';
 $route['home/send_messages'] = 'home/send_messages';
 $route['product/basico'] = 'home/product';
+
+$route['backoffice'] = "b_home";
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */

@@ -36,9 +36,6 @@ class customer_model_atributos{
     var $city='';
     var $phone='';
     var $active=''; 
-    var $binaries='';
-    var $point_calification_left='';
-    var $point_calification_rigth='';
     var $range_id='';
     var $status_value='';
     var $created_at='';

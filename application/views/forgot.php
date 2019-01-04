@@ -14,6 +14,9 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
 <link rel="stylesheet" href="<?php echo site_url().'static/login/css/AdminLTE.min.css';?>">
 <link rel="stylesheet" href="<?php echo site_url().'static/login/css/all-skins.min.css';?>">
+<script>
+    var site = '<?php echo site_url();?>';
+</script>
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
