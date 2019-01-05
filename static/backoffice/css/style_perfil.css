@@ -1,0 +1,119 @@
+
+.DivValign {*position: absolute;top: 50%;display: table-cell;vertical-align:middle}
+
+
+/*====== DIV DO TOPO MOBILE ======*/
+#CorpoMobilePerfil {float:left; width:100%; height:auto; text-align:center; margin-bottom:20px; display:none}
+#CorpoMobilePerfil .Centralizar {display:inline-block; width:100%; height:100%}
+
+.VoltarAoEscritorio2 {float:left; margin-left:10px; color:#3c3c3c; font-size:14px; width:228px; cursor:pointer; padding:10px; padding-top:15px; padding-bottom:15px; border:1px solid #b2b2b2; background:#fff; text-align:center; border-radius:8px; margin-top:15px; margin-bottom:15px}
+.VoltarAoEscritorio2:hover {background:#f2f2f2; transition: 0.3s;}
+/*====== DIV DO TOPO MOBILE ======*/
+
+
+/*====== DIV DO PERFIL COMPLETO ======*/
+#CorpoPerfil {box-sizing:border-box;float:left; width:100%; height:100%; padding:20px 30px 20px 30px;  text-align:center; display:table;
+/*gradiente do fundo*/
+background: rgba(255,255,255,1);
+background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 47%, rgba(237,237,237,1) 100%);
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(255,255,255,1)), color-stop(47%, rgba(255,255,255,1)), color-stop(100%, rgba(237,237,237,1)));
+background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 47%, rgba(237,237,237,1) 100%);
+background: -o-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 47%, rgba(237,237,237,1) 100%);
+background: -ms-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 47%, rgba(237,237,237,1) 100%);
+background: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 47%, rgba(237,237,237,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=1 );
+/*gradiente do fundo*/
+}
+#CorpoPerfil .TituloPerfil {float:left; width:100%; color:#404040; font-size:35px; text-align:center; font-family:Oswald,Open Sans, Arial; font-weight:700; display:none}
+#CorpoPerfil .SubTituloPerfil {float:left; width:100%; color:#404040; font-size:18px; text-align:center; font-weight:400; display:none}
+
+/* Roda de categorias */
+#CorpoPerfil .DivPrincipalCategorias {float:left; width:100%; height:100%; text-align:center; display:table}
+#CorpoPerfil .DivPrincipalCategoriasSelecionada {float:left; width:45%; height:100%; filter:alpha(opacity=90);opacity:0.90; text-align:center; display:table}
+#CorpoPerfil .DivPrincipalSVG {width:90%; height:90%; max-height:800px}
+#CorpoPerfil .Cursor {cursor:pointer}
+#CorpoPerfil .ImagemBlur {display:none}
+#CorpoPerfil .BordaBranca {display:none}
+/* Roda de categorias */
+
+/* Bloco das perguntas */
+#CorpoPerfil .DivPrincipalPerguntas {float:left; width:calc(55% - 15px); margin-left:15px; height:100%; text-align:center; display:none}
+#CorpoPerfil .DivPergunta {float:left; width:100%; padding-top:5px; padding-bottom:5px; padding-left:12px; font-size:24px; font-weight:600; text-align:left}
+#CorpoPerfil .NomeCategoria {float:left; width:100%; font-size:24px; font-weight:600; text-align:left}
+#CorpoPerfil .Pergunta {float:left; width:100%; font-size:24px; font-weight:600; color:#404040; text-align:left; margin-top:0px}
+#CorpoPerfil .Pergunta2 {float:left; width:100%; font-size:17px; padding-left:3px; font-weight:600; color:#404040; text-align:left; margin-top:0px}
+#CorpoPerfil .Respostas {float:left; width:100%; padding-left:6px; text-align:left; margin-top:20px; margin-bottom:20px}
+#CorpoPerfil .InputsChecklist {float:left; width:33.3%}
+#CorpoPerfil .InputsCheckUnico {float:left; width:calc(100% - 30px)}
+#CorpoPerfil .InputsTextarea {float:left; width:calc(95% - 20px); padding:10px}
+#CorpoPerfil .InputsTextarea textarea {float:left; width:calc(100% - 20px); padding:10px; text-align:left; height:100px; color:#404040; font-weight:400; font-size:16px; background:#ffffff; border:1px solid #e6e6e6;resize:none}
+
+#CorpoPerfil .NaoEncontrado {float:left; width:100%; padding-left:6px; text-align:left; margin-top:20px; margin-bottom:20px; font-size:20px; color:#404040}
+#CorpoPerfil .BotaoProximo {background:url('../imagens_perfil/ico-proximo.png') no-repeat center right 20px; color:#FFFFFF; font-size:19px; font-family:arial,verdana; border:0px; height:40px; padding-left:25px; padding-right:56px; cursor:pointer; border-radius: 4px 4px 4px 4px;-moz-border-radius: 4px 4px 4px 4px;-webkit-border-radius: 4px 4px 4px 4px; outline-style:none}
+#CorpoPerfil .BotaoProximo:hover {filter:alpha(opacity=90);opacity:.9}
+
+#CorpoPerfil .DivMeuPerfil {float:right; margin-right:30px}
+#CorpoPerfil .MeuPerfil {background-color:#404040; color:#FFFFFF; font-size:19px; font-family:arial,verdana; border:0px; height:40px; padding-left:25px; padding-right:25px; cursor:pointer; border-radius: 4px 4px 4px 4px;-moz-border-radius: 4px 4px 4px 4px;-webkit-border-radius: 4px 4px 4px 4px; outline-style:none}
+#CorpoPerfil .MeuPerfil:hover {filter:alpha(opacity=90);opacity:.9}
+
+#CorpoPerfil .DivProximaPergunta {float:left; width:95%; text-align:right; margin-top:10px}
+#CorpoPerfil .ProximaPergunta {float:right;}
+#CorpoPerfil .ProximaPergunta input {background:url('../imagens_perfil/ico-proximo.png') no-repeat center right 20px;background-color:#5ec768; color:#FFFFFF; font-size:19px; font-family:arial,verdana; border:0px; height:40px; padding-left:25px; padding-right:56px; cursor:pointer; border-radius: 4px 4px 4px 4px;-moz-border-radius: 4px 4px 4px 4px;-webkit-border-radius: 4px 4px 4px 4px; outline-style:none}
+#CorpoPerfil .ProximaPergunta input:hover {filter:alpha(opacity=90);opacity:.9}
+
+#CorpoPerfil .DivPrivacidade {float:left; text-align:left; width:100%; padding-top:6px}
+/* Bloco das perguntas */
+
+/* Bloco das respostas que o cliente deu */
+#CorpoPerfil .BlocoPerguntas {float:left; width:calc(100% - 10px); padding:5px; padding-top:16px; text-align:left; margin-bottom:10px}
+#CorpoPerfil .DivBotaoVoltar {float:left; width:100%; text-align:right; margin-bottom:15px; margin-top:10px}
+#CorpoPerfil .BotaoVoltar {padding-left:35px;padding-right:16px;height:36px;border:0px;background:url('../imagens_perfil/ico_voltar.png') no-repeat;background-position:10px 8px;background-color:#404040;text-align:right;font-size:15px;color:#ffffff;border-radius: 4px 4px 4px 4px;-moz-border-radius: 4px 4px 4px 4px;-webkit-border-radius: 4px 4px 4px 4px;cursor:pointer}
+#CorpoPerfil .BotaoVoltar:hover {filter:alpha(opacity=90);opacity:.9}
+#DivGeralPerfil {float:left; width:calc(100% - 30%); padding:15%; padding-top:20px; padding-bottom:20px; height:100%}
+/* Bloco das respostas que o cliente deu */
+
+/*====== DIV DO PERFIL COMPLETO ======*/
+
+
+/*============================================ RESPONSIVO =============================================*/
+
+@media screen and (max-width: 1525px){
+#CorpoPerfil .DivPrivacidade {width:100%; float:left; text-align:left; margin-bottom:12px}
+#CorpoPerfil .ProximaPergunta {width:100%; float:left; text-align:left; margin-bottom:12px}
+#CorpoPerfil .DivMeuPerfil {width:100%; float:left; text-align:left}
+}
+
+@media screen and (max-width: 1250px){
+#CorpoPerfil .DivPrincipalCategoriasSelecionada {width:100%; height:400px; margin-bottom:20px}
+#CorpoPerfil .DivPrincipalPerguntas {width:100%; height:auto; margin:0px}
+#DivGeralPerfil {float:left; width:calc(100% - 20%); padding:10%; padding-top:20px; padding-bottom:20px;}
+}
+
+@media screen and (max-width: 955px){
+#CorpoPerfil {height:60%}
+#CorpoOutraPagina {width:100%}
+#CorpoPerfil .DivPrincipalCategorias {height:calc(100% - 105px)}
+#CorpoPerfil .TituloPerfil {display:inline}
+#CorpoPerfil .SubTituloPerfil {display:inline}
+}
+
+@media screen and (max-width: 730px){
+#DivGeralPerfil {float:left; width:calc(100% - 10%); padding:5%; padding-top:20px; padding-bottom:20px;}
+}
+
+@media screen and (max-width: 730px){
+#CorpoPerfil .DivPrivacidade {width:100%; float:left; text-align:left; margin-bottom:12px}
+#CorpoPerfil .ProximaPergunta {width:100%; float:left; text-align:left; margin-bottom:12px}
+#CorpoPerfil .DivMeuPerfil {width:100%; float:left; text-align:left}
+}
+
+@media screen and (max-width: 650px){
+#CorpoPerfil .InputsChecklist {width:50%}
+}
+
+@media screen and (max-width: 480px){
+#CorpoPerfil .InputsChecklist {width:100%}
+#DivGeralPerfil {float:left; width:100%; padding:0px; padding-top:20px; padding-bottom:20px;}
+}
+
+/*============================================ RESPONSIVO =============================================*/
