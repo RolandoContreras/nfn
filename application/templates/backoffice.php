@@ -113,10 +113,10 @@
     <div id="MenuMobile">
         <div class="ParteMenu">
             <div class="Logo" onclick="EfeitoMenu('MenuMobile');">
-              <img src="imagens/logotipo-sci.png" width="217" height="63" align="center" style="cursor:pointer" />
-              <div style="position:raltive">
+                <img src="<?php echo site_url().'static/page_front/images/logo/logo.png';?>" height="80" align="center" style="cursor:pointer" />
+              <div style="position:relative">
                 <div style="position:absolute; right:10px; top:10px">
-                  <img src="imagens/fechar.png" width="20" height="20" align="center" style="cursor:pointer" />
+                  <img src="<?php echo site_url().'static/backoffice/images/fechar.png';?>" width="20" height="20" align="center" style="cursor:pointer" />
                 </div>
               </div>
             </div>
@@ -131,9 +131,6 @@
                 <div class="Menu">
                     <span class="DivValign">Mis datos</span>
                 </div>
-                    <div class="SubMenu" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="EfeitoMenu('MenuMobile');abre('https://www.scipiracicaba.com.br/escritorio-virtual/dados-entrega-paraguai','ModalPadrao2');" title="Datos de retirada del Kit" alt="Datos de retirada del Kit">
-                        <span class="DivValign">&bull; Datos de retirada del Kit</span>
-                    </div>
                     <div class="Linhas2"></div>
                     <div class="SubMenu" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="EfeitoMenu('MenuMobile');abre('https://www.scipiracicaba.com.br/escritorio-virtual/dados-pessoais','ModalPadrao2');" alt=" Datos personales" title="Datos personales">
                         <span class="DivValign">&bull; Datos personales</span>
@@ -178,16 +175,12 @@
                         <div class="Linhas2"></div>
 
                         <div class="SubMenu" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="EfeitoMenu('MenuMobile');abre('https://www.scipiracicaba.com.br/escritorio-virtual/downloads','ModalPadrao2');" alt="Downloads" title="Downloads">
-                            <span class="DivValign">&bull; Downloads</span>
+                            <span class="DivValign">&bull; Descargas</span>
                         </div>
                         <div class="Linhas2"></div>
 
                         <div class="SubMenu" onclick="window.open('https://www.scipiracicaba.com.br/agenda-sci-py','_self');" alt="Calendario de eventos" title="Calendario de eventos">
                             <span class="DivValign">&bull; Calendario de eventos</span></div>
-                        <div class="Linhas2"></div>
-
-                        <div class="SubMenu" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="EfeitoMenu('MenuMobile');abre('https://www.scipiracicaba.com.br/escritorio-virtual/tv-sci','ModalPadrao2');" alt="Vídeo conferencia" title="Vídeo conferencia">
-                            <span class="DivValign">&bull; Vídeo conferencia</span></div>
                         <div class="Linhas2"></div>
 
                         <div class="SubMenu" onclick="window.open('https://www.scipiracicaba.com.br/downloads/Manual_de_Negocios_SCI_PY.pdf')" alt="Manual de negocios" title="Manual de negocios">
@@ -199,14 +192,6 @@
                     <div class="Menu">
                         <span class="DivValign">Interactividad</span>
                     </div>
-                        <div class="SubMenu" onclick="window.open('https://www.youtube.com/channel/UCWssjK78s0rDbMcmDLENDlg?sub_confirmation=1','_blank');" alt="TV SCI" title="TV SCI">
-                            <span class="DivValign">&bull; TV SCI</span>
-                        </div>
-                        <div class="Linhas2"></div>
-
-                        <div class="SubMenu" onclick="window.open('https://www.scipiracicaba.com.br/caderno-marketing','_self');" alt="Revista online" title="Revista online">
-                            <span class="DivValign">&bull; Revista online</span>
-                        </div>
                         <div class="Linhas2"></div>
                         <div class="SubMenu" onclick="window.open('https://www.facebook.com/SCIParaguayOficial/','_self');" alt="Facebook" title="Facebook">
                             <span class="DivValign">&bull; Facebook</span>
@@ -218,7 +203,7 @@
                         <div class="Linhas2"></div>
                         <div class="Linhas"></div>
                         <div class="Menu" onclick="window.open('https://www.scipiracicaba.com.br/escritorio-virtual/sair','_self');" alt="Dejar" title="Dejar">
-                            <span class="DivValign">Dejar</span>
+                            <span class="DivValign">Salir</span>
                         </div>
         </div>
 <!-- /Menu fixo -->
@@ -238,37 +223,8 @@
       .botaozinho {background-image:url('<?php echo site_url().'static/backoffice/images/foto-perfil.jpg';?>');background-size:cover;cursor:pointer}
   </style>
   <div class="Blocos">
-    <div class="botaozinho FotoCliente" id="FotoCliente">
-      <div class="FotoBotao" id="FotoBotao" name="FotoBotao" data-toggle="modal" data-target="#ModalPadrao" border="0" onclick="abre('cropper_altera_foto.asp', 'ModalPadrao2')"></div>
-    </div>
     <div class="TextoBemVindo">¡Bienvenido, Rolando!<br>ID:
       <font style="font-weight:400">1540265</font>
-    </div>
-  </div>
-  <div id="BlocosPadrao">
-    <div class="Blocos Tempo" style="display:none">
-      <div class="ImgInfo"><img src="imagens/tempo.png" width="31" height="26" align="center" /></div>
-      <div class="TextoInfo"><span class="DivValign">Piracicaba |27ºC | nublado</span></div>
-      <div class="ImgInfo"><img src="imagens/calendario.png" width="30" height="26" alt="" /></div>
-      <div class="TextoInfo"><span class="DivValign">05/01/2019</span></div>
-    </div>
-    <!-- desabilitado -->
-  </div>
-  <!-- Lateral do quadro dos sonhos -->
-  <div class="" id="BlocoQuadro" style="display: none; ">
-    <div class="Blocos">
-      <div class="FraseDia" style="font-weight: 400;"> ¡Usted está en su cuadro de los sueños!Establezca metas y todos los días¡Crea, podrás conquistar!Configurar tu marco de los sueños ypersonaliza a
-        su manera. </div>
-    </div>
-    <div class="Blocos" id="BlocoOpcoes" style="display: none;"></div>
-    <div style="float:left; background:#fff; position:fixed; left:0px; bottom:92px">
-      <div class="VoltarAoEscritorio" onclick="mudaLateral('Home')" style="position:initial; margin-bottom:15px">
-        <div style="float:left; margin-left:5px;"><img src="quadro_dos_sonhos/imagens/voltar_ev.png" width="24" height="20" alt="Voltar ao escritório virtual" title="Volver a la oficina virtual"
-          /></div>
-        <div style="float:right; margin-right:5px">
-          <font style="font-weight:600; font-size:14.5px; color:#5e5e5e">Volver a la oficina virtual</font>
-        </div>
-      </div>
     </div>
   </div>
   <!-- //Lateral do quadro dos sonhos -->
@@ -286,18 +242,9 @@
 </div>
 <!-- //Lateral do Perfil -->
 </div>
-<div class="Radio" style="">
-    <iframe src="player2.asp" style="width:270px; height:92px" scrolling="no" frameborder="0"></iframe>
-</div>
-<script type="text/javascript">
-  //Para o video do modal ao fechar $('body').on('hidden.bs.modal', '.modal', function () { $('#iframeTutorial').remove(); }); /* Função adicionada para corrigir a barra de rolagem com dois modal aberto */ $(document).on('hidden.bs.modal', function (event) { if ($('.modal:visible').length) { $('body').addClass('modal-open'); } });
-</script>
 <style type="text/css">
   .BordaBotaoPosicao {position:relative} .BordaBotao {position:absolute; left:-5px; top:-5px; border:5px solid #D64541; width:65px; height:65px; border-radius:100%} .BordaBotaoPL {position:absolute; left:-5px; top:-5px; border:5px solid #F3C77B; width:65px; height:65px; border-radius:100%} .BordaBotaoFacebook {position:absolute; left:-5px; top:-5px; border:5px solid #5E7FC1; width:65px; height:65px; border-radius:100%} /*==== Video responsivo no modal ====== */ .video-container {position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;} .video-container iframe, .video-container object, .video-container embed {position:absolute;top:0;left:0;width:100%;height:100%;} /* Paraguai */ #Corpo .DivGrupo3 {float:left;width:286px}
 </style>
-<script type="text/javascript">
-  setInterval(function() { $('.BordaBotao').animate({opacity:0}, 200, "linear", function(){ $(this).delay(200); $(this).animate({opacity:1}, 200, function(){ }); $(this).delay(200); }); },300); setInterval(function() { $('.BordaBotaoPL').animate({opacity:0}, 200, "linear", function(){ $(this).delay(200); $(this).animate({opacity:1}, 200, function(){ }); $(this).delay(200); }); },300); setInterval(function() { $('.BordaBotaoFacebook').animate({opacity:0}, 200, "linear", function(){ $(this).delay(200); $(this).animate({opacity:1}, 200, function(){ }); $(this).delay(200); }); },300);
-</script>
 <!-- alerta do sac -->
 <!-- abre o quadro dos sonhos direto se vier do painel pela pagina do quadro -->
 <!-- abre o quadro dos sonhos direto se vier do painel pela pagina do quadro -->
@@ -318,163 +265,242 @@
               <img src="<?php echo site_url().'static/backoffice/images/botonsalir.png';?>" class="ImagemMenor" data-toggle="tooltip" data-placement="bottom" title="Salir" onclick="window.open('https://www.scipiracicaba.com.br/escritorio-virtual/sair', '_self');" alt="Salir" />
           </span>
       </div>
-      <!-- 'NOTIFICAÇÃO DE NOVO ATENDIMENTO NO SAC' -->
-      <div class="DivBolinhas" id="BotaoMensagemSac">
-          <span class="DivValign">
-              <img src="imagens/botaosac.png" class="ImagemDesabilitado" data-toggle="tooltip" data-placement="bottom" title="En el momento usted no tiene nuevas atenciones en el SAC" alt="SAC - En el momento usted no tiene nuevas atenciones en el SAC"/></span></div>
-      <!-- //NOTIFICAÇÃO DE NOVO ATENDIMENTO NO SAC' -->
-      <!-- 'NOTIFICAÇÃO DE NOVA CONQUISTA' -->
-      <div class="DivBolinhas"><span class="DivValign"><span><img src="imagens/back_plano_de_carreira_conquistas.png" class="ImagemDesabilitado" data-toggle="tooltip" data-placement="bottom"/></span>        </span>
-      </div>
-      <!-- //NOTIFICAÇÃO DE NOVA CONQUISTA' -->
-      <!-- 'LÍDER DE EXPANSÃO' -->
-      <div class="DivBolinhas"><span class="DivValign"><span data-toggle="modal" data-target="#ModalPadrao" onclick="abre('lider_expansao.asp','ModalPadrao2')"><img src="https://www.scipiracicaba.com.br/img_site/lideres_expansao/paulo_lima_p.jpg" class="Imagem" data-toggle="tooltip" data-placement="bottom" title="Haga clic aquí para conocer a su Coordinador de Expansión!" alt="Haga clic aquí para conocer a su Coordinador de Expansión!"/></span>        </span>
-      </div>
-      <!-- //LÍDER DE EXPANSÃO' -->
     </div>
     <div class="BannersTopo">
-      <div class="PubImagem "> 
+      <div class="PubImagem"> 
       </div>
     </div>
   </div>
   <div class="CorpoRolagem" id="RolagemCorpo">
     <div class="WidthQuadrados">
-      <!-- BLOCOS -->
-      <style type="text/css">
-        .EstrelaAmarela {float:left;position:absolute;top:6px;left:6px;width:20px;height:19px;background:url('imagens/favorito.png')} /* .EstrelaAmarela:hover {background:url('imagens/favorito2.png');} */ .EstrelaBranca {float:left;position:absolute;top:6px;left:6px;width:20px;height:19px;background:url('imagens/favorito2.png')} /* .EstrelaBranca:hover {background:url('imagens/favorito.png');} */ #FotoBotaoMobile {float: left; width: 100%; height: 100%; opacity: 0; cursor: pointer;}
-      </style>
+      <!-- START MIS DATOS -->
       <div class="DivGrupo0">
         <div class="DivGrupoTitulo">
           <div class="DivGrupoTitulo1" alt="Mis datos" title="Mis datos"> Mis datos </div>
         </div>
         <div class="DivGrupo2">
-          <div class="DivQuadrado " style="background-color:#8e44ad" data-toggle="tooltip" title="" alt="Punto de apoyo "> <span class="DivValign"><div class="DivQuadrado1"><img src="imagens/1.png" border="0"></div><div class="DivQuadrado2" >Punto de apoyo</div></span>
-            <div class="DivQuadrado0">
-              <!-- style="EstrelaBranca" -->
-              <!--<div class="EstrelaBranca" id="Estrela1" onclick="Favoritos('Dados de entrega')"></div>--><span class="DivValign"><div class="DivQuadrado5" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('https://www.scipiracicaba.com.br/escritorio-virtual/dados-entrega-paraguai','ModalPadrao2')" ></div></span>              </div>
+          <div class="DivQuadrado" style="background-color:#913d88;filter:alpha(opacity=30);opacity:.3"> 
+              <span class="DivValign">
+                  <div class="DivQuadrado1">
+                      <img src="<?php echo site_url().'static/backoffice/images/2.png';?>" border="0">
+                  </div>
+                  <div class="DivQuadrado2">Datos de pago</div>
+              </span>            
           </div>
-          <div class="DivQuadrado " style="background-color:#913d88;filter:alpha(opacity=30);opacity:.3"> <span class="DivValign"><div class="DivQuadrado1"><img src="imagens/2.png" border="0"></div><div class="DivQuadrado2" >Datos de pago</div></span>            </div>
-          <div class="DivQuadrado " style="background-color:#9d5797;filter:alpha(opacity=30);opacity:.3"> <span class="DivValign"><div class="DivQuadrado1"><img src="imagens/27.png" border="0"></div><div class="DivQuadrado2" >Datos del beneficiario</div></span>            </div>
-          <div class="DivQuadrado DivQuadrado3" style="background-color:#9b59b6" data-toggle="tooltip" title="Es necesario que mantenga sus datos siempre actualizados"
-            alt="Datos personales Es necesario que mantenga sus datos siempre actualizados"> <span class="DivValign"><div class="DivQuadrado1"><img src="imagens/3.png" border="0"></div><div class="DivQuadrado2" >Datos personales</div></span>
-            <div class="DivQuadrado0">
-              <!-- style="EstrelaBranca" -->
-              <!--<div class="EstrelaBranca" id="Estrela3" onclick="Favoritos('Dados pessoais')"></div>--><span class="DivValign"><div class="DivQuadrado5" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('https://www.scipiracicaba.com.br/escritorio-virtual/dados-pessoais','ModalPadrao2')" style="width:286px"></div></span>              </div>
+          <div class="DivQuadrado" style="background-color:#9d5797;filter:alpha(opacity=30);opacity:.3"> 
+              <span class="DivValign">
+                  <div class="DivQuadrado1">
+                      <img src="<?php echo site_url().'static/backoffice/images/27.png';?>" border="0">
+                  </div>
+                  <div class="DivQuadrado2">Datos del beneficiario</div>
+              </span>            
           </div>
-          <div class="DivQuadrado " style="background-color:#bc91d2" data-toggle="tooltip" title="Si es necesario cambiar la contraseña de acceso" alt="Contraseña Si es necesario cambiar la contraseña de acceso">
-          <span class="DivValign"><div class="DivQuadrado1"><img src="imagens/4.png" border="0"></div><div class="DivQuadrado2" >Contraseña</div></span>
+          <div class="DivQuadrado DivQuadrado3" style="background-color:#9b59b6" data-toggle="tooltip" title="Es necesario que mantenga sus datos siempre actualizados" alt="Datos personales Es necesario que mantenga sus datos siempre actualizados"> 
+                <span class="DivValign">
+                    <div class="DivQuadrado1">
+                        <img src="<?php echo site_url().'static/backoffice/images/3.png';?>" border="0">
+                    </div>
+                    <div class="DivQuadrado2">Datos personales</div>
+                </span>
             <div class="DivQuadrado0">
-              <!-- style="EstrelaAmarela" -->
-              <!--<div class="EstrelaAmarela" id="Estrela4" onclick="Favoritos('Senha')"></div>--><span class="DivValign"><div class="DivQuadrado5" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('https://www.scipiracicaba.com.br/escritorio-virtual/senha','ModalPadrao2')" ></div></span>              </div>
+              <span class="DivValign">
+                  <div class="DivQuadrado5" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('https://www.scipiracicaba.com.br/escritorio-virtual/dados-pessoais','ModalPadrao2')" style="width:286px"></div>
+              </span>              
+            </div>
+          </div>
+          <div class="DivQuadrado" style="background-color:#bc91d2" data-toggle="tooltip" title="Si es necesario cambiar la contraseña de acceso" alt="Contraseña Si es necesario cambiar la contraseña de acceso">
+            <span class="DivValign">
+                <div class="DivQuadrado1">
+                    <img src="<?php echo site_url().'static/backoffice/images/4.png';?>" border="0">
+                </div>
+                <div class="DivQuadrado2">Contraseña</div>
+            </span>
+            <div class="DivQuadrado0">
+                <span class="DivValign">
+                    <div class="DivQuadrado5" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('https://www.scipiracicaba.com.br/escritorio-virtual/senha','ModalPadrao2')" ></div>
+                </span>              
+            </div>
           </div>
         </div>
       </div>
+      <!-- END MIS DATOS -->
+      <!-- START BOX -->
       <div class="DivGrupo3 DivMarginLeft">
         <div class="DivGrupoTitulo">
-          <div class="DivGrupoTitulo1" alt="Kit" title="Kit"> Kit </div>
+          <div class="DivGrupoTitulo1" alt="Box" title="Box"> Box </div>
         </div>
         <div class="DivGrupo2">
-          <div class="DivQuadrado " style="background-color:#1f3a93" data-toggle="tooltip" title="Haga clic aquí para generar su boleto" alt="Facturas Haga clic aquí para generar su boleto">
-          <span class="DivValign"><div class="DivQuadrado1"><img src="imagens/5.png" border="0"></div><div class="DivQuadrado2" >Facturas</div></span>
+          <div class="DivQuadrado" style="background-color:#1f3a93" data-toggle="tooltip" title="Haga clic aquí para generar su boleto" alt="Facturas Haga clic aquí para generar su boleto">
+              <span class="DivValign">
+                  <div class="DivQuadrado1">
+                      <img src="<?php echo site_url().'static/backoffice/images/5.png';?>" border="0">
+                  </div>
+                  <div class="DivQuadrado2">Facturas</div>
+              </span>
             <div class="DivQuadrado0">
-              <!-- style="EstrelaBranca" -->
-              <!--<div class="EstrelaBranca" id="Estrela5" onclick="Favoritos('Boletos')"></div>--><span class="DivValign"><div class="DivQuadrado5" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('https://www.scipiracicaba.com.br/escritorio-virtual/boletos-py','ModalPadrao2')" ></div></span>              </div>
+              <span class="DivValign">
+                  <div class="DivQuadrado5" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('https://www.scipiracicaba.com.br/escritorio-virtual/boletos-py','ModalPadrao2')" ></div>
+              </span>              
+            </div>
           </div>
-          <div class="DivQuadrado " style="background-color:#4b77be" data-toggle="tooltip" title="Aquí puede cambiar el tipo de kit que desea recibir este mes"
-            alt="Cambiar el kit Aquí puede cambiar el tipo de kit que desea recibir este mes"> <span class="DivValign"><div class="DivQuadrado1"><img src="imagens/7.png" border="0"></div><div class="DivQuadrado2" >Cambiar el kit</div></span>
+          <div class="DivQuadrado" style="background-color:#4b77be" data-toggle="tooltip" title="Aquí puede cambiar el tipo de kit que desea recibir este mes" alt="Cambiar el kit Aquí puede cambiar el tipo de kit que desea recibir este mes"> 
+              <span class="DivValign">
+                  <div class="DivQuadrado1">
+                      <img src="<?php echo site_url().'static/backoffice/images/7.png';?>" border="0">
+                  </div>
+                  <div class="DivQuadrado2">Cambiar el Box</div>
+              </span>
             <div class="DivQuadrado0">
-              <!-- style="EstrelaAmarela" -->
-              <!--<div class="EstrelaAmarela" id="Estrela7" onclick="Favoritos('Alterar kit')"></div>--><span class="DivValign"><div class="DivQuadrado5" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('https://www.scipiracicaba.com.br/escritorio-virtual/alterar-kit','ModalPadrao2')" ></div></span>              </div>
+                  <span class="DivValign">
+                      <div class="DivQuadrado5" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('https://www.scipiracicaba.com.br/escritorio-virtual/alterar-kit','ModalPadrao2')" ></div>
+                  </span>              
+            </div>
           </div>
-          <div class="DivQuadrado " style="background-color:#1e8bc3" data-toggle="tooltip" title="Opción disponible del 01 al 05 de cada mes" alt="Pagar kit con bonos Opción disponible del 01 al 05 de cada mes">
-          <span class="DivValign"><div class="DivQuadrado1"><img src="imagens/8.png" border="0"></div><div class="DivQuadrado2" >Pagar kit con bonos</div></span>
+          <div class="DivQuadrado" style="background-color:#1e8bc3" data-toggle="tooltip" title="Opción disponible del 01 al 05 de cada mes" alt="Pagar kit con bonos Opción disponible del 01 al 05 de cada mes">
+          <span class="DivValign">
+              <div class="DivQuadrado1">
+                  <img src="<?php echo site_url().'static/backoffice/images/8.png';?>" border="0">
+              </div>
+              <div class="DivQuadrado2">Pagar box con bonos</div>
+          </span>
             <div class="DivQuadrado0">
-              <!-- style="EstrelaBranca" -->
-              <!--<div class="EstrelaBranca" id="Estrela8" onclick="Favoritos('Pagar kit com bônus')"></div>--><span class="DivValign"><div class="DivQuadrado5" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('https://www.scipiracicaba.com.br/escritorio-virtual/pagar-kit-com-bonus-py','ModalPadrao2')" ></div></span>              </div>
+                <span class="DivValign">
+                    <div class="DivQuadrado5" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('https://www.scipiracicaba.com.br/escritorio-virtual/pagar-kit-com-bonus-py','ModalPadrao2')"></div>
+                </span>              
+            </div>
           </div>
         </div>
       </div>
+      <!-- END BOX -->
+      <!-- START RED-->
       <div class="DivGrupo0 DivMarginLeft">
         <div class="DivGrupoTitulo">
           <div class="DivGrupoTitulo1" alt="Red" title="Red"> Red </div>
         </div>
         <div class="DivGrupo2">
-          <div class="DivQuadrado " style="background-color:#049372" data-toggle="tooltip" title="Haga clic aquí para hacer un nuevo registro en su red"
-            alt="Añadir cliente Haga clic aquí para hacer un nuevo registro en su red"> <span class="DivValign"><div class="DivQuadrado1"><img src="imagens/9.png" border="0"></div><div class="DivQuadrado2" >Añadir cliente</div></span>
+          <div class="DivQuadrado" style="background-color:#049372" data-toggle="tooltip" title="Haga clic aquí para hacer un nuevo registro en su red" alt="Añadir cliente Haga clic aquí para hacer un nuevo registro en su red"> 
+              <span class="DivValign">
+                  <div class="DivQuadrado1">
+                      <img src="<?php echo site_url().'static/backoffice/images/9.png';?>" border="0">
+                  </div>
+                  <div class="DivQuadrado2">Añadir cliente</div>
+              </span>
             <div class="DivQuadrado0">
-              <!-- style="EstrelaAmarela" -->
-              <!--<div class="EstrelaAmarela" id="Estrela9" onclick="Favoritos('Adicionar cliente')"></div>--><span class="DivValign"><div class="DivQuadrado5" onclick="window.open('https://www.scipiracicaba.com.br/py/registro-datos-personales','_blank');" ></div></span>              </div>
+              <span class="DivValign">
+                  <div class="DivQuadrado5" onclick="window.open('https://www.scipiracicaba.com.br/py/registro-datos-personales','_blank');"></div>
+              </span>              
+            </div>
           </div>
-          <div class="DivQuadrado " style="background-color:#00b16a" data-toggle="tooltip" title="Acompañar a su equipo" alt="Ver red Acompañar a su equipo">
-          <span class="DivValign"><div class="DivQuadrado1"><img src="imagens/10.png" border="0"></div><div class="DivQuadrado2" >Ver red</div></span>
-            <div class="DivQuadrado0">
-              <!-- style="EstrelaAmarela" -->
-              <!--<div class="EstrelaAmarela" id="Estrela10" onclick="Favoritos('Ver rede')"></div>--><span class="DivValign"><div class="DivQuadrado5" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('https://www.scipiracicaba.com.br/escritorio-virtual/ver-rede','ModalPadrao2')" ></div></span>              </div>
+          <div class="DivQuadrado" style="background-color:#00b16a" data-toggle="tooltip" title="Acompañar a su equipo" alt="Ver red Acompañar a su equipo">
+                <span class="DivValign">
+                      <div class="DivQuadrado1">
+                          <img src="<?php echo site_url().'static/backoffice/images/10.png';?>" border="0">
+                      </div>
+                      <div class="DivQuadrado2">Ver red</div>
+                </span>
+                <div class="DivQuadrado0">
+                    <span class="DivValign">
+                        <div class="DivQuadrado5" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('https://www.scipiracicaba.com.br/escritorio-virtual/ver-rede','ModalPadrao2')"></div>
+                    </span>              
+                </div>
           </div>
-          <div class="DivQuadrado " style="background-color:#26c281" data-toggle="tooltip" title="Profesionalización y reconocimiento por el Plan de Carrera de SCI"
-            alt="Plano de carrera Profesionalización y reconocimiento por el Plan de Carrera de SCI"> <span class="DivValign"><div class="DivQuadrado1"><img src="imagens/11.png" border="0"></div><div class="DivQuadrado2" >Plano de carrera</div></span>
+          <div class="DivQuadrado " style="background-color:#26c281" data-toggle="tooltip" title="Profesionalización y reconocimiento por el Plan de Carrera de SCI" alt="Plano de carrera Profesionalización y reconocimiento por el Plan de Carrera de SCI"> 
+              <span class="DivValign">
+                  <div class="DivQuadrado1">
+                      <img src="<?php echo site_url().'static/backoffice/images/11.png';?>" border="0">
+                  </div>
+                  <div class="DivQuadrado2">Plan Carrera</div>
+              </span>
             <div class="DivQuadrado0">
-              <!-- style="EstrelaBranca" -->
-              <!--<div class="EstrelaBranca" id="Estrela11" onclick="Favoritos('Plano de carreira')"></div>--><span class="DivValign"><div class="DivQuadrado5" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('https://www.scipiracicaba.com.br/escritorio-virtual/plano-de-carreira','ModalPadrao2')" ></div></span>              </div>
+                <span class="DivValign">
+                    <div class="DivQuadrado5" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('https://www.scipiracicaba.com.br/escritorio-virtual/plano-de-carreira','ModalPadrao2')"></div>
+                </span>              
+            </div>
           </div>
-          <div class="DivQuadrado DivQuadrado3" style="background-color:#18ad90" data-toggle="tooltip" title="Acompañe toda bonificación que se genera en su red"
-            alt="Extracto Acompañe toda bonificación que se genera en su red"> <span class="DivValign"><div class="DivQuadrado1"><img src="imagens/12.png" border="0"></div><div class="DivQuadrado2" >Extracto</div></span>
+          <div class="DivQuadrado DivQuadrado3" style="background-color:#18ad90" data-toggle="tooltip" title="Acompañe toda bonificación que se genera en su red" alt="Extracto Acompañe toda bonificación que se genera en su red"> 
+              <span class="DivValign">
+                  <div class="DivQuadrado1">
+                      <img src="<?php echo site_url().'static/backoffice/images/12.png';?>" border="0">
+                  </div>
+                  <div class="DivQuadrado2">Extracto</div>
+              </span>
             <div class="DivQuadrado0">
-              <!-- style="EstrelaAmarela" -->
-              <!--<div class="EstrelaAmarela" id="Estrela12" onclick="Favoritos('Extrato')"></div>--><span class="DivValign"><div class="DivQuadrado5" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('https://www.scipiracicaba.com.br/escritorio-virtual/extrato-py','ModalPadrao2')" style="width:286px"></div></span>              </div>
+                <span class="DivValign">
+                    <div class="DivQuadrado5" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('https://www.scipiracicaba.com.br/escritorio-virtual/extrato-py','ModalPadrao2')" style="width:286px"></div>
+                </span>              
+            </div>
           </div>
-          <div class="DivQuadrado " style="background-color:#4daf7c" data-toggle="tooltip" title="Compruebe todas sus indicaciones directas" alt="Mis nominados directos Compruebe todas sus indicaciones directas">
-          <span class="DivValign"><div class="DivQuadrado1"><img src="imagens/13.png" border="0"></div><div class="DivQuadrado2" >Mis nominados directos</div></span>
+          <div class="DivQuadrado" style="background-color:#4daf7c" data-toggle="tooltip" title="Compruebe todas sus indicaciones directas" alt="Mis nominados directos Compruebe todas sus indicaciones directas">
+          <span class="DivValign">
+              <div class="DivQuadrado1">
+                  <img src="<?php echo site_url().'static/backoffice/images/13.png';?>" border="0">
+              </div>
+              <div class="DivQuadrado2">Mis referidos directos</div>
+          </span>
             <div class="DivQuadrado0">
-              <!-- style="EstrelaBranca" -->
-              <!--<div class="EstrelaBranca" id="Estrela13" onclick="Favoritos('Meus indicados diretos')"></div>--><span class="DivValign"><div class="DivQuadrado5" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao3" onclick="abre('https://www.scipiracicaba.com.br/escritorio-virtual/meus-indicados-diretos','ModalPadrao4')" ></div></span>              </div>
+                <span class="DivValign">
+                    <div class="DivQuadrado5" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao3" onclick="abre('https://www.scipiracicaba.com.br/escritorio-virtual/meus-indicados-diretos','ModalPadrao4')" ></div>
+                </span>              
+            </div>
           </div>
         </div>
       </div>
+      <!-- END RED-->
       <div class="DivGrupo1 DivGrupoMargin DivApoio">
         <div class="DivGrupoTitulo">
           <div class="DivGrupoTitulo1" alt="Apoyo" title="Apoyo"> Apoyo </div>
         </div>
         <div class="DivGrupo2">
-          <div class="DivQuadrado DivQuadrado3" style="background-color:#b23527" data-toggle="tooltip" title="Compruebe todas sus indicaciones directas"
-            alt="SAC Compruebe todas sus indicaciones directas"> <span class="DivValign"><div class="DivQuadrado1"><img src="imagens/14.png" border="0"></div><div class="DivQuadrado2" >SAC</div></span>
-            <div
-              class="DivQuadrado0">
-              <!-- style="EstrelaBranca" -->
-              <!--<div class="EstrelaBranca" id="Estrela14" onclick="Favoritos('SAC')"></div>--><span class="DivValign"><div class="DivQuadrado5" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadraoChat" onclick="abre('chat.asp','ModalPadraoChat')" style="width:286px"></div></span>              </div>
+          <div class="DivQuadrado DivQuadrado3" style="background-color:#b23527" data-toggle="tooltip" title="Servicio al Cliente" alt="Servicio al Cliente"> 
+              <span class="DivValign">
+                  <div class="DivQuadrado1">
+                      <img src="<?php echo site_url().'static/backoffice/images/14.png';?>" border="0">
+                  </div>
+                  <div class="DivQuadrado2">SAC</div>
+              </span>
+            <div class="DivQuadrado0">
+                <span class="DivValign">
+                    <div class="DivQuadrado5" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadraoChat" onclick="abre('chat.asp','ModalPadraoChat')" style="width:286px"></div>
+                </span>              
+            </div>
         </div>
-        <div class="DivQuadrado " style="background-color:#ed4132" data-toggle="tooltip" title="Aquí tienes acceso a diversos materiales de apoyo y divulgación. ¡Accede y echa un vistazo!"
-          alt="Downloads Aquí tienes acceso a diversos materiales de apoyo y divulgación. ¡Accede y echa un vistazo!"> <span class="DivValign"><div class="DivQuadrado1"><img src="imagens/15.png" border="0"></div><div class="DivQuadrado2" >Downloads</div></span>
+        <div class="DivQuadrado " style="background-color:#ed4132" data-toggle="tooltip" title="Aquí tienes acceso a diversos materiales de apoyo y divulgación. ¡Accede y echa un vistazo!" alt="Aquí tienes acceso a diversos materiales de apoyo y divulgación. ¡Accede y echa un vistazo!"> 
+            <span class="DivValign">
+                <div class="DivQuadrado1">
+                    <img src="<?php echo site_url().'static/backoffice/images/15.png';?>" border="0">
+                </div>
+                <div class="DivQuadrado2">Descargas</div>
+            </span>
           <div class="DivQuadrado0">
-            <!-- style="EstrelaBranca" -->
-            <!--<div class="EstrelaBranca" id="Estrela15" onclick="Favoritos('Downloads')"></div>--><span class="DivValign"><div class="DivQuadrado5" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('https://www.scipiracicaba.com.br/escritorio-virtual/downloads','ModalPadrao2')" ></div></span>            </div>
+                <span class="DivValign">
+                    <div class="DivQuadrado5" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('https://www.scipiracicaba.com.br/escritorio-virtual/downloads','ModalPadrao2')" ></div>
+                </span>            
+          </div>
         </div>
-        <div class="DivQuadrado " style="background-color:#e26a6a" data-toggle="tooltip" title="Adquiere su pasaporte para el mayor evento del año de SCI"
-          alt="Convención Adquiere su pasaporte para el mayor evento del año de SCI"> <span class="DivValign"><div class="DivQuadrado1"><img src="imagens/16_1.png" border="0"></div><div class="DivQuadrado2" >Convención</div></span>
+        <div class="DivQuadrado" style="background-color:#ed4132" data-toggle="tooltip" title="Acceda y quédese dentro de todas las presentaciones de negocios que ocurren en todo Brasil y Paraguay diariamente" alt="Calendario de eventos Acceda y quédese dentro de todas las presentaciones de negocios que ocurren en todo Brasil y Paraguay diariamente">
+        <span class="DivValign">
+            <div class="DivQuadrado1">
+                <img src="<?php echo site_url().'static/backoffice/images/18.png';?>" border="0">
+            </div>
+            <div class="DivQuadrado2">Calendario de eventos</div></span>
           <div class="DivQuadrado0">
-            <!-- style="EstrelaBranca" -->
-            <!--<div class="EstrelaBranca" id="Estrela16_1" onclick="Favoritos('Convenção')"></div>--><span class="DivValign"><div class="DivQuadrado5" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('https://www.scipiracicaba.com.br/escritorio-virtual/convencao-2018','ModalPadrao2')" ></div></span>            </div>
+                <span class="DivValign">
+                    <div class="DivQuadrado5" onclick="window.open('https://www.scipiracicaba.com.br/agenda-sci-py','_blank')"></div>
+                </span>            
+          </div>
         </div>
-        <div class="DivQuadrado " style="background-color:#ef4836;filter:alpha(opacity=30);opacity:.3"> <span class="DivValign"><div class="DivQuadrado1"><img src="imagens/17.png" border="0"></div><div class="DivQuadrado2" >Tienda online</div></span>          </div>
-        <div class="DivQuadrado " style="background-color:#ed4132" data-toggle="tooltip" title="Acceda y quédese dentro de todas las presentaciones de negocios que ocurren en todo Brasil y Paraguay diariamente"
-          alt="Calendario de eventos Acceda y quédese dentro de todas las presentaciones de negocios que ocurren en todo Brasil y Paraguay diariamente">
-        <span class="DivValign"><div class="DivQuadrado1"><img src="imagens/18.png" border="0"></div><div class="DivQuadrado2" >Calendario de eventos</div></span>
-          <div class="DivQuadrado0">
-            <!-- style="EstrelaBranca" -->
-            <!--<div class="EstrelaBranca" id="Estrela18" onclick="Favoritos('Calendário de eventos')"></div>--><span class="DivValign"><div class="DivQuadrado5" onclick="window.open('https://www.scipiracicaba.com.br/agenda-sci-py','_blank')" ></div></span>            </div>
-        </div>
-        <div class="DivQuadrado " style="background-color:#d94838" data-toggle="tooltip" title="De lunes a viernes a las 12h00 (am) al vivo" alt="TV SCI De lunes a viernes a las 12h00 (am) al vivo">
-        <span class="DivValign"><div class="DivQuadrado1"><img src="imagens/25.png" border="0"></div><div class="DivQuadrado2" >TV SCI</div></span>
-          <div
-            class="DivQuadrado0">
-            <!-- style="EstrelaAmarela" -->
-            <!--<div class="EstrelaAmarela" id="Estrela25" onclick="Favoritos('TV SCI')"></div>--><span class="DivValign"><div class="DivQuadrado5" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('https://www.scipiracicaba.com.br/escritorio-virtual/tv-sci','ModalPadrao2')" ></div></span>            </div>
-      </div>
-      <div class="DivQuadrado " style="background-color:#ed321f" data-toggle="tooltip" title="Manual de Negocios, Normas de Uso, Conducta y Política de Privacidad"
-        alt="Manual de negocios Manual de Negocios, Normas de Uso, Conducta y Política de Privacidad"> <span class="DivValign"><div class="DivQuadrado1"><img src="imagens/28.png" border="0"></div><div class="DivQuadrado2" id = "div_manual_negocio" style="font-size: 12px">Manual de negocios</div></span>
+      <div class="DivQuadrado" style="background-color:#ed321f" data-toggle="tooltip" title="Manual de Negocios, Normas de Uso, Conducta y Política de Privacidad" alt="Manual de negocios Manual de Negocios, Normas de Uso, Conducta y Política de Privacidad"> 
+          <span class="DivValign">
+              <div class="DivQuadrado1">
+                  <img src="<?php echo site_url().'static/backoffice/images/28.png';?>" border="0">
+              </div>
+              <div class="DivQuadrado2" id = "div_manual_negocio" style="font-size: 12px">Manual de negocios</div>
+          </span>
         <div class="DivQuadrado0">
-          <!-- style="EstrelaBranca" -->
-          <!--<div class="EstrelaBranca" id="Estrela28" onclick="Favoritos('Manual de Negócios e Código de Ética SCI')"></div>--><span class="DivValign"><div class="DivQuadrado5" onclick="window.open('https://www.scipiracicaba.com.br/downloads/Manual_de_Negocios_SCI_PY.pdf')" ></div></span>          </div>
+            <span class="DivValign">
+                <div class="DivQuadrado5" onclick="window.open('https://www.scipiracicaba.com.br/downloads/Manual_de_Negocios_SCI_PY.pdf')"></div>
+            </span>          
+        </div>
       </div>
     </div>
   </div>
@@ -483,39 +509,45 @@
       <div class="DivGrupoTitulo1" alt="Interactividad" title="Interactividad"> Interactividad </div>
     </div>
     <div class="DivGrupo2">
-      <div class="DivQuadrado " style="background-color:#e68517" data-toggle="tooltip" title="Todos los martes y jueves a las 9h *horas BR" alt="Youtube SCI Todos los martes y jueves a las 9h *horas BR">
-      <span class="DivValign"><div class="DivQuadrado1"><img src="imagens/20.png" border="0"></div><div class="DivQuadrado2" >Youtube SCI</div></span>
+      <div class="DivQuadrado" style="background-color:#e68517" data-toggle="tooltip" title="Entérate de las novedades" alt="Youtube NFN Entérate de las novedades">
+      <span class="DivValign">
+          <div class="DivQuadrado1">
+              <img src="<?php echo site_url().'static/backoffice/images/20.png';?>" border="0">
+          </div>
+          <div class="DivQuadrado2">Youtube NFN</div>
+      </span>
         <div class="DivQuadrado0">
-          <!-- style="EstrelaBranca" -->
-          <!--<div class="EstrelaBranca" id="Estrela20" onclick="Favoritos('Youtube SCI')"></div>--><span class="DivValign"><div class="DivQuadrado5" onclick="window.open('https://www.youtube.com/channel/UCWssjK78s0rDbMcmDLENDlg?sub_confirmation=1','_blank')" ></div></span>          </div>
+            <span class="DivValign">
+                <div class="DivQuadrado5" onclick="window.open('https://www.youtube.com/channel/UCWssjK78s0rDbMcmDLENDlg?sub_confirmation=1','_blank')"></div>
+            </span>          
+        </div>
       </div>
-      <div class="DivQuadrado " style="background-color:#eb974e" data-toggle="tooltip" title="Diariamente se hacen varias entradas en nuestro Facebook. Siga!"
-        alt="Facebook Diariamente se hacen varias entradas en nuestro Facebook. Siga!"> <span class="DivValign"><div class="DivQuadrado1"><img src="imagens/22.png" border="0"></div><div class="DivQuadrado2" >Facebook</div></span>
-        <div
-          class="DivQuadrado0">
-          <!-- style="EstrelaBranca" -->
-          <!--<div class="EstrelaBranca" id="Estrela22" onclick="Favoritos('Facebook')"></div>--><span class="DivValign"><div class="DivQuadrado5" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('modal_facebook.asp','ModalPadrao2')" ></div></span>          </div>
+      <div class="DivQuadrado " style="background-color:#eb974e" data-toggle="tooltip" title="Diariamente se hacen varias entradas en nuestro Facebook. Siga!" alt="Facebook Diariamente se hacen varias entradas en nuestro Facebook. Siga!"> 
+          <span class="DivValign">
+              <div class="DivQuadrado1">
+                  <img src="<?php echo site_url().'static/backoffice/images/22.png';?>" border="0">
+              </div>
+              <div class="DivQuadrado2">Facebook</div>
+          </span>
+        <div class="DivQuadrado0">
+            <span class="DivValign">
+                <div class="DivQuadrado5" onclick="window.open('https://www.youtube.com/channel/UCWssjK78s0rDbMcmDLENDlg?sub_confirmation=1','_blank')"></div>
+            </span>          
+        </div>
     </div>
-    <div class="DivQuadrado " style="background-color:#e88a37" data-toggle="tooltip" title="Acompañe diariamente nuestro Instagram" alt="Instagram Acompañe diariamente nuestro Instagram">
-    <span class="DivValign"><div class="DivQuadrado1"><img src="imagens/35.png" border="0"></div><div class="DivQuadrado2" >Instagram</div></span>
-      <div
-        class="DivQuadrado0">
-        <!-- style="EstrelaBranca" -->
-        <!--<div class="EstrelaBranca" id="Estrela35" onclick="Favoritos('Instagram')"></div>--><span class="DivValign"><div class="DivQuadrado5" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('modal_instagram.asp','ModalPadrao2')" ></div></span>        </div>
+    <div class="DivQuadrado" style="background-color:#e88a37" data-toggle="tooltip" title="Acompañe diariamente nuestro Instagram" alt="Instagram Acompañe diariamente nuestro Instagram">
+    <span class="DivValign">
+        <div class="DivQuadrado1">
+            <img src="<?php echo site_url().'static/backoffice/images/35.png';?>" border="0">
+        </div>
+        <div class="DivQuadrado2">Instagram</div>
+    </span>
+      <div class="DivQuadrado0">
+           <span class="DivValign">
+               <div class="DivQuadrado5" onclick="window.open('https://www.youtube.com/channel/UCWssjK78s0rDbMcmDLENDlg?sub_confirmation=1','_blank')"></div>
+           </span>        
+      </div>
   </div>
-  <div class="DivQuadrado DivQuadrado3" style="background-color:#e7a13c" data-toggle="tooltip" title="Instale el APP y tenga la SCI en la punta de sus dedos"
-    alt="Solicitud Instale el APP y tenga la SCI en la punta de sus dedos"> <span class="DivValign"><div class="DivQuadrado1"><img src="imagens/26.png" border="0"></div><div class="DivQuadrado2" >Solicitud</div></span>
-    <div class="DivQuadrado0">
-      <!-- style="EstrelaBranca" -->
-      <!--<div class="EstrelaBranca" id="Estrela26" onclick="Favoritos('Aplicativo')"></div>--><span class="DivValign"><div class="DivQuadrado5" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('https://www.scipiracicaba.com.br/escritorio-virtual/download-aplicativo','ModalPadrao2')" style="width:286px"></div></span>      </div>
-  </div>
-  <div class="DivQuadrado " style="background-color:#f9bf3b" data-toggle="tooltip" title="Siga todas las cuestiones y las noticias en el Revista de Marketing SCI"
-    alt="Revista Online Siga todas las cuestiones y las noticias en el Revista de Marketing SCI"> <span class="DivValign"><div class="DivQuadrado1"><img src="imagens/21.png" border="0"></div><div class="DivQuadrado2" >Revista Online</div></span>
-    <div
-      class="DivQuadrado0">
-      <!-- style="EstrelaBranca" -->
-      <!--<div class="EstrelaBranca" id="Estrela21" onclick="Favoritos('Revista Online')"></div>--><span class="DivValign"><div class="DivQuadrado5" onclick="window.open('https://www.scipiracicaba.com.br/caderno-marketing','_blank')" ></div></span>      </div>
-</div>
 </div>
 </div>
 <!-- //BLOCOS -->
@@ -533,186 +565,298 @@
 <div id="CorpoMobile">
   <div class="Centralizar">
     <div id="MenuFixo">
-      <div class="BlocoPrincipal"><span class="DivValign"><div class="Logotipo"><img src="imagens/logotipo-sci.png" width="217" height="63" alt="" /></div><div class="MenuMobile" onclick="EfeitoMenu('MenuMobile');">&nbsp;<img src="imagens/menu-mobile2.png" width="27" height="19" align="center" style="margin-top:-3px;"/>&nbsp;MENÚ</div></span></div>
+      <div class="BlocoPrincipal">
+          <span class="DivValign">
+              <div class="Logotipo">
+                  <img src="<?php echo site_url().'static/page_front/images/logo/logo.png';?>" height="65" alt="logo" />
+              </div>
+              <div class="MenuMobile" onclick="EfeitoMenu('MenuMobile');">&nbsp;<img src="<?php echo site_url().'static/backoffice/images/menu-mobile2.png';?>" width="27" height="19" align="center" style="margin-top:-3px;"/>&nbsp;MENÚ</div></span></div>
     </div>
     <div id="TopoMobile">
-      <div class="BlocoPrincipal"><span class="DivValign"><div class="Logotipo"><img src="imagens/logotipo-sci.png" width="217" height="63" alt="" /></div><div class="MenuMobile" onclick="EfeitoMenu('MenuMobile');">&nbsp;<img src="imagens/menu-mobile2.png" width="27" height="19" align="center" style="margin-top:-3px;"/>&nbsp;MENÚ</div></span></div>
-      <div class="Titulo">OFICINA VIRTUAL SCI</div>
+      <div class="BlocoPrincipal">
+          <span class="DivValign">
+              <div class="Logotipo">
+                  <img src="<?php echo site_url().'static/page_front/images/logo/logo.png';?>" height="65" alt="logo" /></div>
+              <div class="MenuMobile" onclick="EfeitoMenu('MenuMobile');">&nbsp;<img src="<?php echo site_url().'static/backoffice/images/menu-mobile2.png';?>" width="27" height="19" align="center" style="margin-top:-3px;"/>&nbsp;MENÚ</div>
+          </span>
+      </div>
+      <div class="Titulo">OFICINA VIRTUAL NFN</div>
       <div class="BlocoFoto">
         <div class="FotoCliente" id="FotoClienteMobile" style="background-image:url('https://www.scipiracicaba.com.br/img_site/foto-perfil/foto-perfil-padrao.jpg');background-size:cover;cursor:pointer;"><input type="button" id="FotoBotaoMobile" name="FotoBotaoMobile" style="cursor:pointer;"></div>
-        <div class="TextoBemVindo">BienvenidoRolando!<br>ID:
+        <div class="TextoBemVindo">Bienvenido Rolando!<br>ID:
           <font style="font-weight:400">1540265</font>
         </div>
       </div>
-      <!-- FOTO PERFIL UPLOAD -->
-      <script type="text/javascript">
-        var campo = document.getElementById("FotoBotaoMobile"); upclick({ element: campo, action: "https://www.scipiracicaba.com.br/escritorio-virtual/lateral-foto-perfil-upload", cache: false, multiple: true, onstart: function(){ $("#FotoCliente").css({"background-image":"url('imagens/carregando.gif')", "background-size":"initial"}); $("#FotoClienteMobile").css({"background-image":"url('imagens/carregando.gif')", "background-size":"initial"}); }, oncomplete: function(retorno) { var banner_mes = "01"; var banner_ano = "2019"; if (parseInt(banner_ano) <= parseInt("2018") && parseInt(banner_mes) <= parseInt("07")){ var banner_url = "plano_carreira_imagem_antigo.asp"; }else{ var banner_url = "plano_carreira_imagem.asp"; } $.ajax({ url: banner_url, data: {CodCadastro: '1540265'}, type: "POST", async: true, success: function(){ location.reload(); } }); //$("#FotoCliente").css({"background-image":"url('https://www.scipiracicaba.com.br/img_site/foto-perfil/"+ retorno +"')", "background-size":"cover"}); //$("#FotoClienteMobile").css({"background-image":"url('https://www.scipiracicaba.com.br/img_site/foto-perfil/"+ retorno +"')", "background-size":"cover"}); } });
-      </script>
-      <!-- //FOTO PERFIL UPLOAD -->
-      <!-- <div class="FraseDia">“Se Deus encheu tua vida de obstáculos, é porque ele acredita na tua capacidade de passar por cada um!”</div> -->
       <style type="text/css">
         #TopoMobile .BotoesTopo {float:left; width:100%; margin-left:10px; margin-top:20px; margin-bottom:10px} #TopoMobile .DivBolinhas {float:left; margin-right:15px; width:65px; height:65px; border-radius:100%; display:table; text-align:center} #TopoMobile .BolinhaMenor {width:45px; height:45px; margin-right:0px; margin-top:10px} #TopoMobile .Imagem {width:65px; height:65px; border-radius:100%; cursor:pointer;} #TopoMobile .ImagemMenor {width:45px; height:45px; cursor:pointer;} #TopoMobile .ImagemDesabilitado {width:65px; height:65px; cursor:default; filter:alpha(opacity=50);opacity:0.5} #TopoMobile .BordaBotaoPosicaoEfeito {position:relative} #TopoMobile .BordaBotao {position:absolute; left:-5px; top:-5px; border-radius:100%; cursor:pointer} #TopoMobile .EfeitoBotaoFace {border:5px solid #5E7FC1} #TopoMobile .EfeitoBotaoSac {border:5px solid #D64541} #TopoMobile .EfeitoBotaoPL {border:5px solid #b9cee4} /*-- Responsivo --*/ @media screen and (max-width: 580px){ #TopoMobile .DivBolinhas {width:45px; height:45px} #TopoMobile .Imagem {width:45px; height:45px} #TopoMobile .ImagemDesabilitado {width:45px; height:45px} } @media screen and (max-width: 440px){ #TopoMobile .DivBolinhas{margin-bottom: 15px;} }
       </style>
-      <!-- **OBS IMPORTANTES**A LISTA DO MOBILE ESTÁ EM **FLOAT LEFT** ENTÃO A INSERÇÃO DOS ÍCONES É DA **ESQUERDA PARA A DIREITA** - CONTRARIO DO DESKTOP - CUIDADO PARA NÃO SE CONFUNDIRESTES MESMOS ÍCONES ESTÃO NO DESKTOP, ENTÃO ALTEREM TAMBÉM NA PAGINA **INICIO_BOTOES_TOPO.ASP**-->
       <div class="BotoesTopo" style="width:calc(100% - 10px)">
-        <!-- 'LÍDER DE EXPANSÃO' -->
-        <div class="DivBolinhas"><span class="DivValign"><span data-toggle="modal" data-target="#ModalPadrao" onclick="abre('lider_expansao.asp','ModalPadrao2')"><img src="https://www.scipiracicaba.com.br/img_site/lideres_expansao/paulo_lima_p.jpg" class="Imagem" data-toggle="tooltip" data-placement="bottom" title="Haga clic aquí para conocer a su Coordinador de Expansión!"/></span>          </span>
-        </div>
-        <!-- //LÍDER DE EXPANSÃO' -->
         <!-- 'NOTIFICAÇÃO DE NOVO ATENDIMENTO NO SAC' -->
-        <div class="DivBolinhas" id="BotaoMensagemSac"><span class="DivValign"><img src="imagens/botaosac.png" class="ImagemDesabilitado" data-toggle="tooltip" data-placement="bottom" title="En el momento usted no tiene nuevas atenciones en el SAC" alt="sac - En el momento usted no tiene nuevas atenciones en el SAC"/></span></div>
-        <!-- //NOTIFICAÇÃO DE NOVO ATENDIMENTO NO SAC' -->
-        <!-- 'NOTIFICAÇÃO PARA CURTIR PÁGINA NO FACEBOOK' -->
-        <div class="DivBolinhas" style="display:none"><span class="DivValign"><div class="BordaBotaoPosicaoEfeito" onclick="abre('/area-restrita-nova/curtir_pagina.asp','ModalPadrao2')" data-toggle="modal" data-target="#ModalPadrao"><div class="BordaBotao EfeitoBotaoFace" data-toggle="tooltip" data-placement="bottom" data-html="true" title="<div style='width:180px'>Corta la página oficial de SCI en Facebook</div>"></div></div><img src="imagens/botaofacebook.png" class="Imagem"/></span></div>
-        <!-- //NOTIFICAÇÃO PARA CURTIR PÁGINA NO FACEBOOK' -->
+        <div class="DivBolinhas" id="BotaoMensagemSac">
+            <span class="DivValign">
+                <img src="<?php echo site_url().'static/backoffice/images/botaosac.png';?>" class="ImagemDesabilitado" data-toggle="tooltip" data-placement="bottom" title="En el momento usted no tiene nuevas atenciones en el SAC" alt="sac - En el momento usted no tiene nuevas atenciones en el SAC"/>
+            </span>
+        </div>
       </div>
     </div>
-    <style type="text/css">
-      .RadioMobile {float:left; width:95%; margin-left:10px; margin-top:15px}
-    </style>
-    <div class="RadioMobile" style=""><iframe src="player2.asp" style="width:270px; height:95px" scrolling="no" frameborder="0"></iframe></div>
     <div class="ConteudoBlocos" style="margin-bottom:40px">
       <!-- BLOCOS -->
       <div class="DivGrupo">
         <div class="DivGrupoTitulo">
-          <div class="DivGrupoTitulo1" alt="Mis datos"> Mis datos </div>
+          <div class="DivGrupoTitulo1" alt="Mis datos">Mis datos</div>
         </div>
-        <div class="DivQuadrado" style="background-color:#8e44ad"> <span class="DivValign"><div class="DivQuadrado1"><img src="imagens/1.png" border="0"></div><div class="DivQuadrado2" >Punto de apoyo</div></span>
-          <div class="DivQuadrado0" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('https://www.scipiracicaba.com.br/escritorio-virtual/dados-entrega-paraguai','ModalPadrao2')"
-            alt="Punto de apoyo">
-            <!--<div class="DivQuadrado4"></div> --><span class="DivValign"><div class="DivQuadrado5"></div></span> </div>
+        <div class="DivQuadrado" style="background-color:#8e44ad"> 
+            <span class="DivValign">
+                <div class="DivQuadrado1">
+                    <img src="<?php echo site_url().'static/backoffice/images/1.png';?>" border="0">
+                </div>
+                <div class="DivQuadrado2">Punto de apoyo</div>
+            </span>
+          <div class="DivQuadrado0" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('https://www.scipiracicaba.com.br/escritorio-virtual/dados-entrega-paraguai','ModalPadrao2')" alt="Punto de apoyo">
+                <span class="DivValign">
+                    <div class="DivQuadrado5"></div>
+                </span> 
+          </div>
         </div>
         <div class="DivQuadrado" style="background-color:#913d88;filter:alpha(opacity=30);opacity:.3"> <span class="DivValign"><div class="DivQuadrado1"><img src="imagens/2.png" border="0"></div><div class="DivQuadrado2" >Datos de pago</div></span>          </div>
         <div class="DivQuadrado" style="background-color:#9d5797;filter:alpha(opacity=30);opacity:.3"> <span class="DivValign"><div class="DivQuadrado1"><img src="imagens/27.png" border="0"></div><div class="DivQuadrado2" >Datos del beneficiario</div></span>          </div>
         <div class="DivQuadrado" style="background-color:#9b59b6"> <span class="DivValign"><div class="DivQuadrado1"><img src="imagens/3.png" border="0"></div><div class="DivQuadrado2" >Datos personales</div></span>
-          <div class="DivQuadrado0" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('https://www.scipiracicaba.com.br/escritorio-virtual/dados-pessoais','ModalPadrao2')"
-            alt="Datos personales">
-            <!--<div class="DivQuadrado4"></div> --><span class="DivValign"><div class="DivQuadrado5"></div></span> </div>
+          <div class="DivQuadrado0" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('https://www.scipiracicaba.com.br/escritorio-virtual/dados-pessoais','ModalPadrao2')" alt="Datos personales">
+                <span class="DivValign">
+                    <div class="DivQuadrado5"></div>
+                </span> 
+          </div>
         </div>
-        <div class="DivQuadrado" style="background-color:#bc91d2"> <span class="DivValign"><div class="DivQuadrado1"><img src="imagens/4.png" border="0"></div><div class="DivQuadrado2" >Contraseña</div></span>
-          <div class="DivQuadrado0" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('https://www.scipiracicaba.com.br/escritorio-virtual/senha','ModalPadrao2')"
-            alt="Contraseña">
-            <!--<div class="DivQuadrado4"></div> --><span class="DivValign"><div class="DivQuadrado5"></div></span> </div>
+        <div class="DivQuadrado" style="background-color:#bc91d2"> 
+            <span class="DivValign">
+                <div class="DivQuadrado1">
+                    <img src="<?php echo site_url().'static/backoffice/images/4.png';?>" border="0">
+                </div>
+                <div class="DivQuadrado2" >Contraseña</div>
+            </span>
+          <div class="DivQuadrado0" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('https://www.scipiracicaba.com.br/escritorio-virtual/senha','ModalPadrao2')" alt="Contraseña">
+                <span class="DivValign">
+                    <div class="DivQuadrado5"></div>
+                </span> 
+          </div>
         </div>
       </div>
       <div class="DivGrupo">
         <div class="DivGrupoTitulo">
-          <div class="DivGrupoTitulo1" alt="Kit"> Kit </div>
+          <div class="DivGrupoTitulo1" alt="Box">Box</div>
         </div>
-        <div class="DivQuadrado" style="background-color:#1f3a93"> <span class="DivValign"><div class="DivQuadrado1"><img src="imagens/5.png" border="0"></div><div class="DivQuadrado2" >Facturas</div></span>
-          <div
-            class="DivQuadrado0" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('https://www.scipiracicaba.com.br/escritorio-virtual/boletos-py','ModalPadrao2')"
-            alt="Facturas">
-            <!--<div class="DivQuadrado4"></div> --><span class="DivValign"><div class="DivQuadrado5"></div></span> </div>
+        <div class="DivQuadrado" style="background-color:#1f3a93"> 
+            <span class="DivValign">
+                <div class="DivQuadrado1">
+                    <img src="<?php echo site_url().'static/backoffice/images/5.png';?>" border="0">
+                </div>
+                <div class="DivQuadrado2">Facturas</div>
+            </span>
+          <div class="DivQuadrado0" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('https://www.scipiracicaba.com.br/escritorio-virtual/boletos-py','ModalPadrao2')" alt="Facturas">
+                <span class="DivValign">
+                    <div class="DivQuadrado5"></div>
+                </span> 
+          </div>
       </div>
-      <div class="DivQuadrado" style="background-color:#4b77be"> <span class="DivValign"><div class="DivQuadrado1"><img src="imagens/7.png" border="0"></div><div class="DivQuadrado2" >Cambiar el kit</div></span>
-        <div class="DivQuadrado0" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('https://www.scipiracicaba.com.br/escritorio-virtual/alterar-kit','ModalPadrao2')"
-          alt="Cambiar el kit">
-          <!--<div class="DivQuadrado4"></div> --><span class="DivValign"><div class="DivQuadrado5"></div></span> </div>
+      <div class="DivQuadrado" style="background-color:#4b77be"> 
+          <span class="DivValign">
+              <div class="DivQuadrado1">
+                  <img src="<?php echo site_url().'static/backoffice/images/7.png';?>" border="0">
+              </div>
+              <div class="DivQuadrado2" >Cambiar el box</div>
+          </span>
+        <div class="DivQuadrado0" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('https://www.scipiracicaba.com.br/escritorio-virtual/alterar-kit','ModalPadrao2')" alt="Cambiar el kit">
+            <span class="DivValign">
+                <div class="DivQuadrado5"></div>
+            </span> 
+        </div>
       </div>
-      <div class="DivQuadrado" style="background-color:#1e8bc3"> <span class="DivValign"><div class="DivQuadrado1"><img src="imagens/8.png" border="0"></div><div class="DivQuadrado2" >Pagar kit con bonos</div></span>
-        <div class="DivQuadrado0" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('https://www.scipiracicaba.com.br/escritorio-virtual/pagar-kit-com-bonus-py','ModalPadrao2')"
-          alt="Pagar kit con bonos">
-          <!--<div class="DivQuadrado4"></div> --><span class="DivValign"><div class="DivQuadrado5"></div></span> </div>
+      <div class="DivQuadrado" style="background-color:#1e8bc3"> 
+          <span class="DivValign">
+              <div class="DivQuadrado1">
+                  <img src="<?php echo site_url().'static/backoffice/images/8.png';?>" border="0">
+              </div>
+              <div class="DivQuadrado2">Pagar box con bonos</div>
+          </span>
+        <div class="DivQuadrado0" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('https://www.scipiracicaba.com.br/escritorio-virtual/pagar-kit-com-bonus-py','ModalPadrao2')" alt="Pagar kit con bonos">
+            <span class="DivValign">
+                <div class="DivQuadrado5"></div>
+            </span> 
+        </div>
       </div>
     </div>
     <div class="DivGrupo">
       <div class="DivGrupoTitulo">
-        <div class="DivGrupoTitulo1" alt="Red"> Red </div>
+        <div class="DivGrupoTitulo1" alt="Red">Red</div>
       </div>
-      <div class="DivQuadrado" style="background-color:#049372"> <span class="DivValign"><div class="DivQuadrado1"><img src="imagens/9.png" border="0"></div><div class="DivQuadrado2" >Añadir cliente</div></span>
+      <div class="DivQuadrado" style="background-color:#049372"> 
+          <span class="DivValign">
+              <div class="DivQuadrado1">
+                  <img src="<?php echo site_url().'static/backoffice/images/9.png';?>" border="0">
+              </div>
+              <div class="DivQuadrado2">Añadir cliente</div>
+          </span>
         <div class="DivQuadrado0" onclick="window.open('https://www.scipiracicaba.com.br/py/registro-datos-personales','_blank');" alt="Añadir cliente">
-          <!--<div class="DivQuadrado4"></div> --><span class="DivValign"><div class="DivQuadrado5"></div></span> </div>
+            <span class="DivValign">
+                <div class="DivQuadrado5"></div>
+            </span> 
+        </div>
       </div>
-      <div class="DivQuadrado" style="background-color:#00b16a"> <span class="DivValign"><div class="DivQuadrado1"><img src="imagens/10.png" border="0"></div><div class="DivQuadrado2" >Ver red</div></span>
-        <div
-          class="DivQuadrado0" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('https://www.scipiracicaba.com.br/escritorio-virtual/ver-rede','ModalPadrao2')"
-          alt="Ver red">
-          <!--<div class="DivQuadrado4"></div> --><span class="DivValign"><div class="DivQuadrado5"></div></span> </div>
+      <div class="DivQuadrado" style="background-color:#00b16a"> 
+          <span class="DivValign">
+              <div class="DivQuadrado1">
+                  <img src="<?php echo site_url().'static/backoffice/images/10.png';?>" border="0">
+              </div>
+              <div class="DivQuadrado2">Ver red</div>
+          </span>
+        <div class="DivQuadrado0" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('https://www.scipiracicaba.com.br/escritorio-virtual/ver-rede','ModalPadrao2')" alt="Ver red">
+            <span class="DivValign">
+                <div class="DivQuadrado5"></div>
+            </span> 
+        </div>
     </div>
-    <div class="DivQuadrado" style="background-color:#26c281"> <span class="DivValign"><div class="DivQuadrado1"><img src="imagens/11.png" border="0"></div><div class="DivQuadrado2" >Plano de carrera</div></span>
-      <div class="DivQuadrado0" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('https://www.scipiracicaba.com.br/escritorio-virtual/plano-de-carreira','ModalPadrao2')"
-        alt="Plano de carrera">
-        <!--<div class="DivQuadrado4"></div> --><span class="DivValign"><div class="DivQuadrado5"></div></span> </div>
+    <div class="DivQuadrado" style="background-color:#26c281"> 
+        <span class="DivValign">
+            <div class="DivQuadrado1">
+                <img src="<?php echo site_url().'static/backoffice/images/11.png';?>" border="0">
+            </div>
+            <div class="DivQuadrado2">Plan Carrera</div></span>
+      <div class="DivQuadrado0" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('https://www.scipiracicaba.com.br/escritorio-virtual/plano-de-carreira','ModalPadrao2')" alt="Plan Carrera">
+            <span class="DivValign">
+                <div class="DivQuadrado5"></div>
+            </span> 
+      </div>
     </div>
     <div class="DivQuadrado" style="background-color:#18ad90"> <span class="DivValign"><div class="DivQuadrado1"><img src="imagens/12.png" border="0"></div><div class="DivQuadrado2" >Extracto</div></span>
-      <div
-        class="DivQuadrado0" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('https://www.scipiracicaba.com.br/escritorio-virtual/extrato-py','ModalPadrao2')"
-        alt="Extracto">
-        <!--<div class="DivQuadrado4"></div> --><span class="DivValign"><div class="DivQuadrado5"></div></span> </div>
+      <div class="DivQuadrado0" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('https://www.scipiracicaba.com.br/escritorio-virtual/extrato-py','ModalPadrao2')" alt="Extracto">
+            <span class="DivValign">
+                <div class="DivQuadrado5"></div>
+            </span> 
+      </div>
   </div>
-  <div class="DivQuadrado" style="background-color:#4daf7c"> <span class="DivValign"><div class="DivQuadrado1"><img src="imagens/13.png" border="0"></div><div class="DivQuadrado2" >Mis nominados directos</div></span>
-    <div class="DivQuadrado0" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao3" onclick="abre('https://www.scipiracicaba.com.br/escritorio-virtual/meus-indicados-diretos','ModalPadrao4')"
-      alt="Mis nominados directos">
-      <!--<div class="DivQuadrado4"></div> --><span class="DivValign"><div class="DivQuadrado5"></div></span> </div>
+  <div class="DivQuadrado" style="background-color:#4daf7c"> 
+      <span class="DivValign">
+          <div class="DivQuadrado1">
+              <img src="<?php echo site_url().'static/backoffice/images/13.png';?>" border="0">
+          </div>
+          <div class="DivQuadrado2">Mis referidos directos</div></span>
+    <div class="DivQuadrado0" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao3" onclick="abre('https://www.scipiracicaba.com.br/escritorio-virtual/meus-indicados-diretos','ModalPadrao4')" alt="Mis referidos directos">
+        <span class="DivValign">
+            <div class="DivQuadrado5"></div>
+        </span> 
+    </div>
   </div>
 </div>
 <div class="DivGrupo">
   <div class="DivGrupoTitulo">
-    <div class="DivGrupoTitulo1" alt="Apoyo"> Apoyo </div>
+    <div class="DivGrupoTitulo1" alt="Apoyo">Apoyo</div>
   </div>
-  <div class="DivQuadrado" style="background-color:#b23527"> <span class="DivValign"><div class="DivQuadrado1"><img src="imagens/14.png" border="0"></div><div class="DivQuadrado2" >SAC</div></span>
-    <div class="DivQuadrado0"
-      data-dismiss="modal" data-toggle="modal" data-target="#ModalPadraoChat" onclick="abre('chat.asp','ModalPadraoChat')" alt="SAC">
-      <!--<div class="DivQuadrado4"></div> --><span class="DivValign"><div class="DivQuadrado5"></div></span> </div>
+  <div class="DivQuadrado" style="background-color:#b23527"> 
+      <span class="DivValign">
+          <div class="DivQuadrado1">
+              <img src="<?php echo site_url().'static/backoffice/images/14.png';?>" border="0">
+          </div>
+          <div class="DivQuadrado2">SAC</div>
+      </span>
+    <div class="DivQuadrado0" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadraoChat" onclick="abre('chat.asp','ModalPadraoChat')" alt="SAC">
+        <span class="DivValign">
+            <div class="DivQuadrado5"></div>
+        </span> 
+    </div>
   </div>
-  <div class="DivQuadrado" style="background-color:#ed4132"> <span class="DivValign"><div class="DivQuadrado1"><img src="imagens/15.png" border="0"></div><div class="DivQuadrado2" >Downloads</div></span>
-    <div class="DivQuadrado0"
-      data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('https://www.scipiracicaba.com.br/escritorio-virtual/downloads','ModalPadrao2')"
-      alt="Downloads">
-      <!--<div class="DivQuadrado4"></div> --><span class="DivValign"><div class="DivQuadrado5"></div></span> </div>
+  <div class="DivQuadrado" style="background-color:#ed4132"> 
+      <span class="DivValign">
+          <div class="DivQuadrado1">
+              <img src="<?php echo site_url().'static/backoffice/images/15.png';?>" border="0">
+          </div>
+          <div class="DivQuadrado2">Descargas</div></span>
+    <div class="DivQuadrado0" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('https://www.scipiracicaba.com.br/escritorio-virtual/downloads','ModalPadrao2')" alt="Descargas">
+        <span class="DivValign">
+            <div class="DivQuadrado5"></div>
+        </span> 
+    </div>
   </div>
-  <div class="DivQuadrado" style="background-color:#e26a6a"> <span class="DivValign"><div class="DivQuadrado1"><img src="imagens/16_1.png" border="0"></div><div class="DivQuadrado2" >Convención</div></span>
-    <div
-      class="DivQuadrado0" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('https://www.scipiracicaba.com.br/escritorio-virtual/convencao-2018','ModalPadrao2')"
-      alt="Convención">
-      <!--<div class="DivQuadrado4"></div> --><span class="DivValign"><div class="DivQuadrado5"></div></span> </div>
-</div>
-<div class="DivQuadrado" style="background-color:#ef4836;filter:alpha(opacity=30);opacity:.3"> <span class="DivValign"><div class="DivQuadrado1"><img src="imagens/17.png" border="0"></div><div class="DivQuadrado2" >Tienda online</div></span> </div>
-<div class="DivQuadrado" style="background-color:#ed4132"> <span class="DivValign"><div class="DivQuadrado1"><img src="imagens/18.png" border="0"></div><div class="DivQuadrado2" >Calendario de eventos</div></span>
+<div class="DivQuadrado" style="background-color:#ed4132"> 
+    <span class="DivValign">
+        <div class="DivQuadrado1">
+            <img src="<?php echo site_url().'static/backoffice/images/18.png';?>" border="0"></div>
+        <div class="DivQuadrado2" >Calendario de eventos</div>
+    </span>
   <div class="DivQuadrado0" onclick="window.open('https://www.scipiracicaba.com.br/agenda-sci-py','_blank')" alt="Calendario de eventos">
-    <!--<div class="DivQuadrado4"></div> --><span class="DivValign"><div class="DivQuadrado5"></div></span> </div>
+        <span class="DivValign">
+            <div class="DivQuadrado5"></div>
+        </span> 
+  </div>
 </div>
-<div class="DivQuadrado" style="background-color:#d94838"> <span class="DivValign"><div class="DivQuadrado1"><img src="imagens/25.png" border="0"></div><div class="DivQuadrado2" >TV SCI</div></span>
-  <div class="DivQuadrado0"
-    data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('https://www.scipiracicaba.com.br/escritorio-virtual/tv-sci','ModalPadrao2')"
-    alt="TV SCI">
-    <!--<div class="DivQuadrado4"></div> --><span class="DivValign"><div class="DivQuadrado5"></div></span> </div>
-</div>
-<div class="DivQuadrado" style="background-color:#ed321f"> <span class="DivValign"><div class="DivQuadrado1"><img src="imagens/28.png" border="0"></div><div class="DivQuadrado2" id = "div_manual_negocio" style="font-size: 12px">Manual de negocios</div></span>
+<div class="DivQuadrado" style="background-color:#ed321f"> 
+    <span class="DivValign">
+        <div class="DivQuadrado1">
+            <img src="<?php echo site_url().'static/backoffice/images/28.png';?>" border="0"></div>
+        <div class="DivQuadrado2" id = "div_manual_negocio" style="font-size: 12px">Manual de negocios</div>
+    </span>
   <div class="DivQuadrado0" onclick="window.open('https://www.scipiracicaba.com.br/downloads/Manual_de_Negocios_SCI_PY.pdf')" alt="Manual de negocios">
-    <!--<div class="DivQuadrado4"></div> --><span class="DivValign"><div class="DivQuadrado5"></div></span> </div>
+        <span class="DivValign">
+            <div class="DivQuadrado5"></div>
+        </span> 
+  </div>
 </div>
 </div>
 <div class="DivGrupo">
   <div class="DivGrupoTitulo">
     <div class="DivGrupoTitulo1" alt="Interactividad"> Interactividad </div>
   </div>
-  <div class="DivQuadrado" style="background-color:#e68517"> <span class="DivValign"><div class="DivQuadrado1"><img src="imagens/20.png" border="0"></div><div class="DivQuadrado2" >Youtube SCI</div></span>
+  <div class="DivQuadrado" style="background-color:#e68517"> 
+      <span class="DivValign">
+          <div class="DivQuadrado1">
+              <img src="<?php echo site_url().'static/backoffice/images/20.png';?>" border="0">
+          </div>
+          <div class="DivQuadrado2">Youtube NFN</div>
+      </span>
     <div
-      class="DivQuadrado0" onclick="window.open('https://www.youtube.com/channel/UCWssjK78s0rDbMcmDLENDlg?sub_confirmation=1','_blank')" alt="Youtube SCI">
-      <!--<div class="DivQuadrado4"></div> --><span class="DivValign"><div class="DivQuadrado5"></div></span> </div>
+      class="DivQuadrado0" onclick="window.open('https://www.youtube.com/channel/UCWssjK78s0rDbMcmDLENDlg?sub_confirmation=1','_blank')" alt="Youtube NFN">
+        <span class="DivValign">
+            <div class="DivQuadrado5"></div>
+        </span> 
+    </div>
 </div>
-<div class="DivQuadrado" style="background-color:#eb974e"> <span class="DivValign"><div class="DivQuadrado1"><img src="imagens/22.png" border="0"></div><div class="DivQuadrado2" >Facebook</div></span>
-  <div class="DivQuadrado0"
-    data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('modal_facebook.asp','ModalPadrao2')" alt="Facebook">
-    <!--<div class="DivQuadrado4"></div> --><span class="DivValign"><div class="DivQuadrado5"></div></span> </div>
+<div class="DivQuadrado" style="background-color:#eb974e"> 
+    <span class="DivValign">
+        <div class="DivQuadrado1">
+            <img src="<?php echo site_url().'static/backoffice/images/22.png';?>" border="0">
+        </div>
+        <div class="DivQuadrado2">Facebook</div>
+    </span>
+  <div class="DivQuadrado0" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('modal_facebook.asp','ModalPadrao2')" alt="Facebook">
+        <span class="DivValign">
+            <div class="DivQuadrado5"></div>
+        </span> 
+  </div>
 </div>
-<div class="DivQuadrado" style="background-color:#e88a37"> <span class="DivValign"><div class="DivQuadrado1"><img src="imagens/35.png" border="0"></div><div class="DivQuadrado2" >Instagram</div></span>
-  <div class="DivQuadrado0"
-    data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('modal_instagram.asp','ModalPadrao2')" alt="Instagram">
-    <!--<div class="DivQuadrado4"></div> --><span class="DivValign"><div class="DivQuadrado5"></div></span> </div>
+<div class="DivQuadrado" style="background-color:#e88a37"> 
+    <span class="DivValign">
+        <div class="DivQuadrado1">
+            <img src="<?php echo site_url().'static/backoffice/images/35.png';?>" border="0">
+        </div>
+        <div class="DivQuadrado2">Instagram</div>
+    </span>
+  <div class="DivQuadrado0" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('modal_instagram.asp','ModalPadrao2')" alt="Instagram">
+        <span class="DivValign">
+            <div class="DivQuadrado5"></div>
+        </span> 
+  </div>
 </div>
-<div class="DivQuadrado" style="background-color:#e7a13c"> <span class="DivValign"><div class="DivQuadrado1"><img src="imagens/26.png" border="0"></div><div class="DivQuadrado2" >Solicitud</div></span>
-  <div class="DivQuadrado0"
-    data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('https://www.scipiracicaba.com.br/escritorio-virtual/download-aplicativo','ModalPadrao2')"
-    alt="Solicitud">
-    <!--<div class="DivQuadrado4"></div> --><span class="DivValign"><div class="DivQuadrado5"></div></span> </div>
-</div>
-<div class="DivQuadrado" style="background-color:#f9bf3b"> <span class="DivValign"><div class="DivQuadrado1"><img src="imagens/21.png" border="0"></div><div class="DivQuadrado2" >Revista Online</div></span>
-  <div
-    class="DivQuadrado0" onclick="window.open('https://www.scipiracicaba.com.br/caderno-marketing','_blank')" alt="Revista Online">
-    <!--<div class="DivQuadrado4"></div> --><span class="DivValign"><div class="DivQuadrado5"></div></span> </div>
+<div class="DivQuadrado" style="background-color:#e7a13c"> 
+    <span class="DivValign">
+        <div class="DivQuadrado1">
+            <img src="<?php echo site_url().'static/backoffice/images/26.png';?>" border="0">
+        </div>
+        <div class="DivQuadrado2">Solicitud</div>
+    </span>
+  <div class="DivQuadrado0" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('https://www.scipiracicaba.com.br/escritorio-virtual/download-aplicativo','ModalPadrao2')" alt="Solicitud">
+        <span class="DivValign">
+            <div class="DivQuadrado5"></div>
+        </span> 
+  </div>
 </div>
 </div>
 <!-- //BLOCOS -->
@@ -752,11 +896,12 @@
   <div class="modal-dialog modal-lg">
     <!-- Modal content-->
     <div class="modal-content ">
-      <div class="modal-header"> <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">TUTORIALES SCI</h4>
+      <div class="modal-header"> 
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">TUTORIALES NFN</h4>
       </div>
-      <div class="modal-body" id="blocos_tutoriais"> </div>
-      <div class="modal-footer"> <button type="button" class="btn btn-default" data-dismiss="modal">Cerca</button> </div>
+      <div class="modal-body" id="blocos_tutoriais"></div>
+      <div class="modal-footer"> <button type="button" class="btn btn-default" data-dismiss="modal">Cerca</button></div>
     </div>
   </div>
 </div>
@@ -802,7 +947,7 @@
   $.ajax({ type: "get", url: "https://www.scipiracicaba.com.br/escritorio-virtual/app/verificar", success: function(retorno){ console.log(retorno); } });
 </script>
 <script type="text/javascript">
-  // BOAS VINDAS //$(document).ready(function () { //abre("https://www.scipiracicaba.com.br/escritorio-virtual/bem-vindo-dados-pagamento", "ModalPadrao2"); //$("#ModalPadrao").modal("show"); //});
+  $(document).ready(function () { abre("https://www.scipiracicaba.com.br/escritorio-virtual/bem-vindo-dados-pagamento", "ModalPadrao2"); $("#ModalPadrao").modal("show"); });
 </script>
 <script type="text/javascript">
   // APP //$(document).ready(function () { //abre('https://www.scipiracicaba.com.br/escritorio-virtual/download-aplicativo','ModalPadrao2'); //$("#ModalPadrao").modal("show"); //});
