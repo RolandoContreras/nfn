@@ -262,7 +262,7 @@
       <!-- 'SAIR DO EV' -->
       <div class="DivBolinhas BolinhaMenor">
           <span class="DivValign">
-              <img src="<?php echo site_url().'static/backoffice/images/botonsalir.png';?>" class="ImagemMenor" data-toggle="tooltip" data-placement="bottom" title="Salir" onclick="window.open('https://www.scipiracicaba.com.br/escritorio-virtual/sair', '_self');" alt="Salir" />
+              <img src="<?php echo site_url().'static/backoffice/images/botonsalir.png';?>" class="ImagemMenor" data-toggle="tooltip" data-placement="bottom" title="Salir" onclick="window.open('<?php echo site_url().'salir';?>', '_self');" alt="Salir" />
           </span>
       </div>
     </div>
@@ -448,7 +448,7 @@
       <!-- END RED-->
       <div class="DivGrupo1 DivGrupoMargin DivApoio">
         <div class="DivGrupoTitulo">
-          <div class="DivGrupoTitulo1" alt="Apoyo" title="Apoyo"> Apoyo </div>
+          <div class="DivGrupoTitulo1" alt="Apoyo" title="Apoyo">Apoyo</div>
         </div>
         <div class="DivGrupo2">
           <div class="DivQuadrado DivQuadrado3" style="background-color:#b23527" data-toggle="tooltip" title="Servicio al Cliente" alt="Servicio al Cliente"> 
@@ -518,7 +518,7 @@
       </span>
         <div class="DivQuadrado0">
             <span class="DivValign">
-                <div class="DivQuadrado5" onclick="window.open('https://www.youtube.com/channel/UCWssjK78s0rDbMcmDLENDlg?sub_confirmation=1','_blank')"></div>
+                <div class="DivQuadrado5" onclick="window.open('https://www.youtube.com/channel/UCsKH0cc3ve4aGCBQ4Luo0-g','_blank')"></div>
             </span>          
         </div>
       </div>
@@ -531,7 +531,7 @@
           </span>
         <div class="DivQuadrado0">
             <span class="DivValign">
-                <div class="DivQuadrado5" onclick="window.open('https://www.youtube.com/channel/UCWssjK78s0rDbMcmDLENDlg?sub_confirmation=1','_blank')"></div>
+                <div class="DivQuadrado5" onclick="window.open('https://www.facebook.com/nfnoficial/','_blank')"></div>
             </span>          
         </div>
     </div>
@@ -544,7 +544,7 @@
     </span>
       <div class="DivQuadrado0">
            <span class="DivValign">
-               <div class="DivQuadrado5" onclick="window.open('https://www.youtube.com/channel/UCWssjK78s0rDbMcmDLENDlg?sub_confirmation=1','_blank')"></div>
+               <div class="DivQuadrado5" onclick="window.open('https://www.instagram.com/nfnperu/?hl=es-la','_blank')"></div>
            </span>        
       </div>
   </div>

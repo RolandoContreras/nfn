@@ -54,6 +54,7 @@ $route['product/basico'] = 'home/product';
 
 //MANAGER - BACKOFFICE
 $route['backoffice'] = "b_home";
+$route['salir'] = "login/logout";
 
 //MANAGER - DASHBOARD
 $route['dashboard'] = "dashboard";

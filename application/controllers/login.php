@@ -17,17 +17,7 @@ class Login extends CI_Controller {
             header('Access-Control-Allow-Credentials: true');  
             header('Access-Control-Max-Age: 86400');   
         }
-        
-        if ($_SERVER['REQUEST_METHOD'] == 'OPTIONS') {  
 
-            if (isset($_SERVER['HTTP_ACCESS_CONTROL_REQUEST_METHOD']))  
-                header("Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS");  
-
-            if (isset($_SERVER['HTTP_ACCESS_CONTROL_REQUEST_HEADERS']))  
-                header("Access-Control-Allow-Headers: {$_SERVER['HTTP_ACCESS_CONTROL_REQUEST_HEADERS']}");  
-        }
-        
-        if($this->input->is_ajax_request()){
             //GET DATA STRING
             $code = $this->input->post("code"); 
             $pass = $this->input->post("pass");
@@ -57,6 +47,12 @@ class Login extends CI_Controller {
             }
             echo json_encode($data); 
             exit(); 
-        }
-    }    
+    }
+
+    public function logout(){        
+        $this->session->unset_userdata('customer');
+	$this->session->destroy();
+        redirect('home'); 
+    }
+    
 }
