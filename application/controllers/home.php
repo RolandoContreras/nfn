@@ -4,6 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 class Home extends CI_Controller {
     public function __construct(){
      parent::__construct();
+     $this->load->model("comments_model","obj_comments");
     } 
 
     public function index()
@@ -18,6 +19,20 @@ class Home extends CI_Controller {
             $email = $this->input->post("email");
             $subject = $this->input->post("subject");
             $comments = $this->input->post("comments");
+            
+            //SAVE MESSAGES BD
+            //status_value 0 means (not read)
+                    $data = array(
+                        'name' => $name,
+                        'email' => $email,
+                        'phone' => $phone,
+                        'subject' => $subject,
+                        'comment' => $comments,
+                        'date_comment' => date("Y-m-d H:i:s"),
+                        'active' => 1,
+                        'status_value' => 1,
+                    );
+                    $this->obj_comments->insert($data);
             
             //SEND MESSAGES
             $mensaje = wordwrap("<html><body>"
