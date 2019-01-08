@@ -17,13 +17,10 @@ BITSHARE S.A.C
 
 class users_model_atributos{	
     var $user_id='';
-    var $user_name='';
     var $password='';
-    var $ip_address='';
     var $first_name='';
     var $last_name='';
     var $email='';
-    var $phone='';
     var $privilage='';
     var $active='';
     var $status_value='';
@@ -39,13 +36,10 @@ class Users_Model extends CI_Model{
         parent::__construct();  
         $this->table = 'users';
 	$this->table_id = 'user_id';
-        $this->user_name='';
 	$this->password='';
-        $this->ip_address='';
 	$this->first_name='';
         $this->last_name='';
         $this->email='';
-	$this->phone='';
         $this->privilage='';
         $this->active='';
 	$this->status_value='';

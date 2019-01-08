@@ -51,6 +51,13 @@ $route['forgot'] = 'forgot';
 $route['home/send_messages'] = 'home/send_messages';
 $route['product/basico'] = 'home/product';
 
+//MANAGER - BACKOFFICE
 $route['backoffice'] = "b_home";
+
+//MANAGER - DASHBOARD
+$route['dashboard'] = "dashboard";
+$route['dashboard/validate'] = "dashboard/validate";
+$route['dashboard/panel'] = "panel";
+
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */
