@@ -107,7 +107,6 @@
                                             <li><a href="<?php echo site_url()."dashboard/comentarios";?>"><i class="icon-large icon-th"></i>Comentarios</a></li>
                                             <li><a href="<?php echo site_url()."dashboard/informativos";?>"><i class="icon-large icon-th"></i>Mensajes Informativos</a></li>
                                             <li><a href="<?php echo site_url()."dashboard/noticias";?>"><i class="icon-large icon-th"></i>Noticias</a></li>
-                                            <li><a href="<?php echo site_url()."dashboard/ventas";?>"><i class="icon-large icon-th"></i>Ventas</a></li>
                                             <?php if($_SESSION['usercms']['privilage'] == 3){ ?>
                                             <li><a href="<?php echo site_url()."dashboard/usuarios";?>"><i class="icon-large icon-th"></i>Usuarios</a></li>
                                             <?php } ?>
@@ -118,7 +117,7 @@
                             <div class="accordion-group">
                                 <div class="accordion-heading">
                                     <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionSB" href="#sell">
-                                    Ventas
+                                    Ventas Box
                                     </a>
                                 </div>
                                 <div id="sell" class="accordion-body collapse">
@@ -132,6 +131,22 @@
                                             </li>
                                             <li>
                                                 <a href="javascript:void(0);"><i class="icon-large icon-th"></i>Asociados</a>
+                                            </li>
+                                        </ul>                                     
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-group">
+                                <div class="accordion-heading">
+                                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionSB" href="#pay">
+                                    Pagos Comisiones
+                                    </a>
+                                </div>
+                                <div id="pay" class="accordion-body collapse">
+                                    <div class="accordion-inner">
+                                        <ul class="nav nav-list">
+                                            <li>
+                                                <a href="javascript:void(0);"><i class="icon-large icon-th"></i>Pagos</a>
                                             </li>
                                         </ul>                                     
                                     </div>

@@ -59,5 +59,23 @@ $route['dashboard'] = "dashboard";
 $route['dashboard/validate'] = "dashboard/validate";
 $route['dashboard/panel'] = "panel";
 
+$route['dashboard/clientes'] = "d_customer";
+$route['dashboard/clientes/load/([0-9]+)'] = "d_customer/load/$1";
+$route['dashboard/clientes/validate'] = "d_customer/validate";
+$route['dashboard/clientes/delete'] = "d_customer/delete";
+
+$route['dashboard/comentarios'] = "d_comments";
+$route['dashboard/comentarios/cambiar_status'] = "d_comments/change_status";
+$route['dashboard/comentarios/cambiar_status_no'] = "d_comments/change_status_no";
+
+$route['dashboard/usuarios'] = "d_users";
+$route['dashboard/usuarios/load'] = "d_users/load";
+$route['dashboard/usuarios/load/([0-9]+)'] = "d_users/load/$1";
+$route['dashboard/usuarios/validate'] = "d_users/validate";
+$route['dashboard/usuarios/delete'] = "d_users/delete";
+
+$route['dashboard/soporte'] = "d_informative/soporte";
+$route['dashboard/soporte/update'] = "d_informative/update";
+
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */

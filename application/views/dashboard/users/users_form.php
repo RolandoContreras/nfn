@@ -32,9 +32,6 @@
               <strong>Apellidos:</strong><br> 
               <input type="text" id="last_name" name="last_name" value="<?php echo isset($obj_users->last_name)?$obj_users->last_name:"";?>" class="input-xlarge-fluid" placeholder="Apellidos">
               <br><br>
-              <strong>Teléfono:</strong><br> 
-              <input type="text" id="phone" name="phone" value="<?php echo isset($obj_users->phone)?$obj_users->phone:"";?>" class="input-xlarge-fluid" placeholder="Telefono">
-              <br><br>
                 <div class="well nomargin" style="width: 200px;">
                     <div class="inner">
                         <strong>Privilegio:</strong>

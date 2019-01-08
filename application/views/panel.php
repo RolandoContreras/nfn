@@ -21,7 +21,7 @@
                             <tbody>
                                     <tr>
                                         <td><a href="<?php echo site_url().'dashboard/ventas_card';?>"><b>0</b><i class="fa fa-btc"></i> Ventas Box</a></td>
-                                        <td><a href="<?php echo site_url().'dashboard/ventas_card';?>" class="pending"><b class="cmd"></b><i class="fa fa-btc"></i> Por Procesar</a></td>
+                                        <td><a href="<?php echo site_url().'dashboard/ventas_card';?>" class="pending"><b class="cmd">0</b><i class="fa fa-btc"></i> Por Procesar</a></td>
                                     </tr>
                                     <tr>
                                             <td><a href="<?php echo site_url().'dashboard/comentarios';?>"><b><?php echo $obj_total->total_comments;?></b><i class="fa fa-comments"></i> Comentarios</a></td>

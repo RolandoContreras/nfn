@@ -42,7 +42,7 @@
                     <form action="" method="get" id="login">
                         <fieldset>
                             <div class="control-group">
-                                <label class="control-label" for="prependedInput">Usuario o email</label>
+                                <label class="control-label" for="prependedInput">Email</label>
                                 <div class="controls">
                                     <div class="input-prepend">
                                         <span class="add-on"><img width="20" class="image_icons" src="<?php echo site_url().'static/cms/png/user91.png';?>"></span>
