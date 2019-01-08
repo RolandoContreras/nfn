@@ -18,14 +18,6 @@ class Dashboard extends CI_Controller {
             header('Access-Control-Max-Age: 86400');   
         }  
 
-        if ($_SERVER['REQUEST_METHOD'] == 'OPTIONS') {  
-
-            if (isset($_SERVER['HTTP_ACCESS_CONTROL_REQUEST_METHOD']))  
-                header("Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS");  
-
-            if (isset($_SERVER['HTTP_ACCESS_CONTROL_REQUEST_HEADERS']))  
-                header("Access-Control-Allow-Headers: {$_SERVER['HTTP_ACCESS_CONTROL_REQUEST_HEADERS']}");  
-        }  
             $this->form_validation->set_rules('email','email',"required|trim|valid_email|callback_validar_user");
             $this->form_validation->set_rules('password','password','required|trim');              
     	    $this->form_validation->set_message('required','Campo requerido %s');    	    

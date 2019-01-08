@@ -28,8 +28,8 @@
                                             <td><a href="<?php echo site_url().'dashboard/comentarios';?>" class="pending"><b class="cmd"><?php echo $obj_pending->pending_comments;?></b><i class="fa fa-comments"></i> Por Leer</a></td>
                                     </tr>
                                     <tr>
-                                            <td><a href="<?php echo site_url().'dashboard/soporte';?>"><b><?php echo $obj_total->total_messages_support;?></b><i class="fa fa-question"></i> Soporte</a></td>
-                                            <td><a href="<?php echo site_url().'dashboard/soporte';?>" class="spam"><b class="cmd"><?php echo $obj_pending->pending_messages_support;?></b><i class="fa fa-question"></i> Por Solucionar</a></td>
+                                            <td><a href="<?php echo site_url().'dashboard/soporte';?>"><b>0</b><i class="fa fa-question"></i> SAC</a></td>
+                                            <td><a href="<?php echo site_url().'dashboard/soporte';?>" class="spam"><b class="cmd">0</b><i class="fa fa-question"></i> Por Solucionar</a></td>
                                     </tr>
                                     <tr>
                                             <td><a href="<?php echo site_url().'dashboard/clientes';?>"><b><?php echo $obj_total->total_customer;?></b><i class="fa fa-users"></i> Asociados</a></td><td></td>

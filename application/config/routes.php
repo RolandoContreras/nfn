@@ -47,6 +47,7 @@ $route['productos'] = 'product';
 $route['noticias'] = 'news';
 $route['contacto'] = 'contact';
 $route['login'] = 'login';
+$route['login/validate'] = 'login/validate';
 $route['forgot'] = 'forgot';
 $route['home/send_messages'] = 'home/send_messages';
 $route['product/basico'] = 'home/product';

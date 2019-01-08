@@ -12,11 +12,25 @@ class Login extends CI_Controller {
     }
         
     public function validate(){
+        if (isset($_SERVER['HTTP_ORIGIN'])) {  
+            header("Access-Control-Allow-Origin: {$_SERVER['HTTP_ORIGIN']}");  
+            header('Access-Control-Allow-Credentials: true');  
+            header('Access-Control-Max-Age: 86400');   
+        }
+        
+        if ($_SERVER['REQUEST_METHOD'] == 'OPTIONS') {  
+
+            if (isset($_SERVER['HTTP_ACCESS_CONTROL_REQUEST_METHOD']))  
+                header("Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS");  
+
+            if (isset($_SERVER['HTTP_ACCESS_CONTROL_REQUEST_HEADERS']))  
+                header("Access-Control-Allow-Headers: {$_SERVER['HTTP_ACCESS_CONTROL_REQUEST_HEADERS']}");  
+        }
+        
         if($this->input->is_ajax_request()){
             //GET DATA STRING
             $code = $this->input->post("code"); 
             $pass = $this->input->post("pass");
-            
             //SET PARAMETER
             $params = array("select" =>"customer.customer_id,
                                         customer.code,
@@ -41,7 +55,8 @@ class Login extends CI_Controller {
             }else{
                    $data['status'] = "false";
             }
-            echo json_encode($data);    
+            echo json_encode($data); 
+            exit(); 
         }
     }    
 }
