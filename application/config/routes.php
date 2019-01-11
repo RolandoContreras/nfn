@@ -66,6 +66,12 @@ $route['dashboard/clientes/load/([0-9]+)'] = "d_customer/load/$1";
 $route['dashboard/clientes/validate'] = "d_customer/validate";
 $route['dashboard/clientes/delete'] = "d_customer/delete";
 
+$route['dashboard/box'] = "d_box";
+$route['dashboard/box/load'] = "d_box/load";
+$route['dashboard/box/load/([0-9]+)'] = "d_box/load/$1";
+$route['dashboard/box/validate'] = "d_box/validate";
+$route['dashboard/box/delete'] = "d_box/delete";
+
 $route['dashboard/comentarios'] = "d_comments";
 $route['dashboard/comentarios/cambiar_status'] = "d_comments/change_status";
 $route['dashboard/comentarios/cambiar_status_no'] = "d_comments/change_status_no";

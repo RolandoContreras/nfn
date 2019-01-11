@@ -32,6 +32,9 @@
                                             <td><a href="<?php echo site_url().'dashboard/soporte';?>" class="spam"><b class="cmd">0</b><i class="fa fa-question"></i> Por Solucionar</a></td>
                                     </tr>
                                     <tr>
+                                            <td><a href="<?php echo site_url().'dashboard/box';?>"><b><?php echo $obj_total->total_box;?></b><i class="fa fa-users"></i> Box</a></td><td></td>
+                                    </tr>
+                                    <tr>
                                             <td><a href="<?php echo site_url().'dashboard/clientes';?>"><b><?php echo $obj_total->total_customer;?></b><i class="fa fa-users"></i> Asociados</a></td><td></td>
                                     </tr>
                                     <tr>

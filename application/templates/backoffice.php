@@ -387,7 +387,7 @@
               </span>
             <div class="DivQuadrado0">
               <span class="DivValign">
-                  <div class="DivQuadrado5" onclick="window.open('https://www.scipiracicaba.com.br/py/registro-datos-personales','_blank');"></div>
+                  <div class="DivQuadrado5" onclick="window.open('<?php echo site_url().'register';?>','_blank');"></div>
               </span>              
             </div>
           </div>
@@ -582,7 +582,9 @@
       </div>
       <div class="Titulo">OFICINA VIRTUAL NFN</div>
       <div class="BlocoFoto">
-        <div class="FotoCliente" id="FotoClienteMobile" style="background-image:url('https://www.scipiracicaba.com.br/img_site/foto-perfil/foto-perfil-padrao.jpg');background-size:cover;cursor:pointer;"><input type="button" id="FotoBotaoMobile" name="FotoBotaoMobile" style="cursor:pointer;"></div>
+          <div class="FotoCliente" id="FotoClienteMobile" style="background-image:url('<?php echo site_url().'static/backoffice/images/foto-perfil.jpg  ';?>');background-size:cover;cursor:pointer;">
+            <input type="button" id="FotoBotaoMobile" name="FotoBotaoMobile" style="cursor:pointer;">
+        </div>
         <div class="TextoBemVindo">Bienvenido Rolando!<br>ID:
           <font style="font-weight:400">1540265</font>
         </div>
@@ -632,7 +634,7 @@
                 <div class="DivQuadrado1">
                     <img src="<?php echo site_url().'static/backoffice/images/4.png';?>" border="0">
                 </div>
-                <div class="DivQuadrado2" >Contraseña</div>
+                <div class="DivQuadrado2">Contraseña</div>
             </span>
           <div class="DivQuadrado0" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('https://www.scipiracicaba.com.br/escritorio-virtual/senha','ModalPadrao2')" alt="Contraseña">
                 <span class="DivValign">
@@ -696,7 +698,7 @@
               </div>
               <div class="DivQuadrado2">Añadir cliente</div>
           </span>
-        <div class="DivQuadrado0" onclick="window.open('https://www.scipiracicaba.com.br/py/registro-datos-personales','_blank');" alt="Añadir cliente">
+          <div class="DivQuadrado0" onclick="window.open('<?php echo site_url().'register';?>','_blank');" alt="Añadir Cliente">
             <span class="DivValign">
                 <div class="DivQuadrado5"></div>
             </span> 

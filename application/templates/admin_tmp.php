@@ -117,20 +117,17 @@
                             <div class="accordion-group">
                                 <div class="accordion-heading">
                                     <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordionSB" href="#sell">
-                                    Ventas Box
+                                    Ventas / Activaciones
                                     </a>
                                 </div>
                                 <div id="sell" class="accordion-body collapse">
                                     <div class="accordion-inner">
                                         <ul class="nav nav-list">
                                             <li>
-                                                <a href="javascript:void(0);"><i class="icon-large icon-th"></i>Total Comisiones</a>
+                                                <a href="<?php echo site_url()."dashboard/panel";?>"><i class="icon-large icon-th"></i>Activaciones</a>
                                             </li>
                                             <li>
-                                                <a href="javascript:void(0);"><i class="icon-large icon-th"></i>Comisión x Asociado</a>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0);"><i class="icon-large icon-th"></i>Asociados</a>
+                                                <a href="javascript:void(0);"><i class="icon-large icon-th"></i>Ventas</a>
                                             </li>
                                         </ul>                                     
                                     </div>
