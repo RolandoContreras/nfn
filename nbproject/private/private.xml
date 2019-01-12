@@ -5,13 +5,16 @@
         <group>
             <file>file:/C:/wamp64/www/nfn/application/views/panel.php</file>
             <file>file:/C:/wamp64/www/nfn/application/controllers/register.php</file>
+            <file>file:/C:/wamp64/www/nfn/application/config/routes.php</file>
+            <file>file:/C:/wamp64/www/nfn/application/views/dashboard/box/box_form.php</file>
             <file>file:/C:/wamp64/www/nfn/application/views/register.php</file>
+            <file>file:/C:/wamp64/www/nfn/application/controllers/panel.php</file>
+            <file>file:/C:/wamp64/www/nfn/application/models/box_model.php</file>
             <file>file:/C:/wamp64/www/nfn/application/templates/backoffice.php</file>
-            <file>file:/C:/wamp64/www/nfn/application/controllers/login.php</file>
-            <file>file:/C:/wamp64/www/nfn/application/views/about.php</file>
-            <file>file:/C:/wamp64/www/nfn/application/views/home.php</file>
+            <file>file:/C:/wamp64/www/nfn/application/controllers/d_box.php</file>
+            <file>file:/C:/wamp64/www/nfn/application/views/dashboard/box/box_list.php</file>
+            <file>file:/C:/wamp64/www/nfn/static/cms/js/box.js</file>
             <file>file:/C:/wamp64/www/nfn/application/templates/admin_tmp.php</file>
-            <file>file:/C:/wamp64/www/nfn/application/views/contacto.php</file>
         </group>
     </open-files>
 </project-private>
