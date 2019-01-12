@@ -35,6 +35,9 @@
                                             <td><a href="<?php echo site_url().'dashboard/box';?>"><b><?php echo $obj_total->total_box;?></b><i class="fa fa-users"></i> Box</a></td><td></td>
                                     </tr>
                                     <tr>
+                                            <td><a href="<?php echo site_url().'dashboard/bonos';?>"><b><?php echo $obj_total->total_bonus;?></b><i class="fa fa-users"></i> Bonos</a></td><td></td>
+                                    </tr>
+                                    <tr>
                                             <td><a href="<?php echo site_url().'dashboard/clientes';?>"><b><?php echo $obj_total->total_customer;?></b><i class="fa fa-users"></i> Asociados</a></td><td></td>
                                     </tr>
                                     <tr>
