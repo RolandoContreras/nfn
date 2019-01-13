@@ -54,6 +54,9 @@ $route['product/basico'] = 'home/product';
 
 //MANAGER - BACKOFFICE
 $route['backoffice'] = "b_home";
+
+$route['backoffice/contrasena'] = "b_home/contrasena";
+
 $route['salir'] = "login/logout";
 
 //MANAGER - DASHBOARD

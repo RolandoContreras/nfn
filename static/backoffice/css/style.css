@@ -866,4 +866,13 @@ button {outline-style:none}
 *:focus {
     outline-style: none !important;
 }
+.label-success {
+    background-color: #029b17;
+}
+.label-danger {
+    background-color: red;
+}
+.title{
+    color: white;
+}
 

@@ -1,20 +1,21 @@
-var UrlAreaRestrita="https://www.scipiracicaba.com.br/escritorio-virtual/";
+//var UrlAreaRestrita="https://www.scipiracicaba.com.br/escritorio-virtual/";
+var UrlAreaRestrita="localhost/nfn/backoffice/";
 
 var DivAguarde ="<div class='DivLeft100pc_P20 Background4 ArredondarBordas4 Padding20 AlignCenter'><div class='DivInlineBlock'><div class='DivLeft'><img src='imagens/carregando.gif' width='40' height='40'></div><div class='DivLeft MarginL10 MarginT8 FontSize17 Weight600'>Aguarde...</div></div></div>";
 
-$(document).keydown(function (event) {
-    if (event.keyCode == 123) { // Prevent F12
-        return false;
-    } else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) { // Prevent Ctrl+Shift+I        
-        return false;
-    } else if (event.ctrlKey && event.keyCode == 85) { // Prevent Ctrl+Shift+U
-        return false;
-    }
-});
+//$(document).keydown(function (event) {
+//    if (event.keyCode == 123) { // Prevent F12
+//        return false;
+//    } else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) { // Prevent Ctrl+Shift+I        
+//        return false;
+//    } else if (event.ctrlKey && event.keyCode == 85) { // Prevent Ctrl+Shift+U
+//        return false;
+//    }
+//});
 
-$(document).on("contextmenu", function (e) {        
-    e.preventDefault();
-});
+//$(document).on("contextmenu", function (e) {        
+//    e.preventDefault();
+//});
 
 //////////////////////////////////////////////////////////
 
@@ -2322,23 +2323,25 @@ function DadosPessoaisEditar(){
 //////////////////////////////////////////////////////////
 
 function abre(url,id) {
-
-	if (id=="ModalPadraoChat") {
-		var DivAguarde2 = "<div class='modal-dialog' style='width:100%;max-width:950px'><div class='modal-content'><div class='modal-body' style='padding:0px'><div class='ModalTable' id='ModalPadraoChat2'>"+ DivAguarde +"</div></div></div></div>";
-	} else {
-		var DivAguarde2 = DivAguarde;
-	}
-
-	$("#"+ id +"").html(DivAguarde2);
-
-	$.ajax({
-	type: "get",
-	url: url,
-	success: function(retorno){
-		$("#"+ id +"").html(retorno);
-		$('[data-toggle="tooltip"]').tooltip();
-	}
-	})
+    
+    alert(url);
+    
+//	if (id=="ModalPadraoChat") {
+//		var DivAguarde2 = "<div class='modal-dialog' style='width:100%;max-width:950px'><div class='modal-content'><div class='modal-body' style='padding:0px'><div class='ModalTable' id='ModalPadraoChat2'>"+ DivAguarde +"</div></div></div></div>";
+//	} else {
+//		var DivAguarde2 = DivAguarde;
+//	}
+//
+//	$("#"+ id +"").html(DivAguarde2);
+//
+//	$.ajax({
+//	type: "get",
+//	url: url,
+//	success: function(retorno){
+//		$("#"+ id +"").html(retorno);
+//		$('[data-toggle="tooltip"]').tooltip();
+//	}
+//	})
 
 }
 

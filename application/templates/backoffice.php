@@ -3,7 +3,8 @@
 <head>
   <title>Oficina Virtual NFN</title>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css' />
-  <base href="https://www.scipiracicaba.com.br/area-restrita-nova/">
+  <!--<base href="https://www.scipiracicaba.com.br/area-restrita-nova/">-->
+  <base href="<?php echo site_url().'backoffice';?>">
   <!--FAVICO-->
     <link rel="apple-touch-icon" sizes="57x57" href="<?php echo site_url().'static/page_front/images/favicon/apple-icon-57x57.png';?>">
     <link rel="apple-touch-icon" sizes="60x60" href="<?php echo site_url().'static/page_front/images/favicon/apple-icon-60x60.png';?>">
@@ -137,7 +138,7 @@
                     </div>
                     <div class="Linhas2"></div>
 
-                    <div class="SubMenu" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="EfeitoMenu('MenuMobile');abre('https://www.scipiracicaba.com.br/escritorio-virtual/senha','ModalPadrao2');" alt="Contraseña" title="Contraseña">
+                    <div class="SubMenu" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="EfeitoMenu('MenuMobile');abre('<?php echo site_url().'backoffice/contrasena;';?>','ModalPadrao2');" alt="Contraseña" title="Contraseña">
                         <span class="DivValign">&bull; Contraseña</span></div>
                     <div class="Linhas"></div>
             <!--MENU BOX-->
@@ -223,14 +224,29 @@
       .botaozinho {background-image:url('<?php echo site_url().'static/backoffice/images/foto-perfil.jpg';?>');background-size:cover;cursor:pointer}
   </style>
   <div class="Blocos">
-    <div class="TextoBemVindo">¡Bienvenido, Rolando!<br>ID:
-      <font style="font-weight:400">1540265</font>
+    <div class="TextoBemVindo">¡Bienvenido, <?php echo $_SESSION['customer']['name'];?>!<br>ID:
+      <font style="font-weight:400"><?php echo $_SESSION['customer']['code'];?></font>
     </div>
+  </div>
+  <?php 
+        $active = $_SESSION['customer']['active'];
+        if($active == 1){
+            $text = "Activo";
+            $style = "label-success";
+        }else{
+            $text = "Inactivo";
+            $style = "label-danger";
+        }
+    ?>
+  <div class="Blocos <?php echo $style;?>">
+        <span class="title">
+           <?php echo $text;?>
+        </span>
   </div>
   <!-- //Lateral do quadro dos sonhos -->
   <!-- Lateral do Perfil -->
   <div class="Blocos" id="BlocoPerfil" style="display:none; border-bottom:0px">
-    <div class="FraseDia" style="font-size:15px">¡SEAN BIENVENIDOS A SCI!</div>
+    <div class="FraseDia" style="font-size:15px">¡SEAN BIENVENIDOS A NFN!</div>
     <div class="FraseDia" style="font-weight: 400;margin-top:3px;font-size:16px">Hable más sobre usted</div>
     <div class="VoltarAoEscritorio" onclick="mudaLateral('Home')">
       <div style="float:left; margin-left:5px;"><img src="imagens_perfil/voltar_ev.png" width="24" height="20" alt="Voltar ao escritório virtual" title="Volver a la oficina virtual" /></div>
@@ -940,7 +956,7 @@
 </script>
 <!--//MODAL (para abrir o conteudo das paginas) -->
 <script type="text/javascript">
-  function FecharPagina(){ window.history.pushState( '', '', 'https://www.scipiracicaba.com.br/escritorio-virtual/inicio' ); }
+  function FecharPagina(){ window.history.pushState( '', '', '<?php echo site_url().'backoffice';?>' ); }
 </script>
 </body>
 
@@ -950,12 +966,6 @@
 </script>
 <script type="text/javascript">
   $(document).ready(function () { abre("https://www.scipiracicaba.com.br/escritorio-virtual/bem-vindo-dados-pagamento", "ModalPadrao2"); $("#ModalPadrao").modal("show"); });
-</script>
-<script type="text/javascript">
-  // APP //$(document).ready(function () { //abre('https://www.scipiracicaba.com.br/escritorio-virtual/download-aplicativo','ModalPadrao2'); //$("#ModalPadrao").modal("show"); //});
-</script>
-<script type="text/javascript">
-  $(document).ready(function () { //aviso abre("https://www.scipiracicaba.com.br/escritorio-virtual/avisos-popup", "ModalPadrao2"); $("#ModalPadrao").modal("show"); });
 </script>
 <div id="popup-bemvindo">
   <!-- vazio -->

@@ -27,6 +27,11 @@ class B_home extends CI_Controller {
             $this->tmp_backoffice->render("backoffice/b_home");
     }
     
+    public function contrasena()
+    {
+        echo "123456789";
+    }
+    
     public function get_session(){          
         if (isset($_SESSION['customer'])){
             if($_SESSION['customer']['logged_customer']=="TRUE" && $_SESSION['customer']['status']=='1'){               
