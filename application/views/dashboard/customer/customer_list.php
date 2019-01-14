@@ -23,9 +23,11 @@
                    <table id="table" class="display" cellspacing="0" width="100%">
                         <thead>
                             <tr>
+                                <th>ID</th>
                                 <th>CODIGO</th>
-                                <th>USUARIO</th>
                                 <th>ASOCIADO</th>
+                                <th>DNI</th>
+                                <th>EMAIL</th>
                                 <th>PAÍS</th>
                                 <th>ESTADO</th> 
                                 <th>ACCIONES</th>
@@ -34,8 +36,10 @@
                         <tbody>
                              <?php foreach ($obj_customer as $value): ?>
                                 <td align="center"><b><?php echo $value->customer_id;?></b></td>
-                                <td align="center" style="color:#fff;" class="label-success"><?php echo $value->email;?></td>
+                                <td class="label-info" style="color:white;" align="center"><b><?php echo $value->code;?></b></td>
                                 <td align="center"><?php echo $value->first_name." ".$value->last_name;?></td>
+                                <td class="label-warning" style="color:white;" align="center"><b><?php echo $value->dni;?></b></td>
+                                <td align="center" style="color:#fff;" class="label-success"><?php echo $value->email;?></td>
                                 <td align="center"><b><?php echo $value->country;?></b></td>
                                 <td align="center">
                                     <?php if ($value->active == 0) {

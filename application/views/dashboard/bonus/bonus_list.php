@@ -34,7 +34,7 @@
                             <?php foreach ($obj_bonus as $value): ?>
                                 <tr>
                             <th align="center"><?php echo $value->bonus_id;?></th>
-                            <td class="post_title" align="center"><?php echo strtoupper($value->name);?></td>
+                            <td class="label-info" style="color:white;" align="center"><?php echo strtoupper($value->name);?></td>
                             <td align="center" style="color:#fff;" class="label-success"><?php echo format_number_moneda_soles($value->percent);?></td>
                             <td align="center">
                                 <?php if ($value->active == 0) {

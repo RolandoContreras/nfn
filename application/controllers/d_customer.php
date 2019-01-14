@@ -15,6 +15,7 @@ class D_customer extends CI_Controller{
                         "select" =>"customer.customer_id,
                                     customer.first_name,
                                     customer.email,
+                                    customer.code,
                                     customer.dni,
                                     customer.last_name,
                                     paises.nombre as country,

@@ -25,10 +25,10 @@
                         <thead>
                             <tr>
                                 <th>ID</th>
-                                <th>FECHA DE CREACIÓN</th>
-                                <th>NOMBRE</th>
-                                <th>PRIVILEGIO</th>
                                 <th>USUARIO</th>
+                                <th>NOMBRE</th>
+                                <th>FECHA DE CREACIÓN</th>
+                                <th>PRIVILEGIO</th>
                                 <th>ESTADO</th> 
                                 <th>ACCIONES</th>
                             </tr>
@@ -36,9 +36,10 @@
                         <tbody>
                            <?php foreach ($obj_users as $value): ?>
                                 <td align="center"><b><?php echo $value->user_id;?></b></td>
-                                <td align="center"><?php echo formato_fecha($value->created_at);?></td>
+                                <td class="label-warning" style="color:white;" align="center"><?php echo $value->email;?></td>
                                 <td align="center" style="color:#fff;" class="label-success"><?php echo $value->first_name." ".$value->last_name;?></td>
-                                <td align="center">
+                                <td align="center"><?php echo formato_fecha($value->created_at);?></td>
+                                <td align="center" class="label-info" style="color:white;">
                                      <?php if ($value->privilage == 1) {
                                         $valor = "Basico";
                                         $stilo = "label label-warning";
@@ -46,9 +47,9 @@
                                         $valor = "Total";
                                         $stilo = "label label-success";
                                     } ?>
-                                    <span class="<?php echo $stilo ?>"><?php echo $valor; ?></span>
+                                    <?php echo $valor; ?>
                                 </td>
-                                <td align="center"><?php echo $value->email;?></td>
+                                
                                 
                                 <td align="center">
                                     <?php if ($value->active == 0) {
