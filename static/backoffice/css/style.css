@@ -770,7 +770,7 @@ button {outline-style:none}
 		#ModalPadraoChat{padding: 0 !important;}
 		#ModalPadraoChat2 iframe{max-height: unset !important; background-color: #ffffff;}
 		#ModalPadraoChat .modal-dialog{width: 100% !important; height: auto !important; min-height: 100% !important; margin: 0 !important;}
-		.divmodaldialog{height: 100vh !important; height: calc(var(--vh, 1vh) * 100) !important;float: left;width: 100%;}
+		
 	}
 
 
@@ -875,3 +875,11 @@ button {outline-style:none}
 .title{
     color: white;
 }
+.title_back{
+    font-weight: 400;
+    font-size: 18px;
+    color: rgb(80, 80, 80);
+}
+
+    
+

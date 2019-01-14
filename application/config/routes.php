@@ -58,8 +58,8 @@ $route['register/create_register'] = 'register/create_register';
 
 //MANAGER - BACKOFFICE
 $route['backoffice'] = "b_home";
-
-$route['backoffice/contrasena'] = "b_home/contrasena";
+$route['backoffice/datos'] = "b_data";
+$route['backoffice/contrasena'] = "b_data/contrasena";
 
 $route['salir'] = "login/logout";
 

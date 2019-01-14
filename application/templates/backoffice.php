@@ -3,7 +3,6 @@
 <head>
   <title>Oficina Virtual NFN</title>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css' />
-  <!--<base href="https://www.scipiracicaba.com.br/area-restrita-nova/">-->
   <base href="<?php echo site_url().'backoffice';?>">
   <!--FAVICO-->
     <link rel="apple-touch-icon" sizes="57x57" href="<?php echo site_url().'static/page_front/images/favicon/apple-icon-57x57.png';?>">
@@ -28,6 +27,24 @@
   <link rel="stylesheet" href="<?php echo site_url().'static/backoffice/css/bootstrap.min.css';?>" type="text/css"/>
   <!-- CSS DO PERFIL -->
   <link rel="stylesheet" href="<?php echo site_url().'static/backoffice/css/style_perfil.css?v=6';?>" type="text/css"/>
+  
+  <!--STYLE 3T CLUB-->
+    <link href="<?php echo site_url().'static/backoffice/css/assets/entypo.css';?>" rel="stylesheet">
+    <!-- /entypo font stylesheet -->
+    <link href="<?php echo site_url().'static/backoffice/css/one/style_one.css';?>" rel="stylesheet">
+    <!-- Font awesome stylesheet -->
+    <link href="<?php echo site_url().'static/backoffice/css/assets/font-awesome.min.css';?>" rel="stylesheet">
+    <!-- /font awesome stylesheet -->
+    <!-- Bootstrap stylesheet min version -->
+    <link href="<?php echo site_url().'static/backoffice/css/assets/bootstrap.min.css';?>" rel="stylesheet">
+    <!-- /bootstrap stylesheet min version -->
+    <!-- Mouldifi core stylesheet -->
+    <link href="<?php echo site_url().'static/backoffice/css/assets/mouldifi-core.css';?>" rel="stylesheet">
+    <!-- /mouldifi core stylesheet -->
+    <link href="<?php echo site_url().'static/backoffice/css/assets/mouldifi-forms.css';?>" rel="stylesheet">
+    <script src="https://use.fontawesome.com/3aa4a6fd0b.js"></script>
+    <!--STYLE 3T CLUB-->
+  
   <!-- //CSS DO PERFIL -->
   <script type="text/javascript" src="<?php echo site_url().'static/backoffice/js/jquery-1.11.3.min.js';?>"></script>
   <script type="text/javascript" src="<?php echo site_url().'static/backoffice/js/jquery-ui.min.js';?>"></script>
@@ -106,7 +123,7 @@
   <meta name="robots" content="noindex,nofollow,nosnippet,noarchive,noimageindex" />
 </head>
 
-<body onresize="verificaTamanho(); verificaTamanho2();" onload="verificaTamanho(); verificaTamanho2(); ">
+<body onresize="verificaTamanho(); verificaTamanho2();" onload="verificaTamanho(); verificaTamanho2();">
   <div id="chat_mktza"></div>
   <div id="DivTamanhoTela" style="position:fixed; background:#000000; color:#FFFFFF; z-index:900; padding:10px; display:none"></div>
   <div id="DivTamanhoTela2" style="position:fixed; background:#000000; color:#FFFFFF; margin-top:25px;  z-index:900; display:none"></div>
@@ -311,7 +328,7 @@
                   <div class="DivQuadrado2">Datos del beneficiario</div>
               </span>            
           </div>
-          <div class="DivQuadrado DivQuadrado3" style="background-color:#9b59b6" data-toggle="tooltip" title="Es necesario que mantenga sus datos siempre actualizados" alt="Datos personales Es necesario que mantenga sus datos siempre actualizados"> 
+          <div class="DivQuadrado DivQuadrado3" style="background-color:#9b59b6;" data-toggle="tooltip" title="Es necesario que mantenga sus datos siempre actualizados" alt="Datos personales Es necesario que mantenga sus datos siempre actualizados"> 
                 <span class="DivValign">
                     <div class="DivQuadrado1">
                         <img src="<?php echo site_url().'static/backoffice/images/3.png';?>" border="0">
@@ -320,7 +337,7 @@
                 </span>
             <div class="DivQuadrado0">
               <span class="DivValign">
-                  <div class="DivQuadrado5" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('https://www.scipiracicaba.com.br/escritorio-virtual/dados-pessoais','ModalPadrao2')" style="width:286px"></div>
+                  <div class="DivQuadrado5" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('<?php echo site_url().'backoffice/datos';?>','ModalPadrao2')" style="width:286px"></div>
               </span>              
             </div>
           </div>
@@ -333,7 +350,7 @@
             </span>
             <div class="DivQuadrado0">
                 <span class="DivValign">
-                    <div class="DivQuadrado5" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('https://www.scipiracicaba.com.br/escritorio-virtual/senha','ModalPadrao2')" ></div>
+                    <div class="DivQuadrado5" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('<?php echo site_url().'backoffice/contrasena';?>','ModalPadrao2')" ></div>
                 </span>              
             </div>
           </div>
@@ -652,7 +669,7 @@
                 </div>
                 <div class="DivQuadrado2">Contraseña</div>
             </span>
-          <div class="DivQuadrado0" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('https://www.scipiracicaba.com.br/escritorio-virtual/senha','ModalPadrao2')" alt="Contraseña">
+            <div class="DivQuadrado0" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('<?php echo site_url().'backoffice/contrasena';?>','ModalPadrao2')" alt="Contraseña">
                 <span class="DivValign">
                     <div class="DivQuadrado5"></div>
                 </span> 
@@ -681,7 +698,7 @@
               <div class="DivQuadrado1">
                   <img src="<?php echo site_url().'static/backoffice/images/7.png';?>" border="0">
               </div>
-              <div class="DivQuadrado2" >Cambiar el box</div>
+              <div class="DivQuadrado2">Cambiar el box</div>
           </span>
         <div class="DivQuadrado0" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('https://www.scipiracicaba.com.br/escritorio-virtual/alterar-kit','ModalPadrao2')" alt="Cambiar el kit">
             <span class="DivValign">
@@ -965,7 +982,7 @@
   $.ajax({ type: "get", url: "https://www.scipiracicaba.com.br/escritorio-virtual/app/verificar", success: function(retorno){ console.log(retorno); } });
 </script>
 <script type="text/javascript">
-  $(document).ready(function () { abre("https://www.scipiracicaba.com.br/escritorio-virtual/bem-vindo-dados-pagamento", "ModalPadrao2"); $("#ModalPadrao").modal("show"); });
+//  $(document).ready(function () { abre("https://www.scipiracicaba.com.br/escritorio-virtual/bem-vindo-dados-pagamento", "ModalPadrao2"); $("#ModalPadrao").modal("show"); });
 </script>
 <div id="popup-bemvindo">
   <!-- vazio -->

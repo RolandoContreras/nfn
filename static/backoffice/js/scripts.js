@@ -2326,22 +2326,22 @@ function abre(url,id) {
     
     alert(url);
     
-//	if (id=="ModalPadraoChat") {
-//		var DivAguarde2 = "<div class='modal-dialog' style='width:100%;max-width:950px'><div class='modal-content'><div class='modal-body' style='padding:0px'><div class='ModalTable' id='ModalPadraoChat2'>"+ DivAguarde +"</div></div></div></div>";
-//	} else {
-//		var DivAguarde2 = DivAguarde;
-//	}
-//
-//	$("#"+ id +"").html(DivAguarde2);
-//
-//	$.ajax({
-//	type: "get",
-//	url: url,
-//	success: function(retorno){
-//		$("#"+ id +"").html(retorno);
-//		$('[data-toggle="tooltip"]').tooltip();
-//	}
-//	})
+	if (id=="ModalPadraoChat") {
+		var DivAguarde2 = "<div class='modal-dialog' style='width:100%;max-width:950px'><div class='modal-content'><div class='modal-body' style='padding:0px'><div class='ModalTable' id='ModalPadraoChat2'>"+ DivAguarde +"</div></div></div></div>";
+	} else {
+		var DivAguarde2 = DivAguarde;
+	}
+
+	$("#"+ id +"").html(DivAguarde2);
+
+	$.ajax({
+	type: "get",
+	url: url,
+	success: function(retorno){
+		$("#"+ id +"").html(retorno);
+		$('[data-toggle="tooltip"]').tooltip();
+	}
+	})
 
 }
 
