@@ -52,6 +52,10 @@ $route['forgot'] = 'forgot';
 $route['home/send_messages'] = 'home/send_messages';
 $route['product/basico'] = 'home/product';
 
+$route['register/validate'] = 'register/validate';
+$route['register/step2'] = 'register/step2';
+$route['register/create_register'] = 'register/create_register';
+
 //MANAGER - BACKOFFICE
 $route['backoffice'] = "b_home";
 

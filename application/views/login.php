@@ -37,8 +37,6 @@
 </script>
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
-<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
 </head>
 <body class="hold-transition login-page">
@@ -81,7 +79,7 @@
                 <div class="form-group has-feedback"></div>
                 <div class="row">
                     <div class="col-xs-12">
-                        <button id="submit" onclick="login();" class="btn btn-primary btn-block btn-flat">Inicio de Sesión</button>
+                        <button id="submit" class="btn btn-primary btn-block btn-flat">Inicio de Sesión</button>
                     </div>
                 </div>
             </form>

@@ -67,14 +67,21 @@
                             <div class="col4-2 sub_column module_column middle sub_column_post_6 sub_column_6-0-1-1">
                               <div class="tb-column-inner">
                                 <div id="contact-6-sub_row_6-0-1-1-0" class="module module-contact contact-6-sub_row_6-0-1-1-0 contact-animated-label  ">
-                                  <form class="builder-contact" enctype="multipart/form-data">
+                                  <form class="builder-contact" action="javascript:void(0);" method="post" onsubmit="register();" enctype="multipart/form-data">
                                     <div class="contact-message"></div>
                                     <div class="builder-contact-fields">
                                       <div class="builder-contact-field builder-contact-field-subject builder-contact-text-field">
                                         <div class="control-input">
-                                          <p class="text-contact">Nombre Completo <span class="required">*</span></p>
+                                          <p class="text-contact">Nombres<span class="required">*</span></p>
                                           <input type="text" name="name" id="name" onkeyup="fade_name(this.value);" class="form-control"/>
                                           <span id="message_name" class="field-validation-error" style="display:none;">El Nombre es requerido</span>
+                                        </div>
+                                      </div>
+                                      <div class="builder-contact-field builder-contact-field-subject builder-contact-text-field">
+                                        <div class="control-input">
+                                          <p class="text-contact">Apellidos<span class="required">*</span></p>
+                                          <input type="text" name="last_name" id="last_name" onkeyup="fade_last_name(this.value);" class="form-control"/>
+                                          <span id="message_last_name" class="field-validation-error" style="display:none;">Los apellidos son requeridos</span>
                                         </div>
                                       </div>
                                       <div class="builder-contact-field builder-contact-field-subject builder-contact-text-field">
@@ -85,26 +92,75 @@
                                         </div>
                                       </div>
                                       <div class="builder-contact-field builder-contact-field-subject builder-contact-text-field">
-                                        <p class="text-contact">Asunto<span class="required">*</span></p>
                                         <div class="control-input">
-                                          <input type="text" name="subject" id="subject" onkeyup="fade_subject(this.value);" class="form-control"/>
-                                          <span id="message_subject" class="field-validation-error" style="display:none;">El Asunto es requerido</span>
+                                            <p class="text-contact">DNI<span class="required">*</span></p>
+                                            <input type="text" name="dni" id="dni" onkeyup="fade_dni(this.value);" class="form-control"/>
+                                            <span id="message_dni" class="field-validation-error" style="display:none;">El dni es requerido</span>
+                                        </div>
+                                      </div>
+                                      <div class="builder-contact-field builder-contact-field-subject builder-contact-text-field">
+                                        <div class="control-input">
+                                            <p class="text-contact">Teléfono<span class="required">*</span></p>
+                                            <input type="text" name="phone" id="phone" onkeyup="fade_phone(this.value);" class="form-control"/>
+                                            <span id="message_phone" class="field-validation-error" style="display:none;">El teléfono es requerido</span>
+                                        </div>
+                                      </div>
+                                      <div class="builder-contact-field builder-contact-field-subject builder-contact-text-field">
+                                        <div class="control-input">
+                                            <p class="text-contact">Contraseña<span class="required">*</span></p>
+                                            <input type="password" name="pass" id="pass" onkeyup="fade_pass(this.value);" class="form-control"/>
+                                            <span id="message_pass" class="field-validation-error" style="display:none;">La contraseña es requerida</span>
+                                        </div>
+                                      </div>
+                                      <div class="builder-contact-field builder-contact-field-subject builder-contact-text-field">
+                                        <div class="control-input">
+                                            <p class="text-contact">Confirmar contraseña<span class="required">*</span></p>
+                                            <input type="password" name="pass2" id="pass2" onkeyup="fade_pass2(this.value);" class="form-control"/>
+                                            <span id="message_pass2" class="field-validation-error" style="display:none;">La confirmación es requerida</span>
+                                            <span id="message_pass3" class="field-validation-error" style="display:none;">Las contraseñas no coinciden</span>
                                         </div>
                                       </div>
                                       <div class="builder-contact-field builder-contact-field-message builder-contact-textarea-field" data-order="">
-                                       <p class="text-contact">Mensaje<span class="required">*</span></p>
+                                       <p class="text-contact">Dirección<span class="required">*</span></p>
                                         <div class="control-input">
-                                          <textarea name="messages" onkeyup="fade_comments(this.value);" id="messages" rows="8" cols="45" class="form-control"></textarea>
-                                          <span id="message_comments" class="field-validation-error" style="display:none;">El Mensaje es requerido</span>
+                                          <textarea name="address" onkeyup="fade_address(this.value);" id="address" rows="8" cols="45" class="form-control"></textarea>
+                                          <span id="message_address" class="field-validation-error" style="display:none;">La dirección es requerida</span>
                                         </div>
                                       </div>
-                                      <div class="builder-contact-field builder-contact-field-send" data-order="10000">
-                                        <div class="control-input builder-contact-field-send-center">
-                                            <button onclick="send_messages_home();" class="btn btn-primary"> Enviar </button><br/><br/>
-                                            <div id="messages_respose" class="alert alert-success" style="text-align: center; display: none;">Enviado Correctamente.</div>
+                                      <div class="builder-contact-field builder-contact-field-message builder-contact-textarea-field" data-order="">
+                                       <p class="text-contact">País<span class="required">*</span></p>
+                                        <div class="control-input">
+                                            <select onchange="validate_region(this.value);" name="pais" id="pais">
+                                                <option  selected value="">Seleccionar</option>
+                                                    <?php  foreach ($obj_paises as $key => $value) { ?>
+                                                           <option style="border-style: solid !important" value="<?php echo $value->id;?>"><?php echo $value->nombre;?></option>
+                                                    <?php } ?>
+                                            </select>
+                                                <span id="message_pais" class="field-validation-error" style="display:none;">El país es requerido</span>
                                         </div>
-                                     </div>
-                                        
+                                      </div>
+                                     <div class="builder-contact-field builder-contact-field-message builder-contact-textarea-field" data-order="">
+                                       <p class="text-contact">Región<span class="required">*</span></p>
+                                        <div class="control-input">
+                                            <select name="region" id="region" style="margin-bottom: 10px;">
+                                                <option  selected="selected" value="">Seleccionar</option>
+                                            </select>
+                                            <span id="message_region" class="field-validation-error" style="display:none;">La regíón es requerido</span>
+                                        </div>
+                                      </div>
+                                      <div class="builder-contact-field builder-contact-field-subject builder-contact-text-field">
+                                        <div class="control-input">
+                                            <p class="text-contact">Ciudad<span class="required">*</span></p>
+                                            <input type="text" name="city" id="city" onkeyup="fade_ciudad(this.value);" class="form-control"/>
+                                            <span id="message_city" class="field-validation-error" style="display:none;">La ciudad es requerida</span>
+                                        </div>
+                                      </div>
+                                      <br/>
+                                      <div class="builder-contact-field builder-contact-field-subject builder-contact-text-field">
+                                        <div class="control-input">
+                                            <button id="submit"class="btn btn-primary"> Siguiente </button><br/><br/>
+                                        </div>
+                                      </div>
                                      </div>
                                   </form>
                                 </div>
@@ -128,23 +184,15 @@
       <?php $this->load->view("footer");?>
     </div>
   </div>
-  <script src='<?php echo site_url().'static/page_front/js/home.js';?>'></script>
+  <script src="<?php echo site_url().'static/page_front/js/register.js';?>"></script>
   <!-- wp_footer -->
-  <script type='text/javascript'>
-    /* <![CDATA[ */
-    var themify_vars = {"version":"4.0.0","url":"https:\/\/themify.me\/demo\/themes\/ultra-app\/wp-content\/themes\/themify-ultra\/themify","map_key":null,"includesURL":"https:\/\/themify.me\/demo\/themes\/ultra-app\/wp-includes\/","isCached":null,"minify":{"css":{"themify-icons":false,"themify.framework":false,"lightbox":false,"themify-builder-style":false},"js":{"backstretch.themify-version":false,"bigvideo":false,"themify.dropdown":false,"themify-tiles":false,"themify.mega-menu":false,"themify.builder.script":false,"themify.scroll-highlight":false,"themify-youtube-bg":false,"themify.parallaxit":false,"themify.ticks":false}}};
-    var tbLocalScript = {"isAnimationActive":"1","isParallaxActive":"1","isParallaxScrollActive":"1","animationInviewSelectors":[".module.wow",".module_row.wow",".builder-posts-wrap > .post.wow"],"backgroundSlider":{"autoplay":5000,"speed":2000},"animationOffset":"100","videoPoster":"https:\/\/themify.me\/demo\/themes\/ultra-app\/wp-content\/themes\/themify-ultra\/themify\/themify-builder\/img\/blank.png","backgroundVideoLoop":"yes","builder_url":"https:\/\/themify.me\/demo\/themes\/ultra-app\/wp-content\/themes\/themify-ultra\/themify\/themify-builder","framework_url":"https:\/\/themify.me\/demo\/themes\/ultra-app\/wp-content\/themes\/themify-ultra\/themify","version":"4.0.0","fullwidth_support":"1","fullwidth_container":"body","loadScrollHighlight":"1","addons":{"builder_contact":{"js":"https:\/\/themify.me\/demo\/themes\/ultra-app\/wp-content\/plugins\/builder-contact\/assets\/scripts.js","css":"https:\/\/themify.me\/demo\/themes\/ultra-app\/wp-content\/plugins\/builder-contact\/assets\/style.css","ver":"1.2.8","selector":".module-contact","external":"var BuilderContact = {\"admin_url\":\"https:\\\/\\\/themify.me\\\/demo\\\/themes\\\/ultra-app\\\/wp-admin\\\/admin-ajax.php\"};"},"contact":{"selector":".module-contact","css":"https:\/\/themify.me\/demo\/themes\/ultra-app\/wp-content\/plugins\/builder-contact\/assets\/style.css","js":"https:\/\/themify.me\/demo\/themes\/ultra-app\/wp-content\/plugins\/builder-contact\/assets\/scripts.js","external":"var BuilderContact = {\"admin_url\":\"https:\\\/\\\/themify.me\\\/demo\\\/themes\\\/ultra-app\\\/wp-admin\\\/admin-ajax.php\"};","ver":"1.2.8"},"pricing-table":{"selector":".module-pricing-table","css":"https:\/\/themify.me\/demo\/themes\/ultra-app\/wp-content\/plugins\/builder-pricing-table\/assets\/style.css","ver":"1.1.3"}},"breakpoints":{"tablet_landscape":[769,"1280"],"tablet":[681,"768"],"mobile":"680"},"ticks":{"tick":30,"ajaxurl":"https:\/\/themify.me\/demo\/themes\/ultra-app\/wp-admin\/admin-ajax.php","postID":6}};
-    var themifyScript = {"lightbox":{"lightboxSelector":".themify_lightbox","lightboxOn":true,"lightboxContentImages":false,"lightboxContentImagesSelector":"","theme":"pp_default","social_tools":false,"allow_resize":true,"show_title":false,"overlay_gallery":false,"screenWidthNoLightbox":600,"deeplinking":false,"contentImagesAreas":"","gallerySelector":".gallery-icon > a","lightboxGalleryOn":true},"lightboxContext":"body"};
-    var tbScrollHighlight = {"fixedHeaderSelector":"#headerwrap.fixed-header","speed":"900","navigation":"#main-nav, .module-menu .menu-bar","scrollOffset":"-5","scroll":"internal"};
-    /* ]]> */
-  </script>
-  <script src='<?php echo site_url().'static/page_front/js/bootstrap.min.js';?>'></script>
-  <script src='<?php echo site_url().'static/page_front/js/main.js?ver=4.0.0';?>'></script>
-  <script src='<?php echo site_url().'static/page_front/js/imagesloaded.min.js?ver=3.2.0';?>'></script>
-  <script src='<?php echo site_url().'static/page_front/js/themify.sidemenu.js?ver=2.0.2';?>'></script>
-  <script src='<?php echo site_url().'static/page_front/js/themify.script.js?ver=2.0.2';?>'></script>
-  <script src='<?php echo site_url().'static/page_front/js/comment-reply.min.js?ver=4.9.7';?>'></script>
-  <script src='<?php echo site_url().'static/page_front/js/wp-embed.min.js?ver=4.9.7';?>'></script>
-  
+  <script src='https://www.google.com/recaptcha/api.js'></script>
+<script src='<?php echo site_url().'static/login/js/jquery-2.2.3.min.js';?>'></script>
+<script src="<?php echo site_url().'static/page_front/js/login.js';?>"></script>
+<script src="<?php echo site_url().'static/login/js/bootstrap.min.js';?>"></script>
+<script src="<?php echo site_url().'static/login/js/fastclick.js';?>"></script>
+<script src="<?php echo site_url().'static/login/js/app.min.js';?>"></script>
+<script src="<?php echo site_url().'static/login/js/demo.js';?>"></script>
+<script src="<?php echo site_url().'static/login/js/icheck.min.js.js';?>"></script>
 </body>
 </html>

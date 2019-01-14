@@ -1,0 +1,121 @@
+#CadastroPasso2 {
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#CadastroPasso2 .centralizar_2{
+    display: inline-block;
+    max-width: 1240px;
+    width: calc(100% - 20px);
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+#CadastroPasso2 .tituloPagina{
+    float: left;
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+    color: #3D3D3D;
+    margin-bottom: 10px;
+}
+#CadastroPasso2 .SubTitulo {
+    float: left;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    color: #3D3D3D;
+    font-family: 'Lato';
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+#CadastroPasso2 .BlocoPrincipal {
+    float: left;
+    width: calc(100% + 50px);
+    margin-left: -25px;
+}
+
+#CadastroPasso2 .Blocos {
+    display: inline-block;
+    width: calc(50% - 29px);
+    margin-left: 12.5px;
+    margin-right: 12.5px;
+    margin-bottom: 45px;
+    border: 1px solid #DDDDDD;
+    background: #FFFFFF;
+}
+#CadastroPasso2 .TituloKit {
+
+    float: left;
+    width: 100%;
+    background: #DDDDDD;
+    height: 50px;
+    display: table;
+    font-size: 14px;
+    font-weight: 600;
+
+}
+.alignCenter_title {
+    vertical-align: middle;
+    padding-top: 7%;
+    color: #3D3D3D;
+
+}
+#CadastroPasso2 .Botao2:hover {
+    background: #3C9646;
+}
+ .Botao2 {
+    cursor: pointer;
+    outline-style: none;
+    float: left;
+    width: 100%;
+    border-radius: 5px;
+    background: #4DB858;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'Lato';
+    border: 0px;
+    height: 45px;
+}
+.Botao2:hover {
+    background: #3C9646;
+}
+
+#CadastroPasso2 .Botao2 {
+
+    cursor: pointer;
+    outline-style: none;
+    float: left;
+    width: 100%;
+    border-radius: 5px;
+    background: #4DB858;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'Lato';
+    border: 0px;
+    height: 45px;
+}
+.text-contact-2{
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    vertical-align: middle;
+    margin-bottom: 3px;
+    padding-bottom: 15px;
+    padding-top: 5px;
+}
+.text-verify{
+    font-size: 12px;
+}
+.radio_box{
+    font-size: 12px;
+    margin-top: 5%;
+}
+.Valor{
+    padding-bottom: 4%;
+}
