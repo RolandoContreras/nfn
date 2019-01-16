@@ -27,6 +27,7 @@ class B_red extends CI_Controller {
         //VERIFIRY GET SESSION    
         $this->get_session();
         /// VISTA
+        
         $customer_id = $_SESSION['customer']['customer_id'];
         $params = array(
                         "select" =>"customer.customer_id,

@@ -61,7 +61,7 @@ $route['backoffice'] = "b_home";
 $route['backoffice/datos'] = "b_data";
 $route['backoffice/contrasena'] = "b_data/contrasena";
 
-
+$route['backoffice/red'] = "b_red/index";
 $route['backoffice/directos'] = "b_red/directos";
 
 $route['salir'] = "login/logout";

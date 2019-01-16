@@ -150,7 +150,7 @@
                     <span class="DivValign">Mis datos</span>
                 </div>
                     <div class="Linhas2"></div>
-                    <div class="SubMenu" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="EfeitoMenu('MenuMobile');abre('https://www.scipiracicaba.com.br/escritorio-virtual/dados-pessoais','ModalPadrao2');" alt=" Datos personales" title="Datos personales">
+                    <div class="SubMenu" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="EfeitoMenu('MenuMobile');abre('','ModalPadrao2');" alt=" Datos personales" title="Datos personales">
                         <span class="DivValign">&bull; Datos personales</span>
                     </div>
                     <div class="Linhas2"></div>
@@ -162,7 +162,7 @@
                 <div class="Menu">
                     <span class="DivValign">Box</span>
                 </div>
-                    <div class="SubMenu" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="EfeitoMenu('MenuMobile');abre('https://www.scipiracicaba.com.br/escritorio-virtual/alterar-kit','ModalPadrao2');" alt="Cambiar el kit" title="Cambiar el kit">
+                    <div class="SubMenu" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="EfeitoMenu('MenuMobile');abre('','ModalPadrao2');" alt="Cambiar el kit" title="Cambiar el kit">
                         <span class="DivValign">&bull; Cambiar el Box</span>
                     </div>
                     <div class="Linhas2"></div>
@@ -171,15 +171,15 @@
                 <div class="Menu">
                     <span class="DivValign">Red</span>
                 </div>
-                    <div class="SubMenu" onclick="window.open('https://www.scipiracicaba.com.br/py/registro-datos-personales','_blank');" alt="Agregar cliente" title="Agregar cliente">
+                    <div class="SubMenu" onclick="window.open('','_blank');" alt="Agregar cliente" title="Agregar cliente">
                         <span class="DivValign">&bull; Agregar cliente</span>
                     </div>
                     <div class="Linhas2"></div>
-                    <div class="SubMenu" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="EfeitoMenu('MenuMobile');abre('https://www.scipiracicaba.com.br/escritorio-virtual/ver-rede','ModalPadrao2');" alt="Ver la red" title="Ver la red">
+                    <div class="SubMenu" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="EfeitoMenu('MenuMobile');abre('','ModalPadrao2');" alt="Ver la red" title="Ver la red">
                         <span class="DivValign">&bull; Ver la red</span></div>
                         <div class="Linhas2"></div>
 
-                        <div class="SubMenu" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao3" onclick="EfeitoMenu('MenuMobile');abre('https://www.scipiracicaba.com.br/escritorio-virtual/meus-indicados-diretos','ModalPadrao4');" alt="Mis indicadores directos" title="Mis indicadores directos">
+                        <div class="SubMenu" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao3" onclick="EfeitoMenu('MenuMobile');abre('','ModalPadrao4');" alt="Mis indicadores directos" title="Mis indicadores directos">
                             <span class="DivValign">&bull; Mis indicadores directos</span>
                         </div>
                         <div class="Linhas"></div>
@@ -187,21 +187,21 @@
                     <div class="Menu">
                         <span class="DivValign">Apoyo</span>
                     </div>
-                        <div class="SubMenu" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="EfeitoMenu('MenuMobile');abre('https://www.scipiracicaba.com.br/escritorio-virtual/sac','ModalPadrao2');" alt="SAC" title="SAC">
+                        <div class="SubMenu" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="EfeitoMenu('MenuMobile');abre('','ModalPadrao2');" alt="SAC" title="SAC">
                             <span class="DivValign">&bull; SAC</span>
                         </div>
                         <div class="Linhas2"></div>
 
-                        <div class="SubMenu" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="EfeitoMenu('MenuMobile');abre('https://www.scipiracicaba.com.br/escritorio-virtual/downloads','ModalPadrao2');" alt="Downloads" title="Downloads">
+                        <div class="SubMenu" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="EfeitoMenu('MenuMobile');abre('','ModalPadrao2');" alt="Downloads" title="Downloads">
                             <span class="DivValign">&bull; Descargas</span>
                         </div>
                         <div class="Linhas2"></div>
 
-                        <div class="SubMenu" onclick="window.open('https://www.scipiracicaba.com.br/agenda-sci-py','_self');" alt="Calendario de eventos" title="Calendario de eventos">
+                        <div class="SubMenu" onclick="window.open('','_self');" alt="Calendario de eventos" title="Calendario de eventos">
                             <span class="DivValign">&bull; Calendario de eventos</span></div>
                         <div class="Linhas2"></div>
 
-                        <div class="SubMenu" onclick="window.open('https://www.scipiracicaba.com.br/downloads/Manual_de_Negocios_SCI_PY.pdf')" alt="Manual de negocios" title="Manual de negocios">
+                        <div class="SubMenu" onclick="window.open('')" alt="Manual de negocios" title="Manual de negocios">
                             <span class="DivValign">&bull; Manual de negocios</span>
                         </div>
                         <div class="Linhas2"></div>
@@ -266,7 +266,9 @@
     <div class="FraseDia" style="font-size:15px">¡SEAN BIENVENIDOS A NFN!</div>
     <div class="FraseDia" style="font-weight: 400;margin-top:3px;font-size:16px">Hable más sobre usted</div>
     <div class="VoltarAoEscritorio" onclick="mudaLateral('Home')">
-      <div style="float:left; margin-left:5px;"><img src="imagens_perfil/voltar_ev.png" width="24" height="20" alt="Voltar ao escritório virtual" title="Volver a la oficina virtual" /></div>
+      <div style="float:left; margin-left:5px;">
+          <img src="imagens_perfil/voltar_ev.png" width="24" height="20" alt="Voltar ao escritório virtual" title="Volver a la oficina virtual" />
+      </div>
       <div
         style="float:right; margin-right:5px">
         <font style="font-weight:600; font-size:14.5px; color:#5e5e5e">Volver a la oficina virtual</font>
@@ -372,7 +374,7 @@
               </span>
             <div class="DivQuadrado0">
               <span class="DivValign">
-                  <div class="DivQuadrado5" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('https://www.scipiracicaba.com.br/escritorio-virtual/boletos-py','ModalPadrao2')" ></div>
+                  <div class="DivQuadrado5" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('','ModalPadrao2')" ></div>
               </span>              
             </div>
           </div>
@@ -385,7 +387,7 @@
               </span>
             <div class="DivQuadrado0">
                   <span class="DivValign">
-                      <div class="DivQuadrado5" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('https://www.scipiracicaba.com.br/escritorio-virtual/alterar-kit','ModalPadrao2')" ></div>
+                      <div class="DivQuadrado5" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('','ModalPadrao2')" ></div>
                   </span>              
             </div>
           </div>
@@ -398,7 +400,7 @@
           </span>
             <div class="DivQuadrado0">
                 <span class="DivValign">
-                    <div class="DivQuadrado5" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('https://www.scipiracicaba.com.br/escritorio-virtual/pagar-kit-com-bonus-py','ModalPadrao2')"></div>
+                    <div class="DivQuadrado5" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('','ModalPadrao2')"></div>
                 </span>              
             </div>
           </div>
@@ -433,7 +435,7 @@
                 </span>
                 <div class="DivQuadrado0">
                     <span class="DivValign">
-                        <div class="DivQuadrado5" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('https://www.scipiracicaba.com.br/escritorio-virtual/ver-rede','ModalPadrao2')"></div>
+                        <div class="DivQuadrado5" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('<?php echo site_url().'backoffice/red';?>','ModalPadrao2')"></div>
                     </span>              
                 </div>
           </div>
@@ -446,7 +448,7 @@
               </span>
             <div class="DivQuadrado0">
                 <span class="DivValign">
-                    <div class="DivQuadrado5" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('https://www.scipiracicaba.com.br/escritorio-virtual/plano-de-carreira','ModalPadrao2')"></div>
+                    <div class="DivQuadrado5" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('','ModalPadrao2')"></div>
                 </span>              
             </div>
           </div>
@@ -459,7 +461,7 @@
               </span>
             <div class="DivQuadrado0">
                 <span class="DivValign">
-                    <div class="DivQuadrado5" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('https://www.scipiracicaba.com.br/escritorio-virtual/extrato-py','ModalPadrao2')" style="width:286px"></div>
+                    <div class="DivQuadrado5" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('','ModalPadrao2')" style="width:286px"></div>
                 </span>              
             </div>
           </div>
@@ -506,7 +508,7 @@
             </span>
           <div class="DivQuadrado0">
                 <span class="DivValign">
-                    <div class="DivQuadrado5" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('https://www.scipiracicaba.com.br/escritorio-virtual/downloads','ModalPadrao2')" ></div>
+                    <div class="DivQuadrado5" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('','ModalPadrao2')" ></div>
                 </span>            
           </div>
         </div>
@@ -518,7 +520,7 @@
             <div class="DivQuadrado2">Calendario de eventos</div></span>
           <div class="DivQuadrado0">
                 <span class="DivValign">
-                    <div class="DivQuadrado5" onclick="window.open('https://www.scipiracicaba.com.br/agenda-sci-py','_blank')"></div>
+                    <div class="DivQuadrado5" onclick="window.open('','_blank')"></div>
                 </span>            
           </div>
         </div>
@@ -531,7 +533,7 @@
           </span>
         <div class="DivQuadrado0">
             <span class="DivValign">
-                <div class="DivQuadrado5" onclick="window.open('https://www.scipiracicaba.com.br/downloads/Manual_de_Negocios_SCI_PY.pdf')"></div>
+                <div class="DivQuadrado5" onclick="window.open('')"></div>
             </span>          
         </div>
       </div>
