@@ -15,13 +15,13 @@ BITSHARE S.A.C
 * Fecha: 16/11/2016
 ****/
 
-class activation_message_model_atributos{	
-    var $activation_message_id='';
-    var $subject='';
-    var $message='';
-    var $name='';
-    var $franchise='';
+class invoices_model_atributos{	
+    var $invoice_id='';
     var $customer_id='';
+    var $box_id='';
+    var $subject='';
+    var $type='';
+    var $img='';
     var $date='';
     var $active='';
     var $status_value='';
@@ -31,18 +31,19 @@ class activation_message_model_atributos{
     var $updated_by='';
 }
 
-class Activation_message_model extends CI_Model{ 
+class Invoices_model extends CI_Model{ 
 
     public function __construct() {
         parent::__construct();  
-        $this->table = 'activation_message';
-	$this->table_id = 'activation_message_id';
-        $this->activation_message_id='';
-        $this->subject='';
-        $this->message='';
-        $this->name='';
-        $this->franchise='';
+        $this->table = 'invoices';
+	$this->table_id = 'invoice_id';
+        $this->invoice_id='';
         $this->customer_id='';
+        $this->box_id='';
+        $this->subject='';
+        $this->type='';
+        $this->name='';
+        $this->img='';
         $this->date='';
         $this->active='';
 	$this->status_value='';
@@ -50,7 +51,7 @@ class Activation_message_model extends CI_Model{
         $this->created_by='';
         $this->updated_at='';
         $this->updated_by='';
-	$this->fields = new activation_message_model_atributos();
+	$this->fields = new invoices_model_atributos();
     }   
     
     public function fields(){

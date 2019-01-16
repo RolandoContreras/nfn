@@ -8,6 +8,7 @@ class Register extends CI_Controller {
         $this->load->model("paises_model", "obj_paises");
         $this->load->model("regiones_model", "obj_regiones");
         $this->load->model("box_model", "obj_box");
+        $this->load->model("invoices_model", "obj_invoices");
     }
 
 	/**
@@ -128,7 +129,7 @@ class Register extends CI_Controller {
                 $new_code = $customer->code + 1;
                 $new_code = str_pad($new_code, 7, "0", STR_PAD_LEFT);
                 
-                //INSERT TABLE
+                //INSERT TABLE CUSTOMER
                 $data = array(
                         'first_name' => $_SESSION['new_customer']['name'],
                         'last_name' => $_SESSION['new_customer']['last_name'],
@@ -148,6 +149,20 @@ class Register extends CI_Controller {
                         'created_at' => date("Y-m-d H:i:s"),
                     );
                     $customer_id = $this->obj_customer->insert($data);
+                    
+                //CREATE INVOICE
+                $data_invoice = array(
+                        'customer_id' => $customer_id,
+                        'box_id' => $box,
+                        'subject' => "Activación Cliente",
+                        'box_id' => $box,
+                        'type' => 1,
+                        'date' => date("Y-m-d H:i:s"),
+                        'active' => 0,
+                        'status_value' => 1,
+                        'created_at' => date("Y-m-d H:i:s"),
+                    );
+                    $this->obj_invoices->insert($data_invoice);
                     
                     $data_customer_session['customer_id'] = $customer_id;
                     $data_customer_session['code'] = $new_code;
