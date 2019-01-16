@@ -61,6 +61,9 @@ $route['backoffice'] = "b_home";
 $route['backoffice/datos'] = "b_data";
 $route['backoffice/contrasena'] = "b_data/contrasena";
 
+
+$route['backoffice/directos'] = "b_red/directos";
+
 $route['salir'] = "login/logout";
 
 //MANAGER - DASHBOARD

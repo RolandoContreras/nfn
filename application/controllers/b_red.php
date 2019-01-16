@@ -1,12 +1,10 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class B_data extends CI_Controller {
+class B_red extends CI_Controller {
     function __construct() {
         parent::__construct();
         $this->load->model("customer_model","obj_customer");
-//        $this->load->model("messages_model","obj_messages");
-//        $this->load->model("otros_model","obj_otros");
     }
 
 	/**
@@ -59,11 +57,6 @@ class B_data extends CI_Controller {
          //GET SPONSOR
          $parent = $obj_customer->parents_id;
          $name = $obj_customer->first_name.' '.$obj_customer->last_name;
-         $param_sponsor = array(
-                        "select" =>"customer.code,customer.first_name,customer.last_name",
-                        "where" => "customer.customer_id = $parent");
-
-         $obj_sponsor = $this->obj_customer->get_search_row($param_sponsor);
          
          
          //SEND DATA TO VIEW  
@@ -272,166 +265,116 @@ class B_data extends CI_Controller {
          
 	}
         
-        public function contrasena(){
-        echo '
-       <div id="payments" class="tabcontent" style="display: block;">
-    <div class="row ml-custom">
-        <div class="col-xs-12">
-            <div class="row">
-                <div class="col-md-12">
-                        <form name="form">
-                        <div class="panel panel-default panel-form">
-                            <div class="panel-heading text-uppercase">
-                                <h3>Cambiar Contraseña</h3>
+    public function directos(){
+        //VERIFIRY GET SESSION    
+        $this->get_session();
+         /// VISTA
+        $customer_id = $_SESSION['customer']['customer_id'];
+        $params = array(
+                        "select" =>"customer.customer_id,
+                                    customer.code,
+                                    customer.email,
+                                    customer.phone,
+                                    customer.first_name,
+                                    customer.last_name,
+                                    customer.dni,
+                                    customer.address,
+                                    customer.date_start,
+                                    customer.city,
+                                    customer.active,
+                                    paises.nombre as pais,
+                                    ",
+                        "where" => "customer.parents_id = $customer_id and paises.id_idioma = 7 and regiones.id_idioma = 7",
+                        "join" => array('paises, customer.country = paises.id',
+                                        'regiones, customer.region = regiones.id')
+                                        );
+
+         $obj_customer = $this->obj_customer->search($params); 
+         
+        //GET SPONSOR
+         $url = site_url().'static/backoffice/images/user.png';
+         $img = "<img src='$url' alt='perfil' width='25'/>";
+        echo "
+            
+
+
+        <div id='payments' class='tabcontent' style='display: block;'>
+    <div class='row ml-custom'>
+        <div class='col-xs-12'>
+            <div class='row'>
+                <div class='col-md-12'>
+                        <div class='panel panel-default panel-form'>
+                            <div class='panel-heading text-uppercase'>
+                                <h3>Mis referidos directos</h3>
                             </div>
-                            <hr class="style-2">
-                            <div class="panel-body">
-                                <div class="">
-                                    <div class="row">
-                                    <div class="col-sm-12">
-                                    <div class="form-group">
-                                        <label class="control-label required">Contraseña Actual</label>
-                                        <span class="invite-link-more-info" data-tooltip="" data-tooltip-class="tooltip-info" title="Introduzca su contraseña actual."><i class="fa fa-lg fa-question-circle"></i></span>
-                                        <input type="password" id="password" name="password" onkeyup="validate_password(this.value);" class="form-control form-control" maxlength="50" data-constraints="@NotEmpty">
-                                        <span class="alert-0"></span>
-                                    </div>
-                                    </div>
-                                    </div>
-
-                                    <div class="row">
-                                    <div class="col-sm-12">
-                                    <div class="form-group"><label class="control-label required">Nueva Contraseña</label>
-                                        <input type="password" id="password_one" name="password_one" disabled="" required="required" class="form-control form-control">
-                                    </div>
-                                    </div>
-                                    </div>
-                                    <div class="row">
-                                    <div class="col-sm-12">
-                                    <div class="form-group"><label class="control-label required">Repita Nueva Contraseña</label>
-                                        <input type="password" id="password_two" name="password_two" required="required" disabled="" class="form-control form-control"></div>
-
-                                    </div>
-                                    </div>
-                                <hr class="style-1">
-                                    <div class="row">
-                                        <div class="mb-10">
-                                            <a class="btn btn-primary btn-block" onclick="alter_password();" name="button_password" style="word-wrap: break-word; white-space: normal !important;">Cambiar Contraseña</a>
-                                            <div id="alert_message_password"></div>
+                                    <div class='col-lg-12'>
+                                      <div id='panelDemo14' class='panel panel-success'>
+                                            <div class='panel-body'>
+                                                <div id='archivos_subidos'>
+                                                    <div class='row'>
+                                                        <div class='col-lg-12'>
+                                                            <div class='table-responsive'>
+                                                                <table class='table table-hover'>
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th><b>Código</b></th>
+                                                                            <th><b>Nombre</b></th>
+                                                                            <th class='text-center'><b>Estado</b></th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>";
+                                                                      foreach ($obj_customer as $value) {
+                                                                                if($value->active == 1){
+                                                                                    $style = "label-success";
+                                                                                    $text = "activo";
+                                                                                }else{
+                                                                                    $style = "label-danger";
+                                                                                    $text = "inactivo";
+                                                                                }
+                                                                            echo "<tr>
+                                                                                <td style='padding: 25px'><b>$value->code<b></td>
+                                                                                <td style='padding: 25px'>$img&nbsp;&nbsp;$value->first_name $value->last_name</td>";
+                                                                                    if($value->active == 1){
+                                                                                        $style = "label-success";
+                                                                                        $value = "activo";
+                                                                                    }else{
+                                                                                        $style = "label-danger";
+                                                                                        $value = "inactivo";
+                                                                                    }    
+                                                                             echo   "<td style='padding: 25px' class='text-center'>
+                                                                                    <span class='label $style'>$text</span>
+                                                                                </td>
+                                                                            </tr>";
+                                                                         }
+                                                                 echo "        
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-
-                                </div>
-                            </div>
                         </div>
-                     </form>
                 </div>
             </div>
         </div>
     </div> 
 </div>
-        ';
-        
-    }
-        
-        public function get_messages_informative(){
-            $params = array(
-                            "select" =>"",
-                             "where" => "status_value = 1 and page = 2 and active = 1",
-                            "order" => "position ASC");
-                
-           $messages_informative = $this->obj_otros->search($params); 
-            return $messages_informative;
-        }
-        
-        public function udpate_address(){
-            
-         if($this->input->is_ajax_request()){  
-           //SELECT ID FROM CUSTOMER
-           $address = $this->input->post('address');
-           $customer_id = $this->input->post('customer_id');
 
-           //UPDATE DATA EN CUSTOMER TABLE
-           $data = array(
-                           'address' => $address,
-                           'updated_by' => $customer_id,
-                           'updated_at' => date("Y-m-d H:i:s")
-                       ); 
-                       $this->obj_customer->update($customer_id,$data);
 
-                $data['message'] = "true";
-            echo json_encode($data); 
-            }
-        }
-    
-        public function update_position(){
-         if($this->input->is_ajax_request()){   
-            //SELECT ID FROM CUSTOMER
-           $pierna = $this->input->post('pierna');
-           $customer_id = $this->input->post('customer_id');
-           //UPDATE DATA EN CUSTOMER TABLE
-           $data = array(
-                           'position_temporal' => $pierna,
-                           'updated_by' => $customer_id,
-                           'updated_at' => date("Y-m-d H:i:s")
-                       ); 
-                       $this->obj_customer->update($customer_id,$data);
 
-                $data['message'] = "true";
-            echo json_encode($data); 
-            }
-        }
+
+
+
+
+       
+        ";
         
-        public function update_password(){
-
-             if($this->input->is_ajax_request()){   
-                //SELECT ID FROM CUSTOMER
-               $password_one = $this->input->post('password_one');
-               $customer_id = $this->input->post('customer_id');
-               
-               if($password_one != ""){
-                            //UPDATE DATA EN CUSTOMER TABLE
-                            $data = array(
-                                            'password' => $password_one,
-                                            'updated_by' => $customer_id,
-                                            'updated_at' => date("Y-m-d H:i:s")
-                                        ); 
-                                        $this->obj_customer->update($customer_id,$data);
-
-                                 $data['message'] = "true";
-                                 $data['print'] = "La contraseña de cambio con exito";
-                                 $data['url'] = "misdatos";
-                             echo json_encode($data); 
-                    
-               }else{
-                     $data['message'] = "false";
-                     $data['print'] = "Las contraseñas no deben estan en blanco";
-                     $data['url'] = "misdatos";
-                     echo json_encode($data); 
-               }
-            }
-        }
-
-        public function validate_password() {
-        //SELECT ID FROM CUSTOMER
-        $password = str_to_minuscula(trim($this->input->post('password')));
-        $customer_id = trim($this->input->post('customer_id'));
+    }    
         
-        $param_customer = array(
-            "select" => "password",
-            "where" => "customer_id = '$customer_id' and password = '$password'");
-        $customer = count($this->obj_customer->get_search_row($param_customer));
-        
-        if ($customer > 0) {
-            $data['message'] = "true";
-            $data['print'] = "✔ Verificado";
-        } else {
-            $data['message'] = "false";
-            $data['print'] = "Contraseña Incorrecta";
-        }
-        echo json_encode($data);
-    }
-        
-        public function get_session(){          
+    public function get_session(){          
         if (isset($_SESSION['customer'])){
             if($_SESSION['customer']['logged_customer']=="TRUE" && $_SESSION['customer']['status']=='1'){               
                 return true;
@@ -442,33 +385,5 @@ class B_data extends CI_Controller {
             redirect(site_url().'home');
         }
     }
-    
-        public function get_total_messages($customer_id){
-        $params = array(
-                        "select" =>"count(messages_id) as total",
-                        "where" => "customer_id = $customer_id and active = 1 and status_value = 1 and support <> 1",
-                        
-                                        );
-            $obj_message = $this->obj_messages->get_search_row($params);
-            //GET TOTAL MESSAGE ACTIVE   
-            $all_message = $obj_message->total;
-            return $all_message;
-    }
-    
-        public function get_messages($customer_id){
-            $params = array(
-                        "select" =>"messages_id,
-                                    date,
-                                    subject,
-                                    label,
-                                    type,
-                                    messages",
-                        "where" => "customer_id = $customer_id and status_value = 1 and support <> 1",
-                        "order" => "messages_id DESC",
-                        "limit" => "3",
-                                        );
-            $obj_message = $this->obj_messages->search($params); 
-            //GET ALL MESSAGE   
-            return $obj_message;
-    }
+        
 }

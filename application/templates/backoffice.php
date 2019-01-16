@@ -472,7 +472,7 @@
           </span>
             <div class="DivQuadrado0">
                 <span class="DivValign">
-                    <div class="DivQuadrado5" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao3" onclick="abre('https://www.scipiracicaba.com.br/escritorio-virtual/meus-indicados-diretos','ModalPadrao4')" ></div>
+                    <div class="DivQuadrado5" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao3" onclick="abre('<?php echo site_url().'backoffice/directos';?>','ModalPadrao4')" ></div>
                 </span>              
             </div>
           </div>
