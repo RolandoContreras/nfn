@@ -89,7 +89,7 @@ class B_invoices extends CI_Controller {
                                                                                         <td style='padding: 25px'>$value->subject</td>";
                                                                                             if ($value->active == 0) {
                                                                                                 $valor = "Sin acción";
-                                                                                                $stilo = "label label-defaul";
+                                                                                                $stilo = "label label-info";
                                                                                             }elseif($value->active == 1){
                                                                                                 $valor = "Pendiente";
                                                                                                 $stilo = "label label-warning";
@@ -101,7 +101,7 @@ class B_invoices extends CI_Controller {
                                                                                                 $stilo = "label label-important";
                                                                                             } 
                                                                                      echo   "<td style='padding: 25px' class='text-center'>
-                                                                                            <span class='label $style'>$text</span>
+                                                                                            <span class='label $stilo'>$valor</span>
                                                                                         </td>
                                                                                         <td style='padding: 25px'>
                                                                                             <a class='label btn-primary' onclick='alter_password();' style='word-wrap: break-word; white-space: normal !important;'>&nbsp;<i class='fa fa-upload'></i>&nbsp;&nbsp;&nbsp;Subir&nbsp;&nbsp;&nbsp;</a>
