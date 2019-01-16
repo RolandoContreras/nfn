@@ -16,6 +16,8 @@ var DivAguarde ="<div class='DivLeft100pc_P20 Background4 ArredondarBordas4 Padd
 //    e.preventDefault();
 //});
 
+
+
 //////////////////////////////////////////////////////////
 
 function AbreBloqueio(){
@@ -2320,7 +2322,26 @@ function DadosPessoaisEditar(){
 
 function abre(url,id) {
     
-//    alert(url);
+	if (id=="ModalPadraoChat") {
+		var DivAguarde2 = "<div class='modal-dialog' style='width:100%;max-width:950px'><div class='modal-content'><div class='modal-body' style='padding:0px'><div class='ModalTable' id='ModalPadraoChat2'>"+ DivAguarde +"</div></div></div></div>";
+	} else {
+		var DivAguarde2 = DivAguarde;
+	}
+
+	$("#"+ id +"").html(DivAguarde2);
+
+	$.ajax({
+	type: "get",
+	url: url,
+	success: function(retorno){
+		$("#"+ id +"").html(retorno);
+		$('[data-toggle="tooltip"]').tooltip();
+	}
+	})
+
+}
+
+function abre_2(url,id,data) {
     
 	if (id=="ModalPadraoChat") {
 		var DivAguarde2 = "<div class='modal-dialog' style='width:100%;max-width:950px'><div class='modal-content'><div class='modal-body' style='padding:0px'><div class='ModalTable' id='ModalPadraoChat2'>"+ DivAguarde +"</div></div></div></div>";
@@ -2333,6 +2354,7 @@ function abre(url,id) {
 	$.ajax({
 	type: "get",
 	url: url,
+        data: {data : data},
 	success: function(retorno){
 		$("#"+ id +"").html(retorno);
 		$('[data-toggle="tooltip"]').tooltip();
@@ -2877,10 +2899,6 @@ function MktZapPreencherFormulario () {
 	MktZapEntrarConversa();
 }
 
-function MktZapEntrarConversa () {
-	// $("#widget_iframe").contents().find("button").click();
-}
-
 function ChatMktza () {
 	
 	$.ajax({
@@ -2913,8 +2931,42 @@ function ChatMktza () {
 
 }
 
-// Fix VH no chrome android
+function upload_images(id) {
+        cerrar_pagina();
+        abre_2(site+"backoffice/carga_documento",'ModalPadrao2',id);
+        abrir_pagina();
+}
 
+function cerrar_pagina(){ 
+    $("#ModalPadrao").modal("hide");
+}
+
+function abrir_pagina(){ 
+    $("#ModalPadrao").modal("show");
+}
+function upload(){
+$("#upload_form").on('submit',function(e){
+            if($('#bank_number').val() == ''){
+                $("#uploaded_image").html('<div class="alert alert-danger" style="text-align: center">Ingrese el número de deposito</div>  ');
+            }else{
+                $.ajax({
+                url : site+"backoffice/facturas/upload",
+                method: "POST",
+                data:new FormData(this),
+                contentType: false,
+                cache: false,
+                processData: false,
+                success:function(data){
+                    $("#uploaded_image").html(data);
+                }
+            });
+            }
+ });
+}
+
+
+
+// Fix VH no chrome android
 window.addEventListener('resize', () => {
 
   let vh = window.innerHeight * 0.01;

@@ -211,7 +211,7 @@
                         <span class="DivValign">Interactividad</span>
                     </div>
                         <div class="Linhas2"></div>
-                        <div class="SubMenu" onclick="window.open('https://www.facebook.com/SCIParaguayOficial/','_self');" alt="Facebook" title="Facebook">
+                        <div class="SubMenu" onclick="window.open('https://www.facebook.com/nfnoficial/','_blank');" alt="Facebook" title="Facebook">
                             <span class="DivValign">&bull; Facebook</span>
                         </div>
                         <div class="Linhas2"></div>
@@ -220,7 +220,7 @@
                         </div>
                         <div class="Linhas2"></div>
                         <div class="Linhas"></div>
-                        <div class="Menu" onclick="window.open('https://www.scipiracicaba.com.br/escritorio-virtual/sair','_self');" alt="Dejar" title="Dejar">
+                        <div class="Menu" onclick="window.open('<?php echo site_url().'salir';?>','_self');" alt="Salir" title="Salir">
                             <span class="DivValign">Salir</span>
                         </div>
         </div>
@@ -620,8 +620,8 @@
           <div class="FotoCliente" id="FotoClienteMobile" style="background-image:url('<?php echo site_url().'static/backoffice/images/foto-perfil.jpg  ';?>');background-size:cover;cursor:pointer;">
             <input type="button" id="FotoBotaoMobile" name="FotoBotaoMobile" style="cursor:pointer;">
         </div>
-        <div class="TextoBemVindo">Bienvenido Rolando!<br>ID:
-          <font style="font-weight:400">1540265</font>
+        <div class="TextoBemVindo">¡Bienvenido, <?php echo $_SESSION['customer']['name'];?>!<br>ID:
+          <font style="font-weight:400"><?php echo $_SESSION['customer']['code'];?></font>
         </div>
       </div>
       <style type="text/css">
@@ -922,7 +922,7 @@
     <div class="modal-content" id="ModalPadrao8"></div>
   </div>
 </div>
-<div class="modal fade-scale" id="ModalPadrao9" role="dialog" onclick="FecharPagina()" style="overflow-y:scroll">
+<div class="modal fade-scale" id="ModalPadrao9" role="dialog" onclick="FecharPagina();" style="overflow-y:scroll">
   <div class="modal-dialog modal-lg">
     <div class="modal-content" id="ModalPadrao10"></div>
   </div>
@@ -981,9 +981,6 @@
 
 </html>
 <script type="text/javascript">
-  $.ajax({ type: "get", url: "https://www.scipiracicaba.com.br/escritorio-virtual/app/verificar", success: function(retorno){ console.log(retorno); } });
-</script>
-<script type="text/javascript">
 //  $(document).ready(function () { abre("https://www.scipiracicaba.com.br/escritorio-virtual/bem-vindo-dados-pagamento", "ModalPadrao2"); $("#ModalPadrao").modal("show"); });
 </script>
 <div id="popup-bemvindo">
@@ -991,4 +988,31 @@
 </div>
 <script>
   var velocidade = 1000; var valor = 1; function pisca() { if (valor == 1) { $('#div_manual_negocio').css({'color':'#FFFFFF'}); //console.log('1'); valor=0; } else { $('#div_manual_negocio').css({'color':'#FFFF90'}); valor=1; //console.log('2'); } setTimeout("pisca();",velocidade); } setTimeout("pisca();",velocidade);
+</script>
+<script>
+$(document).ready(function(){
+    $("#upload_form").on('submit',function(e){
+        e.preventDefault();
+        if($('#image_file').val() == ''){
+            $("#uploaded_image").html('<div class="alert alert-danger" style="text-align: center">Debe seleccionar la imagen</div>  ');
+        }else{
+            if($('#bank_number').val() == ''){
+                $("#uploaded_image").html('<div class="alert alert-danger" style="text-align: center">Ingrese el número de deposito</div>  ');
+            }else{
+                $.ajax({
+                url : "<?php echo site_url().'backoffice/message_confirmation/upload'?>",
+                method: "POST",
+                data:new FormData(this),
+                contentType: false,
+                cache: false,
+                processData: false,
+                success:function(data){
+                    $("#uploaded_image").html(data);
+                }
+            });
+            }
+            
+        }
+    });
+});
 </script>
