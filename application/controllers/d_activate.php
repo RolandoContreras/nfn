@@ -5,48 +5,43 @@ class D_activate extends CI_Controller{
     public function __construct(){
         parent::__construct();
         $this->load->model("customer_model","obj_customer");
-        $this->load->model("commissions_model","obj_commissions");
-        $this->load->model("franchise_model","obj_franchise");
         $this->load->model("bonus_model","obj_bonus");
-        $this->load->model("activation_message_model","obj_activation");
+        $this->load->model("invoices_model","obj_invoices");
         $this->load->model("messages_model","obj_messages");
-        $this->load->model("points_model","obj_points");
-        $this->load->model("binarys_model","obj_binarys");
     }   
                 
     public function index(){  
         
            $this->get_session();
            $params = array(
-                        "select" =>"customer.customer_id,
-                                    customer.username,
-                                    customer.first_name,
+                        "select" =>"customer.first_name,
                                     customer.last_name,
-                                    customer.position,
-                                    customer.active,
-                                    customer.identificador,
-                                    customer.parents_id,
-                                    customer.created_at,
-                                    franchise.price as price,
-                                    franchise.point as point,
-                                    franchise.name as franchise,
-                                    customer.status_value",
-                        "join" => array('franchise, franchise.franchise_id = customer.franchise_id'),
-                        "where" => "customer.status_value = 1"
+                                    customer.code,
+                                    invoices.invoice_id,
+                                    invoices.activation_code,
+                                    invoices.img,
+                                    invoices.date,
+                                    invoices.subject,
+                                    invoices.active,
+                                    box.name,
+                                    box.price",
+                        "join" => array('customer, invoices.customer_id = customer.customer_id',
+                                        'box, invoices.box_id = box.box_id'),
+                        "where" => "invoices.type = 1 and customer.status_value = 1"
                );
            //GET DATA FROM CUSTOMER
-           $obj_customer= $this->obj_customer->search($params);
+           $obj_invoices = $this->obj_invoices->search($params);
            
            /// PAGINADO
-            $modulos ='activaciones'; 
+            $modulos ='activaciones_clientes'; 
             $seccion = 'Lista';        
-            $link_modulo =  site_url().'dashboard/activaciones'; 
+            $link_modulo =  site_url().'dashboard/'.$modulos; 
             
             /// VISTA
             $this->tmp_mastercms->set('link_modulo',$link_modulo);
             $this->tmp_mastercms->set('modulos',$modulos);
             $this->tmp_mastercms->set('seccion',$seccion);
-            $this->tmp_mastercms->set("obj_customer",$obj_customer);
+            $this->tmp_mastercms->set("obj_invoices",$obj_invoices);
             $this->tmp_mastercms->render("dashboard/activate/activate_list");
     }
     

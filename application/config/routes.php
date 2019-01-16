@@ -76,6 +76,10 @@ $route['dashboard/bonos/load/([0-9]+)'] = "d_bonus/load/$1";
 $route['dashboard/bonos/validate'] = "d_bonus/validate";
 $route['dashboard/bonos/delete'] = "d_bonus/delete";
 
+$route['dashboard/activaciones_clientes'] = "d_activate"; 
+$route['dashboard/activaciones_clientes/cambiar_status'] = "d_activate/change_status";
+$route['dashboard/activaciones_clientes/delete'] = "d_activate/delete";
+
 $route['dashboard/clientes'] = "d_customer";
 $route['dashboard/clientes/load/([0-9]+)'] = "d_customer/load/$1";
 $route['dashboard/clientes/validate'] = "d_customer/validate";

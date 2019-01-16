@@ -19,6 +19,7 @@ class invoices_model_atributos{
     var $invoice_id='';
     var $customer_id='';
     var $box_id='';
+    var $activation_code='';
     var $subject='';
     var $type='';
     var $img='';
@@ -40,6 +41,7 @@ class Invoices_model extends CI_Model{
         $this->invoice_id='';
         $this->customer_id='';
         $this->box_id='';
+        $this->activation_code='';
         $this->subject='';
         $this->type='';
         $this->name='';
