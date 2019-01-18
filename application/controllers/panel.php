@@ -15,13 +15,17 @@ class Panel extends CI_Controller{
         $params = array("select" =>"count(comment_id) as total_comments,
                                     (select count(*) from customer where status_value = 1) as total_customer, 
                                     (select count(*) from box where status_value = 1) as total_box, 
+                                    (select count(*) from invoices where type = 1 and status_value = 1) as total_activate_customer, 
+                                    (select count(*) from invoices where type = 2 and status_value = 1) as total_activate_consumo, 
                                     (select count(*) from bonus where status_value = 1) as total_bonus, 
                                     (select count(*) from users where status_value = 1) as total_users",
                         "where" => "status_value = 1");
         $obj_total = $this->obj_comments->get_search_row($params);
         
          //GET PENDING ROWS
-        $params = array("select" =>"count(*) as pending_comments
+        $params = array("select" =>"count(*) as pending_comments,
+                                    (select count(*) from invoices where type = 1 and active = 1 and status_value = 1) as pending_activate_customer, 
+                                    (select count(*) from invoices where type = 2 and active = 1 and status_value = 1) as pending_activate_consumo, 
                                     ",
                         "where" => "active = 1");
         $obj_pending = $this->obj_comments->get_search_row($params);

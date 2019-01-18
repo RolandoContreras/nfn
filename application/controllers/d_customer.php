@@ -43,47 +43,27 @@ class D_customer extends CI_Controller{
     
     public function validate(){
         
-        $birth_date = formato_fecha_db_mes_dia_ano($this->input->post('fecha_de_nacimiento'));
         //GET CUSTOMER_ID
         $customer_id = $this->input->post("customer_id");
         $data = array(
                 'first_name' => $this->input->post('first_name'),
-                'last_name   ' => $this->input->post('last_name'),
+                'last_name' => $this->input->post('last_name'),
+                'code' => $this->input->post('code'),
                 'password' => $this->input->post('password'),
                 'email' => $this->input->post('email'),
                 'dni' => $this->input->post('dni'),  
-                'birth_date' => $birth_date,  
                 'phone' => $this->input->post('phone'),
                 'country' => $this->input->post('pais'),
-                'provincia' => $this->input->post('provincia'),
+                'region' => $this->input->post('region'),
                 'city' => $this->input->post('city'),
                 'active' => $this->input->post('active'),
                 'address' => $this->input->post('address'),
-                'btc_address' => $this->input->post('btc_address'),
                 'updated_at' => date("Y-m-d H:i:s"),
                 'updated_by' => $_SESSION['usercms']['user_id']
                 );          
             //SAVE DATA IN TABLE    
             $this->obj_customer->update($customer_id, $data);
         redirect(site_url()."dashboard/clientes");
-    }
-    
-    public function active_customer(){
-        //ACTIVE CUSTOMER
-        if($this->input->is_ajax_request()){  
-            
-                $customer_id = $this->input->post("customer_id");
-                if(count($customer_id) > 0){
-                    $data = array(
-                        'calification' => 1,
-                        'updated_at' => date("Y-m-d H:i:s"),
-                        'updated_by' => $_SESSION['usercms']['user_id'],
-                    ); 
-                    $this->obj_customer->update($customer_id,$data);
-                }
-                echo json_encode($data);            
-        exit();
-            }
     }
     
     public function delete(){
@@ -126,6 +106,14 @@ class D_customer extends CI_Controller{
             $obj_paises  = $this->obj_paises->search($params);   
             //RENDER TO VIEW
             $this->tmp_mastercms->set("obj_paises",$obj_paises);
+            
+            //SELECT REGIONES
+            $params = array("select" => "id,nombre",
+                            "where" => "id_idioma = 7");
+            $obj_regiones  = $this->obj_regiones->search($params);   
+            
+            //RENDER TO VIEW
+            $this->tmp_mastercms->set("obj_regiones",$obj_regiones);
             
             $modulos ='clientes'; 
             $seccion = 'Formulario';        

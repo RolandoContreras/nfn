@@ -19,7 +19,6 @@
                 </div>
                 <!--GET CUSTOMER ID-->
                 <input type="hidden" name="customer_id" id="customer_id" value="<?php echo isset($obj_customer)?$obj_customer->customer_id:"";?>">
-              
                 <div class="well nomargin" style="width: 600px;">
                     <div class="inner">
                     <strong>País:</strong>
@@ -40,15 +39,33 @@
                         </option>
                             <?php endforeach; ?>
                         </select>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <strong>Región:</strong>
+                        <select name="region" id="region">
+                        <option value="">[ Seleccionar ]</option>
+                            <?php foreach ($obj_regiones as $value ): ?>
+                        <option value="<?php echo $value->id;?>"
+                            <?php 
+                                    if(isset($obj_customer->region)){
+                                            if($obj_customer->region==$value->id){
+                                                echo "selected";
+                                            }
+                                    }else{
+                                              echo "";
+                                    }
+
+                            ?>><?php echo $value->nombre;?>
+                        </option>
+                            <?php endforeach; ?>
+                        </select>
                     </div>
-                    <br/>
                 </div>
               <br><br>
               <strong>ID:</strong><br>
               <input type="text" id="customer_id" name="customer_id" value="<?php echo isset($obj_customer->customer_id)?$obj_customer->customer_id:"";?>" class="input-xlarge-fluid" placeholder="ID" disabled="">
               <br><br>
-              <strong>Usuario:</strong><br>
-              <input type="text" id="username" name="username" value="<?php echo isset($obj_customer->email)?$obj_customer->email:"";?>" class="input-xlarge-fluid" placeholder="Username">
+              <strong>Código:</strong><br>
+              <input type="text" id="code" name="code" value="<?php echo isset($obj_customer->code)?$obj_customer->code:"";?>" class="input-xlarge-fluid" placeholder="Código" maxlength="7">
               <br><br>
               <strong>Contraseña:</strong><br>              
               <input type="password" id="password" name="password" value="<?php echo isset($obj_customer->password)?$obj_customer->password:"";?>" class="input-xlarge-fluid" placeholder="Contraseña">
@@ -65,9 +82,6 @@
               <strong>DNI:</strong><br>
               <input type="text" id="dni" name="dni" value="<?php echo isset($obj_customer->dni)?$obj_customer->dni:"";?>" class="input-xlarge-fluid" placeholder="DNI">
               <br><br>
-              <strong>Fecha de Nacimiento:</strong><br>
-              <input type="text" id="fecha_de_nacimiento" name="fecha_de_nacimiento" value="<?php echo formato_fecha_barras($obj_customer->birth_date);?>" class="input-xlarge-fluid" placeholder="Fecha de Nacimiento">
-              <br><br>
               <strong>Telefono:</strong><br>
               <input type="text" id="phone" name="phone" class="input-small-fluid" placeholder="Telefono" value="<?php echo isset($obj_customer->phone)?$obj_customer->phone:"";?>">
               <br><br>
@@ -75,10 +89,7 @@
               <textarea name="address" id="address" placeholder="Dirección ..." style="width: 90%; height: 100px;"><?php echo isset($obj_customer->address)?$obj_customer->address:"";?></textarea>
               <script type="text/javascript">CKEDITOR.replace("adress")</script> 
               <br><br>
-              <strong>Provincia:</strong><br>
-              <input type="text" id="provincia" name="provincia" class="input-small-fluid" placeholder="Provincia" value="<?php echo isset($obj_customer->provincia)?$obj_customer->provincia:"";?>">
-              <br><br>
-              <strong>Población:</strong><br>
+              <strong>Ciudad:</strong><br>
               <input type="text" id="city" name="city" class="input-small-fluid" placeholder="Ciudad" value="<?php echo isset($obj_customer->city)?$obj_customer->city:"";?>">
               <br><br>
                 <div class="well nomargin" style="width: 200px;">
@@ -94,8 +105,9 @@
                                 }else{echo "";} ?>>Activo</option>
                     </select>
                 </div>
+                <br>
                 </div>
-                <br><br>
+                <br>
                 <strong>Fecha de Creación:</strong><br>
                 <input type="text" id="created_at" name="created_at" class="input-small-fluid" placeholder="Fecha de Creación" value="<?php echo isset($obj_customer->created_at)?$obj_customer->created_at:"";?>" disabled="">
                 <br><br>

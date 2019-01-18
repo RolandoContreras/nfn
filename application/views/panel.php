@@ -24,6 +24,14 @@
                                         <td><a href="<?php echo site_url().'dashboard/ventas_card';?>" class="pending"><b class="cmd">0</b><i class="fa fa-btc"></i> Por Procesar</a></td>
                                     </tr>
                                     <tr>
+                                        <td><a href="<?php echo site_url().'dashboard/activaciones_clientes';?>"><b><?php echo $obj_total->total_activate_customer;?></b><i class="fa fa-user"></i> Activaciones Nuevos Cliente</a></td>
+                                        <td><a href="<?php echo site_url().'dashboard/activaciones_clientes';?>" class="pending"><b class="cmd"><?php echo $obj_pending->pending_activate_customer;?></b><i class="fa fa-clock-o" aria-hidden="true"></i> Por Procesar</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="<?php echo site_url().'dashboard/activaciones_consumo';?>"><b><?php echo $obj_total->total_activate_consumo;?></b><i class="fa fa-shopping-basket"></i> Activaciones Consumos</a></td>
+                                        <td><a href="<?php echo site_url().'dashboard/activaciones_consumo';?>" class="pending"><b class="cmd"><?php echo $obj_pending->pending_activate_consumo;?></b><i class="fa fa-clock-o" aria-hidden="true"></i> Por Procesar</a></td>
+                                    </tr>
+                                    <tr>
                                             <td><a href="<?php echo site_url().'dashboard/comentarios';?>"><b><?php echo $obj_total->total_comments;?></b><i class="fa fa-comments"></i> Comentarios</a></td>
                                             <td><a href="<?php echo site_url().'dashboard/comentarios';?>" class="pending"><b class="cmd"><?php echo $obj_pending->pending_comments;?></b><i class="fa fa-comments"></i> Por Leer</a></td>
                                     </tr>
