@@ -15,33 +15,34 @@ BITSHARE S.A.C
 * Fecha: 16/11/2016
 ****/
 
-class sell_model_atributos{	
-    var $sell_id='';
-    var $invoice_id='';
+class matrix_model_atributos{	
+    var $matrix_id='';
+    var $customer_id='';
+    var $position='';
     var $date='';
-    var $active='';
     var $status_value='';
     var $created_at='';
     var $created_by='';
-    var $update_at='';
-    var $update_by='';
+    var $updated_at='';
+    var $updated_by='';
 }
 
-class Sell_Model extends CI_Model{ 
+class Matrix_Model extends CI_Model{ 
 
     public function __construct() {
         parent::__construct();  
-        $this->table = 'sell';
-	$this->table_id = 'sell_id';
-        $this->sell_id='';
-        $this->invoice_id='';
-        $this->active='';
-	$this->status_value='';
+        $this->table = 'matrix';
+	$this->table_id = 'matrix_id';
+        $this->matrix_id='';
+        $this->customer_id='';
+        $this->nivel='';
+	$this->position='';
+        $this->date='';
         $this->created_at='';
         $this->created_by='';
-        $this->update_at='';
-        $this->update_by='';
-	$this->fields = new sell_model_atributos();
+        $this->updated_at='';
+        $this->updated_by='';
+	$this->fields = new matrix_model_atributos();
     }   
     
     public function fields(){

@@ -81,7 +81,7 @@
                                     <?php  if($value->active == 1){ ?>
                                                 <div class="operation">
                                                     <div class="btn-group"> 
-                                                        <button class="btn btn-small" onclick="activar_cliente('<?php echo $value->invoice_id;?>');"><i class="fa fa-check"></i>  Activar</button>
+                                                        <button class="btn btn-small" onclick="active_cliente('<?php echo $value->invoice_id;?>','<?php echo $value->customer_id;?>','<?php echo $value->parents_id;?>');"><i class="fa fa-check"></i>  Activar</button>
                                                         <button class="btn btn-small" onclick="cancelar_cliente('<?php echo $value->invoice_id;?>');"><i class="fa fa-times-circle"></i>  Cancelar</button>
                                                     </div>
                                                 </div>
@@ -105,4 +105,4 @@
     } );
 } );
 </script>
-<script src="static/cms/js/activate.js"></script>
+<script src="static/cms/js/active.js"></script>

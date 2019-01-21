@@ -81,6 +81,7 @@ $route['dashboard/bonos/validate'] = "d_bonus/validate";
 $route['dashboard/bonos/delete'] = "d_bonus/delete";
 
 $route['dashboard/activaciones_clientes'] = "d_activate"; 
+$route['dashboard/activaciones_clientes/active'] = "d_activate/active";
 $route['dashboard/activaciones_clientes/cambiar_status'] = "d_activate/change_status";
 $route['dashboard/activaciones_clientes/delete'] = "d_activate/delete";
 
