@@ -2360,27 +2360,7 @@ function abre(url,id) {
 
 }
 
-function abre_2(url,id,data) {
-    
-	if (id=="ModalPadraoChat") {
-		var DivAguarde2 = "<div class='modal-dialog' style='width:100%;max-width:950px'><div class='modal-content'><div class='modal-body' style='padding:0px'><div class='ModalTable' id='ModalPadraoChat2'>"+ DivAguarde +"</div></div></div></div>";
-	} else {
-		var DivAguarde2 = DivAguarde;
-	}
 
-	$("#"+ id +"").html(DivAguarde2);
-
-	$.ajax({
-	type: "get",
-	url: url,
-        data: {data : data},
-	success: function(retorno){
-		$("#"+ id +"").html(retorno);
-		$('[data-toggle="tooltip"]').tooltip();
-	}
-	})
-
-}
 
 function abreModalTutorial(secao){
 	$("#secaotutorial").html(DivAguarde);
@@ -2950,10 +2930,70 @@ function ChatMktza () {
 
 }
 
+function mostrar_nivel(nivel,posicion,end_posicion) {
+        abre_nivel_red(site+"backoffice/mostrar_nivel",'ModalPadrao10',nivel,posicion,end_posicion);
+        abrir_pagina_9();
+        
+}
+
+function abrir_pagina_9(){ 
+    $("#ModalPadrao9").modal("show");
+}
+function cerrar_pagina_9(){ 
+    $("#ModalPadrao9").modal("hide");
+}
+
 function upload_images(id) {
 //        cerrar_pagina();
         abre_2(site+"backoffice/carga_documento",'ModalPadrao4',id);
         abrir_pagina_3();
+}
+
+function abre_2(url,id,data) {
+    
+	if (id=="ModalPadraoChat") {
+		var DivAguarde2 = "<div class='modal-dialog' style='width:100%;max-width:950px'><div class='modal-content'><div class='modal-body' style='padding:0px'><div class='ModalTable' id='ModalPadraoChat2'>"+ DivAguarde +"</div></div></div></div>";
+	} else {
+		var DivAguarde2 = DivAguarde;
+	}
+
+	$("#"+ id +"").html(DivAguarde2);
+
+	$.ajax({
+	type: "get",
+	url: url,
+        data: {data : data},
+	success: function(retorno){
+		$("#"+ id +"").html(retorno);
+		$('[data-toggle="tooltip"]').tooltip();
+	}
+	})
+
+}
+
+function abre_nivel_red(url,id,nivel,posicion,end_posicion) {
+    
+        if (id=="ModalPadraoChat") {
+		var DivAguarde2 = "<div class='modal-dialog' style='width:100%;max-width:950px'><div class='modal-content'><div class='modal-body' style='padding:0px'><div class='ModalTable' id='ModalPadraoChat2'>"+ DivAguarde +"</div></div></div></div>";
+	} else {
+		var DivAguarde2 = DivAguarde;
+	}
+
+	$("#"+ id +"").html(DivAguarde2);
+
+	$.ajax({
+	type: "get",
+	url: url,
+        data: {nivel : nivel,
+               posicion : posicion,
+               end_posicion : end_posicion
+               },
+	success: function(retorno){
+		$("#"+ id +"").html(retorno);
+		$('[data-toggle="tooltip"]').tooltip();
+	}
+	})
+
 }
 
 function cerrar_pagina(){ 
@@ -2968,6 +3008,11 @@ function abrir_pagina(){
 function abrir_pagina_3(){ 
     $("#ModalPadrao3").modal("show");
 }
+
+function abrir_pagina_5(){ 
+    $("#ModalPadrao5").modal("show");
+}
+
 function cerrar_pagina_3(){ 
     $("#ModalPadrao3").modal("hide");
 }

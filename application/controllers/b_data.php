@@ -77,7 +77,12 @@ class B_data extends CI_Controller {
                     <div class="col-md-12">
                         <div class="panel panel-default panel-form" data-behaviour="container">
                             <div class="panel-heading text-uppercase clearfix">
-                                <h3 class="class="title_back"">Información</h3>
+                                <div class="pull-left">
+                                    <h3>Datos Personales</h3>
+                                </div>    
+                                <div class="pull-right tooltip-demo">
+                                    <a title="" data-placement="top" data-toggle="tooltip" class="btn btn-default btn-sm" onclick="cerrar_pagina();" data-original-title="Cerrar ventana"><i class="fa fa-times"></i> Cerrar</a>
+                                </div>
                             </div>
                             <hr class="style-2">
                             <div class="panel-body">         
@@ -281,8 +286,13 @@ class B_data extends CI_Controller {
                 <div class="col-md-12">
                         <form name="form">
                         <div class="panel panel-default panel-form">
-                            <div class="panel-heading text-uppercase">
-                                <h3>Cambiar Contraseña</h3>
+                            <div class="panel-heading text-uppercase clearfix">
+                                <div class="pull-left">
+                                    <h3>Cambiar Contraseña</h3>
+                                </div>    
+                                <div class="pull-right tooltip-demo">
+                                    <a title="" data-placement="top" data-toggle="tooltip" class="btn btn-default btn-sm" onclick="cerrar_pagina();" data-original-title="Cerrar ventana"><i class="fa fa-times"></i> Cerrar</a>
+                                </div>
                             </div>
                             <hr class="style-2">
                             <div class="panel-body">

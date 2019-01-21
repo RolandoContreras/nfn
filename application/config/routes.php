@@ -67,6 +67,7 @@ $route['backoffice/facturas/upload'] = "b_invoices/upload";
 
 $route['backoffice/red'] = "b_red/index";
 $route['backoffice/directos'] = "b_red/directos";
+$route['backoffice/mostrar_nivel'] = "b_red/mostrar_nivel";
 
 $route['salir'] = "login/logout";
 

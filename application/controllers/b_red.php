@@ -65,7 +65,6 @@ class B_red extends CI_Controller {
                     );
                 //GET DATA FROM BONUS
                 $obj_matrix = $this->obj_matrix->get_search_row($params);
-                //SET DATA VAR
                 
                 $nivel = $obj_matrix->nivel;
                 $position = $obj_matrix->position;
@@ -78,46 +77,61 @@ class B_red extends CI_Controller {
                 }
                 
                 //DECLARE VARIABLES
+                $percent_n1 = 0;
+                $count_1 = 0;
+                $end_position_1 = 0;
+                $href_1 = "javascript:void(0);";
+                
                 $percent_n2 = 0;
                 $count_2 = 0;
                 $end_position_2 = 0;
+                $href_2 = "javascript:void(0);";
                 
                 $percent_n3 = 0;
                 $count_3 = 0;
                 $end_position_3 = 0;
+                $href_3 = "javascript:void(0);";
                 
                 $percent_n4 = 0;
                 $count_4 = 0;
                 $end_position_4 = 0;
+                $href_4 = "javascript:void(0);";
                 
                 $percent_n5 = 0;
                 $count_5 = 0;
                 $end_position_5 = 0;
+                $href_5 = "javascript:void(0);";
                 
                 $percent_n6 = 0;
                 $count_6 = 0;
                 $end_position_6 = 0;
+                $href_6 = "javascript:void(0);";
                 
                 $percent_n7 = 0;
                 $count_7 = 0;
                 $end_position_7 = 0;
+                $href_7 = "javascript:void(0);";
                 
                 $percent_n8 = 0;
                 $count_8 = 0;
                 $end_position_8 = 0;
+                $href_8 = "javascript:void(0);";
                 
                 $percent_n9 = 0;
                 $count_9 = 0;
                 $end_position_9 = 0;
+                $href_9 = "javascript:void(0);";
                 
                 $percent_n10 = 0;
                 $count_10 = 0;
                 $end_position_10 = 0;
+                $href_10 = "javascript:void(0);";
                 
                 //CREATE NIVEL 1
                 $new_nivel = $nivel + 1;
                 $total_position = pow(3, $nivel_sec);
                 $end_position =  ($new_position + $total_position) - 1;
+                
                 //CREATE IDENTIFICADOR
                     $params = array(
                         "select" =>"position",
@@ -130,12 +144,15 @@ class B_red extends CI_Controller {
                 $percent_n1 =  ceil(($count / $end_position) * 100 );
                 
                 if($count > 0){
+                    //SET HREF_1
+                    $href_1 = "mostrar_nivel($new_nivel,$new_position,$end_position)";
                     //CREATE NIVEL 2
                     $new_position = (($new_position - 1) * 3) + 1;
                     $new_nivel = $new_nivel + 1;
                     $nivel_sec = $nivel_sec + 1;
                     $total_position = pow(3, $nivel_sec);
                     $end_position_2 =  ($new_position + $total_position) - 1;
+                    
                     //CREATE IDENTIFICADOR
                         $params = array(
                             "select" =>"position",
@@ -149,6 +166,8 @@ class B_red extends CI_Controller {
                     $percent_n2 =  ceil(($count_2 / $end_position_2) * 100);
                     
                     if($count_2 > 0){
+                        //SET HREF
+                        $href_2 = "mostrar_nivel($new_nivel,$new_position,$end_position_2)";
                         //CREATE NIVEL 3
                         $new_position = (($new_position - 1) * 3) + 1;
                         $new_nivel = $new_nivel + 1;
@@ -168,12 +187,16 @@ class B_red extends CI_Controller {
                         $percent_n3 =  ceil(($count_3 / $end_position_2) * 100);
                         
                         if($count_3 > 0){
+                            //SET HREF
+                            $href_3 = "mostrar_nivel($new_nivel,$new_position,$end_position_3)";
                             //CREATE NIVEL 4
                             $new_position = (($new_position - 1) * 3) + 1;
                             $new_nivel = $new_nivel + 1;
                             $nivel_sec = $nivel_sec + 1;
                             $total_position = pow(3, $nivel_sec);
                             $end_position_4 =  ($new_position + $total_position) - 1;
+                            //SET HREF
+                            $href_4 = "mostrar_nivel($new_nivel,$new_position,$end_position_4)";
                             //CREATE IDENTIFICADOR
                                 $params = array(
                                     "select" =>"position",
@@ -187,6 +210,8 @@ class B_red extends CI_Controller {
                             $percent_n4 =  ceil(($count_4 / $end_position_4) * 100);
                             
                             if($count_4 > 0){
+                                //SET HREF
+                                $href_4 = "mostrar_nivel($new_nivel,$new_position,$end_position_4)";
                                 //CREATE NIVEL 5
                                 $new_position = (($new_position - 1) * 3) + 1;
                                 $new_nivel = $new_nivel + 1;
@@ -206,6 +231,8 @@ class B_red extends CI_Controller {
                                 $percent_n5 =  ceil(($count_5 / $end_position_5) * 100);
                                 
                                 if($count_5 > 0){
+                                    //SET HREF
+                                    $href_5 = "mostrar_nivel($new_nivel,$new_position,$end_position_5)";
                                     //CREATE NIVEL 6
                                     $new_position = (($new_position - 1) * 3) + 1;
                                     $new_nivel = $new_nivel + 1;
@@ -225,6 +252,8 @@ class B_red extends CI_Controller {
                                     $percent_n6 =  ceil(($count_6 / $end_position_6) * 100);
                                     
                                     if($count_6 > 0){
+                                        //SET HREF
+                                        $href_6 = "mostrar_nivel($new_nivel,$new_position,$end_position_6)";
                                         //CREATE NIVEL 7
                                         $new_position = (($new_position - 1) * 3) + 1;
                                         $new_nivel = $new_nivel + 1;
@@ -244,6 +273,8 @@ class B_red extends CI_Controller {
                                         $percent_n7 =  ceil(($count_7 / $end_position_7) * 100);
                                         
                                         if($count_7 > 0){
+                                            //SET HREF
+                                            $href_7 = "mostrar_nivel($new_nivel,$new_position,$end_position_7)";
                                             //CREATE NIVEL 8
                                             $new_position = (($new_position - 1) * 3) + 1;
                                             $new_nivel = $new_nivel + 1;
@@ -263,7 +294,11 @@ class B_red extends CI_Controller {
                                             $percent_n8 =  ceil(($count_8 / $end_position_8) * 100);
                                             
                                             if($count_8 > 0){
+                                                //SET HREF
+                                                $href_8 = "mostrar_nivel($new_nivel,$new_position,$end_position_8)";
                                                 //CREATE NIVEL 9
+                                                $href_8 = "mostrar_nivel(1)";
+                                                
                                                 $new_position = (($new_position - 1) * 3) + 1;
                                                 $new_nivel = $new_nivel + 1;
                                                 $nivel_sec = $nivel_sec + 1;
@@ -282,6 +317,8 @@ class B_red extends CI_Controller {
                                                 $percent_n9 =  ceil(($count_9 / $end_position_9) * 100);
                                                 
                                                 if($count_9 > 0){
+                                                    //SET HREF
+                                                    $href_9 = "mostrar_nivel($new_nivel,$new_position,$end_position_9)";
                                                     //CREATE NIVEL 10
                                                     $new_position = (($new_position - 1) * 3) + 1;
                                                     $new_nivel = $new_nivel + 1;
@@ -299,6 +336,11 @@ class B_red extends CI_Controller {
 
                                                     $count_10 = count($obj_position);
                                                     $percent_n10 =  ceil(($count_10 / $end_position_10) * 100);
+                                                    
+                                                    if($count_9 > 0){
+                                                        //SET HREF
+                                                        $href_10 = "mostrar_nivel($new_nivel,$new_position,$end_position_10)";
+                                                    }
                                                 }
                                             }
 
@@ -383,7 +425,7 @@ class B_red extends CI_Controller {
                                         <div class="col-sm-1"></div>
                                         <div class="col-sm-2">
                                                     <h2 class="h2">NIVEL 1</h2>
-                                                    <a href="javascript:void(0);">
+                                                    <a href="javascript:void(0);" onclick="'.$href_1.'">
                                                         <div class="bar-chart">
                                                             <div class="chart clearfix">
                                                                 <div class="item" id="item-1">
@@ -402,7 +444,7 @@ class B_red extends CI_Controller {
                                         </div>
                                         <div class="col-sm-2">
                                                     <h2 class="h2">NIVEL 2</h2>
-                                                    <a href="javascript:void(0);">
+                                                    <a href="javascript:void(0);" onclick="'.$href_2.'">
                                                         <div class="bar-chart">
                                                             <div class="chart clearfix">
                                                                 <div class="item" id="item-2">
@@ -421,7 +463,7 @@ class B_red extends CI_Controller {
                                         </div>
                                          <div class="col-sm-2">
                                                     <h2 class="h2">NIVEL 3</h2>
-                                                    <a href="javascript:void(0);">
+                                                    <a href="javascript:void(0);" onclick="'.$href_3.'">
                                                     <div class="bar-chart">
                                                         <div class="chart clearfix">
                                                             <div class="item" id="item-3">
@@ -439,7 +481,7 @@ class B_red extends CI_Controller {
                                         </div>
                                         <div class="col-sm-2">
                                                     <h2 class="h2">NIVEL 4</h2>
-                                                    <a href="javascript:void(0);">
+                                                    <a href="javascript:void(0);" onclick="'.$href_4.'">
                                                     <div class="bar-chart">
                                                         <div class="chart clearfix">
                                                             <div class="item" id="item-4">
@@ -457,7 +499,7 @@ class B_red extends CI_Controller {
                                         </div>
                                         <div class="col-sm-2">
                                                     <h2 class="h2">NIVEL 5</h2>
-                                                    <a href="javascript:void(0);">
+                                                    <a href="javascript:void(0);" onclick="'.$href_5.'">
                                                     <div class="bar-chart">
                                                         <div class="chart clearfix">
                                                             <div class="item" id="item-5">
@@ -480,7 +522,7 @@ class B_red extends CI_Controller {
                                         <div class="col-sm-1"></div>
                                         <div class="col-sm-2">
                                                     <h2 class="h2">NIVEL 6</h2>
-                                                    <a href="javascript:void(0);">
+                                                    <a href="javascript:void(0);" onclick="'.$href_6.'">
                                                     <div class="bar-chart">
                                                         <div class="chart clearfix">
                                                             <div class="item" id="item-6">
@@ -498,7 +540,7 @@ class B_red extends CI_Controller {
                                         </div>
                                         <div class="col-sm-2">
                                                     <h2 class="h2">NIVEL 7</h2>
-                                                    <a href="javascript:void(0);">
+                                                    <a href="javascript:void(0);" onclick="'.$href_7.'">
                                                     <div class="bar-chart">
                                                         <div class="chart clearfix">
                                                             <div class="item" id="item-7">
@@ -516,7 +558,7 @@ class B_red extends CI_Controller {
                                         </div>
                                          <div class="col-sm-2">
                                                     <h2 class="h2">NIVEL 8</h2>
-                                                    <a href="javascript:void(0);">
+                                                    <a href="javascript:void(0);" onclick="'.$href_8.'">
                                                     <div class="bar-chart">
                                                         <div class="chart clearfix">
                                                             <div class="item" id="item-8">
@@ -534,7 +576,7 @@ class B_red extends CI_Controller {
                                         </div>
                                         <div class="col-sm-2">
                                                     <h2 class="h2">NIVEL 9</h2>
-                                                    <a href="javascript:void(0);">
+                                                    <a href="javascript:void(0);" onclick="'.$href_9.'">
                                                     <div class="bar-chart">
                                                         <div class="chart clearfix">
                                                             <div class="item" id="item-9">
@@ -552,7 +594,7 @@ class B_red extends CI_Controller {
                                         </div>
                                         <div class="col-sm-2">
                                                     <h2 class="h2">NIVEL 10</h2>
-                                                    <a href="javascript:void(0);">
+                                                    <a href="javascript:void(0);" onclick="'.$href_10.'">
                                                     <div class="bar-chart">
                                                         <div class="chart clearfix">
                                                             <div class="item" id="item-10">
@@ -678,6 +720,155 @@ class B_red extends CI_Controller {
                                                                                     }    
                                                                              echo   "<td style='padding: 25px' class='text-center'>
                                                                                     <span class='label $style'>$text</span>
+                                                                                </td>
+                                                                            </tr>";
+                                                                         }
+                                                                 echo "        
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+</div>
+
+
+
+
+
+
+
+       
+        ";
+        
+    }    
+    
+    public function mostrar_nivel(){
+        //VERIFIRY GET SESSION    
+        $this->get_session();
+         /// VISTA
+        $nivel = $_GET['nivel'];
+        $position = $_GET['posicion'];
+        $end_position = $_GET['end_posicion'];
+        
+        //CREATE IDENTIFICADOR
+                    $params = array(
+                        "select" =>"customer.customer_id,
+                                    customer.code,
+                                    customer.email,
+                                    customer.phone,
+                                    customer.first_name,
+                                    customer.active,
+                                    customer.last_name,
+                                    paises.nombre,
+                                    matrix.position",
+                        "where" => "nivel = $nivel and position between $position and $end_position and paises.id_idioma = 7",
+                        "order" => "position ASC",
+                        "join" => array('customer, customer.customer_id = matrix.customer_id',
+                                        'paises, customer.country = paises.id')
+                    );
+                //GET DATA FROM BONUS
+                $obj_matrix = $this->obj_matrix->search($params);
+         
+         //GET SPONSOR
+         $url = site_url().'static/backoffice/images/user.png';
+         $img = "<img src='$url' alt='perfil' width='25'/>";
+        echo "
+        <div id='payments' class='tabcontent' style='display: block;'>
+    <div class='row ml-custom'>
+        <div class='col-xs-12'>
+            <div class='row'>
+                <div class='col-md-12'>
+                        <div class='panel panel-default panel-form' data-behaviour='container'>
+                            <div class='panel-heading text-uppercase clearfix'>
+                                <div class='pull-left'>
+                                    <h3>Mi Red</h3>
+                                </div>    
+                                <div class='pull-right tooltip-demo'>
+                                    <a title='' data-placement='top' data-toggle='tooltip' class='btn btn-default btn-sm' onclick='cerrar_pagina_9();' data-original-title='Cerrar ventana'><i class='fa fa-times'></i> Cerrar</a>
+                                </div>
+                            </div>
+                                    <div class='panel-body'>         
+                                        <div data-behaviour='content'>
+                                            <div class='row'>
+                                            <div class='mb-10'>
+                                                    <a class='btn btn-primary btn-block' href='javascript:void(0);'>
+                                                    Usurios del Nivel 1</a>
+                                                    </div>
+                                                    <div class='col-md-4'></div>
+                                                <div class='col-md-8'>
+                                                    <div class='form-group'>
+                                                        <div class='media'>
+                                                            <div class='media-left'>
+                                                                <i class='fa fa-user-circle-o fa-4x' aria-hidden='true'></i>
+                                                            </div>
+                                                            <div class='media-body'>
+                                                            <b>PATROCINADOR</b>
+                                                                <div class='user-name-info'><span>0000000 (Código)</span></div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    <div class='col-sm-12'>
+                                      <div id='panelDemo14' class='panel panel-success'>
+                                            <div class='panel-body'>
+                                                <div id='archivos_subidos'>
+                                                    <div class='row'>
+                                                        <div class='col-lg-12'>
+                                                            <div class='table-responsive'>
+                                                                <table class='table table-hover'>
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th style='padding: 25px'><b>Código</b></th>
+                                                                            <th style='padding: 25px'><b>Nombre</b></th>
+                                                                            <th style='padding: 25px'><b>País</b></th>
+                                                                            <th style='padding: 25px' class='text-center'><b>Estado</b></th>
+                                                                            <th style='padding: 25px' class='text-center'><b>Acción</b></th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>";
+                                                                      foreach ($obj_matrix as $value) {
+                                                                                if($value->active == 1){
+                                                                                    $style = "label-success";
+                                                                                    $text = "activo";
+                                                                                }else{
+                                                                                    $style = "label-danger";
+                                                                                    $text = "inactivo";
+                                                                                }
+                                                                                $phone = $value->phone;
+                                                                                $email = $value->email;
+                                                                                
+                                                                            echo "<tr>
+                                                                                <td style='padding: 25px'><b>$value->code<b></td>
+                                                                                <td style='padding: 25px'>$img&nbsp;&nbsp;$value->first_name $value->last_name</td>
+                                                                                <td style='padding: 25px'>$value->nombre</td>";
+                                                                            
+                                                                                    if($value->active == 1){
+                                                                                        $style = "label-success";
+                                                                                        $value = "activo";
+                                                                                    }else{
+                                                                                        $style = "label-danger";
+                                                                                        $value = "inactivo";
+                                                                                    }    
+                                                                             echo   "<td style='padding: 25px' class='text-center'>
+                                                                                    <span class='label $style'>$text</span>
+                                                                                </td>
+                                                                                <td style='padding: 25px'>
+                                                                                <a data-placement='top' data-toggle='tooltip' data-original-title='$email'><i class='fa fa-envelope fa-2x'></i></a>&nbsp;&nbsp;
+                                                                                    <a data-placement='top' data-toggle='tooltip' data-original-title='$phone'><i class='fa fa-phone-square fa-2x'></i></a>
                                                                                 </td>
                                                                             </tr>";
                                                                          }
