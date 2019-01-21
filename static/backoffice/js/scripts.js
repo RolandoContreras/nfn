@@ -2963,6 +2963,7 @@ function cerrar_pagina(){
 function abrir_pagina(){ 
     $("#ModalPadrao").modal("show");
 }
+
 function upload(){
 $("#upload_form").on('submit',function(e){
             if($('#bank_number').val() == ''){
@@ -2983,7 +2984,11 @@ $("#upload_form").on('submit',function(e){
  });
 }
 
-
+function view_directos(){
+    cerrar_pagina();
+    abre(site+"backoffice/directos",'ModalPadrao2');
+    abrir_pagina();
+}
 
 // Fix VH no chrome android
 window.addEventListener('resize', () => {

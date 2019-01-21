@@ -68,7 +68,7 @@ class B_red extends CI_Controller {
             $code = "0000000"; 
             $name = "Empresa"; 
          }else{
-            $parent = $obj_customer->parents_id;
+            $code = $obj_customer->code;
             $name = $obj_customer->first_name.' '.$obj_customer->last_name;
          }
          
@@ -78,7 +78,6 @@ class B_red extends CI_Controller {
          
          //SEND DATA TO VIEW  
          echo '
-             
                <div id="principal" class="tabcontent" style="display: block;">
     <div class="row ml-custom">
         <div class="col-xs-12">
@@ -101,7 +100,7 @@ class B_red extends CI_Controller {
                                         </div>
                                         <div class="media-body">
                                         <b>PATROCINADOR</b>
-                                            <div class="user-name-info"><span>'.$code.'</span></div>
+                                            <div class="user-name-info"><span>'.$code.' (Código)</span></div>
                                                 <p class="form-control">
                                                     <span>'.$name.'</span>
                                                 </p> 
@@ -112,14 +111,9 @@ class B_red extends CI_Controller {
                             <div class="col-md-6 col-sm-6 border-left">
                                 <div class="form-group">
                                     <div class="media">
-                                        <div class="media-left"><i class="fa fa-envelope fa-3x"></i></div>
-                                        <div class="media-body">
-                                            <div class="control-label">E-mail</div>
-                                            <p class="form-control">
-                                                <span>Email</span>
-                                                <input type="hidden" id="customer_id" name="customer_id" disabled="" value="56">
-                                            </p>
-                                        </div>
+                                        <div class="form-group text-right">
+                                                    <button title="" data-placement="top" data-toggle="tooltip" onclick="view_directos();" class="btn btn-primary" data-original-title="Referidos Directos"><i class="fa fa-street-view"></i> Ver Referidos Directos</button>
+                                                </div>
                                     </div>
                                 </div>
                             </div>
