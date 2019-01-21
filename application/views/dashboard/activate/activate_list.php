@@ -35,7 +35,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <?php foreach ($obj_invoices as $value): ?>
+                            <?php foreach ($obj_invoices as $key  => $value): ?>
                             <tr>
                                 <td align="center"><b><?php echo $value->invoice_id;?></b></td>
                                 <td align="center"><?php echo formato_fecha_barras($value->date);?></td>
@@ -50,9 +50,9 @@
                                 <td align="center" ><?php echo $value->subject;?></td>
                                 <td align="center">
                                     <?php 
-                                    if($value->img != ""){
-                                        echo '<img src="'.site_url()."static/backoffice/images/invoices/nuevo_cliente/$value->img".'" alt="kit" width="40"';
-                                    }else{
+                                    if($value->img != ""){ ?>
+                                    <img id="<?php echo $key;?>" onclick="modal_img(<?php echo $key;?>);" src='<?php echo site_url()."static/backoffice/images/invoices/nuevo_cliente/$value->img";?>' width="40" alt="imagen" />
+                                    <?php }else{
                                         echo "---";
                                     }
                                     ?>
@@ -93,8 +93,16 @@
                             <?php endforeach; ?>
                         </tbody>
                     </table>
+                    <!-- The Modal -->
+                   
+                    
             </div>
         </div>
+            <div id="myModal" class="modal" style="display:none">
+                      <span class="close">&times;</span>
+                      <img class="modal-content" id="img01">
+                      <div id="caption"></div>
+                    </div>
     </div>
 </div><!-- main content -->
 </div>
@@ -105,4 +113,50 @@
     } );
 } );
 </script>
+
 <script src="static/cms/js/active.js"></script>
+<style>
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 1;}
+/* Caption of Modal Image */
+/* Add Animation */
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: black;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #aaa;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+</style>
