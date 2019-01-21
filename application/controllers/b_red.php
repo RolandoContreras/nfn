@@ -5,6 +5,7 @@ class B_red extends CI_Controller {
     function __construct() {
         parent::__construct();
         $this->load->model("customer_model","obj_customer");
+        $this->load->model("matrix_model","obj_matrix");
     }
 
 	/**
@@ -33,33 +34,17 @@ class B_red extends CI_Controller {
                         "select" =>"parents_id",
                         "where" => "customer_id = $customer_id",);
 
-         $obj_parents_id = $this->obj_customer->get_search_row($params);
-         $patrocinador = $obj_parents_id->parents_id;
+         $obj_customer = $this->obj_customer->get_search_row($params);
+         $patrocinador = $obj_customer->parents_id;
          
          $params = array(
                         "select" =>"customer.customer_id,
-                                    customer.parents_id,
                                     customer.code,
-                                    customer.email,
-                                    customer.created_at,
-                                    customer.phone,
-                                    customer.password,
                                     customer.first_name,
-                                    customer.last_name,
-                                    customer.dni,
-                                    customer.address,
-                                    customer.date_start,
-                                    customer.date_end,
-                                    customer.city,
-                                    customer.active,
-                                    customer.status_value,
-                                    paises.nombre as pais,
-                                    regiones.nombre as region
+                                    customer.last_name
                                     ",
-                        "where" => "customer.customer_id = $patrocinador and paises.id_idioma = 7 and regiones.id_idioma = 7",
-                        "join" => array('paises, customer.country = paises.id',
-                                        'regiones, customer.region = regiones.id')
-                                        );
+                        "where" => "customer.customer_id = $patrocinador",
+                        );
 
          $obj_customer = $this->obj_customer->get_search_row($params); 
          
@@ -72,9 +57,262 @@ class B_red extends CI_Controller {
             $name = $obj_customer->first_name.' '.$obj_customer->last_name;
          }
          
-         
-         
-         
+         //GET SPONSOR DATA
+                    $params = array(
+                        "select" =>"nivel,
+                                    position",
+                        "where" => "customer_id = $customer_id and status_value = 1"
+                    );
+                //GET DATA FROM BONUS
+                $obj_matrix = $this->obj_matrix->get_search_row($params);
+                //SET DATA VAR
+                $nivel = $obj_matrix->nivel;
+                $position = $obj_matrix->position;
+                $nivel_sec = 1;
+                
+                if($position == 0){
+                    $new_position = 1;
+                }else{
+                    $new_position = (($position - 1) * 3) + 1;
+                }
+                
+                //DECLARE VARIABLES
+                $percent_n2 = 0;
+                $count_2 = 0;
+                $end_position_2 = 0;
+                
+                $percent_n3 = 0;
+                $count_3 = 0;
+                $end_position_3 = 0;
+                
+                $percent_n4 = 0;
+                $count_4 = 0;
+                $end_position_4 = 0;
+                
+                $percent_n5 = 0;
+                $count_5 = 0;
+                $end_position_5 = 0;
+                
+                $percent_n6 = 0;
+                $count_6 = 0;
+                $end_position_6 = 0;
+                
+                $percent_n7 = 0;
+                $count_7 = 0;
+                $end_position_7 = 0;
+                
+                $percent_n8 = 0;
+                $count_8 = 0;
+                $end_position_8 = 0;
+                
+                $percent_n9 = 0;
+                $count_9 = 0;
+                $end_position_9 = 0;
+                
+                $percent_n10 = 0;
+                $count_10 = 0;
+                $end_position_10 = 0;
+                
+                //CREATE NIVEL 1
+                $new_nivel = $nivel + 1;
+                $total_position = pow(3, $nivel_sec);
+                $end_position =  ($new_position + $total_position) - 1;
+                //CREATE IDENTIFICADOR
+                    $params = array(
+                        "select" =>"position",
+                        "where" => "nivel = $new_nivel and position between $new_position and $end_position",
+                        "order" => "position ASC"
+                    );
+                //GET DATA FROM BONUS
+                $obj_position = $this->obj_matrix->search($params);
+                $count = count($obj_position);
+                $percent_n1 =  ceil(($count / $end_position) * 100 );
+                
+                if($count > 0){
+                    //CREATE NIVEL 2
+                    $new_position = (($new_position - 1) * 3) + 1;
+                    $new_nivel = $new_nivel + 1;
+                    $nivel_sec = $nivel_sec + 1;
+                    $total_position = pow(3, $nivel_sec);
+                    $end_position_2 =  ($new_position + $total_position) - 1;
+                    //CREATE IDENTIFICADOR
+                        $params = array(
+                            "select" =>"position",
+                            "where" => "nivel = $new_nivel and position between $new_position and $end_position_2",
+                            "order" => "position ASC"
+                        );
+                    //GET DATA FROM BONUS
+                    $obj_position = $this->obj_matrix->search($params);
+                    
+                    $count_2 = count($obj_position);
+                    $percent_n2 =  ceil(($count_2 / $end_position_2) * 100);
+                    
+                    if($count_2 > 0){
+                        //CREATE NIVEL 3
+                        $new_position = (($new_position - 1) * 3) + 1;
+                        $new_nivel = $new_nivel + 1;
+                        $nivel_sec = $nivel_sec + 1;
+                        $total_position = pow(3, $nivel_sec);
+                        $end_position_3 =  ($new_position + $total_position) - 1;
+                        //CREATE IDENTIFICADOR
+                            $params = array(
+                                "select" =>"position",
+                                "where" => "nivel = $new_nivel and position between $new_position and $end_position_3",
+                                "order" => "position ASC"
+                            );
+                        //GET DATA FROM BONUS
+                        $obj_position = $this->obj_matrix->search($params);
+
+                        $count_3 = count($obj_position);
+                        $percent_n3 =  ceil(($count_3 / $end_position_2) * 100);
+                        
+                        if($count_3 > 0){
+                            //CREATE NIVEL 4
+                            $new_position = (($new_position - 1) * 3) + 1;
+                            $new_nivel = $new_nivel + 1;
+                            $nivel_sec = $nivel_sec + 1;
+                            $total_position = pow(3, $nivel_sec);
+                            $end_position_4 =  ($new_position + $total_position) - 1;
+                            //CREATE IDENTIFICADOR
+                                $params = array(
+                                    "select" =>"position",
+                                    "where" => "nivel = $new_nivel and position between $new_position and $end_position_4",
+                                    "order" => "position ASC"
+                                );
+                            //GET DATA FROM BONUS
+                            $obj_position = $this->obj_matrix->search($params);
+
+                            $count_4 = count($obj_position);
+                            $percent_n4 =  ceil(($count_4 / $end_position_4) * 100);
+                            
+                            if($count_4 > 0){
+                                //CREATE NIVEL 5
+                                $new_position = (($new_position - 1) * 3) + 1;
+                                $new_nivel = $new_nivel + 1;
+                                $nivel_sec = $nivel_sec + 1;
+                                $total_position = pow(3, $nivel_sec);
+                                $end_position_5 =  ($new_position + $total_position) - 1;
+                                //CREATE IDENTIFICADOR
+                                    $params = array(
+                                        "select" =>"position",
+                                        "where" => "nivel = $new_nivel and position between $new_position and $end_position_5",
+                                        "order" => "position ASC"
+                                    );
+                                //GET DATA FROM BONUS
+                                $obj_position = $this->obj_matrix->search($params);
+
+                                $count_5 = count($obj_position);
+                                $percent_n5 =  ceil(($count_5 / $end_position_5) * 100);
+                                
+                                if($count_5 > 0){
+                                    //CREATE NIVEL 6
+                                    $new_position = (($new_position - 1) * 3) + 1;
+                                    $new_nivel = $new_nivel + 1;
+                                    $nivel_sec = $nivel_sec + 1;
+                                    $total_position = pow(3, $nivel_sec);
+                                    $end_position_6 =  ($new_position + $total_position) - 1;
+                                    //CREATE IDENTIFICADOR
+                                        $params = array(
+                                            "select" =>"position",
+                                            "where" => "nivel = $new_nivel and position between $new_position and $end_position_6",
+                                            "order" => "position ASC"
+                                        );
+                                    //GET DATA FROM BONUS
+                                    $obj_position = $this->obj_matrix->search($params);
+
+                                    $count_6 = count($obj_position);
+                                    $percent_n6 =  ceil(($count_6 / $end_position_6) * 100);
+                                    
+                                    if($count_6 > 0){
+                                        //CREATE NIVEL 7
+                                        $new_position = (($new_position - 1) * 3) + 1;
+                                        $new_nivel = $new_nivel + 1;
+                                        $nivel_sec = $nivel_sec + 1;
+                                        $total_position = pow(3, $nivel_sec);
+                                        $end_position_7 =  ($new_position + $total_position) - 1;
+                                        //CREATE IDENTIFICADOR
+                                            $params = array(
+                                                "select" =>"position",
+                                                "where" => "nivel = $new_nivel and position between $new_position and $end_position_7",
+                                                "order" => "position ASC"
+                                            );
+                                        //GET DATA FROM BONUS
+                                        $obj_position = $this->obj_matrix->search($params);
+
+                                        $count_7 = count($obj_position);
+                                        $percent_n7 =  ceil(($count_7 / $end_position_7) * 100);
+                                        
+                                        if($count_7 > 0){
+                                            //CREATE NIVEL 8
+                                            $new_position = (($new_position - 1) * 3) + 1;
+                                            $new_nivel = $new_nivel + 1;
+                                            $nivel_sec = $nivel_sec + 1;
+                                            $total_position = pow(3, $nivel_sec);
+                                            $end_position_8 =  ($new_position + $total_position) - 1;
+                                            //CREATE IDENTIFICADOR
+                                                $params = array(
+                                                    "select" =>"position",
+                                                    "where" => "nivel = $new_nivel and position between $new_position and $end_position_8",
+                                                    "order" => "position ASC"
+                                                );
+                                            //GET DATA FROM BONUS
+                                            $obj_position = $this->obj_matrix->search($params);
+
+                                            $count_8 = count($obj_position);
+                                            $percent_n8 =  ceil(($count_8 / $end_position_8) * 100);
+                                            
+                                            if($count_8 > 0){
+                                                //CREATE NIVEL 9
+                                                $new_position = (($new_position - 1) * 3) + 1;
+                                                $new_nivel = $new_nivel + 1;
+                                                $nivel_sec = $nivel_sec + 1;
+                                                $total_position = pow(3, $nivel_sec);
+                                                $end_position_9 =  ($new_position + $total_position) - 1;
+                                                //CREATE IDENTIFICADOR
+                                                    $params = array(
+                                                        "select" =>"position",
+                                                        "where" => "nivel = $new_nivel and position between $new_position and $end_position_9",
+                                                        "order" => "position ASC"
+                                                    );
+                                                //GET DATA FROM BONUS
+                                                $obj_position = $this->obj_matrix->search($params);
+
+                                                $count_9 = count($obj_position);
+                                                $percent_n9 =  ceil(($count_9 / $end_position_9) * 100);
+                                                
+                                                if($count_9 > 0){
+                                                    //CREATE NIVEL 10
+                                                    $new_position = (($new_position - 1) * 3) + 1;
+                                                    $new_nivel = $new_nivel + 1;
+                                                    $nivel_sec = $nivel_sec + 1;
+                                                    $total_position = pow(3, $nivel_sec);
+                                                    $end_position_10 =  ($new_position + $total_position) - 1;
+                                                    //CREATE IDENTIFICADOR
+                                                        $params = array(
+                                                            "select" =>"position",
+                                                            "where" => "nivel = $new_nivel and position between $new_position and $end_position_10",
+                                                            "order" => "position ASC"
+                                                        );
+                                                    //GET DATA FROM BONUS
+                                                    $obj_position = $this->obj_matrix->search($params);
+
+                                                    $count_10 = count($obj_position);
+                                                    $percent_n10 =  ceil(($count_10 / $end_position_10) * 100);
+                                                }
+                                            }
+
+                                        }
+
+                                    }
+
+                                }
+
+                            }
+
+                        }
+
+                    }
+                }
          
          //SEND DATA TO VIEW  
          echo '
@@ -144,10 +382,10 @@ class B_red extends CI_Controller {
                                                             <div class="chart clearfix">
                                                                 <div class="item" id="item-1">
                                                                     <div class="bar">
-                                                                        <span class="percent">40%</span>
+                                                                        <span class="percent">'.$percent_n1.'%</span>
 
-                                                                        <div class="progress" data-percent="40">
-                                                                            <span class="title">1/3</span>
+                                                                        <div class="progress" data-percent="'.$percent_n1.'">
+                                                                            <span class="title">'.$count.'/'.$end_position.'</span>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -163,10 +401,10 @@ class B_red extends CI_Controller {
                                                             <div class="chart clearfix">
                                                                 <div class="item" id="item-2">
                                                                     <div class="bar">
-                                                                        <span class="percent">85%</span>
+                                                                        <span class="percent">'.$percent_n2.'%</span>
 
-                                                                        <div class="progress" data-percent="40">
-                                                                            <span class="title">1/3</span>
+                                                                        <div class="progress" data-percent="'.$percent_n2.'">
+                                                                            <span class="title">'.$count_2.'/'.$end_position_2.'</span>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -182,10 +420,10 @@ class B_red extends CI_Controller {
                                                         <div class="chart clearfix">
                                                             <div class="item" id="item-3">
                                                                 <div class="bar">
-                                                                    <span class="percent">85%</span>
+                                                                    <span class="percent">'.$percent_n3.'%</span>
 
-                                                                    <div class="progress" data-percent="40">
-                                                                        <span class="title">1/3</span>
+                                                                    <div class="progress" data-percent="'.$percent_n3.'">
+                                                                        <span class="title">'.$count_3.'/'.$end_position_3.'</span>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -200,10 +438,10 @@ class B_red extends CI_Controller {
                                                         <div class="chart clearfix">
                                                             <div class="item" id="item-4">
                                                                 <div class="bar">
-                                                                    <span class="percent">85%</span>
+                                                                    <span class="percent">'.$percent_n4.'%</span>
 
-                                                                    <div class="progress" data-percent="40">
-                                                                        <span class="title">1/3</span>
+                                                                    <div class="progress" data-percent="'.$percent_n4.'">
+                                                                        <span class="title">'.$count_4.'/'.$end_position_4.'</span>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -218,10 +456,10 @@ class B_red extends CI_Controller {
                                                         <div class="chart clearfix">
                                                             <div class="item" id="item-5">
                                                                 <div class="bar">
-                                                                    <span class="percent">85%</span>
+                                                                    <span class="percent">'.$percent_n5.'%</span>
 
-                                                                    <div class="progress" data-percent="40">
-                                                                        <span class="title">1/3</span>
+                                                                    <div class="progress" data-percent="'.$percent_n5.'">
+                                                                        <span class="title">'.$count_5.'/'.$end_position_5.'</span>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -241,10 +479,10 @@ class B_red extends CI_Controller {
                                                         <div class="chart clearfix">
                                                             <div class="item" id="item-6">
                                                                 <div class="bar">
-                                                                    <span class="percent">85%</span>
+                                                                    <span class="percent">'.$percent_n6.'%</span>
 
-                                                                    <div class="progress" data-percent="40">
-                                                                        <span class="title">1/3</span>
+                                                                    <div class="progress" data-percent="'.$percent_n6.'">
+                                                                        <span class="title">'.$count_6.'/'.$end_position_6.'</span>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -259,10 +497,10 @@ class B_red extends CI_Controller {
                                                         <div class="chart clearfix">
                                                             <div class="item" id="item-7">
                                                                 <div class="bar">
-                                                                    <span class="percent">85%</span>
+                                                                    <span class="percent">'.$percent_n7.'%</span>
 
-                                                                    <div class="progress" data-percent="40">
-                                                                        <span class="title">1/3</span>
+                                                                    <div class="progress" data-percent="'.$percent_n7.'">
+                                                                        <span class="title">'.$count_7.'/'.$end_position_7.'</span>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -277,10 +515,10 @@ class B_red extends CI_Controller {
                                                         <div class="chart clearfix">
                                                             <div class="item" id="item-8">
                                                                 <div class="bar">
-                                                                    <span class="percent">85%</span>
+                                                                    <span class="percent">'.$percent_n8.'%</span>
 
-                                                                    <div class="progress" data-percent="40">
-                                                                        <span class="title">1/3</span>
+                                                                    <div class="progress" data-percent="'.$percent_n8.'">
+                                                                        <span class="title">'.$count_8.'/'.$end_position_8.'</span>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -295,10 +533,10 @@ class B_red extends CI_Controller {
                                                         <div class="chart clearfix">
                                                             <div class="item" id="item-9">
                                                                 <div class="bar">
-                                                                    <span class="percent">85%</span>
+                                                                    <span class="percent">'.$percent_n9.'%</span>
 
-                                                                    <div class="progress" data-percent="40">
-                                                                        <span class="title">1/3</span>
+                                                                    <div class="progress" data-percent="'.$percent_n9.'">
+                                                                        <span class="title">'.$count_9.'/'.$end_position_9.'</span>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -313,10 +551,10 @@ class B_red extends CI_Controller {
                                                         <div class="chart clearfix">
                                                             <div class="item" id="item-10">
                                                                 <div class="bar">
-                                                                    <span class="percent">85%</span>
+                                                                    <span class="percent">'.$percent_n10.'%</span>
 
-                                                                    <div class="progress" data-percent="40">
-                                                                        <span class="title">1/3</span>
+                                                                    <div class="progress" data-percent="'.$percent_n10.'">
+                                                                        <span class="title">'.$count_10.'/'.$end_position_10.'</span>
                                                                     </div>
                                                                 </div>
                                                             </div>
