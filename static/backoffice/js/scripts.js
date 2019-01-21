@@ -2,6 +2,25 @@ var UrlAreaRestrita="localhost/nfn/backoffice/";
 var DivAguarde ="<div class='DivLeft100pc_P20 Background4 ArredondarBordas4 Padding20 AlignCenter'>\n\
                     <div class='DivInlineBlock'><div class='DivLeft'><img src='https://rednfn.com/static/backoffice/images/cargando.gif' width='40' height='40'></div><div class='DivLeft MarginL10 MarginT8 FontSize17 Weight600'>Aguarde...</div></div></div>";
 
+
+$(document).ready(function(){
+    barChart();
+    $(window).resize(function(){
+        barChart();
+    });
+    function barChart(){
+        $('.bar-chart').find('.progress').each(function(){
+            var itemProgress = $(this),
+            itemProgressWidth = $(this).parent().width() * ($(this).data('percent') / 100);
+            itemProgress.css('width', itemProgressWidth);
+        });
+    }
+});
+
+
+//
+//
+//
 //$(document).keydown(function (event) {
 //    if (event.keyCode == 123) { // Prevent F12
 //        return false;

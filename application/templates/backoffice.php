@@ -27,7 +27,8 @@
   <link rel="stylesheet" href="<?php echo site_url().'static/backoffice/css/bootstrap.min.css';?>" type="text/css"/>
   <!-- CSS DO PERFIL -->
   <link rel="stylesheet" href="<?php echo site_url().'static/backoffice/css/style_perfil.css?v=6';?>" type="text/css"/>
-  
+  <!-- CSS RED -->
+  <link rel="stylesheet" href="<?php echo site_url().'static/backoffice/css/red.css';?>" type="text/css"/>
   <!--STYLE 3T CLUB-->
     <link href="<?php echo site_url().'static/backoffice/css/assets/entypo.css';?>" rel="stylesheet">
     <!-- /entypo font stylesheet -->
@@ -59,6 +60,7 @@
         var site = '<?php echo site_url();?>';
   </script>
   <!-- //SCRIPTS DO PERFIL -->
+
   <script type="text/javascript">
     //tamanho width
     function verificaTamanho() {
@@ -970,6 +972,7 @@
     </div>
   </div>
 </div>
+
 <script>
   function copiar(element, context) { var $temp = $("<input>"); $("body").append($temp); $temp.val($(element).text()).select(); document.execCommand("copy"); $temp.remove(); } function paraVideo(modal){ $('#iframeTutorial').remove(); //código para fechar a modal aqui $(modal).modal("hide"); }
 </script>
@@ -981,7 +984,20 @@
 
 </html>
 <script type="text/javascript">
-//  $(document).ready(function () { abre("https://www.scipiracicaba.com.br/escritorio-virtual/bem-vindo-dados-pagamento", "ModalPadrao2"); $("#ModalPadrao").modal("show"); });
+  $(document).ready(function () { 
+//      abre("https://www.scipiracicaba.com.br/escritorio-virtual/bem-vindo-dados-pagamento", "ModalPadrao2"); $("#ModalPadrao").modal("show"); 
+barChart();
+    $(window).resize(function(){
+        barChart();
+    });
+    function barChart(){
+        $('.bar-chart').find('.progress').each(function(){
+            var itemProgress = $(this),
+            itemProgressWidth = $(this).parent().width() * ($(this).data('percent') / 100);
+            itemProgress.css('width', itemProgressWidth);
+        });
+    }
+  });
 </script>
 <div id="popup-bemvindo">
   <!-- vazio -->
@@ -989,6 +1005,7 @@
 <script>
   var velocidade = 1000; var valor = 1; function pisca() { if (valor == 1) { $('#div_manual_negocio').css({'color':'#FFFFFF'}); //console.log('1'); valor=0; } else { $('#div_manual_negocio').css({'color':'#FFFF90'}); valor=1; //console.log('2'); } setTimeout("pisca();",velocidade); } setTimeout("pisca();",velocidade);
 </script>
+
 <script>
 $(document).ready(function(){
     $("#upload_form").on('submit',function(e){

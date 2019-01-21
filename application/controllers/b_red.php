@@ -30,6 +30,13 @@ class B_red extends CI_Controller {
         
         $customer_id = $_SESSION['customer']['customer_id'];
         $params = array(
+                        "select" =>"parents_id",
+                        "where" => "customer_id = $customer_id",);
+
+         $obj_parents_id = $this->obj_customer->get_search_row($params);
+         $patrocinador = $obj_parents_id->parents_id;
+         
+         $params = array(
                         "select" =>"customer.customer_id,
                                     customer.parents_id,
                                     customer.code,
@@ -49,15 +56,24 @@ class B_red extends CI_Controller {
                                     paises.nombre as pais,
                                     regiones.nombre as region
                                     ",
-                        "where" => "customer.customer_id = $customer_id and paises.id_idioma = 7 and regiones.id_idioma = 7",
+                        "where" => "customer.customer_id = $patrocinador and paises.id_idioma = 7 and regiones.id_idioma = 7",
                         "join" => array('paises, customer.country = paises.id',
                                         'regiones, customer.region = regiones.id')
                                         );
 
          $obj_customer = $this->obj_customer->get_search_row($params); 
+         
          //GET SPONSOR
-         $parent = $obj_customer->parents_id;
-         $name = $obj_customer->first_name.' '.$obj_customer->last_name;
+         if($patrocinador == 0){
+            $code = "0000000"; 
+            $name = "Empresa"; 
+         }else{
+            $parent = $obj_customer->parents_id;
+            $name = $obj_customer->first_name.' '.$obj_customer->last_name;
+         }
+         
+         
+         
          
          
          //SEND DATA TO VIEW  
@@ -71,7 +87,7 @@ class B_red extends CI_Controller {
                     <div class="col-md-12">
                         <div class="panel panel-default panel-form" data-behaviour="container">
                             <div class="panel-heading text-uppercase clearfix">
-                                <h3 class="class="title_back"">Información</h3>
+                                <h3 class="class="title_back"">Mi Red</h3>
                             </div>
                             <hr class="style-2">
                             <div class="panel-body">         
@@ -81,13 +97,14 @@ class B_red extends CI_Controller {
                                 <div class="form-group">
                                     <div class="media">
                                         <div class="media-left">
-                                            <i class="fa fa-male fa-4x" aria-hidden="true"></i>
+                                            <i class="fa fa-user-circle-o fa-4x" aria-hidden="true"></i>
                                         </div>
                                         <div class="media-body">
-                                            <div class="user-name-info"><span>'.$obj_customer->code.'</span></div>
+                                        <b>PATROCINADOR</b>
+                                            <div class="user-name-info"><span>'.$code.'</span></div>
                                                 <p class="form-control">
                                                     <span>'.$name.'</span>
-                                                </p>
+                                                </p> 
                                         </div>
                                     </div>
                                 </div>
@@ -99,7 +116,7 @@ class B_red extends CI_Controller {
                                         <div class="media-body">
                                             <div class="control-label">E-mail</div>
                                             <p class="form-control">
-                                                <span>'.$obj_customer->email.'</span>
+                                                <span>Email</span>
                                                 <input type="hidden" id="customer_id" name="customer_id" disabled="" value="56">
                                             </p>
                                         </div>
@@ -119,141 +136,215 @@ class B_red extends CI_Controller {
                 <div class="col-md-12">
                     <div class="panel panel-default panel-form" data-behaviour="container">
                         <div class="panel-heading text-uppercase clearfix">
-                            <h3 class="title_back">Activación</h3>
+                            <h3 class="title_back">Equipo en Red</h3>
                         </div>
                        <hr class="style-2"> 
                         <div class="panel-body">
                                 <div data-behaviour="content">
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <div class="media">
-                                                <div class="media-left"><i class="fa fa-calendar-check-o fa-3x"></i></div>
-                                                <div class="media-body">
-                                                     <label class="control-label">Fecha de Creación :</label>
-                                                    <p class="form-control"><span>'.$obj_customer->created_at.'</span></p>
-                                                </div>
-                                            </div>
+                                     <div class="row">
+                                        <div class="col-sm-1"></div>
+                                        <div class="col-sm-2">
+                                                    <h2 class="h2">NIVEL 1</h2>
+                                                    <a href="javascript:void(0);">
+                                                        <div class="bar-chart">
+                                                            <div class="chart clearfix">
+                                                                <div class="item" id="item-1">
+                                                                    <div class="bar">
+                                                                        <span class="percent">40%</span>
+
+                                                                        <div class="progress" data-percent="40">
+                                                                            <span class="title">1/3</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </a>
                                         </div>
-                                        
-                                        <div class="col-sm-6">
-                                            <div class="media">
-                                                <div class="media-left"><i class="fa fa-calendar-check-o fa-3x"></i></div>
-                                                <div class="media-body">
-                                                     <label class="control-label">Fecha de Activación :</label>
-                                                    <p class="form-control">
-                                                    <span>---</span>
-                                                </p>
-                                                </div>
-                                            </div>
+                                        <div class="col-sm-2">
+                                                    <h2 class="h2">NIVEL 2</h2>
+                                                    <a href="javascript:void(0);">
+                                                        <div class="bar-chart">
+                                                            <div class="chart clearfix">
+                                                                <div class="item" id="item-2">
+                                                                    <div class="bar">
+                                                                        <span class="percent">85%</span>
+
+                                                                        <div class="progress" data-percent="40">
+                                                                            <span class="title">1/3</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                    </a>
                                         </div>
+                                         <div class="col-sm-2">
+                                                    <h2 class="h2">NIVEL 3</h2>
+                                                    <a href="javascript:void(0);">
+                                                    <div class="bar-chart">
+                                                        <div class="chart clearfix">
+                                                            <div class="item" id="item-3">
+                                                                <div class="bar">
+                                                                    <span class="percent">85%</span>
+
+                                                                    <div class="progress" data-percent="40">
+                                                                        <span class="title">1/3</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    </a>
+                                        </div>
+                                        <div class="col-sm-2">
+                                                    <h2 class="h2">NIVEL 4</h2>
+                                                    <a href="javascript:void(0);">
+                                                    <div class="bar-chart">
+                                                        <div class="chart clearfix">
+                                                            <div class="item" id="item-4">
+                                                                <div class="bar">
+                                                                    <span class="percent">85%</span>
+
+                                                                    <div class="progress" data-percent="40">
+                                                                        <span class="title">1/3</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    </a>
+                                        </div>
+                                        <div class="col-sm-2">
+                                                    <h2 class="h2">NIVEL 5</h2>
+                                                    <a href="javascript:void(0);">
+                                                    <div class="bar-chart">
+                                                        <div class="chart clearfix">
+                                                            <div class="item" id="item-5">
+                                                                <div class="bar">
+                                                                    <span class="percent">85%</span>
+
+                                                                    <div class="progress" data-percent="40">
+                                                                        <span class="title">1/3</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    </a>
+                                        </div>
+                                        <div class="col-sm-1"></div>
+                                      </div>
+                                    <hr class="style-2"/> 
+                                        <div class="row">
+                                        <div class="col-sm-1"></div>
+                                        <div class="col-sm-2">
+                                                    <h2 class="h2">NIVEL 6</h2>
+                                                    <a href="javascript:void(0);">
+                                                    <div class="bar-chart">
+                                                        <div class="chart clearfix">
+                                                            <div class="item" id="item-6">
+                                                                <div class="bar">
+                                                                    <span class="percent">85%</span>
+
+                                                                    <div class="progress" data-percent="40">
+                                                                        <span class="title">1/3</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    </a>
+                                        </div>
+                                        <div class="col-sm-2">
+                                                    <h2 class="h2">NIVEL 7</h2>
+                                                    <a href="javascript:void(0);">
+                                                    <div class="bar-chart">
+                                                        <div class="chart clearfix">
+                                                            <div class="item" id="item-7">
+                                                                <div class="bar">
+                                                                    <span class="percent">85%</span>
+
+                                                                    <div class="progress" data-percent="40">
+                                                                        <span class="title">1/3</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    </a>
+                                        </div>
+                                         <div class="col-sm-2">
+                                                    <h2 class="h2">NIVEL 8</h2>
+                                                    <a href="javascript:void(0);">
+                                                    <div class="bar-chart">
+                                                        <div class="chart clearfix">
+                                                            <div class="item" id="item-8">
+                                                                <div class="bar">
+                                                                    <span class="percent">85%</span>
+
+                                                                    <div class="progress" data-percent="40">
+                                                                        <span class="title">1/3</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    </a>
+                                        </div>
+                                        <div class="col-sm-2">
+                                                    <h2 class="h2">NIVEL 9</h2>
+                                                    <a href="javascript:void(0);">
+                                                    <div class="bar-chart">
+                                                        <div class="chart clearfix">
+                                                            <div class="item" id="item-9">
+                                                                <div class="bar">
+                                                                    <span class="percent">85%</span>
+
+                                                                    <div class="progress" data-percent="40">
+                                                                        <span class="title">1/3</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    </a>
+                                        </div>
+                                        <div class="col-sm-2">
+                                                    <h2 class="h2">NIVEL 10</h2>
+                                                    <a href="javascript:void(0);">
+                                                    <div class="bar-chart">
+                                                        <div class="chart clearfix">
+                                                            <div class="item" id="item-10">
+                                                                <div class="bar">
+                                                                    <span class="percent">85%</span>
+
+                                                                    <div class="progress" data-percent="40">
+                                                                        <span class="title">1/3</span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    </a>
+                                        </div>
+                                        <div class="col-sm-1"></div>
                                       </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            <div class="row">
-                 <div class="col-md-6">
-                    <div class="panel panel-default panel-form fix-info">
-                        <div class="panel-heading text-uppercase">
-                            <div class="clearfix">
-                                <h3 class="title_back">Teléfono</h3>
-                            </div>
-                        </div>
-                        <hr class="style-1">
-                        <div class="panel-body">
-                            <div data-behaviour="content">
-                                <div class="form-group has-feedback" data-behaviour="element-content">
-                                    <div class="media">
-                                        <div class="media-left"><i class="fa fa-mobile fa-4x" aria-hidden="true"></i></div>
-                                        <div class="media-body">
-                                             <div class="control-label">Teléfono</div>
-                                             <p class="form-control"><span>'.$obj_customer->phone.'</span></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>               
-
-
-                    
-                <div class="col-md-6">
-                    <div class="panel panel-default panel-form fix-info">
-                        <div class="panel-heading text-uppercase">
-                            <div class="clearfix">
-                                <h3 class="title_back">Identificación</h3>
-                            </div>
-                        </div>
-                        <hr class="style-1">
-                        <div class="panel-body">
-                            <div data-behaviour="content">
-                                <div class="form-group has-feedback" data-behaviour="element-content">
-                                    <div class="media">
-                                        <div class="media-left"><i class="fa fa-id-card fa-3x"></i></div>
-                                        <div class="media-body">
-                                             <label class="control-label">Pasaporte / Numero de Identidad</label>
-                                             <p class="form-control"><span>'.$obj_customer->dni.'</span></p>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+           
                 </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="panel panel-default panel-form" data-behaviour="container">
-                        <div class="panel-heading text-uppercase clearfix">
-                            <h3 class="title_back">Dirección</h3>
-                        </div>
-                       <hr class="style-2"> 
-                        <div class="panel-body">
-                                <div data-behaviour="content">
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <div class="media">
-                                                <div class="media-left"><i class="fa fa-globe fa-3x"></i></div>
-                                                <div class="media-body">
-                                                     <label class="control-label">País :</label>
-                                                    <p class="form-control"><span>'.$obj_customer->pais.'</span></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="col-sm-6">
-                                            <div class="media">
-                                                <div class="media-left"><i class="fa fa-globe fa-3x"></i></div>
-                                                <div class="media-body">
-                                                     <label class="control-label">Región :</label>
-                                                     <p class="form-control"><span>'.$obj_customer->region.'</span></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                <hr class="style-1">
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <div class="form-group">
-                                                <label class="control-label">Dirección :</label>
-                                                    <p class="form-control"><span>Av. Tomas Guzman 513 - SJM</span></p>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <div class="form-group">
-                                                <label class="control-label">Ciudad :</label>
-                                                <p class="form-control"><span>'.$obj_customer->city.'</span></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+           
     </div>
 </div>
 </div>
