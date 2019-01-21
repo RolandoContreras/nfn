@@ -50,9 +50,14 @@ class B_invoices extends CI_Controller {
                 <div class='col-xs-12'>
                     <div class='row'>
                         <div class='col-md-12'>
-                                <div class='panel panel-default panel-form'>
-                                    <div class='panel-heading text-uppercase'>
-                                        <h3>Facturas de Compras</h3>
+                                <div class='panel panel-default panel-form' data-behaviour='container'>
+                                    <div class='panel-heading text-uppercase clearfix'>
+                                        <div class='pull-left'>
+                                            <h3>Facturas de Compra</h3>
+                                        </div>    
+                                        <div class='pull-right tooltip-demo'>
+                                            <a title='' data-placement='top' data-toggle='tooltip' class='btn btn-default btn-sm' onclick='cerrar_pagina();' data-original-title='Cerrar ventana'><i class='fa fa-times'></i> Cerrar</a>
+                                        </div>
                                     </div>
                                             <div class='col-lg-12'>
                                               <div id='panelDemo14' class='panel panel-success'>
@@ -174,7 +179,7 @@ class B_invoices extends CI_Controller {
                                                                 <div class='mail-box-header'>
                                                                             <div class='mail-box-header clearfix'>
                                                                                     <div class='pull-right tooltip-demo'>
-                                                                                        <a title='Cerrar ventana' data-placement='top' data-toggle='tooltip' class='btn btn-default btn-sm' onclick='cerrar_pagina();'><i class='fa fa-times'></i> Cerrar</a>
+                                                                                        <a title='Cerrar ventana' data-placement='top' data-toggle='tooltip' class='btn btn-default btn-sm' onclick='cerrar_pagina_3();'><i class='fa fa-times'></i> Cerrar</a>
                                                                                     </div>
                                                                             </div>
                                                                     <div class='mail-body'>

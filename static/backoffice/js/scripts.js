@@ -2951,9 +2951,9 @@ function ChatMktza () {
 }
 
 function upload_images(id) {
-        cerrar_pagina();
-        abre_2(site+"backoffice/carga_documento",'ModalPadrao2',id);
-        abrir_pagina();
+//        cerrar_pagina();
+        abre_2(site+"backoffice/carga_documento",'ModalPadrao4',id);
+        abrir_pagina_3();
 }
 
 function cerrar_pagina(){ 
@@ -2962,6 +2962,14 @@ function cerrar_pagina(){
 
 function abrir_pagina(){ 
     $("#ModalPadrao").modal("show");
+}
+
+
+function abrir_pagina_3(){ 
+    $("#ModalPadrao3").modal("show");
+}
+function cerrar_pagina_3(){ 
+    $("#ModalPadrao3").modal("hide");
 }
 
 function upload(){
@@ -2985,9 +2993,9 @@ $("#upload_form").on('submit',function(e){
 }
 
 function view_directos(){
-    cerrar_pagina();
-    abre(site+"backoffice/directos",'ModalPadrao2');
-    abrir_pagina();
+//    cerrar_pagina();
+    abre(site+"backoffice/directos",'ModalPadrao4');
+    abrir_pagina_3();
 }
 
 // Fix VH no chrome android

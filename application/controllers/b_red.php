@@ -23,8 +23,8 @@ class B_red extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
-	public function index()
-	{
+    public function index()
+    {
         //VERIFIRY GET SESSION    
         $this->get_session();
         /// VISTA
@@ -66,6 +66,7 @@ class B_red extends CI_Controller {
                 //GET DATA FROM BONUS
                 $obj_matrix = $this->obj_matrix->get_search_row($params);
                 //SET DATA VAR
+                
                 $nivel = $obj_matrix->nivel;
                 $position = $obj_matrix->position;
                 $nivel_sec = 1;
@@ -324,7 +325,12 @@ class B_red extends CI_Controller {
                     <div class="col-md-12">
                         <div class="panel panel-default panel-form" data-behaviour="container">
                             <div class="panel-heading text-uppercase clearfix">
+                            <div class="pull-left">
                                 <h3 class="class="title_back"">Mi Red</h3>
+                            </div>
+                            <div class="pull-right tooltip-demo">
+                                    <a title="" data-placement="top" data-toggle="tooltip" class="btn btn-default btn-sm" onclick="cerrar_pagina();" data-original-title="Cerrar ventana"><i class="fa fa-times"></i> Cerrar</a>
+                            </div>
                             </div>
                             <hr class="style-2">
                             <div class="panel-body">         
@@ -627,9 +633,14 @@ class B_red extends CI_Controller {
         <div class='col-xs-12'>
             <div class='row'>
                 <div class='col-md-12'>
-                        <div class='panel panel-default panel-form'>
-                            <div class='panel-heading text-uppercase'>
-                                <h3>Mis referidos directos</h3>
+                        <div class='panel panel-default panel-form' data-behaviour='container'>
+                            <div class='panel-heading text-uppercase clearfix'>
+                                <div class='pull-left'>
+                                    <h3>Mis referidos directos</h3>
+                                </div>    
+                                <div class='pull-right tooltip-demo'>
+                                    <a title='' data-placement='top' data-toggle='tooltip' class='btn btn-default btn-sm' onclick='cerrar_pagina_3();' data-original-title='Cerrar ventana'><i class='fa fa-times'></i> Cerrar</a>
+                                </div>
                             </div>
                                     <div class='col-lg-12'>
                                       <div id='panelDemo14' class='panel panel-success'>
