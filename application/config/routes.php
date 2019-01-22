@@ -91,6 +91,11 @@ $route['dashboard/clientes/load/([0-9]+)'] = "d_customer/load/$1";
 $route['dashboard/clientes/validate'] = "d_customer/validate";
 $route['dashboard/clientes/delete'] = "d_customer/delete";
 
+$route['dashboard/comisiones'] = "d_comission";
+$route['dashboard/comisiones/load/([0-9]+)'] = "d_comission/load/$1";
+$route['dashboard/comisiones/validate_customer'] = "d_comission/validate_customer";
+$route['dashboard/comisiones/validate'] = "d_comission/validate";
+
 $route['dashboard/box'] = "d_box";
 $route['dashboard/box/load'] = "d_box/load";
 $route['dashboard/box/load/([0-9]+)'] = "d_box/load/$1";

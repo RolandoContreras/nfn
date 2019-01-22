@@ -113,7 +113,6 @@
     } );
 } );
 </script>
-
 <script src="static/cms/js/active.js"></script>
 <style>
 #myImg {
