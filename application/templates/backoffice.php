@@ -463,7 +463,7 @@
               </span>
             <div class="DivQuadrado0">
                 <span class="DivValign">
-                    <div class="DivQuadrado5" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('','ModalPadrao2')" style="width:286px"></div>
+                    <div class="DivQuadrado5" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('<?php echo site_url().'backoffice/extracto';?>','ModalPadrao2')" style="width:286px"></div>
                 </span>              
             </div>
           </div>
