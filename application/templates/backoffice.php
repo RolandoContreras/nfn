@@ -255,9 +255,11 @@
         if($active == 1){
             $text = "Activo";
             $style = "label-success";
+            $style_boton = "";
         }else{
             $text = "Inactivo";
             $style = "label-danger";
+            $style_boton = "filter:alpha(opacity=30);opacity:.3";
         }
     ?>
   <div class="Blocos <?php echo $style;?>">
@@ -307,7 +309,7 @@
       </div>
     </div>
     <div class="BannersTopo">
-      <div class="PubImagem"> 
+      <div class="PubImagem">
       </div>
     </div>
   </div>
@@ -319,21 +321,37 @@
           <div class="DivGrupoTitulo1" alt="Mis datos" title="Mis datos"> Mis datos </div>
         </div>
         <div class="DivGrupo2">
-          <div class="DivQuadrado" style="background-color:#913d88;filter:alpha(opacity=30);opacity:.3"> 
+          <div class="DivQuadrado" style="background-color:#913d88; <?php echo $style_boton;?>" data-toggle="tooltip" title="Es necesario que mantenga sus datos de pago actualizados" alt="Es necesario que mantenga sus datos de pago actualizados"> 
               <span class="DivValign">
                   <div class="DivQuadrado1">
                       <img src="<?php echo site_url().'static/backoffice/images/2.png';?>" border="0">
                   </div>
                   <div class="DivQuadrado2">Datos de pago</div>
-              </span>            
+              </span>  
+              <?php 
+              if($active == 1){?>
+                  <div class="DivQuadrado0">
+                    <span class="DivValign">
+                        <div class="DivQuadrado5" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('<?php echo site_url().'backoffice/datos_pago';?>','ModalPadrao2')" ></div>
+                    </span>              
+                  </div>
+              <?php } ?>
           </div>
-          <div class="DivQuadrado" style="background-color:#9d5797;filter:alpha(opacity=30);opacity:.3"> 
+          <div class="DivQuadrado" style="background-color:#9d5797; <?php echo $style_boton;?>" data-toggle="tooltip" title="Confirmar los datos del beneficiario" alt="Confirmar los datos del beneficiario"> 
               <span class="DivValign">
                   <div class="DivQuadrado1">
                       <img src="<?php echo site_url().'static/backoffice/images/27.png';?>" border="0">
                   </div>
                   <div class="DivQuadrado2">Datos del beneficiario</div>
-              </span>            
+              </span>
+              <?php 
+              if($active == 1){?>
+                    <div class="DivQuadrado0">
+                        <span class="DivValign">
+                            <div class="DivQuadrado5" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('<?php echo site_url().'backoffice/contrasena';?>','ModalPadrao2')" ></div>
+                        </span>              
+                    </div>
+              <?php } ?>
           </div>
           <div class="DivQuadrado DivQuadrado3" style="background-color:#9b59b6;" data-toggle="tooltip" title="Es necesario que mantenga sus datos siempre actualizados" alt="Datos personales Es necesario que mantenga sus datos siempre actualizados"> 
                 <span class="DivValign">

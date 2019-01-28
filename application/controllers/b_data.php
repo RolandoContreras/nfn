@@ -5,8 +5,8 @@ class B_data extends CI_Controller {
     function __construct() {
         parent::__construct();
         $this->load->model("customer_model","obj_customer");
-//        $this->load->model("messages_model","obj_messages");
-//        $this->load->model("otros_model","obj_otros");
+        $this->load->model("customer_bank_model","obj_customer_bank");
+
     }
 
 	/**
@@ -78,7 +78,7 @@ class B_data extends CI_Controller {
                         <div class="panel panel-default panel-form" data-behaviour="container">
                             <div class="panel-heading text-uppercase clearfix">
                                 <div class="pull-left">
-                                    <h3>Datos Personales</h3>
+                                    <h3><b>Datos Personales</b></h3>
                                 </div>    
                                 <div class="pull-right tooltip-demo">
                                     <a title="" data-placement="top" data-toggle="tooltip" class="btn btn-default btn-sm" onclick="cerrar_pagina();" data-original-title="Cerrar ventana"><i class="fa fa-times"></i> Cerrar</a>
@@ -278,6 +278,8 @@ class B_data extends CI_Controller {
 	}
         
         public function contrasena(){
+        //VERIFIRY GET SESSION    
+        $this->get_session();
         echo '
        <div id="payments" class="tabcontent" style="display: block;">
     <div class="row ml-custom">
@@ -288,7 +290,7 @@ class B_data extends CI_Controller {
                         <div class="panel panel-default panel-form">
                             <div class="panel-heading text-uppercase clearfix">
                                 <div class="pull-left">
-                                    <h3>Cambiar Contraseña</h3>
+                                    <h3><b>Cambiar Contraseña</b></h3>
                                 </div>    
                                 <div class="pull-right tooltip-demo">
                                     <a title="" data-placement="top" data-toggle="tooltip" class="btn btn-default btn-sm" onclick="cerrar_pagina();" data-original-title="Cerrar ventana"><i class="fa fa-times"></i> Cerrar</a>
@@ -342,6 +344,102 @@ class B_data extends CI_Controller {
         ';
         
     }
+    
+        public function datos_pagos(){
+            //VERIFIRY GET SESSION    
+            $this->get_session();
+            $customer_id = $_SESSION['customer']['customer_id'];
+            //VERIFY IF ISSET
+            $params = array(
+                        "select" =>"customer_bank_id,
+                                    bank_name,
+                                    titular,
+                                    account_number,
+                                    account_number_inter",
+                        "where" => "customer_id = $customer_id",
+                                    );
+            $obj_customer = $this->obj_customer_bank->get_search_row($params); 
+            $count_customer = count($obj_customer); 
+            
+            if($count_customer == 1){
+                $bank = $obj_customer->bank_name;
+                $account_number = $obj_customer->account_number;
+                $account_number_inter = $obj_customer->account_number_inter;
+                $titular = $obj_customer->titular;
+            }else{
+                $bank = "";
+                $account_number = "";
+                $account_number_inter = "";
+                $titular = "";
+            }
+            
+            echo '
+       <div id="payments" class="tabcontent" style="display: block;">
+    <div class="row ml-custom">
+        <div class="col-xs-12">
+            <div class="row">
+                <div class="col-md-12">
+                        <form name="form">
+                        <div class="panel panel-default panel-form">
+                            <div class="panel-heading text-uppercase clearfix">
+                                <div class="pull-left">
+                                    <h3><b>Datos para Pago</b></h3>
+                                </div>    
+                                <div class="pull-right tooltip-demo">
+                                    <a title="" data-placement="top" data-toggle="tooltip" class="btn btn-default btn-sm" onclick="cerrar_pagina();" data-original-title="Cerrar ventana"><i class="fa fa-times"></i> Cerrar</a>
+                                </div>
+                            </div>
+                            <hr class="style-2">
+                            <div class="panel-body">
+                                <div class="">
+                                    <div class="row">
+                                    <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <label class="control-label required">Nombre de Banco</label>
+                                        <input type="text" id="bank" name="bank" class="form-control form-control" value="'.$bank.'" data-constraints="@NotEmpty">
+                                    </div>
+                                    </div>
+                                    </div>
+
+                                    <div class="row">
+                                    <div class="col-sm-12">
+                                    <div class="form-group"><label class="control-label required">Número de Cuenta (Ahorros s/.)</label>
+                                        <input type="text" id="account" name="account" required="required" value="'.$account_number.'" class="form-control form-control">
+                                    </div>
+                                    </div>
+                                    </div>
+                                    <div class="row">
+                                    <div class="col-sm-12">
+                                    <div class="form-group"><label class="control-label required">Número de Cuenta Interbancario</label>
+                                        <input type="text" id="account_inter" name="account_inter" value="'.$account_number_inter.'" required="required" class="form-control form-control"></div>
+                                    </div>
+                                    </div>
+                                    <div class="row">
+                                    <div class="col-sm-12">
+                                    <div class="form-group"><label class="control-label required">Títular de la Cuenta</label>
+                                        <input type="text" id="titular" name="titular" value="'.$titular.'" required="required" class="form-control form-control"></div>
+                                    </div>
+                                    </div>
+                                <hr class="style-1">
+                                    <div class="row">
+                                        <div class="mb-10">
+                                            <a class="btn btn-primary btn-block" onclick="save_bank();" name="button_password" style="word-wrap: break-word; white-space: normal !important;">Guardar Datos</a>
+                                        </div>
+                                            <div id="alert_message"></div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                     </form>
+                </div>
+            </div>
+        </div>
+    </div> 
+</div>
+        ';
+        
+    }
         
         public function get_messages_informative(){
             $params = array(
@@ -353,40 +451,45 @@ class B_data extends CI_Controller {
             return $messages_informative;
         }
         
-        public function udpate_address(){
+        public function save_bank(){
             
          if($this->input->is_ajax_request()){  
            //SELECT ID FROM CUSTOMER
-           $address = $this->input->post('address');
-           $customer_id = $this->input->post('customer_id');
+           $customer_id = $_SESSION['customer']['customer_id'];
+           $bank = $this->input->post('bank');
+           $account = $this->input->post('account');
+           $account_inter = $this->input->post('account_inter');
+           $titular = $this->input->post('titular');
+           //VERIFY IF ISSET
+           $params = array(
+                        "select" =>"customer_bank_id",
+                        "where" => "customer_id = $customer_id",
+                                    );
+         $obj_customer = $this->obj_customer_bank->total_records($params);
+         if($obj_customer == 1){
+             //UPDATE DATA EN CUSTOMER_BANK TABLE
+               $data = array(
+                   'bank_name' => $bank,
+                   'account_number' => $account,
+                   'account_number_inter' => $account_inter,
+                   'titular' => $titular,
+               ); 
+               $this->obj_customer_bank->update($customer_id,$data);
+         }else{
+             //CREATE REGISTER ON CUSTOMER TABLE
+                $data = array(
+                   'customer_id' => $customer_id,
+                   'bank_name' => $bank,
+                   'account_number' => $account,
+                   'account_number_inter' => $account_inter,
+                   'titular' => $titular,
+                   'created_by' => $customer_id,
+                   'updated_at' => date("Y-m-d H:i:s")
+                ); 
+                $this->obj_customer_bank->insert($data);
+         }
 
-           //UPDATE DATA EN CUSTOMER TABLE
-           $data = array(
-                           'address' => $address,
-                           'updated_by' => $customer_id,
-                           'updated_at' => date("Y-m-d H:i:s")
-                       ); 
-                       $this->obj_customer->update($customer_id,$data);
-
-                $data['message'] = "true";
-            echo json_encode($data); 
-            }
-        }
-    
-        public function update_position(){
-         if($this->input->is_ajax_request()){   
-            //SELECT ID FROM CUSTOMER
-           $pierna = $this->input->post('pierna');
-           $customer_id = $this->input->post('customer_id');
-           //UPDATE DATA EN CUSTOMER TABLE
-           $data = array(
-                           'position_temporal' => $pierna,
-                           'updated_by' => $customer_id,
-                           'updated_at' => date("Y-m-d H:i:s")
-                       ); 
-                       $this->obj_customer->update($customer_id,$data);
-
-                $data['message'] = "true";
+            $data['message'] = "true";
             echo json_encode($data); 
             }
         }

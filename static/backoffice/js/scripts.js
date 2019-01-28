@@ -2972,6 +2972,35 @@ function alter_password(){
         }
 }
 
+function save_bank(){
+        var bank = document.getElementById("bank").value;
+        var account = document.getElementById("account").value;
+        var account_inter = document.getElementById("account_inter").value;
+        var titular = document.getElementById("titular").value;
+        
+        if(bank == "" || account == "" || account_inter == "" || titular == ""){
+            $("#alert_message").html('<div class="alert alert-danger" style="text-align: center">Debe llenar todos los datos.</div>'); 
+        }else{
+            $.ajax({
+                    type: "post",
+                    url: site + "b_data/save_bank",
+                    dataType: "json",
+                    data: {bank: bank,
+                            account: account,
+                            account_inter: account_inter,
+                            titular: titular
+                       },
+                    success:function(data){            
+                            if(data.message == "true"){         
+                            $("#alert_message").html('<div class="alert alert-success" style="text-align: center">Datos guardados con éxito <i class="fa fa-thumbs-up fa-2x"></i></div>'); 
+                        }else{
+                            $("#alert_message").html('<div class="alert alert-danger" style="text-align: center">No se guardaron los datos</div>'); 
+                        }
+                    }            
+                });
+        }
+}
+
 function mostrar_nivel(nivel,posicion,end_posicion) {
         abre_nivel_red(site+"backoffice/mostrar_nivel",'ModalPadrao10',nivel,posicion,end_posicion);
         abrir_pagina_9();
