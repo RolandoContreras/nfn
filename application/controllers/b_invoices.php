@@ -6,6 +6,7 @@ class B_invoices extends CI_Controller {
         parent::__construct();
         $this->load->model("customer_model","obj_customer");
         $this->load->model("invoices_model","obj_invoices");
+        $this->load->model("box_model","obj_box");
     }
 
 	/**
@@ -134,6 +135,125 @@ class B_invoices extends CI_Controller {
                             </div>
                         </div> 
                     </div>";
+    }
+    
+    public function cambiar_kit()
+	{
+        //VERIFIRY GET SESSION    
+        $this->get_session();
+        //GET CUSTOMER_ID
+        $customer_id = $_SESSION['customer']['customer_id'];
+        $nombre = $_SESSION['customer']['name'];
+        //GET ALL KIT ACTIVE
+        $param_box = array(
+                            "select" => "box_id,
+                                         name,
+                                         price,
+                                         img",
+                            "where" => "active = 1 and status_value = 1");
+        $obj_box = $this->obj_box->search($param_box);
+            
+        $params = array(
+                        "select" =>"customer.code,
+                                    customer.box_id",
+                        "where" => "customer.customer_id = $customer_id"
+               );
+           //GET DATA FROM CUSTOMER
+           $customer_box = $this->obj_customer->get_search_row($params);
+           
+         //SEND DATA TO VIEW  
+    echo "
+        <div id='payments' class='tabcontent' style='display: block;'>
+            <div class='row ml-custom'>
+                <div class='col-xs-12'>
+                    <div class='row'>
+                        <div class='col-md-12'>
+                                <div class='panel panel-default panel-form' data-behaviour='container'>
+                                    <div class='panel-heading text-uppercase clearfix'>
+                                        <div class='pull-left'>
+                                            <h3>Cambir el KIT</h3>
+                                        </div>    
+                                        <div class='pull-right tooltip-demo'>
+                                            <a title='' data-placement='top' data-toggle='tooltip' class='btn btn-default btn-sm' onclick='cerrar_pagina();' data-original-title='Cerrar ventana'><i class='fa fa-times'></i> Cerrar</a>
+                                        </div>
+                                    </div>
+                                            <div class='col-lg-12'>
+                                              <div id='panelDemo14' class='panel panel-success'>
+                                                    <div class='panel-body'>
+                                                        <div id='archivos_subidos'>
+                                                            <div class='row'>
+                                                                <div class='col-lg-12'>
+                                                                    <div id='CadastroPasso2'>
+                                                                        <div class='centralizar_2'>
+                                                                            <div class='tituloPagina'>ELIJA SU KIT</div>
+                                                                                <p class='text-contact-2'>¡Hola! $nombre, Ahora usted puede elegir el kit que desea consumir.</p>
+                                                                                        <div class='BlocoPrincipal'>";
+                                                                                            foreach ($obj_box as $value) {
+                                                                                                $url_img = site_url()."static/backoffice/images/box/$value->img";
+                                                                                                if($value->box_id == $customer_box->box_id){
+                                                                                                    $actual = "- (Actual)";
+                                                                                                }else{
+                                                                                                    $actual = "";
+                                                                                                }
+                                                                                                echo "<div class='Blocos'>
+                                                                                                    <div class='TituloKit'>
+                                                                                                        <span class='alignCenter_title'>$value->name</span>
+                                                                                                    </div>
+                                                                                                    <div class=ImagemKit'>
+                                                                                                        <span class='alignCenter'>
+                                                                                                            <img src='$url_img' alt='$value->name'>
+                                                                                                        </span>
+                                                                                                    </div>
+                                                                                                    <div class='ValorKit'>
+                                                                                                        <div class='Valor'>Precio:&nbsp;&nbsp;&nbsp;&nbsp;<b>".format_number_moneda_soles($value->price)."</b></div>
+                                                                                                    </div>
+                                                                                                    <div class='BotoesKit'>
+                                                                                                        <div class='Botao'>
+                                                                                                                <button onclick='cambiar_kit($value->box_id)' class='btn btn-success btn-block'><i class='fa fa-shopping-basket'></i> Seleccionar Kit $actual</button>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>";
+                                                                                            }
+                                                                                        echo "
+                                                                                        </div>
+                                                                                    
+                                                                </div>
+                                                            </div>
+                                                            <div id='messages_confirmation'>
+                                                                
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>";
+                                                                
+    }
+    
+    public function change_kit()
+	{
+        //VERIFIRY GET SESSION    
+        $this->get_session();
+        //GET BOX_ID
+        $box_id = $this->input->post("box_id");
+        //GET CUSTOMER_ID
+        $customer_id = $_SESSION['customer']['customer_id'];
+        //UPDATE TABLE CUSTOMER
+        $data = array(
+                        'box_id' => $box_id,
+                    ); 
+                    $this->obj_customer->update($customer_id,$data);
+        $data = '<div class="alert alert-success" style="text-align: center">Cambiado Exitosamente</div>';            
+        echo json_encode($data);            
+                    
+      
     }
     
     public function carga_documento()

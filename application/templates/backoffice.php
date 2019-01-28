@@ -3,6 +3,7 @@
 <head>
   <title>Oficina Virtual NFN</title>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css' />
+  <link rel='stylesheet' href='<?php echo site_url().'static/page_front/css/step2.css';?>' media='all'/>
   <base href="<?php echo site_url().'backoffice';?>">
   <!--FAVICO-->
     <link rel="apple-touch-icon" sizes="57x57" href="<?php echo site_url().'static/page_front/images/favicon/apple-icon-57x57.png';?>">
@@ -385,11 +386,11 @@
                   <div class="DivQuadrado1">
                       <img src="<?php echo site_url().'static/backoffice/images/7.png';?>" border="0">
                   </div>
-                  <div class="DivQuadrado2">Cambiar el Box</div>
+                  <div class="DivQuadrado2">Cambiar el Kit</div>
               </span>
             <div class="DivQuadrado0">
                   <span class="DivValign">
-                      <div class="DivQuadrado5" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('','ModalPadrao2')" ></div>
+                      <div class="DivQuadrado5" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('<?php echo site_url().'backoffice/cambiar_kit';?>','ModalPadrao2')" ></div>
                   </span>              
             </div>
           </div>

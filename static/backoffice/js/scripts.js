@@ -3037,6 +3037,21 @@ $("#upload_form").on('submit',function(e){
  });
 }
 
+function cambiar_kit(box_id){
+            $.ajax({
+               type: "post",
+               url: site+"backoffice/invoice/change_kit",
+               dataType: "json",
+               data: {box_id : box_id},
+               success:function(data){                             
+                $("#messages_confirmation").html(data);
+//                cerrar_pagina();
+               }         
+           });
+            
+}
+
+
 function view_directos(){
 //    cerrar_pagina();
     abre(site+"backoffice/directos",'ModalPadrao4');

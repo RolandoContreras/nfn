@@ -65,6 +65,9 @@ $route['backoffice/facturas'] = "b_invoices";
 $route['backoffice/carga_documento'] = "b_invoices/carga_documento";
 $route['backoffice/facturas/upload'] = "b_invoices/upload";
 
+$route['backoffice/cambiar_kit'] = "b_invoices/cambiar_kit";
+$route['backoffice/invoice/change_kit'] = "b_invoices/change_kit";
+
 $route['backoffice/red'] = "b_red/index";
 $route['backoffice/directos'] = "b_red/directos";
 $route['backoffice/mostrar_nivel'] = "b_red/mostrar_nivel";
