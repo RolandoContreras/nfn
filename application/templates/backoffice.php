@@ -23,7 +23,7 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="<?php echo site_url().'static/page_front/images/favicon/ms-icon-144x144.png';?>">
     <meta name="theme-color" content="#ffffff">
-  <!--NED FAVICON-->
+  <!--END FAVICON-->
   <link rel="stylesheet" href="<?php echo site_url().'static/backoffice/css/style.css?v=7';?>" type="text/css">
   <link rel="stylesheet" href="<?php echo site_url().'static/backoffice/css/bootstrap.min.css';?>" type="text/css"/>
   <!-- CSS DO PERFIL -->
@@ -46,9 +46,12 @@
     <link href="<?php echo site_url().'static/backoffice/css/assets/mouldifi-forms.css';?>" rel="stylesheet">
     <script src="https://use.fontawesome.com/3aa4a6fd0b.js"></script>
     <!--STYLE 3T CLUB-->
-  
-  <!-- //CSS DO PERFIL -->
+    <!-- START on off style -->
+    <link href="<?php echo site_url().'static/backoffice/css/switcher.css';?>" rel="stylesheet">
+    <!-- END on off style -->
   <script type="text/javascript" src="<?php echo site_url().'static/backoffice/js/jquery-1.11.3.min.js';?>"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+  
   <script type="text/javascript" src="<?php echo site_url().'static/backoffice/js/jquery-ui.min.js';?>"></script>
   <script type="text/javascript" src="<?php echo site_url().'static/backoffice/js/bootstrap.min.js';?>"></script>
   <script type="text/javascript" src="<?php echo site_url().'static/backoffice/js/mask.min.js';?>"></script>
@@ -61,7 +64,6 @@
         var site = '<?php echo site_url();?>';
   </script>
   <!-- //SCRIPTS DO PERFIL -->
-
   <script type="text/javascript">
     //tamanho width
     function verificaTamanho() {
@@ -399,11 +401,11 @@
               <div class="DivQuadrado1">
                   <img src="<?php echo site_url().'static/backoffice/images/8.png';?>" border="0">
               </div>
-              <div class="DivQuadrado2">Pagar box con bonos</div>
+              <div class="DivQuadrado2">Pagar Kit con bonos</div>
           </span>
             <div class="DivQuadrado0">
                 <span class="DivValign">
-                    <div class="DivQuadrado5" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('','ModalPadrao2')"></div>
+                    <div class="DivQuadrado5" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('<?php echo site_url().'backoffice/pagar_kit';?>','ModalPadrao2')"></div>
                 </span>              
             </div>
           </div>
@@ -982,27 +984,7 @@
   function FecharPagina(){ window.history.pushState( '', '', '<?php echo site_url().'backoffice';?>' ); }
 </script>
 </body>
-
-</html>
-<script type="text/javascript">
-  $(document).ready(function () { 
-//      abre("https://www.scipiracicaba.com.br/escritorio-virtual/bem-vindo-dados-pagamento", "ModalPadrao2"); $("#ModalPadrao").modal("show"); 
-barChart();
-    $(window).resize(function(){
-        barChart();
-    });
-    function barChart(){
-        $('.bar-chart').find('.progress').each(function(){
-            var itemProgress = $(this),
-            itemProgressWidth = $(this).parent().width() * ($(this).data('percent') / 100);
-            itemProgress.css('width', itemProgressWidth);
-        });
-    }
-  });
-</script>
-<div id="popup-bemvindo">
-  <!-- vazio -->
-</div>
+<div id="popup-bemvindo"></div>
 <script>
   var velocidade = 1000; var valor = 1; function pisca() { if (valor == 1) { $('#div_manual_negocio').css({'color':'#FFFFFF'}); //console.log('1'); valor=0; } else { $('#div_manual_negocio').css({'color':'#FFFF90'}); valor=1; //console.log('2'); } setTimeout("pisca();",velocidade); } setTimeout("pisca();",velocidade);
 </script>

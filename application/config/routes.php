@@ -68,6 +68,10 @@ $route['backoffice/facturas/upload'] = "b_invoices/upload";
 $route['backoffice/cambiar_kit'] = "b_invoices/cambiar_kit";
 $route['backoffice/invoice/change_kit'] = "b_invoices/change_kit";
 
+$route['backoffice/pagar_kit'] = "b_invoices/pagar_kit";
+$route['backoffice/invoice/change_pagar_bono'] = "b_invoices/change_pagar_bono";
+
+
 $route['backoffice/red'] = "b_red/index";
 $route['backoffice/directos'] = "b_red/directos";
 $route['backoffice/mostrar_nivel'] = "b_red/mostrar_nivel";

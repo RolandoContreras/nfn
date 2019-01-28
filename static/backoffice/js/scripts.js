@@ -2930,6 +2930,48 @@ function ChatMktza () {
 
 }
 
+function validate_password(password){
+        $.ajax({
+        type: "post",
+        url: site + "b_data/validate_password",
+        dataType: "json",
+        data: {password: password},
+        success:function(data){            
+                if(data.message == "true"){         
+                $(".alert-0").removeClass('text-danger').addClass('text-success').html(data.print);
+                    document.form.password_one.disabled = false;
+                    document.form.password_two.disabled = false;
+            }else{
+                $(".alert-0").removeClass('text-success').addClass('text-danger').html(data.print)
+            }
+        }            
+    });
+}
+
+function alter_password(){
+        var password_one = document.getElementById("password_one").value;
+        var password_two = document.getElementById("password_two").value;
+        
+        if(password_one == password_two){
+                $.ajax({
+                    type: "post",
+                    url: site + "b_data/update_password",
+                    dataType: "json",
+                    data: {password_one: password_one
+                       },
+                    success:function(data){            
+                            if(data.message == "true"){         
+                            $("#alert_message_password").html('<div class="alert alert-success" style="text-align: center">Contraseña cambiada <i class="fa fa-thumbs-up fa-2x"></i></div>'); 
+                        }else{
+                            $("#alert_message_password").html('<div class="alert alert-danger" style="text-align: center">Las contraseñas no deben estan en blanco</div>'); 
+                        }
+                    }            
+                });
+        }else{
+           $("#alert_message_password").html('<div class="alert alert-danger" style="text-align: center">Las contraseñas no coinciden.</div>'); 
+        }
+}
+
 function mostrar_nivel(nivel,posicion,end_posicion) {
         abre_nivel_red(site+"backoffice/mostrar_nivel",'ModalPadrao10',nivel,posicion,end_posicion);
         abrir_pagina_9();
@@ -3045,12 +3087,29 @@ function cambiar_kit(box_id){
                data: {box_id : box_id},
                success:function(data){                             
                 $("#messages_confirmation").html(data);
-//                cerrar_pagina();
                }         
            });
-            
 }
 
+function change_pagar_bono(){
+    var check = document.getElementById("myonoffswitch").checked;
+            $.ajax({
+               type: "post",
+               url: site+"backoffice/invoice/change_pagar_bono",
+               dataType: "json",
+               data: {check : check},
+               success:function(data){          
+                   if(data.message == 0){
+                       $("#messages_true").hide();
+                       $("#messages_false").show();
+                   }else{
+                       $("#messages_false").hide();
+                       $("#messages_true").show();
+                   }
+                
+               }         
+           });
+}
 
 function view_directos(){
 //    cerrar_pagina();

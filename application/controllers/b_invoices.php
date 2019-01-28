@@ -171,7 +171,7 @@ class B_invoices extends CI_Controller {
                                 <div class='panel panel-default panel-form' data-behaviour='container'>
                                     <div class='panel-heading text-uppercase clearfix'>
                                         <div class='pull-left'>
-                                            <h3>Cambir el KIT</h3>
+                                            <h3>Cambiar el KIT</h3>
                                         </div>    
                                         <div class='pull-right tooltip-demo'>
                                             <a title='' data-placement='top' data-toggle='tooltip' class='btn btn-default btn-sm' onclick='cerrar_pagina();' data-original-title='Cerrar ventana'><i class='fa fa-times'></i> Cerrar</a>
@@ -252,8 +252,109 @@ class B_invoices extends CI_Controller {
                     $this->obj_customer->update($customer_id,$data);
         $data = '<div class="alert alert-success" style="text-align: center">Cambiado Exitosamente</div>';            
         echo json_encode($data);            
-                    
-      
+    }
+    
+    public function pagar_kit(){
+        //VERIFIRY GET SESSION    
+        $this->get_session();
+        //GET CUSTOMER_ID
+        $customer_id = $_SESSION['customer']['customer_id'];
+           
+        $params = array(
+                        "select" =>"active_consume",
+                        "where" => "customer_id = $customer_id"
+               );
+           //GET DATA FROM CUSTOMER
+           $obj_customer = $this->obj_customer->get_search_row($params);
+           //VALIDATE CONSUME ACTUIVE
+           if($obj_customer->active_consume == 1){
+               $cheked = "checked";
+           }else{
+               $cheked = "";
+           }
+           
+        
+         //SEND DATA TO VIEW  
+    echo "
+        <div id='payments' class='tabcontent' style='display: block;'>
+            <div class='row ml-custom'>
+                <div class='col-xs-12'>
+                    <div class='row'>
+                        <div class='col-md-12'>
+                                <div class='panel panel-default panel-form' data-behaviour='container'>
+                                    <div class='panel-heading text-uppercase clearfix'>
+                                        <div class='pull-left'>
+                                            <h3><b>Pagar el KIT con bonos</b></h3>
+                                        </div>    
+                                        <div class='pull-right tooltip-demo'>
+                                            <a title='' data-placement='top' data-toggle='tooltip' class='btn btn-default btn-sm' onclick='cerrar_pagina();' data-original-title='Cerrar ventana'><i class='fa fa-times'></i> Cerrar</a>
+                                        </div>
+                                    </div>
+                                            <div class='col-lg-12'>
+                                              <div id='panelDemo14' class='panel panel-success'>
+                                                    <div class='panel-body'>
+                                                        <div id='archivos_subidos'>
+                                                            <div class='row'>
+                                                                <div class='col-lg-12'>
+                                                                    <div role='alert' class='alert'>
+                                                                            NFN puede recoger o pagar automáticamente el valor de su kit cada mes, si tiene suficiente bono en dicho mes.
+                                                                            <br/><br/>
+                                                                            ¿Desea habilitar el descuento automático?
+                                                                             <div class='onoffswitch'>
+                                                                                <input onclick='change_pagar_bono();' type='checkbox' name='onoffswitch' class='onoffswitch-checkbox' id='myonoffswitch' $cheked>
+                                                                                <label class='onoffswitch-label' for='myonoffswitch'>
+                                                                                    <span class='onoffswitch-inner'></span>
+                                                                                    <span class='onoffswitch-switch'></span>
+                                                                                </label>
+                                                                            </div>
+                                                                            <br/>
+                                                                            <div id='messages_false' style='display:none;'>
+                                                                                 <div role='alert' class='alert alert-info'>
+                                                                                    Usted puede utilizar sus créditos para el pago de su kit manualmente.
+                                                                                </div>
+                                                                            </div>
+                                                                            <div id='messages_true' style='display:none;'>
+                                                                                 <div role='alert' class='alert alert-success'>
+                                                                                    El descuento de su kit se hará automáticamente 
+                                                                                </div>
+                                                                            </div>
+                                                                    </div>
+                                                                   
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>";
+                                                                
+    }
+    
+    public function change_pagar_bono()
+	{
+        //VERIFIRY GET SESSION    
+        $this->get_session();
+        //GET BOX_ID
+        $check = $this->input->post("check");
+        
+        //GET CUSTOMER_ID
+        $customer_id = $_SESSION['customer']['customer_id'];
+        //UPDATE TABLE CUSTOMER
+        if($check == "false"){
+            $active_consume = 0;
+        }else{
+            $active_consume = 1;
+        }
+        $data = array(
+                        'active_consume' => $active_consume,
+                    ); 
+                    $this->obj_customer->update($customer_id,$data);
+        $data['message'] = $active_consume;         
+        echo json_encode($data);            
     }
     
     public function carga_documento()

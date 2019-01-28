@@ -26,6 +26,7 @@ class customer_model_atributos{
     var $password='';
     var $first_name='';
     var $last_name='';
+    var $active_consume='';
     var $dni='';
     var $birth_date='';
     var $identificador='';
@@ -60,6 +61,7 @@ class Customer_Model extends CI_Model{
         $this->password='';
 	$this->first_name='';
         $this->last_name='';
+        $this->active_consume='';
         $this->dni='';
         $this->birth_date='';
         $this->address='';

@@ -326,8 +326,8 @@ class B_data extends CI_Controller {
                                     <div class="row">
                                         <div class="mb-10">
                                             <a class="btn btn-primary btn-block" onclick="alter_password();" name="button_password" style="word-wrap: break-word; white-space: normal !important;">Cambiar Contraseña</a>
-                                            <div id="alert_message_password"></div>
                                         </div>
+                                            <div id="alert_message_password"></div>
                                     </div>
 
                                 </div>
@@ -392,11 +392,10 @@ class B_data extends CI_Controller {
         }
         
         public function update_password(){
-
              if($this->input->is_ajax_request()){   
                 //SELECT ID FROM CUSTOMER
                $password_one = $this->input->post('password_one');
-               $customer_id = $this->input->post('customer_id');
+               $customer_id = $_SESSION['customer']['customer_id'];
                
                if($password_one != ""){
                             //UPDATE DATA EN CUSTOMER TABLE
@@ -424,7 +423,7 @@ class B_data extends CI_Controller {
         public function validate_password() {
         //SELECT ID FROM CUSTOMER
         $password = str_to_minuscula(trim($this->input->post('password')));
-        $customer_id = trim($this->input->post('customer_id'));
+        $customer_id = $_SESSION['customer']['customer_id'];
         
         $param_customer = array(
             "select" => "password",
