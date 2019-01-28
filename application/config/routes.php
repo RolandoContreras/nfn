@@ -64,6 +64,9 @@ $route['backoffice/contrasena'] = "b_data/contrasena";
 $route['backoffice/datos_pago'] = "b_data/datos_pagos";
 $route['backoffice/save_bank'] = "b_data/save_bank";
 
+$route['backoffice/datos_beneficiario'] = "b_data/beneficiario";
+$route['backoffice/save_benficiario'] = "b_data/save_benficiario";
+
 $route['backoffice/facturas'] = "b_invoices";
 $route['backoffice/carga_documento'] = "b_invoices/carga_documento";
 $route['backoffice/facturas/upload'] = "b_invoices/upload";

@@ -3001,6 +3001,33 @@ function save_bank(){
         }
 }
 
+function save_beneficiario(){
+        var razon_social = document.getElementById("razon_social").value;
+        var ruc = document.getElementById("ruc").value;
+        var ruc_addresss = document.getElementById("ruc_address").value;
+        
+        if(razon_social == "" || ruc == "" || ruc_addresss == ""){
+            $("#alert_message").html('<div class="alert alert-danger" style="text-align: center">Debe llenar todos los datos.</div>'); 
+        }else{
+            $.ajax({
+                    type: "post",
+                    url: site + "b_data/save_benficiario",
+                    dataType: "json",
+                    data: {razon_social: razon_social,
+                            ruc: ruc,
+                            ruc_addresss: ruc_addresss
+                       },
+                    success:function(data){            
+                            if(data.message == "true"){         
+                            $("#alert_message").html('<div class="alert alert-success" style="text-align: center">Datos guardados con éxito <i class="fa fa-thumbs-up fa-2x"></i></div>'); 
+                        }else{
+                            $("#alert_message").html('<div class="alert alert-danger" style="text-align: center">No se guardaron los datos</div>'); 
+                        }
+                    }            
+                });
+        }
+}
+
 function mostrar_nivel(nivel,posicion,end_posicion) {
         abre_nivel_red(site+"backoffice/mostrar_nivel",'ModalPadrao10',nivel,posicion,end_posicion);
         abrir_pagina_9();

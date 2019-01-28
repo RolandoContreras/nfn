@@ -440,6 +440,93 @@ class B_data extends CI_Controller {
         ';
         
     }
+    
+        public function beneficiario(){
+            //VERIFIRY GET SESSION    
+            $this->get_session();
+            $customer_id = $_SESSION['customer']['customer_id'];
+            //VERIFY IF ISSET
+            $params = array(
+                        "select" =>"customer_bank_id,
+                                    razon_social,
+                                    ruc,
+                                    address_ruc",
+                        "where" => "customer_id = $customer_id",
+                                    );
+            $obj_customer = $this->obj_customer_bank->get_search_row($params); 
+            $count_customer = count($obj_customer); 
+            
+            if($count_customer == 1){
+                $razon_social = $obj_customer->razon_social;
+                $ruc = $obj_customer->ruc;
+                $address_ruc = $obj_customer->address_ruc;
+            }else{
+                $razon_social = "";
+                $ruc = "";
+                $address_ruc = "";
+            }
+            
+            echo '
+       <div id="payments" class="tabcontent" style="display: block;">
+    <div class="row ml-custom">
+        <div class="col-xs-12">
+            <div class="row">
+                <div class="col-md-12">
+                        <form name="form">
+                        <div class="panel panel-default panel-form">
+                            <div class="panel-heading text-uppercase clearfix">
+                                <div class="pull-left">
+                                    <h3><b>Datos del Beneficiario</b></h3>
+                                </div>    
+                                <div class="pull-right tooltip-demo">
+                                    <a title="" data-placement="top" data-toggle="tooltip" class="btn btn-default btn-sm" onclick="cerrar_pagina();" data-original-title="Cerrar ventana"><i class="fa fa-times"></i> Cerrar</a>
+                                </div>
+                            </div>
+                            <hr class="style-2">
+                            <div class="panel-body">
+                                <div class="">
+                                    <div class="row">
+                                    <div class="col-sm-12">
+                                    <div class="form-group">
+                                        <label class="control-label required">Razón Social</label>
+                                        <input type="text" id="razon_social" name="razon_social" class="form-control form-control" value="'.$razon_social.'" data-constraints="@NotEmpty">
+                                    </div>
+                                    </div>
+                                    </div>
+
+                                    <div class="row">
+                                    <div class="col-sm-12">
+                                    <div class="form-group"><label class="control-label required">Número de RUC</label>
+                                        <input type="text" id="ruc" name="ruc" required="required" value="'.$ruc.'" class="form-control form-control">
+                                    </div>
+                                    </div>
+                                    </div>
+                                    <div class="row">
+                                    <div class="col-sm-12">
+                                    <div class="form-group"><label class="control-label required">Dirección</label>
+                                        <input type="text" id="ruc_address" name="ruc_address" value="'.$address_ruc.'" required="required" class="form-control form-control"></div>
+                                    </div>
+                                    </div>
+                                <hr class="style-1">
+                                    <div class="row">
+                                        <div class="mb-10">
+                                            <a class="btn btn-primary btn-block" onclick="save_beneficiario();" name="button_password" style="word-wrap: break-word; white-space: normal !important;">Guardar Datos</a>
+                                        </div>
+                                            <div id="alert_message"></div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                     </form>
+                </div>
+            </div>
+        </div>
+    </div> 
+</div>
+        ';
+        
+    }
         
         public function get_messages_informative(){
             $params = array(
@@ -484,7 +571,47 @@ class B_data extends CI_Controller {
                    'account_number_inter' => $account_inter,
                    'titular' => $titular,
                    'created_by' => $customer_id,
-                   'updated_at' => date("Y-m-d H:i:s")
+                   'created_at' => date("Y-m-d H:i:s")
+                ); 
+                $this->obj_customer_bank->insert($data);
+         }
+
+            $data['message'] = "true";
+            echo json_encode($data); 
+            }
+        }
+        
+        public function save_benficiario(){
+            
+         if($this->input->is_ajax_request()){  
+           //SELECT ID FROM CUSTOMER
+           $customer_id = $_SESSION['customer']['customer_id'];
+           $razon_social = $this->input->post('razon_social');
+           $ruc = $this->input->post('ruc');
+           $ruc_addresss = $this->input->post('ruc_addresss');
+           //VERIFY IF ISSET
+           $params = array(
+                        "select" =>"customer_bank_id",
+                        "where" => "customer_id = $customer_id",
+                                    );
+         $obj_customer = $this->obj_customer_bank->total_records($params);
+         if($obj_customer == 1){
+             //UPDATE DATA EN CUSTOMER_BANK TABLE
+               $data = array(
+                   'razon_social' => $razon_social,
+                   'ruc' => $ruc,
+                   'address_ruc' => $ruc_addresss,
+               ); 
+               $this->obj_customer_bank->update($customer_id,$data);
+         }else{
+             //CREATE REGISTER ON CUSTOMER TABLE
+                $data = array(
+                   'customer_id' => $customer_id,
+                   'razon_social' => $razon_social,
+                   'ruc' => $ruc,
+                   'address_ruc' => $ruc_addresss,
+                   'created_by' => $customer_id,
+                   'created_at' => date("Y-m-d H:i:s")
                 ); 
                 $this->obj_customer_bank->insert($data);
          }
