@@ -522,16 +522,16 @@
                 </span>              
             </div>
         </div>
-        <div class="DivQuadrado " style="background-color:#ed4132" data-toggle="tooltip" title="Aquí tienes acceso a diversos materiales de apoyo y divulgación. ¡Accede y echa un vistazo!" alt="Aquí tienes acceso a diversos materiales de apoyo y divulgación. ¡Accede y echa un vistazo!"> 
+        <div class="DivQuadrado " style="background-color:#ed4132" data-toggle="tooltip" title="Aquí tienes acceso descargar el plan de compensación de la empresa." alt="Aquí tienes acceso descargar el plan de compensación de la empresa."> 
             <span class="DivValign">
                 <div class="DivQuadrado1">
                     <img src="<?php echo site_url().'static/backoffice/images/15.png';?>" border="0">
                 </div>
-                <div class="DivQuadrado2">Descargas</div>
+                <div class="DivQuadrado2">Descarga el Plan</div>
             </span>
           <div class="DivQuadrado0">
                 <span class="DivValign">
-                    <div class="DivQuadrado5" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('','ModalPadrao2')" ></div>
+                    <div class="DivQuadrado5" onclick="window.open('')"></div>
                 </span>            
           </div>
         </div>
@@ -556,7 +556,7 @@
           </span>
         <div class="DivQuadrado0">
             <span class="DivValign">
-                <div class="DivQuadrado5" onclick="window.open('')"></div>
+                <div class="DivQuadrado5" onclick="window.open('<?php echo site_url().'static/backoffice/document/presentacion_nfn.pdf';?>')"></div>
             </span>          
         </div>
       </div>
