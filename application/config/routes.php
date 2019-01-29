@@ -84,6 +84,9 @@ $route['backoffice/mostrar_nivel'] = "b_red/mostrar_nivel";
 
 $route['backoffice/extracto'] = "b_pay/extracto";
 
+$route['backoffice/sac'] = "b_sac";
+$route['backoffice/sac_create_messages'] = "b_sac/create_messages";
+
 $route['salir'] = "login/logout";
 
 //MANAGER - DASHBOARD

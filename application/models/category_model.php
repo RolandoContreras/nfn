@@ -15,15 +15,9 @@ BITSHARE S.A.C
 * Fecha: 16/11/2016
 ****/
 
-class messages_model_atributos{	
-    var $messages_id='';
-    var $customer_id='';
+class category_model_atributos{	
     var $category_id='';
-    var $date='';
-    var $subject='';
-    var $messages='';
-    var $answer='';
-    var $img='';
+    var $name='';
     var $active='';
     var $status_value='';
     var $created_at='';
@@ -32,27 +26,21 @@ class messages_model_atributos{
     var $updated_by='';
 }
 
-class Messages_Model extends CI_Model{ 
+class Category_Model extends CI_Model{ 
 
     public function __construct() {
         parent::__construct();  
-        $this->table = 'messages';
-	$this->table_id = 'messages_id';
-        $this->messages_id='';
-        $this->customer_id='';
+        $this->table = 'category';
+	$this->table_id = 'category_id';
         $this->category_id='';
-        $this->date='';
-        $this->subject='';
-        $this->messages='';
-        $this->answer='';
-        $this->img='';
+        $this->name='';
         $this->active='';
-	$this->status_value='';
+        $this->status_value='';
         $this->created_at='';
         $this->created_by='';
         $this->updated_at='';
         $this->updated_by='';
-	$this->fields = new messages_model_atributos();
+	$this->fields = new category_model_atributos();
     }   
     
     public function fields(){

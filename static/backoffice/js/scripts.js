@@ -2886,50 +2886,6 @@ function MktZapVerificaBotaoAbrir () {
 	}, 500);
 }
 
-function MktZapClicarBotaoAbrir () {
-	$("#widget_iframe").contents().find(".widget-header").eq(0).click();
-}
-
-function MktZapPreencherFormulario () {	
-	MktZapElementoWidgetIframe = $("#widget_iframe");
-	MktZapElementoWidgetIframe.contents().find("#name").val(MktZapJSONInformacoes.nome);
-	MktZapElementoWidgetIframe.contents().find("#email").val(MktZapJSONInformacoes.email);
-	MktZapElementoWidgetIframe.contents().find("#input-number").val(MktZapJSONInformacoes.id_cadastro);
-	MktZapEntrarConversa();
-}
-
-function ChatMktza () {
-	
-	$.ajax({
-		url: "chat_mktzap_dados.asp",
-		type: "GET",
-		success: function (retorno) {
-		
-			MktZapJSONInformacoes = JSON.parse(retorno);
-
-			$("#chat_mktza").html("");
-			$("#widget_iframe").remove();
-
-			$.ajax({
-				url: "chat_mktza.html", 
-				type: "GET", 
-				cache: false, 
-				success: function (retorno) {
-
-					$.when($("#chat_mktza").html(retorno)).then(function() {
-						MktZapVerificaChatCarregado();
-					});
-
-				}, error: function() {
-					ChatMktza();
-				}
-			});
-
-		}
-	});
-
-}
-
 function validate_password(password){
         $.ajax({
         type: "post",
@@ -3034,6 +2990,13 @@ function mostrar_nivel(nivel,posicion,end_posicion) {
         
 }
 
+function show(){
+    $("#form-messages").css("display", "block");
+}
+function hide(){
+    $("#form-messages").css("display", "none");
+}
+
 function abrir_pagina_9(){ 
     $("#ModalPadrao9").modal("show");
 }
@@ -3042,9 +3005,28 @@ function cerrar_pagina_9(){
 }
 
 function upload_images(id) {
-//        cerrar_pagina();
         abre_2(site+"backoffice/carga_documento",'ModalPadrao4',id);
         abrir_pagina_3();
+}
+
+function create_messages() {
+    $("#form-messages_2").on('submit',function(e){
+                if($('#subject').val() == '' || $('#message').val() == '' || $('#image_file').val() == '' || $('#category').val() == ''){
+                    $("#message_reponse").html('<div class="alert alert-danger" style="text-align: center">Debe llenar todos los datos</div>  ');
+                }else{
+                    $.ajax({
+                    url : site+"backoffice/sac_create_messages",
+                    method: "POST",
+                    data:new FormData(this),
+                    contentType: false,
+                    cache: false,
+                    processData: false,
+                    success:function(data){
+                        $("#message_reponse").html(data);
+                    }
+                });
+                }
+     });
 }
 
 function abre_2(url,id,data) {
