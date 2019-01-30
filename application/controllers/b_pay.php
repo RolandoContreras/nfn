@@ -316,7 +316,7 @@ class B_pay extends CI_Controller {
                                         'sell, sell.sell_id = commissions.sell_id',
                                         'invoices, invoices.invoice_id = sell.invoice_id',
                                         'customer as c1, c1.customer_id = invoices.customer_id'), 
-                        "where" => "customer.customer_id = $customer_id and commissions.active = 1",                              
+                        "where" => "customer.customer_id = $customer_id",                              
                         "order" => "commissions.commissions_id DESC",
                         "limit" => "50"              
                                         );            

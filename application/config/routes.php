@@ -113,6 +113,7 @@ $route['dashboard/comisiones'] = "d_comission";
 $route['dashboard/comisiones/load/([0-9]+)'] = "d_comission/load/$1";
 $route['dashboard/comisiones/validate_customer'] = "d_comission/validate_customer";
 $route['dashboard/comisiones/validate'] = "d_comission/validate";
+$route['dashboard/comisiones/marcar_pagado'] = "d_comission/mark_pay";
 
 $route['dashboard/box'] = "d_box";
 $route['dashboard/box/load'] = "d_box/load";

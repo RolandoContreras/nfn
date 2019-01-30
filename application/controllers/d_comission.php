@@ -17,11 +17,16 @@ class D_comission extends CI_Controller{
                                     customer.code,
                                     bonus.name as bonus,
                                     commissions.amount,
-                                    commissions.status_value,
-                                    commissions.date",
+                                    commissions.active,
+                                    commissions.date,
+                                    c1.code as code_2,
+                                    c1.first_name as first_name_2,
+                                    c1.last_name as last_name_2",
                         "join" => array('customer, customer.customer_id = commissions.customer_id',
                                         'bonus, bonus.bonus_id = commissions.bonus_id',
                                         'sell, sell.sell_id = commissions.sell_id',
+                                        'invoices, invoices.invoice_id = sell.invoice_id',
+                                        'customer as c1, c1.customer_id = invoices.customer_id'
                                         ),
                          "order" => "commissions.commissions_id DESC"              
                                         );            
@@ -100,6 +105,24 @@ class D_comission extends CI_Controller{
         
             $this->obj_comission->update($commissions_id, $data);
         redirect(site_url()."dashboard/comisiones");
+    }
+    
+    public function mark_pay(){
+            //UPDATE DATA ORDERS
+        if($this->input->is_ajax_request()){   
+              $commissions_id = $this->input->post("commissions_id");
+              
+                if(count($commissions_id) > 0){
+                    $data = array(
+                        'active' => 3,
+                        'updated_at' => date("Y-m-d H:i:s"),
+                        'updated_by' => $_SESSION['usercms']['user_id'],
+                    ); 
+                    $this->obj_comission->update($commissions_id,$data);
+                }
+                echo json_encode($data);            
+        exit();
+            }
     }
     
     public function get_session(){          
