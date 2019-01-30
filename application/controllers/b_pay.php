@@ -275,7 +275,7 @@ class B_pay extends CI_Controller {
          
 	}
         
-    public function extracto(){
+        public function extracto(){
     
             //GET SESSION   
             $this->get_session();
@@ -304,11 +304,18 @@ class B_pay extends CI_Controller {
                                     bonus.name as bonus,
                                     commissions.amount,
                                     sell.date,
+                                    invoices.invoice_id,
+                                    invoices.customer_id,
                                     commissions.status_value,
-                                    commissions.date",
+                                    commissions.date,
+                                    c1.code,
+                                    c1.first_name,
+                                    c1.last_name",
                         "join" => array('customer, customer.customer_id = commissions.customer_id',
                                         'bonus, bonus.bonus_id = commissions.bonus_id',
-                                        'sell, sell.sell_id = commissions.sell_id'),
+                                        'sell, sell.sell_id = commissions.sell_id',
+                                        'invoices, invoices.invoice_id = sell.invoice_id',
+                                        'customer as c1, c1.customer_id = invoices.customer_id'), 
                         "where" => "customer.customer_id = $customer_id and commissions.active = 1",                              
                         "order" => "commissions.commissions_id DESC",
                         "limit" => "50"              
@@ -405,6 +412,7 @@ class B_pay extends CI_Controller {
                                                                         <tr>
                                                                             <th style='padding: 15px'><b>Fecha</b></th>
                                                                             <th style='padding: 15px'><b>Concepto</b></th>
+                                                                            <th style='padding: 15px'><b>Por Referir a</b></th>
                                                                             <th style='padding: 15px'><b>Importe</b></th>
                                                                             <th style='padding: 15px' class='text-center'><b>Estado</b></th>
                                                                             
@@ -415,6 +423,7 @@ class B_pay extends CI_Controller {
                                                                             echo "<tr>
                                                                                 <td style='padding: 15px'><b>".formato_fecha_barras($value->date)."<b></td>
                                                                                 <td style='padding: 15px'>$value->bonus</td>
+                                                                                <td align='center' style='padding: 15px; font-size: 12px !important;'><b>$value->first_name  $value->last_name</b><br/>($value->code)</td>
                                                                                 <td style='padding: 15px'>".format_number_moneda_soles($value->amount)."</td>
                                                                                 <td style='padding: 15px' class='text-center'>
                                                                                     <span class='label label-success'>Abonado</span>

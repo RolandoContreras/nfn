@@ -531,7 +531,7 @@
             </span>
           <div class="DivQuadrado0">
                 <span class="DivValign">
-                    <div class="DivQuadrado5" onclick="window.open('')"></div>
+                    <div class="DivQuadrado5" onclick="window.open('<?php echo site_url().'static/backoffice/document/presentacion_nfn.pdf';?>')"></div>
                 </span>            
           </div>
         </div>
