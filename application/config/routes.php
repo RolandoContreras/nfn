@@ -45,6 +45,7 @@ $route['inicio'] = 'home';
 $route['nosotros'] = 'about';
 $route['productos'] = 'product';
 $route['noticias'] = 'news';
+$route['eventos'] = 'news/events';
 $route['contacto'] = 'contact';
 $route['login'] = 'login';
 $route['login/validate'] = 'login/validate';

@@ -39,6 +39,7 @@ function format_number_moneda_soles($number){
     $number = number_format($number, $decimals);
     return "S/.".$number;
 }
+
 function format_number_dolar($number){
     $decimals ="2";
     $number = number_format($number, $decimals);
@@ -54,6 +55,7 @@ function format_number_miles($number){
     $number = number_format($number, 0, '.', ',');
     return $number;
 }
+
 function format_number_2decimal($number){
     $number = number_format($number, 2);
     return $number;
@@ -240,5 +242,10 @@ function replace_vocales_voculeshtml($str){
     $replace = array('&aacute;', '&eacute;', '&iacute;', '&oacute;', '&uacute;','&Aacute;','&Eacute;', '&Iacute;', '&Oacute;', '&Uacute;', '&iquest;', '&ntilde;','&Ntilde;');    
     return str_replace($search, $replace, $str);
     
+}
+
+function formato_hora($time){
+    $timestamp = strtotime("08/04/2010 $time");
+    return date("h:i A", $timestamp);
 }
 ?>

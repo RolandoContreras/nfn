@@ -543,7 +543,7 @@
             <div class="DivQuadrado2">Calendario de eventos</div></span>
           <div class="DivQuadrado0">
                 <span class="DivValign">
-                    <div class="DivQuadrado5" onclick="window.open('','_blank')"></div>
+                    <div class="DivQuadrado5" onclick="window.open('<?php echo site_url().'eventos';?>','_blank')"></div>
                 </span>            
           </div>
         </div>
