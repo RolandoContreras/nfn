@@ -110,6 +110,12 @@ $route['dashboard/clientes/load/([0-9]+)'] = "d_customer/load/$1";
 $route['dashboard/clientes/validate'] = "d_customer/validate";
 $route['dashboard/clientes/delete'] = "d_customer/delete";
 
+$route['dashboard/eventos'] = "d_events";
+$route['dashboard/eventos/load'] = "d_events/load";
+$route['dashboard/eventos/load/([0-9]+)'] = "d_events/load/$1";
+$route['dashboard/eventos/validate'] = "d_events/validate";
+$route['dashboard/eventos/delete'] = "d_events/delete";
+
 $route['dashboard/comisiones'] = "d_comission";
 $route['dashboard/comisiones/load/([0-9]+)'] = "d_comission/load/$1";
 $route['dashboard/comisiones/validate_customer'] = "d_comission/validate_customer";
