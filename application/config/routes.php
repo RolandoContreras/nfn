@@ -135,6 +135,14 @@ $route['dashboard/comentarios'] = "d_comments";
 $route['dashboard/comentarios/cambiar_status'] = "d_comments/change_status";
 $route['dashboard/comentarios/cambiar_status_no'] = "d_comments/change_status_no";
 
+$route['dashboard/pagos'] = "d_pays";
+$route['dashboard/pagos_details/([0-9]+)'] = "d_pays/details/$1";
+$route['dashboard/pagos/pagado'] = "d_pays/pagado";
+$route['dashboard/pagos/devolver'] = "d_pays/devolver";
+$route['dashboard/pagos/load/([0-9]+)'] = "d_pays/load/$1";
+$route['dashboard/pagos/validate_customer'] = "d_pays/validate_customer";
+$route['dashboard/pagos/validate'] = "d_pays/validate";
+
 $route['dashboard/usuarios'] = "d_users";
 $route['dashboard/usuarios/load'] = "d_users/load";
 $route['dashboard/usuarios/load/([0-9]+)'] = "d_users/load/$1";

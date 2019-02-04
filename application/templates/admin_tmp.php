@@ -150,7 +150,7 @@
                                     <div class="accordion-inner">
                                         <ul class="nav nav-list">
                                             <li>
-                                                <a href="javascript:void(0);"><i class="icon-large icon-th"></i>Pagos</a>
+                                                <a href="<?php echo site_url()."dashboard/pagos";?>"><i class="icon-large icon-th"></i>Pagos</a>
                                             </li>
                                         </ul>                                     
                                     </div>

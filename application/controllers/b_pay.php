@@ -7,6 +7,7 @@ class B_pay extends CI_Controller {
         $this->load->model("commissions_model","obj_comission");
         $this->load->model("pay_model","obj_pay");
         $this->load->model("pay_commission_model","obj_pay_commision");
+        $this->load->model("customer_bank_model","obj_customer_bank"); 
     }
 
 	/**
@@ -30,6 +31,22 @@ class B_pay extends CI_Controller {
         $this->get_session();
         /// GET CUSTOMER ID
         $customer_id = $_SESSION['customer']['customer_id'];
+        //VERIFY IF FILL YOU DATA BANK DATA
+        $params = array(
+                        "select" =>"customer_bank_id",
+                        "where" => "customer_id = $customer_id",                              
+                                    );            
+            //GET DATA COMMISSIONS
+        $customer_bank = $this->obj_customer_bank->total_records($params);
+        if($customer_bank == 1){
+            $disabled = "";
+            $alert = "";
+        }else{
+            $disabled = "disabled";
+            $alert = "<div role='alert' class='alert alert-success'>
+                       Antes de solicitar un pago primero debe llenar los datos del beneficiario y los datos bancarios.
+                    </div>";
+        }
         
         //GET DATA TOTAL
             $params = array(
@@ -48,7 +65,7 @@ class B_pay extends CI_Controller {
                                     amount_total,
                                     active",
                         "where" => "customer_id = $customer_id and status_value = 1",
-                                    );
+                        "order" => "pay_id DESC");
 
          $obj_pay = $this->obj_pay-> search($params); 
          
@@ -65,7 +82,7 @@ class B_pay extends CI_Controller {
                                     <h3><b>Cobros</b></h3>
                                 </div>    
                                 <div class='pull-right tooltip-demo'>
-                                    <a title='' data-placement='top' data-toggle='tooltip' class='btn btn-default btn-sm' onclick='cerrar_pagina();' data-original-title='Cerrar ventana'><i class='fa fa-times'></i> Cerrar</a>
+                                    <a data-placement='top' data-toggle='tooltip' class='btn btn-default btn-sm' onclick='cerrar_pagina();' data-original-title='Cerrar ventana'><i class='fa fa-times'></i> Cerrar</a>
                                 </div>
                             </div>
                                     <div class='col-lg-12'>
@@ -97,13 +114,17 @@ class B_pay extends CI_Controller {
                                                                                                 <option value=''>***Seleccionar***</option>
                                                                                                 <option value='$obj_comission_total->total'>".format_number_moneda_soles($obj_comission_total->total)."</option>
                                                                                             </select>
-                                                                                        <button onclick='enviar_pago();' class='btn btn-success'>Enviar Solicitud</button>
+                                                                                        <button $disabled onclick='enviar_pago();' class='btn btn-success'>Enviar Solicitud</button>
                                                                                     </div>
+                                                                                    
                                                                                 </div> 
+                                                                                
                                                                             </td>
+                                                                            
                                                                         </tr>
                                                                     </tbody>
                                                                 </table>
+                                                                $alert
                                                                 <div id='messages_pay'></div>
 
                                                             </div>
@@ -133,6 +154,7 @@ class B_pay extends CI_Controller {
                                                                     <thead>
                                                                         <tr>
                                                                             <th style='padding: 15px'><b>Fecha</b></th>
+                                                                            <th style='padding: 15px'><b>Concepto</b></th>
                                                                             <th style='padding: 15px'><b>Importe</b></th>
                                                                             <th style='padding: 15px' class='text-center'><b>Estado</b></th>
                                                                             
@@ -143,7 +165,8 @@ class B_pay extends CI_Controller {
                                                                           foreach ($obj_pay as $value) {
                                                                             echo "<tr>
                                                                                 <td style='padding: 15px'><b>".formato_fecha_barras($value->date)."<b></td>
-                                                                                <td style='padding: 15px'>".format_number_moneda_soles($value->amount_total)."</td>";
+                                                                                <td style='padding: 15px'>Cobros de Comisiones</td>
+                                                                                <td style='padding: 15px'><b>".format_number_moneda_soles($value->amount_total)."</b></td>";
                                                                                     if($value->active == 2){
                                                                                             $style = "label-warning";
                                                                                             $value = "En Espera";
