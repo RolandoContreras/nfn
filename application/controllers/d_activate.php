@@ -25,6 +25,7 @@ class D_activate extends CI_Controller{
                                     invoices.invoice_id,
                                     invoices.activation_code,
                                     invoices.img,
+                                    invoices.type,
                                     invoices.date,
                                     invoices.subject,
                                     invoices.active,
@@ -33,6 +34,44 @@ class D_activate extends CI_Controller{
                         "join" => array('customer, invoices.customer_id = customer.customer_id',
                                         'box, invoices.box_id = box.box_id'),
                         "where" => "invoices.type = 1 and customer.status_value = 1"
+               );
+           //GET DATA FROM CUSTOMER
+           $obj_invoices = $this->obj_invoices->search($params);
+           
+           /// PAGINADO
+            $modulos ='activaciones_clientes'; 
+            $seccion = 'Lista';        
+            $link_modulo =  site_url().'dashboard/'.$modulos; 
+            
+            /// VISTA
+            $this->tmp_mastercms->set('link_modulo',$link_modulo);
+            $this->tmp_mastercms->set('modulos',$modulos);
+            $this->tmp_mastercms->set('seccion',$seccion);
+            $this->tmp_mastercms->set("obj_invoices",$obj_invoices);
+            $this->tmp_mastercms->render("dashboard/activate/activate_list");
+    }
+    
+    public function consume(){  
+        
+           $this->get_session();
+           $params = array(
+                        "select" =>"customer.first_name,
+                                    customer.last_name,
+                                    customer.code,
+                                    customer.customer_id,
+                                    customer.parents_id,
+                                    invoices.invoice_id,
+                                    invoices.activation_code,
+                                    invoices.img,
+                                    invoices.date,
+                                    invoices.type,
+                                    invoices.subject,
+                                    invoices.active,
+                                    box.name,
+                                    box.price",
+                        "join" => array('customer, invoices.customer_id = customer.customer_id',
+                                        'box, invoices.box_id = box.box_id'),
+                        "where" => "invoices.type = 2 and customer.status_value = 1"
                );
            //GET DATA FROM CUSTOMER
            $obj_invoices = $this->obj_invoices->search($params);

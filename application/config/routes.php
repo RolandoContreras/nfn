@@ -108,6 +108,11 @@ $route['dashboard/activaciones_clientes/active'] = "d_activate/active";
 $route['dashboard/activaciones_clientes/cambiar_status'] = "d_activate/change_status";
 $route['dashboard/activaciones_clientes/delete'] = "d_activate/delete";
 
+$route['dashboard/activaciones_consumos'] = "d_activate/consume"; 
+$route['dashboard/activaciones_consumos/active'] = "d_activate/active";
+$route['dashboard/activaciones_consumos/cambiar_status'] = "d_activate/change_status";
+$route['dashboard/activaciones_consumos/delete'] = "d_activate/delete";
+
 $route['dashboard/clientes'] = "d_customer";
 $route['dashboard/clientes/load/([0-9]+)'] = "d_customer/load/$1";
 $route['dashboard/clientes/validate'] = "d_customer/validate";

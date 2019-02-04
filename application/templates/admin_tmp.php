@@ -131,7 +131,7 @@
                                                 <a href="<?php echo site_url()."dashboard/activaciones_clientes";?>"><i class="icon-large icon-th"></i>Activaciones Clientes</a>
                                             </li>
                                             <li>
-                                                <a href="<?php echo site_url()."dashboard/consumos";?>"><i class="icon-large icon-th"></i>Activaciones Consumos</a>
+                                                <a href="<?php echo site_url()."dashboard/activaciones_consumos";?>"><i class="icon-large icon-th"></i>Activaciones Consumos</a>
                                             </li>
                                             <li>
                                                 <a href="javascript:void(0);"><i class="icon-large icon-th"></i>Ventas</a>
