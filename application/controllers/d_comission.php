@@ -5,6 +5,7 @@ class D_comission extends CI_Controller{
     public function __construct(){
         parent::__construct();
         $this->load->model("commissions_model","obj_comission");
+        $this->load->model("customer_model","obj_customer");
     }   
                 
     public function index(){  
@@ -62,7 +63,7 @@ class D_comission extends CI_Controller{
                                     commissions.status_value,
                                     customer.first_name,
                                     customer.last_name,
-                                    customer.username,",
+                                    customer.code",
                          "where" => "commissions_id = $commissions_id",
                          "join" => array('customer, commissions.customer_id = customer.customer_id')
             ); 
@@ -124,6 +125,31 @@ class D_comission extends CI_Controller{
         exit();
             }
     }
+    
+    public function validate_customer() {
+            if ($this->input->is_ajax_request()) {
+                //SELECT ID FROM CUSTOMER
+            $customer_id = $this->input->post('customer_id');
+            $param = array(
+                "select" => "customer_id,
+                             code,
+                             first_name,
+                             last_name",
+                "where" => "customer_id = $customer_id");
+            $obj_customer = $this->obj_customer->get_search_row($param);
+            
+            if (count($obj_customer) > 0) {
+                $data['message'] = "true";
+                $data['code'] = $obj_customer->code;
+                $data['name'] = $obj_customer->first_name." ".$obj_customer->last_name;
+                $data['print'] = '<div class="alert alert-success" style="text-align: center">Usuario Encontrado.</div>';
+            } else {
+                $data['message'] = "false";
+                $data['print'] = '<div class="alert alert-danger" style="text-align: center">Usuario no Existe.</div>';
+            }
+            echo json_encode($data);
+            }
+        }
     
     public function get_session(){          
         if (isset($_SESSION['usercms'])){

@@ -58,18 +58,30 @@ class D_pays extends CI_Controller{
            $this->get_session();
            $params = array(
                         "select" =>"commissions.commissions_id,
+                                    customer.first_name,
+                                    customer.last_name,
+                                    customer.code,
+                                    bonus.name,
                                     commissions.amount,
-                                    commissions.date,
                                     commissions.active,
-                                    bonus.bonus_id,
-                                    bonus.name",
-                        "where" => "pay_commission.pay_id = $pay_id",
+                                    commissions.date,
+                                    c1.code as code_2,
+                                    c1.first_name as first_name_2,
+                                    c1.last_name as last_name_2",
                         "join" => array('commissions, pay_commission.commissions_id = commissions.commissions_id',
-                                        'bonus, commissions.bonus_id = bonus.bonus_id'),
-                        "order" => "commissions.date ASC"
-                        );
-           //GET DATA FROM CUSTOMER
-           $obj_pay_commission= $this->obj_pay_commission->search($params);
+                                        'customer, customer.customer_id = commissions.customer_id',
+                                        'bonus, bonus.bonus_id = commissions.bonus_id',
+                                        'sell, sell.sell_id = commissions.sell_id',
+                                        'invoices, invoices.invoice_id = sell.invoice_id',
+                                        'customer as c1, c1.customer_id = invoices.customer_id'
+                                        ),
+                         "where" => "pay_commission.pay_id = $pay_id",
+                         "order" => "commissions.commissions_id DESC"              
+                                        );            
+            
+            //GET DATA COMMISSIONS
+            $obj_pay_commission = $this->obj_pay_commission->search($params);
+           
            /// PAGINADO
             $modulos ='cobros'; 
             $seccion = 'Lista';        

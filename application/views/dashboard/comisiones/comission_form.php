@@ -20,8 +20,8 @@
               <strong>ID Cliente:</strong><br>
               <input type="text" id="customer_id" onblur="validate_customer(this.value);" name="customer_id" value="<?php echo isset($obj_comission->customer_id)?$obj_comission->customer_id:"";?>" class="input-xlarge-fluid" placeholder="Cliente">
               <br><br>
-              <strong>Usuario:</strong><br>
-              <input type="text" id="username" name="username" value="<?php echo isset($obj_comission->username)?$obj_comission->username:"";?>" class="input-xlarge-fluid" placeholder="Username" disabled="">
+              <strong>Código:</strong><br>
+              <input type="text" id="code" name="code" value="<?php echo isset($obj_comission->code)?$obj_comission->code:"";?>" class="input-xlarge-fluid" placeholder="Código" disabled="">
               <br><br>
               <strong>Nombre:</strong><br>              
               <input type="text" id="name" name="name" value="<?php echo isset($obj_comission->first_name)?$obj_comission->first_name." ".$obj_comission->last_name:"";?>" class="input-xlarge-fluid" placeholder="Nombre" disabled="">

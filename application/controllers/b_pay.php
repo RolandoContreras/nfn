@@ -264,7 +264,7 @@ class B_pay extends CI_Controller {
                         <div class='panel panel-default panel-form' data-behaviour='container'>
                             <div class='panel-heading text-uppercase clearfix'>
                                 <div class='pull-left'>
-                                    <h3>Extracto</h3>
+                                    <h3><b>Extracto</b></h3>
                                 </div>    
                                 <div class='pull-right tooltip-demo'>
                                     <a title='' data-placement='top' data-toggle='tooltip' class='btn btn-default btn-sm' onclick='cerrar_pagina();' data-original-title='Cerrar ventana'><i class='fa fa-times'></i> Cerrar</a>
@@ -320,17 +320,11 @@ class B_pay extends CI_Controller {
                                                                     Solo se muestran las 50 últimas comisiones ganadas.
                                                             </div>
                                                         </div>
-
-
-                       
-
-
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    
                                     <div class='col-sm-12'>
                                       <div id='panelDemo14' class='panel panel-success'>
                                             <div class='panel-body'>
@@ -350,6 +344,7 @@ class B_pay extends CI_Controller {
                                                                         </tr>
                                                                     </thead>
                                                                     <tbody>";
+                                                                    if(count($obj_comission) > 0){
                                                                       foreach ($obj_comission as $value) {
                                                                             echo "<tr>
                                                                                 <td style='padding: 15px'><b>".formato_fecha_barras($value->date)."<b></td>
@@ -360,7 +355,12 @@ class B_pay extends CI_Controller {
                                                                                     <span class='label label-success'>Abonado</span>
                                                                                 </td>
                                                                             </tr>";
-                                                                         }
+                                                                        }
+                                                                    }else{
+                                                                        echo "<tr><td colspan='5' style='padding: 15px' align='center'>No hay registros</td></tr>";   
+                                                                    }
+                                                                             
+                                                                             
                                                                  echo "        
                                                                     </tbody>
                                                                 </table>

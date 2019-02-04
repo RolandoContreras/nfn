@@ -26,6 +26,7 @@
                                 <th>ID</th>
                                 <th>FECHA</th>
                                 <th>BONO</th>
+                                <th>REFERIR A</th>
                                 <th>MONTO</th>
                                 <th>ESTADO</th>
                             </tr>
@@ -38,6 +39,7 @@
                                 <td align="center"><?php echo $value->commissions_id;?></td>
                                 <td align="center"><?php echo formato_fecha_barras($value->date);?></td>
                                 <td align="center" style="color:#fff;" class="label-success" align="center"><?php echo $value->name;?></td>
+                                <td align="center" style="color:#fff;" class="label-warning" align="center"><?php echo "<b>".$value->first_name_2." ".$value->last_name_2."</b><br/>(".$value->code_2.")";?></td>
                                 <td class="label-info" style="color:white;" align="center"><b><?php echo format_number_moneda_soles($value->amount);?></b></td>
                                 <td align="center">
                                     <?php if ($value->active == 1){
