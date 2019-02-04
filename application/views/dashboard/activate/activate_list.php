@@ -50,8 +50,13 @@
                                 <td align="center" ><?php echo $value->subject;?></td>
                                 <td align="center">
                                     <?php 
-                                    if($value->img != ""){ ?>
-                                    <img id="<?php echo $key;?>" onclick="modal_img(<?php echo $key;?>);" src='<?php echo site_url()."static/backoffice/images/invoices/nuevo_cliente/$value->img";?>' width="40" alt="imagen" />
+                                    if($value->img != ""){ 
+                                        if($value->type == 1){
+                                            $path = "nuevo_cliente";
+                                        }else{
+                                            $path = "consumos";
+                                        }?>
+                                    <img id="<?php echo $key;?>" onclick="modal_img(<?php echo $key;?>);" src='<?php echo site_url()."static/backoffice/images/invoices/$path/$value->img";?>' width="40" alt="imagen" />
                                     <?php }else{
                                         echo "---";
                                     }
