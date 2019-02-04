@@ -155,20 +155,20 @@
                     <span class="DivValign">Mis datos</span>
                 </div>
                     <div class="Linhas2"></div>
-                    <div class="SubMenu" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="EfeitoMenu('MenuMobile');abre('','ModalPadrao2');" alt=" Datos personales" title="Datos personales">
+                    <div class="SubMenu" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="EfeitoMenu('MenuMobile');abre('<?php echo site_url().'backoffice/datos';?>','ModalPadrao2');" alt=" Datos personales" title="Datos personales">
                         <span class="DivValign">&bull; Datos personales</span>
                     </div>
                     <div class="Linhas2"></div>
 
-                    <div class="SubMenu" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="EfeitoMenu('MenuMobile');abre('<?php echo site_url().'backoffice/contrasena;';?>','ModalPadrao2');" alt="Contraseña" title="Contraseña">
+                    <div class="SubMenu" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="EfeitoMenu('MenuMobile');abre('<?php echo site_url().'backoffice/contrasena';?>','ModalPadrao2');" alt="Contraseña" title="Contraseña">
                         <span class="DivValign">&bull; Contraseña</span></div>
                     <div class="Linhas"></div>
             <!--MENU BOX-->
                 <div class="Menu">
                     <span class="DivValign">Box y Facturas</span>
                 </div>
-                    <div class="SubMenu" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="EfeitoMenu('MenuMobile');abre('','ModalPadrao2');" alt="Cambiar el kit" title="Cambiar el kit">
-                        <span class="DivValign">&bull; Cambiar el Box</span>
+                    <div class="SubMenu" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="EfeitoMenu('MenuMobile');abre('<?php echo site_url().'backoffice/cambiar_kit';?>','ModalPadrao2');" alt="Cambiar el kit" title="Cambiar el kit">
+                        <span class="DivValign">&bull; Cambiar el Kit</span>
                     </div>
                     <div class="Linhas2"></div>
                     <div class="Linhas"></div>
@@ -176,37 +176,37 @@
                 <div class="Menu">
                     <span class="DivValign">Red</span>
                 </div>
-                    <div class="SubMenu" onclick="window.open('','_blank');" alt="Agregar cliente" title="Agregar cliente">
+                    <div class="SubMenu" onclick="window.open('<?php echo site_url().'register';?>','_blank');" alt="Agregar cliente" title="Agregar cliente">
                         <span class="DivValign">&bull; Agregar cliente</span>
                     </div>
                     <div class="Linhas2"></div>
-                    <div class="SubMenu" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="EfeitoMenu('MenuMobile');abre('','ModalPadrao2');" alt="Ver la red" title="Ver la red">
+                    <div class="SubMenu" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="EfeitoMenu('MenuMobile');abre('<?php echo site_url().'backoffice/red';?>','ModalPadrao2');" alt="Ver la red" title="Ver la red">
                         <span class="DivValign">&bull; Ver la red</span></div>
                         <div class="Linhas2"></div>
 
-                        <div class="SubMenu" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao3" onclick="EfeitoMenu('MenuMobile');abre('','ModalPadrao4');" alt="Mis indicadores directos" title="Mis indicadores directos">
-                            <span class="DivValign">&bull; Mis indicadores directos</span>
+                        <div class="SubMenu" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao3" onclick="EfeitoMenu('MenuMobile');abre('<?php echo site_url().'backoffice/directos';?>','ModalPadrao4');" alt="Mis indicadores directos" title="Mis indicadores directos">
+                            <span class="DivValign">&bull; Mis referidos directos</span>
                         </div>
                         <div class="Linhas"></div>
             <!--MENU APOYO-->
                     <div class="Menu">
                         <span class="DivValign">Apoyo</span>
                     </div>
-                        <div class="SubMenu" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="EfeitoMenu('MenuMobile');abre('','ModalPadrao2');" alt="SAC" title="SAC">
+                        <div class="SubMenu" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="EfeitoMenu('MenuMobile');abre('<?php echo site_url().'backoffice/sac';?>','ModalPadrao2');" alt="SAC" title="SAC">
                             <span class="DivValign">&bull; SAC</span>
                         </div>
                         <div class="Linhas2"></div>
 
-                        <div class="SubMenu" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="EfeitoMenu('MenuMobile');abre('','ModalPadrao2');" alt="Downloads" title="Downloads">
-                            <span class="DivValign">&bull; Descargas</span>
-                        </div>
+                        <div class="SubMenu" onclick="window.open('<?php echo site_url().'static/backoffice/document/presentacion_nfn.pdf';?>','_self');" alt="Descargar el Plan" title="Descargar el Plan">
+                            <span class="DivValign">&bull; Descargar el Plan</span></div>
+                        <div class="Linhas2"></div>
                         <div class="Linhas2"></div>
 
-                        <div class="SubMenu" onclick="window.open('','_self');" alt="Calendario de eventos" title="Calendario de eventos">
+                        <div class="SubMenu" onclick="window.open('<?php echo site_url().'eventos';?>','_self');" alt="Calendario de eventos" title="Calendario de eventos">
                             <span class="DivValign">&bull; Calendario de eventos</span></div>
                         <div class="Linhas2"></div>
 
-                        <div class="SubMenu" onclick="window.open('')" alt="Manual de negocios" title="Manual de negocios">
+                        <div class="SubMenu" alt="Manual de negocios" title="Manual de negocios">
                             <span class="DivValign">&bull; Manual de negocios</span>
                         </div>
                         <div class="Linhas2"></div>
@@ -218,10 +218,6 @@
                         <div class="Linhas2"></div>
                         <div class="SubMenu" onclick="window.open('https://www.facebook.com/nfnoficial/','_blank');" alt="Facebook" title="Facebook">
                             <span class="DivValign">&bull; Facebook</span>
-                        </div>
-                        <div class="Linhas2"></div>
-                        <div class="SubMenu" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="EfeitoMenu('MenuMobile');abre('https://www.scipiracicaba.com.br/escritorio-virtual/download-aplicativo','ModalPadrao2');" alt="Solicitud" title="Solicitud">
-                            <span class="DivValign">&bull; Solicitud</span>
                         </div>
                         <div class="Linhas2"></div>
                         <div class="Linhas"></div>
@@ -240,12 +236,15 @@
 <!-- COLOCAR NO TOPO -->
 <div id="RolagemLateral">
   <div class="Blocos" style="padding-top:0px">
-      <img src="<?php echo site_url().'static/page_front/images/logo/logo.png';?>" height="120" align="center" alt="NFN - New Future Network" title="NFN - New Future Network" />
+      <img src="<?php echo site_url().'static/page_front/images/logo/logo.png';?>" height="90" align="center" alt="NFN - New Future Network" title="NFN - New Future Network" />
   </div>
   <style type="text/css">
       .botaozinho {background-image:url('<?php echo site_url().'static/backoffice/images/foto-perfil.jpg';?>');background-size:cover;cursor:pointer}
   </style>
   <div class="Blocos">
+    <div class="botaozinho FotoCliente" id="FotoCliente">
+        <div class="FotoBotao" id="FotoBotao" name="FotoBotao" border="0"></div>
+    </div>
     <div class="TextoBemVindo">¡Bienvenido, <?php echo $_SESSION['customer']['name'];?>!<br>ID:
       <font style="font-weight:400"><?php echo $_SESSION['customer']['code'];?></font>
     </div>
@@ -267,22 +266,6 @@
            <?php echo $text;?>
         </span>
   </div>
-  <!-- //Lateral do quadro dos sonhos -->
-  <!-- Lateral do Perfil -->
-  <div class="Blocos" id="BlocoPerfil" style="display:none; border-bottom:0px">
-    <div class="FraseDia" style="font-size:15px">¡SEAN BIENVENIDOS A NFN!</div>
-    <div class="FraseDia" style="font-weight: 400;margin-top:3px;font-size:16px">Hable más sobre usted</div>
-    <div class="VoltarAoEscritorio" onclick="mudaLateral('Home')">
-      <div style="float:left; margin-left:5px;">
-          <img src="imagens_perfil/voltar_ev.png" width="24" height="20" alt="Voltar ao escritório virtual" title="Volver a la oficina virtual" />
-      </div>
-      <div
-        style="float:right; margin-right:5px">
-        <font style="font-weight:600; font-size:14.5px; color:#5e5e5e">Volver a la oficina virtual</font>
-    </div>
-  </div>
-</div>
-<!-- //Lateral do Perfil -->
 </div>
 <style type="text/css">
   .BordaBotaoPosicao {position:relative} .BordaBotao {position:absolute; left:-5px; top:-5px; border:5px solid #D64541; width:65px; height:65px; border-radius:100%} .BordaBotaoPL {position:absolute; left:-5px; top:-5px; border:5px solid #F3C77B; width:65px; height:65px; border-radius:100%} .BordaBotaoFacebook {position:absolute; left:-5px; top:-5px; border:5px solid #5E7FC1; width:65px; height:65px; border-radius:100%} /*==== Video responsivo no modal ====== */ .video-container {position:relative;padding-bottom:56.25%;padding-top:30px;height:0;overflow:hidden;} .video-container iframe, .video-container object, .video-container embed {position:absolute;top:0;left:0;width:100%;height:100%;} /* Paraguai */ #Corpo .DivGrupo3 {float:left;width:286px}
@@ -291,7 +274,7 @@
 <!-- abre o quadro dos sonhos direto se vier do painel pela pagina do quadro -->
 <!-- abre o quadro dos sonhos direto se vier do painel pela pagina do quadro -->
 <!-- CONTEUDO DESKTOP -->
-<div id="Corpo" style="background:url('img_gerenciamento/fundo-branco2.jpg'); background-size:cover">
+<div id="Corpo">
   <div id="Topo">
     <div class="Titulo" style="color:#404040; ">
         <span class="DivAlign">OFICINA VIRTUAL NFN</span>
@@ -300,13 +283,20 @@
       #Topo .BotoesTopo {float:right; width:calc(100% - 315px); margin-left:10px} #Topo .DivBolinhas {float:right; margin-right:15px; width:65px; height:65px; border-radius:100%; display:table; text-align:center} #Topo .BolinhaMenor {width:45px; height:45px; margin-right:0px; margin-top:10px} #Topo .Imagem {width:65px; height:65px; border-radius:100%; cursor:pointer;} #Topo .ImagemMenor {width:45px; height:45px; cursor:pointer;} #Topo .ImagemDesabilitado {width:65px; height:65px; cursor:default; filter:alpha(opacity=50);opacity:0.5} #Topo .BordaBotaoPosicaoEfeito {position:relative} #Topo .BordaBotao {position:absolute; left:-5px; top:-5px; border-radius:100%; cursor:pointer} #Topo .EfeitoBotaoFace {border:5px solid #5E7FC1} #Topo .EfeitoBotaoSac {border:5px solid #D64541} #Topo .EfeitoBotaoPL {border:5px solid #b9cee4} /*-- Responsivo --*/ @media screen and (max-width: 1100px){ #Topo .BotoesTopo {width:100%; margin:0px; margin-bottom:20px} }
     </style>
     <!--**OBS IMPORTANTES**A LISTA DO DESKTOP ESTÁ EM **FLOAT RIGHT** ENTÃO A INSERÇÃO DOS ÍCONES É DA **DIRETA PARA A ESQUERDA**ESTES MESMOS ÍCONES ESTÃO NO MOBILE, ENTÃO ALTEREM TAMBÉM NA PAGINA **INICIO_BOTOES_MOBILE.ASP**-->
+    
+    
+    
     <div class="BotoesTopo">
-      <!-- 'SAIR DO EV' -->
-      <div class="DivBolinhas BolinhaMenor">
-          <span class="DivValign">
-              <img src="<?php echo site_url().'static/backoffice/images/botonsalir.png';?>" class="ImagemMenor" data-toggle="tooltip" data-placement="bottom" title="Salir" onclick="window.open('<?php echo site_url().'salir';?>', '_self');" alt="Salir" />
-          </span>
-      </div>
+	<div class="DivBolinhas BolinhaMenor">
+            <span class="DivValign">
+		<img src="<?php echo site_url().'static/backoffice/images/botonsalir.png';?>" class="ImagemMenor" data-toggle="tooltip" data-placement="bottom" title="Salir" onclick="window.open('<?php echo site_url().'salir';?>', '_self');" alt="Salir" />
+            </span>
+        </div>
+	<div class="DivBolinhas" id="BotaoMensagemSac">
+            <span class="DivValign">
+                <img src="<?php echo site_url().'static/backoffice/images/botaosac.png';?>" class="ImagemDesabilitado" data-toggle="tooltip" data-placement="bottom" title="" alt="SAC - En el momento usted no tiene nuevas atenciones en el SAC" data-original-title="En el momento usted no tiene nuevas atenciones en el SAC">
+            </span>
+        </div>
     </div>
     <div class="BannersTopo">
       <div class="PubImagem">
@@ -385,7 +375,7 @@
       <!-- START BOX -->
       <div class="DivGrupo3 DivMarginLeft">
         <div class="DivGrupoTitulo">
-          <div class="DivGrupoTitulo1" alt="Box" title="Box">Box y Pagos    </div>
+          <div class="DivGrupoTitulo1" alt="Box" title="Box">Box y Pagos</div>
         </div>
         <div class="DivGrupo2">
           <div class="DivQuadrado" style="background-color:#1f3a93" data-toggle="tooltip" title="Haga clic aquí para generar su boleto" alt="Facturas Haga clic aquí para generar su boleto">
@@ -483,11 +473,11 @@
                   </div>
                   <div class="DivQuadrado2">Plan Carrera</div>
               </span>
-            <div class="DivQuadrado0">
+<!--            <div class="DivQuadrado0">
                 <span class="DivValign">
                     <div class="DivQuadrado5" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('','ModalPadrao2')"></div>
                 </span>              
-            </div>
+            </div>-->
           </div>
           <div class="DivQuadrado DivQuadrado3" style="background-color:#18ad90" data-toggle="tooltip" title="Acompañe toda bonificación que se genera en su red" alt="Extracto Acompañe toda bonificación que se genera en su red"> 
               <span class="DivValign">
@@ -568,11 +558,11 @@
               </div>
               <div class="DivQuadrado2" id = "div_manual_negocio" style="font-size: 12px">Manual de negocios</div>
           </span>
-        <div class="DivQuadrado0">
+<!--        <div class="DivQuadrado0">
             <span class="DivValign">
                 <div class="DivQuadrado5" onclick="window.open('<?php echo site_url().'static/backoffice/document/presentacion_nfn.pdf';?>')"></div>
             </span>          
-        </div>
+        </div>-->
       </div>
     </div>
   </div>
@@ -654,8 +644,7 @@
       </div>
       <div class="Titulo">OFICINA VIRTUAL NFN</div>
       <div class="BlocoFoto">
-          <div class="FotoCliente" id="FotoClienteMobile" style="background-image:url('<?php echo site_url().'static/backoffice/images/foto-perfil.jpg  ';?>');background-size:cover;cursor:pointer;">
-            <input type="button" id="FotoBotaoMobile" name="FotoBotaoMobile" style="cursor:pointer;">
+          <div class="FotoCliente" id="FotoClienteMobile" style="background-image:url('<?php echo site_url().'static/backoffice/images/foto-perfil.jpg  ';?>');background-size:cover;">
         </div>
         <div class="TextoBemVindo">¡Bienvenido, <?php echo $_SESSION['customer']['name'];?>!<br>ID:
           <font style="font-weight:400"><?php echo $_SESSION['customer']['code'];?></font>
@@ -679,23 +668,48 @@
         <div class="DivGrupoTitulo">
           <div class="DivGrupoTitulo1" alt="Mis datos">Mis datos</div>
         </div>
-        <div class="DivQuadrado" style="background-color:#8e44ad"> 
+          <div class="DivQuadrado" style="background-color:#913d88;<?php echo $style_boton;?>" > 
             <span class="DivValign">
                 <div class="DivQuadrado1">
-                    <img src="<?php echo site_url().'static/backoffice/images/1.png';?>" border="0">
+                    <img src="<?php echo site_url().'static/backoffice/images/2.png';?>" border="0">
                 </div>
-                <div class="DivQuadrado2">Punto de apoyo</div>
+                <div class="DivQuadrado2">Datos de pago</div>
             </span>
-          <div class="DivQuadrado0" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('https://www.scipiracicaba.com.br/escritorio-virtual/dados-entrega-paraguai','ModalPadrao2')" alt="Punto de apoyo">
-                <span class="DivValign">
-                    <div class="DivQuadrado5"></div>
-                </span> 
-          </div>
+            <?php 
+              if($active == 1){?>  
+                    <div class="DivQuadrado0" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('<?php echo site_url().'backoffice/datos_pago';?>','ModalPadrao2')" alt="Datos personales">
+                          <span class="DivValign">
+                              <div class="DivQuadrado5"></div>
+                          </span> 
+                    </div>
+              <?php } ?>
         </div>
-        <div class="DivQuadrado" style="background-color:#913d88;filter:alpha(opacity=30);opacity:.3"> <span class="DivValign"><div class="DivQuadrado1"><img src="imagens/2.png" border="0"></div><div class="DivQuadrado2" >Datos de pago</div></span>          </div>
-        <div class="DivQuadrado" style="background-color:#9d5797;filter:alpha(opacity=30);opacity:.3"> <span class="DivValign"><div class="DivQuadrado1"><img src="imagens/27.png" border="0"></div><div class="DivQuadrado2" >Datos del beneficiario</div></span>          </div>
-        <div class="DivQuadrado" style="background-color:#9b59b6"> <span class="DivValign"><div class="DivQuadrado1"><img src="imagens/3.png" border="0"></div><div class="DivQuadrado2" >Datos personales</div></span>
-          <div class="DivQuadrado0" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('https://www.scipiracicaba.com.br/escritorio-virtual/dados-pessoais','ModalPadrao2')" alt="Datos personales">
+          
+          <div class="DivQuadrado" style="background-color:#9d5797;<?php echo $style_boton;?>"> 
+            <span class="DivValign">
+                <div class="DivQuadrado1">
+                    <img src="<?php echo site_url().'static/backoffice/images/27.png';?>" border="0">
+                </div>
+                <div class="DivQuadrado2">Datos del beneficiario</div>
+            </span>
+              <?php 
+              if($active == 1){?>  
+                  <div class="DivQuadrado0" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('<?php echo site_url().'backoffice/datos_beneficiario';?>','ModalPadrao2')" alt="Datos personales">
+                        <span class="DivValign">
+                            <div class="DivQuadrado5"></div>
+                        </span> 
+                  </div>
+              <?php } ?>
+        </div>
+          
+        <div class="DivQuadrado" style="background-color:#9b59b6"> 
+            <span class="DivValign">
+                <div class="DivQuadrado1">
+                    <img src="<?php echo site_url().'static/backoffice/images/3.png';?>" border="0">
+                </div>
+                <div class="DivQuadrado2">Datos personales</div>
+            </span>
+          <div class="DivQuadrado0" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('<?php echo site_url().'backoffice/datos';?>','ModalPadrao2')" alt="Datos personales">
                 <span class="DivValign">
                     <div class="DivQuadrado5"></div>
                 </span> 
@@ -717,7 +731,7 @@
       </div>
       <div class="DivGrupo">
         <div class="DivGrupoTitulo">
-          <div class="DivGrupoTitulo1" alt="Box">Box</div>
+          <div class="DivGrupoTitulo1" alt="Box">Kit</div>
         </div>
         <div class="DivQuadrado" style="background-color:#1f3a93"> 
             <span class="DivValign">
@@ -726,7 +740,7 @@
                 </div>
                 <div class="DivQuadrado2">Facturas</div>
             </span>
-          <div class="DivQuadrado0" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('https://www.scipiracicaba.com.br/escritorio-virtual/boletos-py','ModalPadrao2')" alt="Facturas">
+          <div class="DivQuadrado0" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('<?php echo site_url().'backoffice/facturas';?>','ModalPadrao2')" alt="Facturas">
                 <span class="DivValign">
                     <div class="DivQuadrado5"></div>
                 </span> 
@@ -739,7 +753,7 @@
               </div>
               <div class="DivQuadrado2">Cambiar el box</div>
           </span>
-        <div class="DivQuadrado0" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('https://www.scipiracicaba.com.br/escritorio-virtual/alterar-kit','ModalPadrao2')" alt="Cambiar el kit">
+        <div class="DivQuadrado0" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('<?php echo site_url().'backoffice/cambiar_kit';?>','ModalPadrao2')" alt="Cambiar el kit">
             <span class="DivValign">
                 <div class="DivQuadrado5"></div>
             </span> 
@@ -750,9 +764,9 @@
               <div class="DivQuadrado1">
                   <img src="<?php echo site_url().'static/backoffice/images/8.png';?>" border="0">
               </div>
-              <div class="DivQuadrado2">Pagar box con bonos</div>
+              <div class="DivQuadrado2">Pagar kit con bonos</div>
           </span>
-        <div class="DivQuadrado0" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('https://www.scipiracicaba.com.br/escritorio-virtual/pagar-kit-com-bonus-py','ModalPadrao2')" alt="Pagar kit con bonos">
+        <div class="DivQuadrado0" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('<?php echo site_url().'backoffice/pagar_kit';?>','ModalPadrao2')" alt="Pagar kit con bonos">
             <span class="DivValign">
                 <div class="DivQuadrado5"></div>
             </span> 
@@ -783,7 +797,7 @@
               </div>
               <div class="DivQuadrado2">Ver red</div>
           </span>
-        <div class="DivQuadrado0" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('https://www.scipiracicaba.com.br/escritorio-virtual/ver-rede','ModalPadrao2')" alt="Ver red">
+        <div class="DivQuadrado0" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('<?php echo site_url().'backoffice/red';?>','ModalPadrao2')" alt="Ver red">
             <span class="DivValign">
                 <div class="DivQuadrado5"></div>
             </span> 
@@ -794,15 +808,22 @@
             <div class="DivQuadrado1">
                 <img src="<?php echo site_url().'static/backoffice/images/11.png';?>" border="0">
             </div>
-            <div class="DivQuadrado2">Plan Carrera</div></span>
-      <div class="DivQuadrado0" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('https://www.scipiracicaba.com.br/escritorio-virtual/plano-de-carreira','ModalPadrao2')" alt="Plan Carrera">
+            <div class="DivQuadrado2">Plan Carrera</div>
+        </span>
+<!--      <div class="DivQuadrado0" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('https://www.scipiracicaba.com.br/escritorio-virtual/plano-de-carreira','ModalPadrao2')" alt="Plan Carrera">
             <span class="DivValign">
                 <div class="DivQuadrado5"></div>
             </span> 
-      </div>
+      </div>-->
     </div>
-    <div class="DivQuadrado" style="background-color:#18ad90"> <span class="DivValign"><div class="DivQuadrado1"><img src="imagens/12.png" border="0"></div><div class="DivQuadrado2" >Extracto</div></span>
-      <div class="DivQuadrado0" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('https://www.scipiracicaba.com.br/escritorio-virtual/extrato-py','ModalPadrao2')" alt="Extracto">
+    <div class="DivQuadrado" style="background-color:#18ad90"> 
+        <span class="DivValign">
+            <div class="DivQuadrado1">
+                <img src="<?php echo site_url().'static/backoffice/images/12.png';?>" border="0">
+            </div>
+            <div class="DivQuadrado2">Extracto</div>
+        </span>
+      <div class="DivQuadrado0" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('<?php echo site_url().'backoffice/extracto';?>','ModalPadrao2')" alt="Extracto">
             <span class="DivValign">
                 <div class="DivQuadrado5"></div>
             </span> 
@@ -814,7 +835,7 @@
               <img src="<?php echo site_url().'static/backoffice/images/13.png';?>" border="0">
           </div>
           <div class="DivQuadrado2">Mis referidos directos</div></span>
-    <div class="DivQuadrado0" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao3" onclick="abre('https://www.scipiracicaba.com.br/escritorio-virtual/meus-indicados-diretos','ModalPadrao4')" alt="Mis referidos directos">
+    <div class="DivQuadrado0" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao3" onclick="abre('<?php echo site_url().'backoffice/directos';?>','ModalPadrao4')" alt="Mis referidos directos">
         <span class="DivValign">
             <div class="DivQuadrado5"></div>
         </span> 
@@ -825,38 +846,42 @@
   <div class="DivGrupoTitulo">
     <div class="DivGrupoTitulo1" alt="Apoyo">Apoyo</div>
   </div>
-  <div class="DivQuadrado" style="background-color:#b23527"> 
-      <span class="DivValign">
-          <div class="DivQuadrado1">
-              <img src="<?php echo site_url().'static/backoffice/images/14.png';?>" border="0">
-          </div>
-          <div class="DivQuadrado2">SAC</div>
-      </span>
-    <div class="DivQuadrado0" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadraoChat" onclick="abre('chat.asp','ModalPadraoChat')" alt="SAC">
+ <div class="DivQuadrado" style="background-color:#ed4132"> 
+    <span class="DivValign">
+        <div class="DivQuadrado1">
+            <img src="<?php echo site_url().'static/backoffice/images/14.png';?>" border="0"></div>
+        <div class="DivQuadrado2">SAC</div>
+    </span>
+  <div class="DivQuadrado0" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('<?php echo site_url().'backoffice/sac';?>','ModalPadrao2')" alt="Ver red">
         <span class="DivValign">
             <div class="DivQuadrado5"></div>
         </span> 
-    </div>
   </div>
-  <div class="DivQuadrado" style="background-color:#ed4132"> 
-      <span class="DivValign">
-          <div class="DivQuadrado1">
-              <img src="<?php echo site_url().'static/backoffice/images/15.png';?>" border="0">
-          </div>
-          <div class="DivQuadrado2">Descargas</div></span>
-    <div class="DivQuadrado0" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('https://www.scipiracicaba.com.br/escritorio-virtual/downloads','ModalPadrao2')" alt="Descargas">
+</div>       
+    
+    
+<div class="DivQuadrado" style="background-color:#ed4132"> 
+    <span class="DivValign">
+        <div class="DivQuadrado1">
+            <img src="<?php echo site_url().'static/backoffice/images/15.png';?>" border="0"></div>
+        <div class="DivQuadrado2">Descarga el Plan</div>
+    </span>
+  <div class="DivQuadrado0" onclick="window.open('<?php echo site_url().'static/backoffice/document/presentacion_nfn.pdf';?>','_blank')" alt="Calendario de eventos">
         <span class="DivValign">
             <div class="DivQuadrado5"></div>
         </span> 
-    </div>
   </div>
+</div>    
+    
+    
+    
 <div class="DivQuadrado" style="background-color:#ed4132"> 
     <span class="DivValign">
         <div class="DivQuadrado1">
             <img src="<?php echo site_url().'static/backoffice/images/18.png';?>" border="0"></div>
         <div class="DivQuadrado2" >Calendario de eventos</div>
     </span>
-  <div class="DivQuadrado0" onclick="window.open('https://www.scipiracicaba.com.br/agenda-sci-py','_blank')" alt="Calendario de eventos">
+  <div class="DivQuadrado0" onclick="window.open('<?php echo site_url().'eventos';?>','_blank')" alt="Calendario de eventos">
         <span class="DivValign">
             <div class="DivQuadrado5"></div>
         </span> 
@@ -868,11 +893,11 @@
             <img src="<?php echo site_url().'static/backoffice/images/28.png';?>" border="0"></div>
         <div class="DivQuadrado2" id = "div_manual_negocio" style="font-size: 12px">Manual de negocios</div>
     </span>
-  <div class="DivQuadrado0" onclick="window.open('https://www.scipiracicaba.com.br/downloads/Manual_de_Negocios_SCI_PY.pdf')" alt="Manual de negocios">
+<!--  <div class="DivQuadrado0" onclick="window.open('https://www.scipiracicaba.com.br/downloads/Manual_de_Negocios_SCI_PY.pdf')" alt="Manual de negocios">
         <span class="DivValign">
             <div class="DivQuadrado5"></div>
         </span> 
-  </div>
+  </div>-->
 </div>
 </div>
 <div class="DivGrupo">
@@ -886,8 +911,7 @@
           </div>
           <div class="DivQuadrado2">Youtube NFN</div>
       </span>
-    <div
-      class="DivQuadrado0" onclick="window.open('https://www.youtube.com/channel/UCWssjK78s0rDbMcmDLENDlg?sub_confirmation=1','_blank')" alt="Youtube NFN">
+    <div class="DivQuadrado0" onclick="window.open('https://www.youtube.com/channel/UCWssjK78s0rDbMcmDLENDlg?sub_confirmation=1','_blank')" alt="Youtube NFN">
         <span class="DivValign">
             <div class="DivQuadrado5"></div>
         </span> 
@@ -900,7 +924,7 @@
         </div>
         <div class="DivQuadrado2">Facebook</div>
     </span>
-  <div class="DivQuadrado0" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('modal_facebook.asp','ModalPadrao2')" alt="Facebook">
+  <div class="DivQuadrado0" onclick="window.open('https://www.facebook.com/nfnoficial/','_blank')" alt="Youtube NFN">
         <span class="DivValign">
             <div class="DivQuadrado5"></div>
         </span> 
@@ -913,24 +937,11 @@
         </div>
         <div class="DivQuadrado2">Instagram</div>
     </span>
-  <div class="DivQuadrado0" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('modal_instagram.asp','ModalPadrao2')" alt="Instagram">
+    <div class="DivQuadrado0" onclick="window.open('https://www.instagram.com/nfnperu/?hl=es-la','_blank')" alt="Youtube NFN">
         <span class="DivValign">
             <div class="DivQuadrado5"></div>
         </span> 
-  </div>
-</div>
-<div class="DivQuadrado" style="background-color:#e7a13c"> 
-    <span class="DivValign">
-        <div class="DivQuadrado1">
-            <img src="<?php echo site_url().'static/backoffice/images/26.png';?>" border="0">
-        </div>
-        <div class="DivQuadrado2">Solicitud</div>
-    </span>
-  <div class="DivQuadrado0" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('https://www.scipiracicaba.com.br/escritorio-virtual/download-aplicativo','ModalPadrao2')" alt="Solicitud">
-        <span class="DivValign">
-            <div class="DivQuadrado5"></div>
-        </span> 
-  </div>
+    </div>
 </div>
 </div>
 <!-- //BLOCOS -->
@@ -965,49 +976,6 @@
   </div>
 </div>
 <div class="modal fade-scale" id="ModalPadraoChat" role="dialog" onclick="FecharPagina()" style="overflow-y:scroll"></div>
-<!-- Modal Tutorial -->
-<div id="ModalTutoriais" class="modal fade" role="dialog">
-  <div class="modal-dialog modal-lg">
-    <!-- Modal content-->
-    <div class="modal-content ">
-      <div class="modal-header"> 
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">TUTORIALES NFN</h4>
-      </div>
-      <div class="modal-body" id="blocos_tutoriais"></div>
-      <div class="modal-footer"> <button type="button" class="btn btn-default" data-dismiss="modal">Cerca</button></div>
-    </div>
-  </div>
-</div>
-<div class="modal fade bs-example-modal-sm" id="ChatMktZap" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog modal-sm" style="width: 350px" role="document">
-    <div class="modal-content">
-      <div class="modal-header"> <button type="button" class="close" onclick="$('#ChatMktZap').modal('hide');"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">Conversar</h4>
-      </div>
-      <div class="modal-body" id="ChatMktZapIframe"></div>
-    </div>
-  </div>
-</div>
-<div id="ModalTutorial" class="modal fade" role="dialog" onclose="paraVideo(ModalTutorial)">
-  <div class="modal-dialog modal-lg">
-    <!-- Modal de vídeo-->
-    <div class="modal-content">
-      <div class="modal-header"> <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">TUTORIAL - <span id="titulovideo"></span></h4>
-      </div>
-      <div class="modal-body video-container" id="secaotutorial" style=""> </div>
-      <div class="modal-footer">
-        <div style="float: left; text-align: left; width: 90%"> <span>Compartir este vídeo </span>
-          <div> <span class="Input" id="urlVideo" style="width: 50%; float: left; margin-right: 10px; overflow: hidden; height: auto;"> </span> <button type="button"
-              class="btn btn-default" style="float: left;" onclick="copiar(urlVideo, this)">Copiar URL</button> </div>
-        </div>
-        <div> <button type="button" style="margin-top: 19px;" class="btn btn-default" data-dismiss="modal">Cerca</button> </div>
-      </div>
-    </div>
-  </div>
-</div>
-
 <script>
   function copiar(element, context) { var $temp = $("<input>"); $("body").append($temp); $temp.val($(element).text()).select(); document.execCommand("copy"); $temp.remove(); } function paraVideo(modal){ $('#iframeTutorial').remove(); //código para fechar a modal aqui $(modal).modal("hide"); }
 </script>
