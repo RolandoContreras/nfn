@@ -3,15 +3,14 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/wamp64/www/nfn/application/controllers/b_pay.php</file>
+            <file>file:/C:/wamp64/www/nfn/static/backoffice/images/11.png</file>
+            <file>file:/C:/wamp64/www/nfn/static/backoffice/images/9.png</file>
             <file>file:/C:/wamp64/www/nfn/application/config/routes.php</file>
-            <file>file:/C:/wamp64/www/nfn/application/views/events.php</file>
-            <file>file:/C:/wamp64/www/nfn/application/views/news.php</file>
-            <file>file:/C:/wamp64/www/nfn/application/controllers/d_comission.php</file>
-            <file>file:/C:/wamp64/www/nfn/application/views/dashboard/comisiones/comission_list.php</file>
-            <file>file:/C:/wamp64/www/nfn/application/controllers/news.php</file>
+            <file>file:/C:/wamp64/www/nfn/application/controllers/b_pay.php</file>
+            <file>file:/C:/wamp64/www/nfn/static/backoffice/images/10.png</file>
+            <file>file:/C:/wamp64/www/nfn/application/models/pay_model.php</file>
             <file>file:/C:/wamp64/www/nfn/application/templates/backoffice.php</file>
-            <file>file:/C:/wamp64/www/nfn/static/cms/js/comission.js</file>
+            <file>file:/C:/wamp64/www/nfn/static/backoffice/images/user.png</file>
         </group>
     </open-files>
 </project-private>

@@ -5,6 +5,8 @@ class B_pay extends CI_Controller {
     function __construct() {
         parent::__construct();
         $this->load->model("commissions_model","obj_comission");
+        $this->load->model("pay_model","obj_pay");
+        $this->load->model("pay_commission_model","obj_pay_commision");
     }
 
 	/**
@@ -26,252 +28,158 @@ class B_pay extends CI_Controller {
 	{
         //VERIFIRY GET SESSION    
         $this->get_session();
-        /// VISTA
+        /// GET CUSTOMER ID
         $customer_id = $_SESSION['customer']['customer_id'];
-        $params = array(
-                        "select" =>"customer.customer_id,
-                                    customer.parents_id,
-                                    customer.code,
-                                    customer.email,
-                                    customer.created_at,
-                                    customer.phone,
-                                    customer.password,
-                                    customer.first_name,
-                                    customer.last_name,
-                                    customer.dni,
-                                    customer.address,
-                                    customer.date_start,
-                                    customer.date_end,
-                                    customer.city,
-                                    customer.active,
-                                    customer.status_value,
-                                    paises.nombre as pais,
-                                    regiones.nombre as region
+        
+        //GET DATA TOTAL
+            $params = array(
+                        "select" =>"sum(amount) as total
                                     ",
-                        "where" => "customer.customer_id = $customer_id and paises.id_idioma = 7 and regiones.id_idioma = 7",
-                        "join" => array('paises, customer.country = paises.id',
-                                        'regiones, customer.region = regiones.id')
-                                        );
+                        "where" => "active = 1 and customer_id = $customer_id",                              
+                        "order" => "commissions_id DESC"              
+                                        );            
+            //GET DATA COMMISSIONS
+            $obj_comission_total= $this->obj_comission->get_search_row($params);
+        
+        $params = array(
+                        "select" =>"pay_id,
+                                    date,
+                                    amount,
+                                    amount_total,
+                                    active",
+                        "where" => "customer_id = $customer_id and status_value = 1",
+                                    );
 
-         $obj_customer = $this->obj_customer->get_search_row($params); 
-         //GET SPONSOR
-         $parent = $obj_customer->parents_id;
-         $name = $obj_customer->first_name.' '.$obj_customer->last_name;
-         $param_sponsor = array(
-                        "select" =>"customer.code,customer.first_name,customer.last_name",
-                        "where" => "customer.customer_id = $parent");
-
-         $obj_sponsor = $this->obj_customer->get_search_row($param_sponsor);
-         
+         $obj_pay = $this->obj_pay-> search($params); 
          
          //SEND DATA TO VIEW  
-         echo '
-             
-               <div id="principal" class="tabcontent" style="display: block;">
-    <div class="row ml-custom">
-        <div class="col-xs-12">
-            <div class="profile-section">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="panel panel-default panel-form" data-behaviour="container">
-                            <div class="panel-heading text-uppercase clearfix">
-                                <div class="pull-left">
-                                    <h3>Datos Personales</h3>
+         echo "
+        <div id='payments' class='tabcontent' style='display: block;'>
+    <div class='row ml-custom'>
+        <div class='col-xs-12'>
+            <div class='row'>
+                <div class='col-md-12'>
+                        <div class='panel panel-default panel-form' data-behaviour='container'>
+                            <div class='panel-heading text-uppercase clearfix'>
+                                <div class='pull-left'>
+                                    <h3><b>Cobros</b></h3>
                                 </div>    
-                                <div class="pull-right tooltip-demo">
-                                    <a title="" data-placement="top" data-toggle="tooltip" class="btn btn-default btn-sm" onclick="cerrar_pagina();" data-original-title="Cerrar ventana"><i class="fa fa-times"></i> Cerrar</a>
+                                <div class='pull-right tooltip-demo'>
+                                    <a title='' data-placement='top' data-toggle='tooltip' class='btn btn-default btn-sm' onclick='cerrar_pagina();' data-original-title='Cerrar ventana'><i class='fa fa-times'></i> Cerrar</a>
                                 </div>
                             </div>
-                            <hr class="style-2">
-                            <div class="panel-body">         
-                    <div data-behaviour="content">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <div class="media">
-                                        <div class="media-left">
-                                            <i class="fa fa-male fa-4x" aria-hidden="true"></i>
+                                    <div class='col-lg-12'>
+                                      <div id='panelDemo14' class='panel panel-success'>
+                                            <div class='panel-body'>
+                                                <div id='archivos_subidos'>
+                                                    <div class='row'>
+                                                        <div class='col-lg-8'>
+                                                            <div class='table-responsive'>
+                                                                <table class='table table-hover'>
+                                                                <a class='btn btn-primary btn-block' href='javascript:void(0);'>TOTAL</a>
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th colspan='3'></th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td style='padding: 10px'><i class='fa fa-check-circle-o'></i></td>
+                                                                            <td style='padding: 10px'>Importe Disponible</td>
+                                                                            <td style='padding: 10px' class='text-center'><b>".format_number_moneda_soles($obj_comission_total->total)."</b></td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td colspan='3' align='center'>
+                                                                                <div class='form-inline'>
+                                                                                    <div class='form-group'>
+                                                                                        <label for='monto'>Monto que Solicita:</label>
+                                                                                            <select id='monto' name='monto' class='form-control'>
+                                                                                                <option value=''>***Seleccionar***</option>
+                                                                                                <option value='$obj_comission_total->total'>".format_number_moneda_soles($obj_comission_total->total)."</option>
+                                                                                            </select>
+                                                                                        <button onclick='enviar_pago();' class='btn btn-success'>Enviar Solicitud</button>
+                                                                                    </div>
+                                                                                </div> 
+                                                                            </td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                                <div id='messages_pay'></div>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class='col-lg-4'>
+                                                            <div role='alert' class='alert alert-info'>
+                                                                    <strong>Importante:</strong><br>
+                                                                    -	Los pagos se procesan a partir de los días <b>5 al 8</b> y del <b>18 al 21</b> de cada mes<br/>
+                                                                    -	Recuerde completar sus datos de pagos y beneficiario para la correcta transferencia.
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="media-body">
-                                            <div class="user-name-info"><span>'.$obj_customer->code.'</span></div>
-                                                <p class="form-control">
-                                                    <span>'.$name.'</span>
-                                                </p>
+                                    </div>
+                                    
+                                    <div class='col-sm-12'>
+                                      <div id='panelDemo14' class='panel panel-success'>
+                                            <div class='panel-body'>
+                                                <div id='archivos_subidos'>
+                                                    <div class='row'>
+                                                        <div class='col-lg-12'>
+                                                            <div class='table-responsive'>
+                                                                <table class='table table-hover'>
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th style='padding: 15px'><b>Fecha</b></th>
+                                                                            <th style='padding: 15px'><b>Importe</b></th>
+                                                                            <th style='padding: 15px' class='text-center'><b>Estado</b></th>
+                                                                            
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>";
+                                                                      if(count($obj_pay) > 0){
+                                                                          foreach ($obj_pay as $value) {
+                                                                            echo "<tr>
+                                                                                <td style='padding: 15px'><b>".formato_fecha_barras($value->date)."<b></td>
+                                                                                <td style='padding: 15px'>".format_number_moneda_soles($value->amount_total)."</td>";
+                                                                                    if($value->active == 2){
+                                                                                            $style = "label-warning";
+                                                                                            $value = "En Espera";
+                                                                                    }else if($value->active == 3){
+                                                                                            $style = "label-success";
+                                                                                            $value = "Procesado";
+                                                                                    }else{
+                                                                                            $style = "label-danger";
+                                                                                            $value = "Cancelado";
+                                                                                    } 
+                                                                              echo " <td style='padding: 15px' class='text-center'>
+                                                                                    <span class='label $style'>$value</span>
+                                                                                </td>
+                                                                            </tr>";
+                                                                         }
+                                                                      }else{
+                                                                          echo "<tr><td colspan='3' style='padding: 15px' align='center'>No hay registros</td></tr>";
+                                                                      }   
+                                                                      
+                                                                 echo "        
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-md-6 col-sm-6 border-left">
-                                <div class="form-group">
-                                    <div class="media">
-                                        <div class="media-left"><i class="fa fa-envelope fa-3x"></i></div>
-                                        <div class="media-body">
-                                            <div class="control-label">E-mail</div>
-                                            <p class="form-control">
-                                                <span>'.$obj_customer->email.'</span>
-                                                <input type="hidden" id="customer_id" name="customer_id" disabled="" value="56">
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
-                        </div>
                 </div>
-            </div>
+            </div> 
         </div>
-    </div>
-    <div class="row">
-        <div class="col-md-12">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="panel panel-default panel-form" data-behaviour="container">
-                        <div class="panel-heading text-uppercase clearfix">
-                            <h3 class="title_back">Activación</h3>
-                        </div>
-                       <hr class="style-2"> 
-                        <div class="panel-body">
-                                <div data-behaviour="content">
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <div class="media">
-                                                <div class="media-left"><i class="fa fa-calendar-check-o fa-3x"></i></div>
-                                                <div class="media-body">
-                                                     <label class="control-label">Fecha de Creación :</label>
-                                                    <p class="form-control"><span>'.$obj_customer->created_at.'</span></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="col-sm-6">
-                                            <div class="media">
-                                                <div class="media-left"><i class="fa fa-calendar-check-o fa-3x"></i></div>
-                                                <div class="media-body">
-                                                     <label class="control-label">Fecha de Activación :</label>
-                                                    <p class="form-control">
-                                                    <span>---</span>
-                                                </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                      </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            <div class="row">
-                 <div class="col-md-6">
-                    <div class="panel panel-default panel-form fix-info">
-                        <div class="panel-heading text-uppercase">
-                            <div class="clearfix">
-                                <h3 class="title_back">Teléfono</h3>
-                            </div>
-                        </div>
-                        <hr class="style-1">
-                        <div class="panel-body">
-                            <div data-behaviour="content">
-                                <div class="form-group has-feedback" data-behaviour="element-content">
-                                    <div class="media">
-                                        <div class="media-left"><i class="fa fa-mobile fa-4x" aria-hidden="true"></i></div>
-                                        <div class="media-body">
-                                             <div class="control-label">Teléfono</div>
-                                             <p class="form-control"><span>'.$obj_customer->phone.'</span></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>               
-
-
-                    
-                <div class="col-md-6">
-                    <div class="panel panel-default panel-form fix-info">
-                        <div class="panel-heading text-uppercase">
-                            <div class="clearfix">
-                                <h3 class="title_back">Identificación</h3>
-                            </div>
-                        </div>
-                        <hr class="style-1">
-                        <div class="panel-body">
-                            <div data-behaviour="content">
-                                <div class="form-group has-feedback" data-behaviour="element-content">
-                                    <div class="media">
-                                        <div class="media-left"><i class="fa fa-id-card fa-3x"></i></div>
-                                        <div class="media-body">
-                                             <label class="control-label">Pasaporte / Numero de Identidad</label>
-                                             <p class="form-control"><span>'.$obj_customer->dni.'</span></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="panel panel-default panel-form" data-behaviour="container">
-                        <div class="panel-heading text-uppercase clearfix">
-                            <h3 class="title_back">Dirección</h3>
-                        </div>
-                       <hr class="style-2"> 
-                        <div class="panel-body">
-                                <div data-behaviour="content">
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <div class="media">
-                                                <div class="media-left"><i class="fa fa-globe fa-3x"></i></div>
-                                                <div class="media-body">
-                                                     <label class="control-label">País :</label>
-                                                    <p class="form-control"><span>'.$obj_customer->pais.'</span></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="col-sm-6">
-                                            <div class="media">
-                                                <div class="media-left"><i class="fa fa-globe fa-3x"></i></div>
-                                                <div class="media-body">
-                                                     <label class="control-label">Región :</label>
-                                                     <p class="form-control"><span>'.$obj_customer->region.'</span></p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                <hr class="style-1">
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <div class="form-group">
-                                                <label class="control-label">Dirección :</label>
-                                                    <p class="form-control"><span>Av. Tomas Guzman 513 - SJM</span></p>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <div class="form-group">
-                                                <label class="control-label">Ciudad :</label>
-                                                <p class="form-control"><span>'.$obj_customer->city.'</span></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-    </div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-    '
-         ;
+        ";
          
 	}
         
@@ -460,6 +368,67 @@ class B_pay extends CI_Controller {
             
         
     }
+    
+        public function validate(){
+            if($this->input->is_ajax_request()){   
+                //GET MONTO
+                date_default_timezone_set('America/Lima');
+                $monto = trim($this->input->post('monto'));
+                //GET CUSTOMER_ID FROM $_SESSION
+                $customer_id = $_SESSION['customer']['customer_id'];
+               
+                 if($monto >= "100"){
+                        //GET TOTAL AMOUNT AND TO BE PAGOS DIARIOS
+                        $params = array(
+                                "select" =>"commissions_id,
+                                            bonus_id,
+                                            date",
+                                 "where" => "commissions.customer_id = $customer_id and active = 1",
+                            );
+
+                   $obj_commission = $this->obj_comission->search($params); 
+                   //CREATE DATA IN PAY
+                        $data = array(
+                            'amount' => $monto,
+                            'descount' => 0,
+                            'amount_total' => $monto,
+                            'customer_id' => $customer_id,
+                            'active' => 2,
+                            'status_value' => 1,
+                            'date' => date("Y-m-d H:i:s"),
+                            'created_at' => date("Y-m-d H:i:s"),
+                            'created_by' => $_SESSION['customer']['customer_id'],
+                        ); 
+                        $pay_id = $this->obj_pay->insert($data);
+                        
+                    //UPDATE TABLE COMMISSIONS THE AMOUNT TO PAY
+                   foreach ($obj_commission as $value) {
+                            $data = array(
+                                'active' => 2,
+                            ); 
+                            $this->obj_comission->update($value->commissions_id,$data);
+
+                            //CREATE DATA IN PAY_COMMISSION
+                            $data_pay_commission = array(
+                                'pay_id' => $pay_id,
+                                'commissions_id' => $value->commissions_id,
+                                'status_value' => 1,
+                                'created_at' => date("Y-m-d H:i:s"),
+                                'created_by' => $_SESSION['customer']['customer_id'],
+                            ); 
+                            $this->obj_pay_commision->insert($data_pay_commission);
+                   }    
+                            $data['message'] = 'true';
+                            echo json_encode($data);
+                            exit();   
+
+               }else{
+                   $data['message'] = 'false';
+                   echo json_encode($data);
+                   exit();   
+               }
+           } 
+        }
         
         public function get_session(){          
         if (isset($_SESSION['customer'])){

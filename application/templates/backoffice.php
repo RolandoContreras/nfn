@@ -165,7 +165,7 @@
                     <div class="Linhas"></div>
             <!--MENU BOX-->
                 <div class="Menu">
-                    <span class="DivValign">Box</span>
+                    <span class="DivValign">Box y Facturas</span>
                 </div>
                     <div class="SubMenu" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="EfeitoMenu('MenuMobile');abre('','ModalPadrao2');" alt="Cambiar el kit" title="Cambiar el kit">
                         <span class="DivValign">&bull; Cambiar el Box</span>
@@ -385,7 +385,7 @@
       <!-- START BOX -->
       <div class="DivGrupo3 DivMarginLeft">
         <div class="DivGrupoTitulo">
-          <div class="DivGrupoTitulo1" alt="Box" title="Box"> Box </div>
+          <div class="DivGrupoTitulo1" alt="Box" title="Box">Box y Pagos    </div>
         </div>
         <div class="DivGrupo2">
           <div class="DivQuadrado" style="background-color:#1f3a93" data-toggle="tooltip" title="Haga clic aquí para generar su boleto" alt="Facturas Haga clic aquí para generar su boleto">
@@ -414,7 +414,7 @@
                   </span>              
             </div>
           </div>
-          <div class="DivQuadrado" style="background-color:#1e8bc3" data-toggle="tooltip" title="Opción disponible del 01 al 05 de cada mes" alt="Pagar kit con bonos Opción disponible del 01 al 05 de cada mes">
+          <div class="DivQuadrado" style="background-color:#1e8bc3" data-toggle="tooltip" title="Configura los pagos de tus consumos en automático" alt="Configura los pagos de tus consumos en automático">
           <span class="DivValign">
               <div class="DivQuadrado1">
                   <img src="<?php echo site_url().'static/backoffice/images/8.png';?>" border="0">
@@ -427,6 +427,20 @@
                 </span>              
             </div>
           </div>
+          <div class="DivQuadrado" style="background-color:#062a5e" data-toggle="tooltip" title="Solicita el retiro de todas tus comisiones" alt="Solicita el retiro de todas tus comisiones">
+          <span class="DivValign">
+              <div class="DivQuadrado1">
+                  <img src="<?php echo site_url().'static/backoffice/images/23.png';?>" border="0">
+              </div>
+              <div class="DivQuadrado2">Cobros</div>
+          </span>
+            <div class="DivQuadrado0">
+                <span class="DivValign">
+                    <div class="DivQuadrado5" data-dismiss="modal" data-toggle="modal" data-target="#ModalPadrao" onclick="abre('<?php echo site_url().'backoffice/cobros';?>','ModalPadrao2')"></div>
+                </span>              
+            </div>
+          </div>
+            
         </div>
       </div>
       <!-- END BOX -->

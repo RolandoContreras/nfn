@@ -3117,6 +3117,28 @@ $("#upload_form").on('submit',function(e){
  });
 }
 
+function enviar_pago(){
+    monto =  $('select[name=monto]').val();
+    if(monto != ""){
+       $.ajax({
+       type: "post",
+       url: site+"backoffice/cobros_validate",
+       dataType: "json",
+       data: {monto : monto},
+       success:function(data){
+           if(data.message == "true"){
+               $("#messages_pay").html("<div class='alert alert-success' style='text-align: center'>Solicitud Enviada</div>");
+                window.setTimeout(function(){location.reload()},2000)
+           }else{
+                $("#messages_pay").html("<div class='alert alert-danger' style='text-align: center'>El importe mínimo para cobrar es de s/.100.00</div>");
+           }
+       }         
+   });
+    }else{
+        $("#messages_pay").html("<div class='alert alert-info' style='text-align: center'>Debe seleccionar el importe</div>");
+    }
+}
+
 function cambiar_kit(box_id){
             $.ajax({
                type: "post",

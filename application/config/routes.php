@@ -88,6 +88,9 @@ $route['backoffice/extracto'] = "b_pay/extracto";
 $route['backoffice/sac'] = "b_sac";
 $route['backoffice/sac_create_messages'] = "b_sac/create_messages";
 
+$route['backoffice/cobros'] = "b_pay";
+$route['backoffice/cobros_validate'] = "b_pay/validate";
+
 $route['salir'] = "login/logout";
 
 //MANAGER - DASHBOARD
