@@ -29,27 +29,16 @@
               <strong>Fecha:</strong><br>              
               <input type="text" id="date" name="date" value="<?php echo isset($obj_comission->date)?formato_fecha_barras($obj_comission->date):"";?>" class="input-xlarge-fluid">
               <br><br>
-              <strong>Bono:</strong><br>   
-              <select name="bonus_id" id="bonus_id">
-                         <option value="1" <?php if($obj_comission->bonus_id == 1){ echo "selected";}?>>Patrocinio</option>
-                         <option value="2" <?php if($obj_comission->bonus_id == 2){ echo "selected";}?>>Team Builder</option>
-                         <option value="3" <?php if($obj_comission->bonus_id == 3){ echo "selected";}?>>Productor</option>
-                         <option value="4" <?php if($obj_comission->bonus_id == 4){ echo "selected";}?>>Rendimiento</option>
-                         <option value="5" <?php if($obj_comission->bonus_id == 5){ echo "selected";}?>>Unilevel</option>
-                         <option value="6" <?php if($obj_comission->bonus_id == 6){ echo "selected";}?>>Global</option>
-                         <option value="7" <?php if($obj_comission->bonus_id == 7){ echo "selected";}?>>Binario</option>
-                  </select>
-              <br><br>
               <strong>Monto:</strong><br>   
               <input type="text" id="amount" name="amount" value="<?php echo isset($obj_comission->amount)?$obj_comission->amount:0;?>" class="input-xlarge-fluid">
               <br><br>
               <div class="well nomargin" style="width: 200px;">
                   <div class="inner">
                   <strong>Estado:</strong>
-                      <select name="status_value" id="status_value">
-                                  <option value="1" <?php if(($obj_comission->status_value == 1) || ($obj_comission->status_value == 2)){ echo "selected";}?>>Abonado</option>
-                                  <option value="3" <?php if($obj_comission->status_value == 3){ echo "selected";}?>>Espera de procesar</option>
-                                  <option value="4" <?php if($obj_comission->status_value == 4){ echo "selected";}?>>Pagado</option>
+                      <select name="active" id="active">
+                                  <option value="1" <?php if($obj_comission->active == 1){ echo "selected";}?>>Abonado</option>
+                                  <option value="2" <?php if($obj_comission->active == 2){ echo "selected";}?>>Espera de procesar</option>
+                                  <option value="3" <?php if($obj_comission->active == 3){ echo "selected";}?>>Pagado</option>
                       </select>
                   </div>
               </div>
