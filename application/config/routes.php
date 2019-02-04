@@ -153,5 +153,8 @@ $route['dashboard/usuarios/delete'] = "d_users/delete";
 $route['dashboard/soporte'] = "d_informative/soporte";
 $route['dashboard/soporte/update'] = "d_informative/update";
 
+$route['dashboard/jobs/crear_factura_consumo'] = "jobs/crear_factura_consumo"; 
+$route['dashboard/jobs/verificar_rango'] = "jobs/verify_ranges"; 
+
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */

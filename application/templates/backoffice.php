@@ -988,31 +988,3 @@
 <script>
   var velocidade = 1000; var valor = 1; function pisca() { if (valor == 1) { $('#div_manual_negocio').css({'color':'#FFFFFF'}); //console.log('1'); valor=0; } else { $('#div_manual_negocio').css({'color':'#FFFF90'}); valor=1; //console.log('2'); } setTimeout("pisca();",velocidade); } setTimeout("pisca();",velocidade);
 </script>
-
-<script>
-$(document).ready(function(){
-    $("#upload_form").on('submit',function(e){
-        e.preventDefault();
-        if($('#image_file').val() == ''){
-            $("#uploaded_image").html('<div class="alert alert-danger" style="text-align: center">Debe seleccionar la imagen</div>  ');
-        }else{
-            if($('#bank_number').val() == ''){
-                $("#uploaded_image").html('<div class="alert alert-danger" style="text-align: center">Ingrese el número de deposito</div>  ');
-            }else{
-                $.ajax({
-                url : "<?php echo site_url().'backoffice/message_confirmation/upload'?>",
-                method: "POST",
-                data:new FormData(this),
-                contentType: false,
-                cache: false,
-                processData: false,
-                success:function(data){
-                    $("#uploaded_image").html(data);
-                }
-            });
-            }
-            
-        }
-    });
-});
-</script>

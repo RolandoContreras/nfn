@@ -40,7 +40,8 @@ class B_invoices extends CI_Controller {
                                     box.price",
                         "join" => array('customer, invoices.customer_id = customer.customer_id',
                                         'box, invoices.box_id = box.box_id'),
-                        "where" => "customer.customer_id = $customer_id and customer.status_value = 1"
+                        "where" => "customer.customer_id = $customer_id and customer.status_value = 1",
+                        "order" => "invoices.invoice_id DESC"
                );
            //GET DATA FROM CUSTOMER
            $obj_invoices = $this->obj_invoices->search($params);
@@ -373,6 +374,7 @@ class B_invoices extends CI_Controller {
                                     invoices.date,
                                     invoices.subject,
                                     invoices.active,
+                                    invoices.type,
                                     box.name,
                                     box.price",
                         "join" => array('customer, invoices.customer_id = customer.customer_id',
@@ -409,6 +411,7 @@ class B_invoices extends CI_Controller {
                                                                                     <div class='form-group'>
                                                                                         <input class='form-control' name='name' id='name' placeholder='De' value='$obj_invoice->first_name $obj_invoice->last_name' disabled=''>
                                                                                             <input type='hidden' class='form-control' name='invoice_id' id='invoice_id' placeholder='De' value='$invoice_id'>
+                                                                                            <input type='hidden' class='form-control' name='type' id='type' value='$obj_invoice->type'>
                                                                                     </div>
                                                                                  <label>Kit:</label>
                                                                                     <div class='form-group'>
@@ -453,16 +456,24 @@ class B_invoices extends CI_Controller {
         //GER DATA POST
         $invoice_id = $_POST['invoice_id'];
         $bank_number = $_POST['bank_number'];
+        $type = $_POST['type'];
+        
+        if($type == '1'){
+            $name_path = "nuevo_cliente";
+        }else{
+            $name_path = "consumos";
+        }
         
         $param = array(
                         "select" =>"invoice_id,active",
                          "where" => "invoice_id = $invoice_id"
                          );
          $obj_invoice = $this->obj_invoices->get_search_row($param);
+         
          //VERIFI STATUS
         if($obj_invoice->active == 0){
             if(isset($_FILES["image_file"]["name"])){
-                $config['upload_path']          = './static/backoffice/images/invoices/nuevo_cliente/';
+                $config['upload_path']          = "./static/backoffice/images/invoices/$name_path/";
                 $config['allowed_types']        = 'gif|jpg|png|jpeg';
                 $config['max_size']             = 1000;
                 $this->load->library('upload', $config);

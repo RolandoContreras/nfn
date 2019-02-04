@@ -8,6 +8,7 @@
                             <div class="navbar-inner">
                                     <div class="container" style="width: auto;">
                                             <a class="brand">Vista Rápida</a>
+                                            <button class="btn btn-small" onclick="nueva_factura_consumo();"><i class="fa fa-plus"></i> Crear Facturas Consumo</button>
                                     </div>
                             </div>
                     </div>
